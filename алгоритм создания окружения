@@ -1,0 +1,21 @@
+------------------------------------------------------
+# Удаляем snap chromium если есть, потому что медленный
+sudo snap remove chromium
+
+# Добавляем репозиторий с классическим (non-snap) Chromium
+sudo add-apt-repository ppa:xtradeb/apps
+sudo apt update
+sudo apt install chromium
+
+which chromium
+#/usr/bin/chromium
+
+------------------------------------------------------
+# создаем базовый провиль Chromium
+# Авторизуйся на Perplexity и закрой браузер.
+chromium --user-data-dir=/home/$USER/bot_master_profile
+
+# Запусти свой Python-скрипт.
+# Открой VNC Viewer (адрес localhost:5901), чтобы увидеть результат. 
+
+-------------------------------------------------------

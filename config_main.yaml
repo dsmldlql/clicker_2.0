@@ -1,0 +1,950 @@
+global:
+  screen_max_width: 4000
+  screen_max_height: 2200
+  screen_fps: 5
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  bots_count: 6
+
+prompts:
+  
+  gpt:
+    hypos_norm:
+      gen: 
+        text: prompts/gpt/hypos_norm/gen/hn_gen_gpt_text_latest
+        json: prompts/gpt/hypos_norm/gen/hn_gen_gpt_json_latest
+      filter:
+        text: prompts/gpt/hypos_norm/filter/hn_filter_gpt_text_latest
+        json: prompts/gpt/hypos_norm/filter/hn_filter_gpt_json_latest
+  grok:
+    hypos_norm:
+      gen: 
+        text: prompts/grok/hypos_norm/gen/hn_gen_grok_text_latest
+        json: prompts/grok/hypos_norm/gen/hn_gen_grok_json_latest
+      filter:
+        text: prompts/grok/hypos_norm/filter/hn_filter_grok_text_latest
+        json: prompts/grok/hypos_norm/filter/hn_filter_grok_json_latest
+  claude_sonnet:
+    hypos_norm:
+      gen: 
+        text: prompts/claude_sonnet/hypos_norm/gen/hn_gen_claude_sonnet_text_latest
+        json: prompts/claude_sonnet/hypos_norm/gen/hn_gen_claude_sonnet_json_latest
+      filter:
+        text: prompts/claude_sonnet/hypos_norm/filter/hn_filter_claude_sonnet_text_latest
+        json: prompts/claude_sonnet/hypos_norm/filter/hn_filter_claude_sonnet_json_latest
+  gemini:
+    hypos_norm:
+      gen: 
+        text: prompts/gemini/hypos_norm/gen/hn_gen_gemini_text_latest
+        json: prompts/gemini/hypos_norm/gen/hn_gen_gemini_json_latest
+      filter:
+        text: prompts/gemini/hypos_norm/filter/hn_filter_gemini_text_latest
+        json: prompts/gemini/hypos_norm/filter/hn_filter_gemini_json_latest
+  qwen:
+    hypos_norm:
+      gen: 
+        text: prompts/qwen/hypos_norm/gen/hn_gen_qwen_text_latest
+        json: prompts/qwen/hypos_norm/gen/hn_gen_qwen_json_latest
+      filter:
+        text: prompts/qwen/hypos_norm/filter/hn_filter_qwen_text_latest
+        json: prompts/qwen/hypos_norm/filter/hn_filter_qwen_json_latest
+
+sites:
+  gpt:
+    url: https://chatgpt.com/
+
+    home:
+      reset:
+        sequence:
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: text
+            value: https://chatgpt.com/
+          - type: key
+            key: enter
+          - type: wait
+            seconds: 3.0
+
+    scenarios:
+      study_learn:
+        start_state: start_question
+
+        states:
+          start_question:
+            expect:
+              templates:
+                - templates/firefox/brave/plus.png
+              threshold: 0.88
+            action: click
+            condition:
+              templates:
+                - templates/firefox/brave/study_and_learn.png
+              threshold: 0.88
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/firefox/brave/study_and_learn.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/firefox/brave/study_selected.png
+              threshold: 0.7
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/firefox/brave/learn_something_new.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/firefox/brave/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: answer_processing
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/firefox/brave/voice_mode.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/firefox/brave/copy.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: start_question
+            timeout: 300.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/firefox/brave/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: start_question
+            timeout: 120.0
+
+
+  gpt:
+    url: https://gemini.google.com/
+
+    home:
+      reset:
+        sequence:
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: text
+            value: https://gemini.google.com/
+          - type: key
+            key: enter
+          - type: wait
+            seconds: 3.0
+
+    scenarios:
+      study_learn:
+        start_state: start_question
+
+        states:
+          start_question:
+            expect:
+              templates:
+                - templates/firefox/gpt/plus.png
+              threshold: 0.88
+            action: click
+            condition:
+              templates:
+                - templates/firefox/gpt/study_learn.png
+              threshold: 0.88
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/firefox/gpt/study_learn.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/firefox/gpt/study_selected.png
+              threshold: 0.7
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/firefox/gpt/learn_something_new.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/firefox/gpt/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: answer_processing
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/firefox/gpt/voice_mode.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/firefox/gpt/copy.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: start_question
+            timeout: 300.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/firefox/gpt/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: start_question
+            timeout: 120.0
+
+
+  qwen:
+    url: https://chat.qwen.ai/
+
+    home:
+      reset:
+        sequence:
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: text
+            value: https://chat.qwen.ai/
+          - type: key
+            key: enter
+          - type: wait
+            seconds: 3.0
+
+    scenarios:
+      web_search_no_think:
+        start_state: start_question
+
+        states:
+          start_question:
+            expect:
+              templates:
+                - templates/firefox/qwen/start.png
+              threshold: 0.88
+            action: click
+            condition:
+              templates:
+                - templates/firefox/qwen/plus_in_circle.png
+              threshold: 0.88
+            next:
+              success: empty_start
+              fail: start_question
+            timeout: 120.0
+
+          empty_start:
+            expect:
+              templates:
+                - templates/firefox/qwen/plus_in_circle.png
+              threshold: 0.88
+            action: click
+            condition:
+              templates:
+                - templates/firefox/qwen/deep_research.png
+              threshold: 0.88
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/firefox/qwen/web_search_620.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/firefox/qwen/web_search_blue.png
+              threshold: 0.7
+            next:
+              success: turn_off_thinking
+              fail: start_question
+            timeout: 120.0
+
+          turn_off_thinking:
+            expect:
+              templates:
+                - templates/firefox/qwen/thinking_on.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/firefox/qwen/thinking_off.png
+              threshold: 0.7
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/firefox/qwen/ask.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/firefox/qwen/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/firefox/qwen/thumb_up.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/firefox/qwen/copy.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: start_question
+            timeout: 600.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/firefox/qwen/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: reload_answer
+            timeout: 120.0
+
+          reload_answer:
+            expect:
+              templates:
+                - templates/firefox/qwen/reload_answer.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/firefox/qwen/stop.png     
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+  perplexity:
+    url: https://www.perplexity.ai/
+
+    home:
+      reset:
+        sequence:
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: text
+            value: https://www.perplexity.ai/
+          - type: key
+            key: enter
+          - type: wait
+            seconds: 3.0
+
+    scenarios:
+      grok:
+        start_state: start_question
+
+        states:
+
+          start_question:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            next:
+              success: open_model_menu
+              fail: model_selected
+            timeout: 120.0
+
+          open_model_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          model_selected:
+            expect:
+              templates:
+                - templates/brave/perplexity/grok_main_page.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/brave/perplexity/grok.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/grok_selected.png
+              threshold: 0.8
+            next:
+              success: close_options_menu
+              fail: scroll_down
+            timeout: 120.0
+
+          scroll_down:
+            expect:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            action: click_scroll_down
+            condition:
+              templates:
+                - templates/brave/perplexity/grok.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          close_options_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/close_menu.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/brave/perplexity/white_gray_arrow_up.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 300.0
+
+          scroll_up:
+            expect:
+              templates:
+                - templates/brave/perplexity/left_bottom_corner.png
+              threshold: 0.9
+            action: scroll_up
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 120.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: reload_answer
+            timeout: 120.0
+
+          reload_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_arrows.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png     
+            next:
+              success: push_rewrite
+              fail: start_question
+            timeout: 120.0
+
+          push_rewrite:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png     
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+      claude_sonnet:
+        start_state: start_question
+
+        states:
+
+          start_question:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            next:
+              success: open_model_menu
+              fail: model_selected
+            timeout: 120.0
+
+          open_model_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          model_selected:
+            expect:
+              templates:
+                - templates/brave/perplexity/claude_sonnet_main_page.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/brave/perplexity/claude_sonnet.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/claude_sonnet_selected.png
+              threshold: 0.8
+            next:
+              success: close_options_menu
+              fail: scroll_down
+            timeout: 120.0
+
+          scroll_down:
+            expect:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            action: click_scroll_down
+            condition:
+              templates:
+                - templates/brave/perplexity/claude_sonnet.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          close_options_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/close_menu.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/brave/perplexity/white_gray_arrow_up.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 300.0
+
+          scroll_up:
+            expect:
+              templates:
+                - templates/brave/perplexity/left_bottom_corner.png
+              threshold: 0.9
+            action: scroll_up
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 120.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: reload_answer
+            timeout: 120.0
+
+          reload_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_arrows.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png     
+            next:
+              success: push_rewrite
+              fail: start_question
+            timeout: 120.0
+
+          push_rewrite:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png     
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+      gemini:
+        start_state: start_question
+
+        states:
+
+          start_question:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            next:
+              success: open_model_menu
+              fail: model_selected
+            timeout: 120.0
+
+          open_model_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/model.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          model_selected:
+            expect:
+              templates:
+                - templates/brave/perplexity/gemini_main_page.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          options_menu_opened:
+            expect:
+              templates:
+                - templates/brave/perplexity/gemini.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/gemini_selected.png
+              threshold: 0.8
+            next:
+              success: close_options_menu
+              fail: scroll_down
+            timeout: 120.0
+
+          scroll_down:
+            expect:
+              templates:
+                - templates/brave/perplexity/best.png
+              threshold: 0.8
+            action: click_scroll_down
+            condition:
+              templates:
+                - templates/brave/perplexity/gemini.png
+              threshold: 0.8
+            next:
+              success: options_menu_opened
+              fail: start_question
+            timeout: 120.0
+
+          close_options_menu:
+            expect:
+              templates:
+                - templates/brave/perplexity/close_menu.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 120.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/brave/perplexity/ask_anything.png
+              threshold: 0.9
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/brave/perplexity/white_gray_arrow_up.png
+              threshold: 0.9
+            action: click_ctrl_end
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 300.0
+
+          scroll_up:
+            expect:
+              templates:
+                - templates/brave/perplexity/left_bottom_corner_not_selected.png
+              threshold: 0.9
+            action: scroll_up
+            condition:
+              templates:
+                - templates/brave/perplexity/copy_rewrite.png
+              threshold: 0.9
+            next:
+              success: end_of_answer
+              fail: scroll_up
+            timeout: 120.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/copy.png
+              threshold: 0.9
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: reload_answer
+            timeout: 120.0
+
+          reload_answer:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_arrows.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png     
+            next:
+              success: push_rewrite
+              fail: start_question
+            timeout: 120.0
+
+          push_rewrite:
+            expect:
+              templates:
+                - templates/brave/perplexity/rewrite_button.png
+              threshold: 0.9
+            action: click
+            condition:
+              templates:
+                - templates/brave/perplexity/stop.png     
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0

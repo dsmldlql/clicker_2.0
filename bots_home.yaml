@@ -1,0 +1,81 @@
+bots:
+
+  bot_0:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [0, 0, 500, 620]
+    cooldown: 1.0
+    row_range: [67, 107]
+
+  bot_1:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [501, 0, 500, 620]
+    cooldown: 1.0
+    row_range: [109, 148]
+
+  bot_2:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [0, 621, 500, 620]
+    cooldown: 1.0
+    row_range: [149, 189]
+
+  bot_3:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [501, 621, 500, 620]
+    cooldown: 1.0
+    row_range: [191, 230]
+
+  bot_4:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [1051, 30, 500, 620]
+    cooldown: 1.0
+    row_range: [232, 270]
+
+  bot_5:
+    project: hypos_norm
+    subproject: gen
+    site: perplexity
+    mode: grok
+    model: perplexity_grok
+    roi: [1552, 30, 500, 620]
+    cooldown: 1.0
+    row_range: [271, 310]
+
+  bot_6:
+    project: hypos_norm
+    subproject: gen
+    site: qwen
+    mode: web_search_no_think
+    model: qwen
+    roi: [2505, 30, 500, 620]
+    cooldown: 1.0
+    row_range: [261, 305]
+
+  bot_6:
+    project: hypos_norm
+    subproject: gen
+    site: gpt
+    mode: study_learn
+    model: gpt
+    roi: [0, 621, 500, 620]
+    cooldown: 1.0
+    row_range: [0, 100]

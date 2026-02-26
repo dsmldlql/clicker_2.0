@@ -1,10 +1,16 @@
 import time, json, subprocess
 
-class PerplexityFSM:
-  def __init__(self, bot_id, config):
+class FSM:
+  def __init__(self, bot_id, cfg_main, bot_config):
     self.bot_id = bot_id
-    self.config = config['scenarios']['grok']
-    self.current_state = self.config['start_state']
+    self.cfg_main = cfg_main
+    self.bot_config = bot_config
+
+    site = bot_config['site']
+    scenario = bot_config['scenario']
+    self.scenario = cfg_main['sites'][site]['scenarios'][scenario]
+    self.current_state = self.scenario['start_state']
+
     self.last_change = time.time()
 
   def get_clipboard(self, display):
@@ -28,33 +34,41 @@ class PerplexityFSM:
       return False
 
   def execute_step(self, bot, analyzer, frame):
-    cfg = self.config['states'][self.current_state]
+    cur_state_config = self.scenario['states'][self.current_state]
     
     # Сброс по таймауту
-    if time.time() - self.last_change > cfg.get('timeout', 120):
-      self.current_state = self.config['start_state']
+    if time.time() - self.last_change > cur_state_config.get('timeout', 120):
+      self.current_state = self.scenario['start_state']
       self.last_change = time.time()
       return
 
     # Поиск визуального триггера
-    coords, _ = analyzer.find_best_match(frame, cfg['expect']['templates'], cfg['expect']['threshold'])
+    coords, _ = analyzer.find_best_match(
+      frame, 
+      cur_state_config['expect']['templates'], 
+      cur_state_config['expect']['threshold']
+    )
     
     if coords:
       # ОЧИСТКА перед действием, если ожидаем проверку буфера
-      if cfg.get('condition', {}).get('json_valid'):
+      if cur_state_config.get('condition', {}).get('json_valid'):
         bot.clear_clipboard()
         
-      self._run_action(bot, cfg['action'], coords)
-      time.sleep(cfg.get('cooldown', 2.0))
+      self._run_action(bot, cur_state_config['action'], coords)
+      # time.sleep(cur_state_config.get('cooldown', 2.0))
       
       success = False
-      cond = cfg.get('condition', {})
+      cond = cur_state_config.get('condition', {})
       
       # Проверка условий
       if 'templates' in cond:
         new_frame = bot.get_frame_umat()
         if new_frame is not None:
-          hit, _ = analyzer.find_best_match(new_frame, cond['templates'], cond.get('threshold', 0.8))
+          hit, _ = analyzer.find_best_match(
+            new_frame, 
+            cur_state_config['condition']['templates'], 
+            cur_state_config['condition'].get('threshold', 0.8)
+          )
           success = hit is not None
           
       elif cond.get('json_valid'):
@@ -65,7 +79,7 @@ class PerplexityFSM:
         success = True
 
       # Переход
-      self.current_state = cfg['next']['success' if success else 'fail']
+      self.current_state = cur_state_config['next']['success' if success else 'fail']
       self.last_change = time.time()
 
   def _run_action(self, bot, action, coords):

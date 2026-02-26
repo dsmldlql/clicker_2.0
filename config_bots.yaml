@@ -4,6 +4,7 @@ bot_0:
   site: perplexity
   mode: grok
   model: perplexity_grok
+  scenario: grok
   browser_master_profile: ~/bot_master_profile 
   roi: [0, 0, 500, 620]
   cooldown: 1.0
@@ -15,6 +16,7 @@ bot_1:
   site: perplexity
   mode: grok
   model: perplexity_grok
+  scenario: grok
   browser_master_profile: ~/bot_master_profile 
   roi: [501, 0, 500, 620]
   cooldown: 1.0

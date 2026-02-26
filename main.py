@@ -2,7 +2,7 @@ import time, yaml, os
 from typing import Dict, List, Any
 from scripts.env_bot import VirtualBotEnv
 from scripts.gpu_analyzer import GPUAnalyzer
-from scripts.bot_logic import PerplexityFSM
+from scripts.bot_logic import FSM
 
 def load_config(path: str) -> Dict[str, Any]:
   if not os.path.exists(path):
@@ -32,20 +32,24 @@ def main():
     bot_key = f'bot_{i}'
     if bot_key not in cfg_bots:
       continue
+
+    bot_cfg = cfg_bots[bot_key]
       
     # Инициализация окружения (ID и конфиг конкретного бота)
-    bot = VirtualBotEnv(i, cfg_bots[bot_key])
-    bot.start(cfg_main['perplexity']['url'])
+    bot = VirtualBotEnv(i, bot_cfg)
+    site_name = bot_cfg['site']
+    bot.start(cfg_main['sites'][site_name]['url'])
     bots.append(bot)
     
     # Инициализация логики (конфиг из основного файла для Perplexity)
-    logics.append(PerplexityFSM(i, cfg_main['perplexity']))
+    logics.append(FSM(i, cfg_main, bot_cfg))
     time.sleep(2)
 
   try:
     while True:
       for bot, fsm in zip(bots, logics):
         frame = bot.get_frame_umat()
+        time.sleep(0.1)
         if frame is not None:
           fsm.execute_step(bot, analyzer, frame)
       time.sleep(0.1)

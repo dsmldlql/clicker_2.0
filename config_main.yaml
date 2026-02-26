@@ -7,7 +7,7 @@ global:
     - uid
     - query
     - used
-  bots_count: 6
+  bots_count: 2
 
 prompts:
   

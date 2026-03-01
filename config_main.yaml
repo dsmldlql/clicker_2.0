@@ -2,12 +2,7 @@ global:
   screen_max_width: 4000
   screen_max_height: 2200
   screen_fps: 5
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  bots_count: 2
+  bots_count: 1
 
 prompts:
   
@@ -149,7 +144,7 @@ sites:
             timeout: 120.0
 
 
-  gpt:
+  gemini:
     url: https://gemini.google.com/
 
     home:
@@ -270,13 +265,13 @@ sites:
           start_question:
             expect:
               templates:
-                - templates/firefox/qwen/start.png
-              threshold: 0.88
+                - templates/chromium/qwen/plus_in_the_circle.png
+              threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/firefox/qwen/plus_in_circle.png
-              threshold: 0.88
+                - templates/chromium/qwen/more.png
+              threshold: 0.8
             next:
               success: empty_start
               fail: start_question
@@ -285,13 +280,13 @@ sites:
           empty_start:
             expect:
               templates:
-                - templates/firefox/qwen/plus_in_circle.png
-              threshold: 0.88
+                - templates/chromium/qwen/more.png
+              threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/firefox/qwen/deep_research.png
-              threshold: 0.88
+                - templates/chromium/qwen/web_search.png
+              threshold: 0.8
             next:
               success: options_menu_opened
               fail: start_question
@@ -300,28 +295,28 @@ sites:
           options_menu_opened:
             expect:
               templates:
-                - templates/firefox/qwen/web_search_620.png
-              threshold: 0.9
+                - templates/chromium/qwen/web_search.png
+              threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/firefox/qwen/web_search_blue.png
-              threshold: 0.7
+                - templates/chromium/qwen/web_search_selected.png
+              threshold: 0.8
             next:
-              success: turn_off_thinking
+              success: ask_empty
               fail: start_question
             timeout: 120.0
 
           turn_off_thinking:
             expect:
               templates:
-                - templates/firefox/qwen/thinking_on.png
-              threshold: 0.9
+                - templates/chromium/qwen/thinking_on.png
+              threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/firefox/qwen/thinking_off.png
-              threshold: 0.7
+                - templates/chromium/qwen/thinking_off.png
+              threshold: 0.8
             next:
               success: ask_empty
               fail: start_question
@@ -330,13 +325,13 @@ sites:
           ask_empty:
             expect:
               templates:
-                - templates/firefox/qwen/ask.png
-              threshold: 0.9
+                - templates/chromium/qwen/how_can.png
+              threshold: 0.8
             action: click_paste_enter
             condition:
               templates:
-                - templates/firefox/qwen/stop.png
-              threshold: 0.9
+                - templates/chromium/qwen/stop.png
+              threshold: 0.8
             next:
               success: answer_processing
               fail: start_question
@@ -345,13 +340,13 @@ sites:
           answer_processing:
             expect:
               templates:
-                - templates/firefox/qwen/thumb_up.png
-              threshold: 0.9
+                - templates/chromium/qwen/copy_thumbs.png
+              threshold: 0.8
             action: click_ctrl_end
             condition:
               templates:
-                - templates/firefox/qwen/copy.png
-              threshold: 0.9
+                - templates/chromium/qwen/copy.png
+              threshold: 0.8
             next:
               success: end_of_answer
               fail: start_question
@@ -360,8 +355,8 @@ sites:
           end_of_answer:
             expect:
               templates:
-                - templates/firefox/qwen/copy.png
-              threshold: 0.9
+                - templates/chromium/qwen/copy.png
+              threshold: 0.8
             action: click_copy_save_json_check
             condition:
               json_valid: true            
@@ -373,12 +368,12 @@ sites:
           reload_answer:
             expect:
               templates:
-                - templates/firefox/qwen/reload_answer.png
-              threshold: 0.9
+                - templates/chromium/qwen/regenerate.png
+              threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/firefox/qwen/stop.png     
+                - templates/chromium/qwen/stop.png     
             next:
               success: answer_processing
               fail: start_question
@@ -434,7 +429,7 @@ sites:
             action: click
             condition:
               templates:
-                - templates/brave/perplexity/best.png
+                - templates/brave/perplexity/sonar.png
               threshold: 0.8
             next:
               success: options_menu_opened
@@ -449,7 +444,7 @@ sites:
             action: click
             condition:
               templates:
-                - templates/brave/perplexity/best.png
+                - templates/brave/perplexity/sonar.png
               threshold: 0.8
             next:
               success: options_menu_opened
@@ -474,7 +469,7 @@ sites:
           scroll_down:
             expect:
               templates:
-                - templates/brave/perplexity/best.png
+                - templates/brave/perplexity/sonar.png
               threshold: 0.8
             action: click_scroll_down
             condition:
@@ -489,12 +484,12 @@ sites:
           close_options_menu:
             expect:
               templates:
-                - templates/brave/perplexity/close_menu.png
+                - templates/brave/perplexity/type_for.png
               threshold: 0.9
             action: click
             condition:
               templates:
-                - templates/brave/perplexity/ask_anything.png
+                - templates/brave/perplexity/type_for.png
               threshold: 0.9
             next:
               success: ask_empty
@@ -504,7 +499,7 @@ sites:
           ask_empty:
             expect:
               templates:
-                - templates/brave/perplexity/ask_anything.png
+                - templates/brave/perplexity/type_for.png
               threshold: 0.9
             action: click_paste_enter
             condition:

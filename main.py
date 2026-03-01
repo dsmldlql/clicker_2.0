@@ -1,5 +1,6 @@
 import time, yaml, os
 from typing import Dict, List, Any
+import cv2
 from scripts.env_bot import VirtualBotEnv
 from scripts.gpu_analyzer import GPUAnalyzer
 from scripts.bot_logic import FSM
@@ -48,8 +49,10 @@ def main():
   try:
     while True:
       for bot, fsm in zip(bots, logics):
+        time.sleep(1.0)
+        print(f"Global frame")
         frame = bot.get_frame_umat()
-        time.sleep(0.1)
+        cv2.imwrite(f'_frame.png', frame)
         if frame is not None:
           fsm.execute_step(bot, analyzer, frame)
       time.sleep(0.1)

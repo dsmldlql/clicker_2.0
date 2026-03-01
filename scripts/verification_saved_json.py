@@ -112,21 +112,23 @@ def check_valid_json(raw_data: Any, bot_id) -> Tuple[bool, Any]:
       except json.JSONDecodeError as e:
         logger.warning(f"Bot_{bot_id} Initial JSON parse failed: {e}")
         try:
-          data = repair_json(data)
-          data = json.loads(data)
-          norms_count = len(data.get("Norms", []))
-          if norms_count <= 1:
-            return False, raw_data
+          # Use json_repair library to repair malformed JSON
+          repaired_str = repair_json(data, return_objects=False)
+          data = json.loads(repaired_str)
         except json.JSONDecodeError as e:
-          logger.warning(f"Bot_{bot_id} Initial JSON second parse failed: {e}")
-        # Optional: try simple repair or just fail. 
-        # The original code wrote to spam.json and re-read it, which is weird.
-        # We will log and fail for now unless strict repair is needed.
+          logger.warning(f"Bot_{bot_id} JSON repair failed: {e}")
+          return False, raw_data
+        except Exception as e:
+          logger.exception(f"Bot_{bot_id} Unexpected error during JSON repair: {e}")
           return False, raw_data
 
     if not isinstance(data, dict):
        logger.warning(f"Bot_{bot_id} Parsed data is not a dict: {type(data)}")
        return False, data
+
+    norms_count = len(data.get("Norms", []))
+    if norms_count <= 1:
+      return False, raw_data
 
     if "Norms" not in data:
       logger.warning(f"Bot_{bot_id} Missing 'Norms' key in JSON")

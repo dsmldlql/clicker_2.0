@@ -1,12 +1,17 @@
 bot_0:
   project: hypos_norm
   subproject: gen
-  site: perplexity
-  mode: grok
-  model: perplexity_grok
-  scenario: grok
-  browser_master_profile: ~/bot_master_profile 
-  roi: [0, 0, 500, 620]
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/bot_master_profile
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [83, 107]
 
@@ -18,7 +23,7 @@ bot_1:
   model: perplexity_grok
   scenario: grok
   browser_master_profile: ~/bot_master_profile 
-  roi: [501, 0, 500, 620]
+  roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [124, 148]
 

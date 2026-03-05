@@ -13,7 +13,7 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [168, 190]
+  row_range: [366, 375]
 
 bot_1:
   project: hypos_norm
@@ -30,7 +30,7 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [193, 215]
+  row_range: [356, 365]
 
 bot_2:
   project: hypos_norm
@@ -47,7 +47,7 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [238, 260]
+  row_range: [346, 355]
 
 bot_3:
   project: hypos_norm
@@ -64,7 +64,7 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [277, 305]
+  row_range: [336, 345]
 
 bot_4:
   project: hypos_norm
@@ -75,7 +75,7 @@ bot_4:
   browser_master_profile: ~/bot_master_profile 
   roi: [0, 1242, 500, 620]
   cooldown: 1.0
-  row_range: [247, 270]
+  row_range: [336, 340]
 
 bot_5:
   project: hypos_norm
@@ -86,7 +86,7 @@ bot_5:
   browser_master_profile: ~/bot_master_profile 
   roi: [501, 1242, 500, 620]
   cooldown: 1.0
-  row_range: [285, 310]
+  row_range: [341, 345]
 
 bot_6:
   project: hypos_norm
@@ -97,9 +97,9 @@ bot_6:
   browser_master_profile: ~/bot_master_profile 
   roi: [2505, 30, 500, 620]
   cooldown: 1.0
-  row_range: [261, 305]
+  row_range: [346, 350]
 
-bot_6:
+bot_11:
   project: hypos_norm
   subproject: gen
   site: gpt

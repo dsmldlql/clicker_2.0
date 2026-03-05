@@ -1,0 +1,178 @@
+2026-03-05 21:06:26 | INFO     | [BOT_START] {"bot_id": 3, "project": "hypos_norm", "timestamp": "2026-03-05T21:06:26.048118", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_3"}
+2026-03-05 21:06:26 | INFO     | [QUESTIONS_LOAD] {"dataset_path": "/home/dmitrii/Documents/projects/clicker_2.0/datasets/sp_depers_final_with_hypnorm_used_marks.csv", "row_range": [331, 335]}
+2026-03-05 21:06:26 | SUCCESS  | ✓ [QUESTIONS_LOADED] {"count": 5, "first_index": 331}
+2026-03-05 21:06:26 | ACTION   | BROWSER_PROFILE_PREPARED - ✓ | {'url': 'https://chat.qwen.ai/'}
+2026-03-05 21:06:26 | INFO     | [BOT_STARTING] {"display": ":103", "url": "https://chat.qwen.ai/"}
+2026-03-05 21:06:27 | ACTION   | BROWSER_BROWSER_STARTED - ✓ | {'vnc_port': 5903, 'display': ':103', 'url': 'https://chat.qwen.ai/'}
+2026-03-05 21:06:27 | INFO     | [FSM_INITIALIZED] {"site": "qwen", "scenario": "web_search_no_think", "start_state": "start_question"}
+2026-03-05 21:06:46 | INFO     | [STATE_ENTER_start_question] {"elapsed": 19.3, "timeout": 120.0}
+2026-03-05 21:06:46 | DEBUG    | [STATE_EXPECT] {"state": "start_question"}
+2026-03-05 21:06:46 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "start_question", "coords": [310, 426], "score": 0.8322847485542297}
+2026-03-05 21:06:46 | ACTION   | CLICK - ✓ | {'coords': (310, 426)}
+2026-03-05 21:06:46 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.57}
+2026-03-05 21:06:46 | SUCCESS  | ✓ [OP_click] {"coords": [310, 426], "element": "unknown", "success": true}
+2026-03-05 21:06:49 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "start_question"}
+2026-03-05 21:06:49 | INFO     | [STATE_EXIT_start_question] {"next_state": "empty_start", "transition": "success", "duration_ms": 3022.67, "success": true}
+2026-03-05 21:07:06 | INFO     | [STATE_ENTER_empty_start] {"elapsed": 17.2, "timeout": 120.0}
+2026-03-05 21:07:06 | DEBUG    | [STATE_EXPECT] {"state": "empty_start"}
+2026-03-05 21:07:06 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "empty_start", "coords": [349, 739], "score": 0.927197277545929}
+2026-03-05 21:07:06 | ACTION   | CLICK - ✓ | {'coords': (349, 739)}
+2026-03-05 21:07:06 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.67}
+2026-03-05 21:07:06 | SUCCESS  | ✓ [OP_click] {"coords": [349, 739], "element": "unknown", "success": true}
+2026-03-05 21:07:09 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "empty_start"}
+2026-03-05 21:07:09 | INFO     | [STATE_EXIT_empty_start] {"next_state": "options_menu_opened", "transition": "success", "duration_ms": 3019.2, "success": true}
+2026-03-05 21:07:26 | INFO     | [STATE_ENTER_options_menu_opened] {"elapsed": 17.2, "timeout": 120.0}
+2026-03-05 21:07:26 | DEBUG    | [STATE_EXPECT] {"state": "options_menu_opened"}
+2026-03-05 21:07:26 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "options_menu_opened", "coords": [612, 620], "score": 0.8902158141136169}
+2026-03-05 21:07:26 | ACTION   | CLICK - ✓ | {'coords': (612, 620)}
+2026-03-05 21:07:26 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.22}
+2026-03-05 21:07:27 | SUCCESS  | ✓ [OP_click] {"coords": [612, 620], "element": "unknown", "success": true}
+2026-03-05 21:07:29 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "options_menu_opened"}
+2026-03-05 21:07:29 | INFO     | [STATE_EXIT_options_menu_opened] {"next_state": "ask_empty", "transition": "success", "duration_ms": 3023.97, "success": true}
+2026-03-05 21:07:49 | INFO     | [STATE_ENTER_ask_empty] {"elapsed": 19.7, "timeout": 120.0}
+2026-03-05 21:07:49 | DEBUG    | [STATE_EXPECT] {"state": "ask_empty"}
+2026-03-05 21:07:49 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "ask_empty", "coords": [384, 428], "score": 0.9472710490226746}
+2026-03-05 21:07:49 | INFO     | [PROMPT_SEND_START] {"length": 17248, "coords": [384, 428]}
+2026-03-05 21:07:49 | ACTION   | CLIPBOARD_WRITE_PROMPT - ✓ | {'preview': 'Prompt: 17248 chars'}
+2026-03-05 21:07:49 | SUCCESS  | ✓ [OP_click] {"coords": [384, 428], "element": "unknown", "success": true}
+2026-03-05 21:07:50 | ACTION   | HOTKEY_CTRL+V - ✓
+2026-03-05 21:07:50 | ACTION   | CLICK_PASTE_ENTER - ✓ | {'coords': (384, 428), 'prompt_length': 17248}
+2026-03-05 21:07:50 | DEBUG    | [ACTION_COMPLETED] {"action": "click_paste_enter", "duration_ms": 805.58}
+2026-03-05 21:07:50 | ACTION   | KEY_RETURN - ✓ | {'key': 'Return'}
+2026-03-05 21:07:53 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "ask_empty"}
+2026-03-05 21:07:53 | INFO     | [STATE_EXIT_ask_empty] {"next_state": "answer_processing", "transition": "success", "duration_ms": 3828.02, "success": true}
+2026-03-05 21:08:01 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 8.2, "timeout": 600.0}
+2026-03-05 21:08:01 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:09 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 16.3, "timeout": 600.0}
+2026-03-05 21:08:09 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:17 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 24.5, "timeout": 600.0}
+2026-03-05 21:08:17 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:26 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 32.7, "timeout": 600.0}
+2026-03-05 21:08:26 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:34 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 40.9, "timeout": 600.0}
+2026-03-05 21:08:34 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:42 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 49.0, "timeout": 600.0}
+2026-03-05 21:08:42 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:57 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 64.5, "timeout": 600.0}
+2026-03-05 21:08:57 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:08:57 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "answer_processing", "coords": [349, 509], "score": 0.9727434515953064}
+2026-03-05 21:08:58 | SUCCESS  | ✓ [OP_click] {"coords": [349, 479], "element": "unknown", "success": true}
+2026-03-05 21:08:58 | ACTION   | HOTKEY_CTRL+END - ✓
+2026-03-05 21:08:58 | ACTION   | CLICK_CTRL_END - ✓ | {'coords': (349, 479)}
+2026-03-05 21:08:58 | DEBUG    | [ACTION_COMPLETED] {"action": "click_ctrl_end", "duration_ms": 601.06}
+2026-03-05 21:09:01 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "answer_processing"}
+2026-03-05 21:09:01 | INFO     | [STATE_EXIT_answer_processing] {"next_state": "end_of_answer", "transition": "success", "duration_ms": 3621.99, "success": true}
+2026-03-05 21:09:29 | INFO     | [STATE_ENTER_end_of_answer] {"elapsed": 27.8, "timeout": 120.0}
+2026-03-05 21:09:29 | DEBUG    | [STATE_EXPECT] {"state": "end_of_answer"}
+2026-03-05 21:09:29 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "end_of_answer", "coords": [299, 398], "score": 0.9380196332931519}
+2026-03-05 21:09:29 | ACTION   | CLIPBOARD_CLEAR - ✓
+2026-03-05 21:09:29 | SUCCESS  | ✓ [OP_click] {"coords": [299, 398], "element": "unknown", "success": true}
+2026-03-05 21:09:30 | DEBUG    | [ACTION_PROGRESS] {"processed": 10, "last_action": "click"}
+2026-03-05 21:09:30 | SUCCESS  | ✓ [OP_click] {"coords": [299, 398], "element": "unknown", "success": true}
+2026-03-05 21:09:30 | ACTION   | CLICK_COPY_SAVE_JSON_CHECK - ✓ | {'coords': (299, 398)}
+2026-03-05 21:09:30 | DEBUG    | [ACTION_COMPLETED] {"action": "click_copy_save_json_check", "duration_ms": 1501.98}
+2026-03-05 21:09:32 | ACTION   | CLIPBOARD_READ - ✓ | {'preview': '```json {   "Norms": [     {       "act": "Гражданский кодекс Российской Федерации (часть вторая)", ...'}
+2026-03-05 21:09:32 | SUCCESS  | ✓ [VERIFY_JSON] {"norms_count": 8, "clipboard_preview": "```json {   \"Norms\": [     {       \"act\": \"Гражданский кодекс Российской Федерации (часть вторая)\",       \"date\": \"26.01.1996\",       \"number\": \"146-ФЗ\",       \"art\": \"549\",       \"art_prilozhenie\": \""}
+2026-03-05 21:09:32 | DEBUG    | [JSON_SAVE_START] {"cur_global_idx": 331, "uid": "ce021bd8-be28-4eda-ac8b-e4fb2b0864bb"}
+2026-03-05 21:09:32 | SUCCESS  | ✓ [JSON_SAVED] {"filepath": "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/331_ce021bd8-be28-4eda-ac8b-e4fb2b0864bb_qwen.json", "uid": "ce021bd8-be28-4eda-ac8b-e4fb2b0864bb", "global_idx": 331}
+2026-03-05 21:09:32 | INFO     | [QUESTION_ADVANCE] {"old_idx": 331, "new_idx": 332, "uid": "6fcb2ef3-15dd-4be5-8dd0-dd07a83a3b3d"}
+2026-03-05 21:09:32 | INFO     | [SCENARIO_RESET] {"reason": "State timeout or manual reset"}
+2026-03-05 21:09:32 | INFO     | [RESET_SEQUENCE_START] {"current_state": "end_of_answer"}
+2026-03-05 21:09:32 | ACTION   | HOTKEY_CTRL+L - ✓
+2026-03-05 21:09:35 | ACTION   | TYPE_21_chars - ✓
+2026-03-05 21:09:35 | ACTION   | KEY_RETURN - ✓ | {'key': 'Return'}
+2026-03-05 21:09:39 | INFO     | [SCENARIO_RESET] {"reason": "Reset sequence completed"}
+2026-03-05 21:09:39 | INFO     | [RESET_SEQUENCE_COMPLETE] {"old_state": "end_of_answer", "new_state": "start_question", "steps": ["hotkey:ctrl+l", "wait:2.0s", "type:https://chat.qwen.ai/...", "key:enter", "wait:3.0s"]}
+2026-03-05 21:09:39 | INFO     | [STATE_EXIT_start_question] {"next_state": "start_question", "transition": "success", "duration_ms": 9836.29, "success": true}
+2026-03-05 21:09:57 | INFO     | [STATE_ENTER_start_question] {"elapsed": 17.8, "timeout": 120.0}
+2026-03-05 21:09:57 | DEBUG    | [STATE_EXPECT] {"state": "start_question"}
+2026-03-05 21:09:57 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "start_question", "coords": [307, 424], "score": 0.8323098421096802}
+2026-03-05 21:09:57 | ACTION   | CLICK - ✓ | {'coords': (307, 424)}
+2026-03-05 21:09:57 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.53}
+2026-03-05 21:09:57 | SUCCESS  | ✓ [OP_click] {"coords": [307, 424], "element": "unknown", "success": true}
+2026-03-05 21:10:00 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "start_question"}
+2026-03-05 21:10:00 | INFO     | [STATE_EXIT_start_question] {"next_state": "empty_start", "transition": "success", "duration_ms": 3022.97, "success": true}
+2026-03-05 21:10:24 | INFO     | [STATE_ENTER_empty_start] {"elapsed": 24.0, "timeout": 120.0}
+2026-03-05 21:10:24 | DEBUG    | [STATE_EXPECT] {"state": "empty_start"}
+2026-03-05 21:10:24 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "empty_start", "coords": [338, 737], "score": 0.927178144454956}
+2026-03-05 21:10:24 | ACTION   | CLICK - ✓ | {'coords': (338, 737)}
+2026-03-05 21:10:24 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.8}
+2026-03-05 21:10:24 | SUCCESS  | ✓ [OP_click] {"coords": [338, 737], "element": "unknown", "success": true}
+2026-03-05 21:10:27 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "empty_start"}
+2026-03-05 21:10:27 | INFO     | [STATE_EXIT_empty_start] {"next_state": "options_menu_opened", "transition": "success", "duration_ms": 3022.17, "success": true}
+2026-03-05 21:10:41 | INFO     | [STATE_ENTER_options_menu_opened] {"elapsed": 14.2, "timeout": 120.0}
+2026-03-05 21:10:41 | DEBUG    | [STATE_EXPECT] {"state": "options_menu_opened"}
+2026-03-05 21:10:41 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "options_menu_opened", "coords": [611, 615], "score": 0.8902158141136169}
+2026-03-05 21:10:41 | ACTION   | CLICK - ✓ | {'coords': (611, 615)}
+2026-03-05 21:10:41 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 1.01}
+2026-03-05 21:10:41 | SUCCESS  | ✓ [OP_click] {"coords": [611, 615], "element": "unknown", "success": true}
+2026-03-05 21:10:44 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "options_menu_opened"}
+2026-03-05 21:10:44 | INFO     | [STATE_EXIT_options_menu_opened] {"next_state": "ask_empty", "transition": "success", "duration_ms": 3020.77, "success": true}
+2026-03-05 21:10:59 | INFO     | [STATE_ENTER_ask_empty] {"elapsed": 15.0, "timeout": 120.0}
+2026-03-05 21:10:59 | DEBUG    | [STATE_EXPECT] {"state": "ask_empty"}
+2026-03-05 21:10:59 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "ask_empty", "coords": [376, 421], "score": 0.9472736716270447}
+2026-03-05 21:10:59 | INFO     | [PROMPT_SEND_START] {"length": 19014, "coords": [376, 421]}
+2026-03-05 21:10:59 | ACTION   | CLIPBOARD_WRITE_PROMPT - ✓ | {'preview': 'Prompt: 19014 chars'}
+2026-03-05 21:10:59 | SUCCESS  | ✓ [OP_click] {"coords": [376, 421], "element": "unknown", "success": true}
+2026-03-05 21:10:59 | ACTION   | HOTKEY_CTRL+V - ✓
+2026-03-05 21:11:00 | ACTION   | CLICK_PASTE_ENTER - ✓ | {'coords': (376, 421), 'prompt_length': 19014}
+2026-03-05 21:11:00 | DEBUG    | [ACTION_COMPLETED] {"action": "click_paste_enter", "duration_ms": 805.46}
+2026-03-05 21:11:00 | ACTION   | KEY_RETURN - ✓ | {'key': 'Return'}
+2026-03-05 21:11:03 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "ask_empty"}
+2026-03-05 21:11:03 | INFO     | [STATE_EXIT_ask_empty] {"next_state": "answer_processing", "transition": "success", "duration_ms": 3827.96, "success": true}
+2026-03-05 21:11:14 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 11.2, "timeout": 600.0}
+2026-03-05 21:11:14 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:11:26 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 23.2, "timeout": 600.0}
+2026-03-05 21:11:26 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:11:34 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 31.4, "timeout": 600.0}
+2026-03-05 21:11:34 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:11:42 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 39.6, "timeout": 600.0}
+2026-03-05 21:11:42 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:11:50 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 47.7, "timeout": 600.0}
+2026-03-05 21:11:50 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:12:02 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 59.5, "timeout": 600.0}
+2026-03-05 21:12:02 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:12:20 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 77.5, "timeout": 600.0}
+2026-03-05 21:12:20 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:12:41 | INFO     | [STATE_ENTER_answer_processing] {"elapsed": 98.6, "timeout": 600.0}
+2026-03-05 21:12:41 | DEBUG    | [STATE_EXPECT] {"state": "answer_processing"}
+2026-03-05 21:12:41 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "answer_processing", "coords": [342, 510], "score": 0.9727539420127869}
+2026-03-05 21:12:41 | DEBUG    | [ACTION_PROGRESS] {"processed": 20, "last_action": "click"}
+2026-03-05 21:12:41 | SUCCESS  | ✓ [OP_click] {"coords": [342, 480], "element": "unknown", "success": true}
+2026-03-05 21:12:42 | ACTION   | HOTKEY_CTRL+END - ✓
+2026-03-05 21:12:42 | ACTION   | CLICK_CTRL_END - ✓ | {'coords': (342, 480)}
+2026-03-05 21:12:42 | DEBUG    | [ACTION_COMPLETED] {"action": "click_ctrl_end", "duration_ms": 601.08}
+2026-03-05 21:12:45 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "answer_processing"}
+2026-03-05 21:12:45 | INFO     | [STATE_EXIT_answer_processing] {"next_state": "end_of_answer", "transition": "success", "duration_ms": 3623.14, "success": true}
+2026-03-05 21:13:09 | INFO     | [STATE_ENTER_end_of_answer] {"elapsed": 24.0, "timeout": 120.0}
+2026-03-05 21:13:09 | DEBUG    | [STATE_EXPECT] {"state": "end_of_answer"}
+2026-03-05 21:13:09 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "end_of_answer", "coords": [297, 507], "score": 0.9380067586898804}
+2026-03-05 21:13:09 | ACTION   | CLIPBOARD_CLEAR - ✓
+2026-03-05 21:13:09 | SUCCESS  | ✓ [OP_click] {"coords": [297, 507], "element": "unknown", "success": true}
+2026-03-05 21:13:10 | SUCCESS  | ✓ [OP_click] {"coords": [297, 507], "element": "unknown", "success": true}
+2026-03-05 21:13:10 | ACTION   | CLICK_COPY_SAVE_JSON_CHECK - ✓ | {'coords': (297, 507)}
+2026-03-05 21:13:10 | DEBUG    | [ACTION_COMPLETED] {"action": "click_copy_save_json_check", "duration_ms": 1501.86}
+2026-03-05 21:13:12 | ACTION   | CLIPBOARD_READ - ✓ | {'preview': '```json { "Norms": [ { "act": "Постановление Правительства РФ", "date": "06.05.2011", "number": "354...'}
+2026-03-05 21:13:12 | SUCCESS  | ✓ [VERIFY_JSON] {"norms_count": 13, "clipboard_preview": "```json { \"Norms\": [ { \"act\": \"Постановление Правительства РФ\", \"date\": \"06.05.2011\", \"number\": \"354\", \"art\": \"\", \"art_prilozhenie\": \"1\", \"art_chast\": \"\", \"art_punkt\": \"\", \"art_podpunkt\": \"\", \"art_abz"}
+2026-03-05 21:13:12 | DEBUG    | [JSON_SAVE_START] {"cur_global_idx": 332, "uid": "6fcb2ef3-15dd-4be5-8dd0-dd07a83a3b3d"}
+2026-03-05 21:13:12 | SUCCESS  | ✓ [JSON_SAVED] {"filepath": "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/332_6fcb2ef3-15dd-4be5-8dd0-dd07a83a3b3d_qwen.json", "uid": "6fcb2ef3-15dd-4be5-8dd0-dd07a83a3b3d", "global_idx": 332}
+2026-03-05 21:13:12 | INFO     | [QUESTION_ADVANCE] {"old_idx": 332, "new_idx": 333, "uid": "2aa07b95-8028-47f7-ac34-4b122b2b0b5b"}
+2026-03-05 21:13:12 | INFO     | [SCENARIO_RESET] {"reason": "State timeout or manual reset"}
+2026-03-05 21:13:12 | INFO     | [RESET_SEQUENCE_START] {"current_state": "end_of_answer"}
+2026-03-05 21:13:12 | ACTION   | HOTKEY_CTRL+L - ✓
+2026-03-05 21:13:15 | ACTION   | TYPE_21_chars - ✓
+2026-03-05 21:13:15 | ACTION   | KEY_RETURN - ✓ | {'key': 'Return'}
+2026-03-05 21:13:19 | INFO     | [SCENARIO_RESET] {"reason": "Reset sequence completed"}
+2026-03-05 21:13:19 | INFO     | [RESET_SEQUENCE_COMPLETE] {"old_state": "end_of_answer", "new_state": "start_question", "steps": ["hotkey:ctrl+l", "wait:2.0s", "type:https://chat.qwen.ai/...", "key:enter", "wait:3.0s"]}
+2026-03-05 21:13:19 | INFO     | [STATE_EXIT_start_question] {"next_state": "start_question", "transition": "success", "duration_ms": 9835.81, "success": true}
+2026-03-05 21:13:36 | INFO     | [STATE_ENTER_start_question] {"elapsed": 17.2, "timeout": 120.0}
+2026-03-05 21:13:36 | DEBUG    | [STATE_EXPECT] {"state": "start_question"}
+2026-03-05 21:13:36 | SUCCESS  | ✓ [VERIFY_TEMPLATE_MATCH] {"state": "start_question", "coords": [298, 425], "score": 0.8322848677635193}
+2026-03-05 21:13:36 | ACTION   | CLICK - ✓ | {'coords': (298, 425)}
+2026-03-05 21:13:36 | DEBUG    | [ACTION_COMPLETED] {"action": "click", "duration_ms": 0.96}
+2026-03-05 21:13:36 | SUCCESS  | ✓ [OP_click] {"coords": [298, 425], "element": "unknown", "success": true}
+2026-03-05 21:13:39 | SUCCESS  | ✓ [VERIFY_CONDITION_TEMPLATE] {"state": "start_question"}
+2026-03-05 21:13:39 | INFO     | [STATE_EXIT_start_question] {"next_state": "empty_start", "transition": "success", "duration_ms": 3025.17, "success": true}
+2026-03-05 21:13:54 | INFO     | [BOT_STOPPING] {"reason": "User requested shutdown"}
+2026-03-05 21:13:54 | INFO     | [STATS] {"actions_total": 33, "actions_success": 33, "actions_failed": 0, "states_visited": {"start_question": 3, "empty_start": 2, "options_menu_opened": 2, "ask_empty": 2, "answer_processing": 15, "end_of_answer": 2}, "start_time": "2026-03-05T21:06:26.048105", "last_activity": "2026-03-05T21:13:36.495827", "success_rate": 100.0}
+2026-03-05 21:13:54 | INFO     | [BOT_STOP] {"bot_id": 3, "runtime_stats": {"actions_total": 33, "actions_success": 33, "actions_failed": 0, "states_visited": {"start_question": 3, "empty_start": 2, "options_menu_opened": 2, "ask_empty": 2, "answer_processing": 15, "end_of_answer": 2}, "start_time": "2026-03-05T21:06:26.048105", "last_activity": "2026-03-05T21:13:36.495827", "success_rate": 100.0}}

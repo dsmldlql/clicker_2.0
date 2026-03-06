@@ -305,7 +305,7 @@ class VirtualBotEnv:
         # Т.к. img_umat — это UMat, cvtColor вернет тоже UMat
         gray = cv2.cvtColor(img_umat, cv2.COLOR_BGRA2GRAY)
         gray = cv2.Canny(gray, 50, 150)
-        time.sleep(1.0)
+        time.sleep(0.2)
         return gray
       
       except Exception as e:

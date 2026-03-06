@@ -44,18 +44,18 @@ def main():
     
     # Инициализация логики (конфиг из основного файла для Perplexity)
     logics.append(FSM(i, cfg_main, bot_cfg))
-    time.sleep(2)
+    time.sleep(1.0)
 
   try:
     while True:
       for bot, fsm in zip(bots, logics):
-        time.sleep(0.1)
+        # time.sleep(0.1)
         print(f"Global frame")
         frame = bot.get_frame_umat()
         # cv2.imwrite(f'_frame.png', frame)
         if frame is not None:
           fsm.execute_step(bot, analyzer, frame)
-      time.sleep(0.1)
+      # time.sleep(0.1)
   except KeyboardInterrupt:
     print("\n[*] Завершение работы...")
     for b in bots:

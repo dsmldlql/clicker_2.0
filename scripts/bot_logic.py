@@ -21,6 +21,7 @@ class FSM:
     self.scenario = cfg_main['sites'][site]['scenarios'][scenario]
     self.site_config = cfg_main['sites'][site]
     self.current_state = self.scenario['start_state']
+    self.expected_complete = False
 
     self.last_change = time.time()
     self.json_path = f"/tmp/bot_{bot_id}_response.json"
@@ -152,26 +153,31 @@ class FSM:
       self.reset_scenario(bot)
       return
 
-    # Поиск визуального триггера
-    print(f'Expect [{self.current_state}]')
-    coords, _ = analyzer.find_best_match(
-      frame,
-      cur_state_config['expect']['templates'],
-      cur_state_config['expect']['threshold']
-    )
+    if not self.expected_complete:
+      # Поиск визуального триггера
+      print(f'Expect [{self.current_state}]')
+      coords, _ = analyzer.find_best_match(
+        frame,
+        cur_state_config['expect']['templates'],
+        cur_state_config['expect']['threshold']
+      )
 
-    if coords:
-      # Сброс таймера при успешном нахождении триггера
-      self.last_change = time.time()
-      
-      # ОЧИСТКА перед действием, если ожидаем проверку буфера
-      if cur_state_config.get('condition', {}).get('json_valid'):
-        bot.clear_clipboard()
+      if coords and not self.expected_complete:
+        print(f'coords and not self.expected_complete: {coords}, {self.expected_complete:}')
+        self.expected_complete = True
+        # Сброс таймера при успешном нахождении триггера
+        self.last_change = time.time()
+        
+        # ОЧИСТКА перед действием, если ожидаем проверку буфера
+        if cur_state_config.get('condition', {}).get('json_valid'):
+          bot.clear_clipboard()
 
-      self._run_action(bot, cur_state_config['action'], coords)
-      # time.sleep(cur_state_config.get('cooldown', 2.0))
-
-      time.sleep(2.0)
+        self._run_action(bot, cur_state_config['action'], coords)
+        # time.sleep(cur_state_config.get('cooldown', 2.0))
+    
+    if self.expected_complete:
+      print(f'self.expected_complete {self.expected_complete}')
+      # time.sleep(2.0)
 
       success = False
       cond = cur_state_config.get('condition', {})
@@ -189,7 +195,7 @@ class FSM:
           success = hit is not None
           if hit is None:
             print('Condition not found')
-            time.sleep(10.0)
+            time.sleep(0.1)
 
       elif cond.get('json_valid'):
         # Полная верификация JSON из буфера
@@ -208,9 +214,13 @@ class FSM:
         success = True
 
       # Переход
-      next_state_key = 'success' if success else 'fail'
-      self.current_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
-      self.last_change = time.time()
+      if time.time() - self.last_change > 2.0:
+        print(time.time() - self.last_change)
+        print('PEREHOD\n')
+        next_state_key = 'success' if success else 'fail'
+        self.current_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
+        self.last_change = time.time()
+        self.expected_complete = False
 
   def _run_action(self, bot, action, coords):
     x, y = int(coords[0]), int(coords[1])

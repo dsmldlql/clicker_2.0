@@ -13,7 +13,7 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [366, 375]
+  row_range: [526, 532]
 
 bot_1:
   project: hypos_norm
@@ -30,7 +30,7 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [356, 365]
+  row_range: [533, 540]
 
 bot_2:
   project: hypos_norm
@@ -47,7 +47,7 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [346, 355]
+  row_range: [474, 475]
 
 bot_3:
   project: hypos_norm
@@ -64,29 +64,41 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [336, 345]
+  row_range: [495, 500]
 
 bot_4:
   project: hypos_norm
   subproject: gen
-  site: perplexity
-  mode: grok
-  model: perplexity_grok
-  browser_master_profile: ~/bot_master_profile 
-  roi: [0, 1242, 500, 620]
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/rxmzge8117_outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [336, 340]
+  row_range: [481, 500]
 
 bot_5:
   project: hypos_norm
   subproject: gen
-  site: perplexity
-  mode: grok
-  model: perplexity_grok
-  browser_master_profile: ~/bot_master_profile 
-  roi: [501, 1242, 500, 620]
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [341, 345]
+  row_range: [516, 525]
 
 bot_6:
   project: hypos_norm
@@ -94,12 +106,240 @@ bot_6:
   site: qwen
   mode: web_search_no_think
   model: qwen
-  browser_master_profile: ~/bot_master_profile 
-  roi: [2505, 30, 500, 620]
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [346, 350]
+  row_range: [516, 525]
+
+bot_7:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_8:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_9:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_10:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
 
 bot_11:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_12:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_13:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_14:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_15:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_16:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_17:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_18:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+bot_19:
+  project: hypos_norm
+  subproject: gen
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/dsmldlql_gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [516, 525]
+
+
+bot_20:
   project: hypos_norm
   subproject: gen
   site: gpt
@@ -110,7 +350,7 @@ bot_11:
   cooldown: 1.0
   row_range: [0, 100]
 
-bot_10:
+bot_21:
   project: hypos_norm
   subproject: gen
   site: perplexity
@@ -122,7 +362,7 @@ bot_10:
   cooldown: 1.0
   row_range: [124, 148]
 
-bot_12:
+bot_22:
   project: hypos_norm
   subproject: gen
   site: perplexity

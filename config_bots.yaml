@@ -13,7 +13,7 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [526, 532]
+  row_range: [527, 551]
 
 bot_1:
   project: hypos_norm
@@ -30,7 +30,7 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [533, 540]
+  row_range: [552, 575]
 
 bot_2:
   project: hypos_norm
@@ -47,7 +47,7 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [474, 475]
+  row_range: [576, 600]
 
 bot_3:
   project: hypos_norm
@@ -64,7 +64,7 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [495, 500]
+  row_range: [601, 625]
 
 bot_4:
   project: hypos_norm
@@ -81,7 +81,7 @@ bot_4:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [481, 500]
+  row_range: [626, 650]
 
 bot_5:
   project: hypos_norm
@@ -98,7 +98,7 @@ bot_5:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [516, 525]
+  row_range: [651, 675]
 
 bot_6:
   project: hypos_norm

@@ -48,7 +48,15 @@ def main():
 
   try:
     while True:
-      for bot, fsm in zip(bots, logics):
+      # Фильтруем активных ботов (не остановленных)
+      active_pairs = [(bot, fsm) for bot, fsm in zip(bots, logics) if not bot.stop_event.is_set()]
+      
+      # Если все боты остановлены - завершаем работу
+      if not active_pairs:
+        print("[*] Все боты завершили работу. Выход.")
+        break
+      
+      for bot, fsm in active_pairs:
         # time.sleep(0.1)
         print(f"Global frame")
         frame = bot.get_frame_umat()

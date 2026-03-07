@@ -204,7 +204,11 @@ class FSM:
           # JSON хорош - сохраняем ТЕКУЩИЙ вопрос
           bot.save_verified_json(verified_data)
           # Затем переходим к следующему вопросу
-          bot.advance_question()
+          advanced = bot.advance_question()
+          if not advanced:
+            # Достигнут последний вопрос - бот будет остановлен
+            print(f"[+] [Бот {self.bot_id}] Все вопросы обработаны, бот будет остановлен")
+            return
           # Выполняем reset последовательность браузера для нового вопроса
           self.reset_scenario(bot)
         else:

@@ -204,15 +204,25 @@ class VirtualBotEnv:
       print(f"[!] [Бот {self.bot_id}] Ошибка сохранения JSON: {e}")
       return None
 
+  def is_last_question(self):
+    """Проверяет, является ли текущий вопрос последним в диапазоне"""
+    if self.questions is None:
+      return False
+    start_row, end_row = self.row_range
+    return self.cur_global_idx >= end_row
+
   def advance_question(self):
     """Advances to the next question index"""
     if self.questions is not None:
       start_row, end_row = self.row_range
       self.cur_global_idx += 1
-      # Wrap around if exceeded range
+      # Проверка достижения последнего вопроса
       if self.cur_global_idx > end_row:
-        self.cur_global_idx = start_row
+        print(f"[+] [Бот {self.bot_id}] Достигнут последний вопрос (индекс {end_row}). Остановка.")
+        self.stop_event.set()  # Сигнал остановки для executor
+        return False  # Возвращаем False для индикации завершения
       print(f"[+] [Бот {self.bot_id}] Вопрос изменён на индекс {self.cur_global_idx}")
+      return True
 
   def _clear_cache(self, profile_path):
     trash_dirs = [

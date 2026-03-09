@@ -149,8 +149,11 @@ class FSM:
     # Проверка таймаута состояния
     if elapsed > timeout:
       print(f"[!] [Бот {self.bot_id}] Таймаут состояния '{self.current_state}' ({elapsed:.1f}с > {timeout}с)")
-      # Выполняем reset последовательность в браузере
-      self.reset_scenario(bot)
+      # Переход на fail state
+      fail_state = cur_state_config['next'].get('fail', self.scenario['start_state'])
+      self.current_state = fail_state
+      self.last_change = time.time()
+      self.expected_complete = False
       return
 
     if not self.expected_complete:
@@ -201,6 +204,11 @@ class FSM:
         # Полная верификация JSON из буфера
         success, verified_data = self.verify_json_from_clipboard(bot.display)
         if success:
+          # Увеличиваем глобальный счётчик вопросов (и логируем попытку)
+          if not bot.increment_question_count():
+            # Лимит исчерпан - логируем и останавливаем бота
+            bot.log_limit_exhausted()
+            return
           # JSON хорош - сохраняем ТЕКУЩИЙ вопрос
           bot.save_verified_json(verified_data)
           # Затем переходим к следующему вопросу
@@ -209,11 +217,26 @@ class FSM:
             # Достигнут последний вопрос - бот будет остановлен
             print(f"[+] [Бот {self.bot_id}] Все вопросы обработаны, бот будет остановлен")
             return
+          # Проверяем, не достигнут ли лимит вопросов перед продолжением
+          if not bot.check_question_limit():
+            bot.log_limit_exhausted()
+            return
           # Выполняем reset последовательность браузера для нового вопроса
           self.reset_scenario(bot)
         else:
-          # JSON плох - остаёмся на том же вопросе
-          print(f"[!] [Бот {self.bot_id}] JSON плохой, вопрос будет задан повторно")
+          # JSON плох - увеличиваем счётчик (это тоже считается как вопрос)
+          if not bot.increment_question_count():
+            # Лимит исчерпан при повторной попытке - логируем и останавливаем
+            bot.log_limit_exhausted()
+            return
+          # Вопрос будет задан повторно (счётчик увеличен)
+          print(f"[!] [Бот {self.bot_id}] JSON плохой, вопрос будет задан повторно (попытка #{bot.total_question_count})")
+          # Проверяем, не достигнут ли лимит перед повторной попыткой
+          if not bot.check_question_limit():
+            bot.log_limit_exhausted()
+            return
+          # Выполняем reset последовательность браузера для повторной попытки
+          self.reset_scenario(bot)
       else:
         success = True
 
@@ -231,6 +254,9 @@ class FSM:
     
     if action == "click":
       bot.action_queue.put(('click', (x, y)))
+    
+    if action == "mousemove":
+      bot.action_queue.put(('mousemove', (x, y)))
       
     elif action == "click_paste_enter":
       # Получаем отформатированный промпт (вопрос + JSON шаблон)

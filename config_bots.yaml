@@ -1,6 +1,134 @@
 bot_0:
   project: hypos_norm
   subproject: gen
+  site: gemini
+  mode: thinking
+  model: gemini
+  scenario: thinking
+  browser_master_profile: ~/vanthuan1990t@gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [0, 74]
+  max_questions: 100
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_1:
+  project: hypos_norm
+  subproject: gen
+  site: gemini
+  mode: thinking
+  model: gemini
+  scenario: thinking
+  browser_master_profile: ~/vanthuan1990t@gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [75, 149]
+  max_questions: 100
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_2:
+  project: hypos_norm
+  subproject: gen
+  site: gemini
+  mode: thinking
+  model: gemini
+  scenario: thinking
+  browser_master_profile: ~/vanthuan1990t@gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [150, 224]
+  max_questions: 100
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_3:
+  project: hypos_norm
+  subproject: gen
+  site: gemini
+  mode: thinking
+  model: gemini
+  scenario: thinking
+  browser_master_profile: ~/vanthuan1990t@gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [225, 299]
+  max_questions: 100
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_0_:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/rxmzge8117_outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  row_range: [0, 40]
+  max_questions: 40
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000]
+
+bot_0_:
+  project: hypos_norm
+  subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
@@ -13,9 +141,11 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [527, 551]
+  row_range: [676, 700]
+  max_questions: 100
+  restart_delay: 180
 
-bot_1:
+bot_1_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -30,9 +160,11 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [552, 575]
+  row_range: [701, 725]
+  max_questions: 100
+  restart_delay: 180
 
-bot_2:
+bot_2_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -47,9 +179,11 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [576, 600]
+  row_range: [726, 750]
+  max_questions: 100
+  restart_delay: 180
 
-bot_3:
+bot_3_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -64,7 +198,9 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [601, 625]
+  row_range: [751, 775]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_4:
   project: hypos_norm
@@ -81,7 +217,9 @@ bot_4:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [626, 650]
+  row_range: [776, 800]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_5:
   project: hypos_norm
@@ -98,7 +236,9 @@ bot_5:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [651, 675]
+  row_range: [801, 825]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_6:
   project: hypos_norm
@@ -116,6 +256,8 @@ bot_6:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_7:
   project: hypos_norm
@@ -133,6 +275,8 @@ bot_7:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_8:
   project: hypos_norm
@@ -150,6 +294,8 @@ bot_8:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_9:
   project: hypos_norm
@@ -167,6 +313,8 @@ bot_9:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_10:
   project: hypos_norm
@@ -184,6 +332,8 @@ bot_10:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_11:
   project: hypos_norm
@@ -201,6 +351,8 @@ bot_11:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_12:
   project: hypos_norm
@@ -218,6 +370,8 @@ bot_12:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_13:
   project: hypos_norm
@@ -235,6 +389,8 @@ bot_13:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_14:
   project: hypos_norm
@@ -252,6 +408,8 @@ bot_14:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_15:
   project: hypos_norm
@@ -269,6 +427,8 @@ bot_15:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_16:
   project: hypos_norm
@@ -286,6 +446,8 @@ bot_16:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_17:
   project: hypos_norm
@@ -303,6 +465,8 @@ bot_17:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_18:
   project: hypos_norm
@@ -320,6 +484,8 @@ bot_18:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_19:
   project: hypos_norm
@@ -337,6 +503,8 @@ bot_19:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [516, 525]
+  max_questions: 100
+  restart_delay: 3600
 
 
 bot_20:
@@ -345,10 +513,12 @@ bot_20:
   site: gpt
   mode: study_learn
   model: gpt
-  browser_master_profile: ~/bot_master_profile 
+  browser_master_profile: ~/bot_master_profile
   roi: [0, 621, 500, 620]
   cooldown: 1.0
   row_range: [0, 100]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_21:
   project: hypos_norm
@@ -357,10 +527,12 @@ bot_21:
   mode: grok
   model: perplexity_grok
   scenario: grok
-  browser_master_profile: ~/bot_master_profile 
+  browser_master_profile: ~/bot_master_profile
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   row_range: [124, 148]
+  max_questions: 100
+  restart_delay: 3600
 
 bot_22:
   project: hypos_norm
@@ -368,7 +540,9 @@ bot_22:
   site: perplexity
   mode: grok
   model: perplexity_grok
-  browser_master_profile: ~/bot_master_profile 
+  browser_master_profile: ~/bot_master_profile
   roi: [0, 621, 500, 620]
   cooldown: 1.0
   row_range: [163, 189]
+  max_questions: 100
+  restart_delay: 3600

@@ -1,9 +1,41 @@
-import subprocess, os, time, shutil, threading, json, queue
+import subprocess, os, time, shutil, threading, json, queue, re
 import numpy as np
 import pandas as pd
 import cv2
 import mss
 from queue import Queue
+from datetime import datetime
+
+# Глобальный список для хранения потоков обновления VNC
+vnc_refresh_threads = []
+
+class VNCRefreshThread(threading.Thread):
+  """
+  Поток для периодического обновления экрана VNC.
+  Решает проблему с пропаданием изображения в VNC.
+  """
+  def __init__(self, display, interval=2.0):
+    super().__init__(daemon=True)
+    self.display = display
+    self.interval = interval
+    self.stop_event = threading.Event()
+
+  def run(self):
+    env = os.environ.copy()
+    env["DISPLAY"] = self.display
+    while not self.stop_event.is_set():
+      try:
+        # Минимальное действие для обновления экрана
+        subprocess.run(
+          ["xdotool", "search", "--name", ".*"],
+          env=env, capture_output=True, timeout=1
+        )
+      except:
+        pass
+      time.sleep(self.interval)
+
+  def stop(self):
+    self.stop_event.set()
 
 class VirtualBotEnv:
   def __init__(self, bot_id, bot_cfg, width=960, height=800):
@@ -24,8 +56,22 @@ class VirtualBotEnv:
     self.roi = bot_cfg.get('roi', [0, 0, 960, 800])
     self.cooldown = bot_cfg.get('cooldown', 1.0)
 
+    # Инициализация stop_event ДО загрузки вопросов (нужен для ранней установки)
+    self.stop_event = threading.Event()
+    self.action_queue = Queue()
+
     # Загрузка вопросов из CSV файла
     self.row_range = bot_cfg.get('row_range', [0, 1000000])
+    # Общий лимит на количество вопросов (с учётом повторных попыток при битом JSON)
+    self.max_questions = bot_cfg.get('max_questions', 100)
+    # Задержка перед перезапуском бота после исчерпания лимита (в секундах)
+    self.restart_delay = bot_cfg.get('restart_delay', 0)
+    # Время последнего запуска бота
+    self.last_start_time = None
+    # Время планируемого перезапуска (last_start_time + restart_delay)
+    self.next_restart_time = None
+    # Глобальный счётчик всех попыток (включая повторные)
+    self.total_question_count = 0
     # Используем dataset_path из конфига или путь по умолчанию
     dataset_path = bot_cfg.get('dataset_path', 'datasets/sp_depers_final_with_hypnorm_used_marks.csv')
     # Преобразуем в абсолютный путь относительно проекта
@@ -33,21 +79,123 @@ class VirtualBotEnv:
     self.dataset_path = os.path.join(base_dir, dataset_path)
     self.df_cols = bot_cfg.get('columns', ['uid', 'query', 'used'])
     self.questions, self.cur_global_idx = self._load_questions()
-    print(f"[+] [Бот {self.bot_id}] Начальный cur_global_idx={self.cur_global_idx}")
+
+    # Находим последний верифицированный JSON и устанавливаем начальный индекс
+    last_verified_idx = self._get_last_verified_question_index()
+    if last_verified_idx is not None and self.questions is not None:
+      # Начинаем со следующего вопроса после последнего верифицированного
+      start_row, end_row = self.row_range
+      next_idx = last_verified_idx + 1
+      if next_idx <= end_row:
+        self.cur_global_idx = next_idx
+        print(f"[+] [Бот {self.bot_id}] Возобновление с вопроса #{self.cur_global_idx} (после верифицированного #{last_verified_idx})")
+      else:
+        print(f"[+] [Бот {self.bot_id}] Все вопросы в диапазоне верифицированы (последний: #{last_verified_idx})")
+        # Помечаем бота как завершенный
+        self.stop_event.set()
+    else:
+      print(f"[+] [Бот {self.bot_id}] Начальный cur_global_idx={self.cur_global_idx}")
+    
+    # Настройка логирования событий бота
+    self.log_dir = os.path.join(base_dir, 'logs', 'bot_events')
+    os.makedirs(self.log_dir, exist_ok=True)
+    self.log_file = os.path.join(self.log_dir, f'bot_{self.bot_id}_events.log')
+    self.log_lock = threading.Lock()
+
+    # Расписание запуска бота
+    self.schedule_start_immediately = bot_cfg.get('schedule', {}).get('start_immediately', False)
+    self.schedule_times = self._parse_schedule_times(bot_cfg.get('schedule', {}).get('start_times', []))
+    self.next_scheduled_time = self._get_next_scheduled_time()
 
     # Загрузка промптов
     self.prompt_text = None
     self.prompt_json = None
     self._load_prompts(base_dir, bot_cfg)
-    
+
     # Размеры окна
     self.width = self.roi[2]
     self.height = self.roi[3]
     self.size = f"{self.width}x{self.height}x24"
-    
+
     self.procs = {}
-    self.action_queue = Queue()
-    self.stop_event = threading.Event()
+
+  def _parse_schedule_times(self, time_strings):
+    """
+    Парсит список времён запуска в формате 'HH:MM' или 'H:MM'.
+    Пример: ['00:00', '6:00', '12:00', '18:00']
+    Возвращает список кортежей (hour, minute).
+    """
+    parsed = []
+    for time_str in time_strings:
+      try:
+        # Удаляем пробелы и разделяем по двоеточию
+        time_str = time_str.strip()
+        if ':' not in time_str:
+          print(f"[!] [Бот {self.bot_id}] Неверный формат времени: '{time_str}' (ожидается HH:MM)")
+          continue
+        parts = time_str.split(':')
+        hour = int(parts[0])
+        minute = int(parts[1])
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+          parsed.append((hour, minute))
+        else:
+          print(f"[!] [Бот {self.bot_id}] Некорректное время: '{time_str}' (часы: 0-23, минуты: 0-59)")
+      except Exception as e:
+        print(f"[!] [Бот {self.bot_id}] Ошибка парсинга времени '{time_str}': {e}")
+    return parsed
+
+  def _get_next_scheduled_time(self):
+    """
+    Вычисляет следующее время запуска на основе расписания.
+    Возвращает datetime следующего запуска или None, если расписание пустое.
+    """
+    if not self.schedule_times:
+      return None
+
+    now = datetime.now()
+    next_time = None
+
+    for hour, minute in self.schedule_times:
+      scheduled = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+      # Если время сегодня уже прошло, планируем на завтра
+      if scheduled <= now:
+        from datetime import timedelta
+        scheduled += timedelta(days=1)
+      # Находим ближайшее будущее время
+      if next_time is None or scheduled < next_time:
+        next_time = scheduled
+
+    return next_time
+
+  def should_start_now(self):
+    """
+    Проверяет, должно ли произойти запланированное время запуска.
+    Возвращает True, если:
+    - Установлен флаг start_immediately
+    - Или текущее время близко к запланированному (в пределах 60 секунд)
+    """
+    # Если установлен флаг start_immediately - запускаем сразу
+    if self.schedule_start_immediately:
+      print(f"[+] [Бот {self.bot_id}] Запуск по флагу start_immediately")
+      self.schedule_start_immediately = False  # Сбрасываем флаг после использования
+      # Обновляем следующее запланированное время для будущих запусков
+      self.next_scheduled_time = self._get_next_scheduled_time()
+      return True
+
+    if not self.next_scheduled_time:
+      return True  # Если расписания нет, разрешаем запуск
+
+    now = datetime.now()
+    time_diff = (self.next_scheduled_time - now).total_seconds()
+
+    # Запускаем, если до запланированного времени осталось меньше минуты
+    if 0 <= time_diff <= 60:
+      print(f"[+] [Бот {self.bot_id}] Наступило время запуска (расписание)")
+      # Обновляем следующее запланированное время
+      self.next_scheduled_time = self._get_next_scheduled_time()
+      return True
+
+    return False
 
   def _load_prompts(self, base_dir, bot_cfg):
     """
@@ -121,6 +269,44 @@ class VirtualBotEnv:
     
     print(f"[+] [Бот {self.bot_id}] Промпт отформатирован для вопроса: {situation[:50]}...")
     return formatted
+
+  def _get_last_verified_question_index(self):
+    """
+    Scans the answers directory for saved JSON files and finds the highest question index.
+    Returns the index of the last verified JSON, or None if no files found.
+    """
+    try:
+      base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+      answers_dir = os.path.join(base_dir, 'answers', self.model_name, self.project, self.subproject)
+      
+      if not os.path.exists(answers_dir):
+        print(f"[*] [Бот {self.bot_id}] Директория ответов не найдена: {answers_dir}")
+        return None
+      
+      # Pattern: {global_idx}_{uid}_{model_name}.json
+      pattern = re.compile(r'^(\d+)_.*_' + re.escape(self.model_name) + r'\.json$')
+      
+      max_idx = None
+      for filename in os.listdir(answers_dir):
+        match = pattern.match(filename)
+        if match:
+          idx = int(match.group(1))
+          # Check if this index is within our row_range
+          start_row, end_row = self.row_range
+          if start_row <= idx <= end_row:
+            if max_idx is None or idx > max_idx:
+              max_idx = idx
+      
+      if max_idx is not None:
+        print(f"[+] [Бот {self.bot_id}] Найден последний верифицированный JSON для вопроса #{max_idx}")
+      else:
+        print(f"[*] [Бот {self.bot_id}] Верифицированные JSON не найдены в диапазоне {self.row_range}")
+      
+      return max_idx
+    
+    except Exception as e:
+      print(f"[!] [Бот {self.bot_id}] Ошибка поиска последнего верифицированного JSON: {e}")
+      return None
 
   def _load_questions(self):
     """Загружает вопросы из файла в соответствии с row_range"""
@@ -211,6 +397,43 @@ class VirtualBotEnv:
     start_row, end_row = self.row_range
     return self.cur_global_idx >= end_row
 
+  def all_questions_answered(self):
+    """
+    Проверяет, все ли вопросы в диапазоне имеют верифицированные JSON файлы.
+    Возвращает True если все вопросы отвечены, False иначе.
+    """
+    start_row, end_row = self.row_range
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    answers_dir = os.path.join(base_dir, 'answers', self.model_name, self.project, self.subproject)
+    
+    if not os.path.exists(answers_dir):
+      print(f"[*] [Бот {self.bot_id}] Директория ответов не найдена: {answers_dir}")
+      return False
+    
+    # Pattern: {global_idx}_{uid}_{model_name}.json
+    pattern = re.compile(r'^(\d+)_.*_' + re.escape(self.model_name) + r'\.json$')
+    
+    # Собираем все найденные индексы в диапазоне
+    answered_indices = set()
+    for filename in os.listdir(answers_dir):
+      match = pattern.match(filename)
+      if match:
+        idx = int(match.group(1))
+        if start_row <= idx <= end_row:
+          answered_indices.add(idx)
+    
+    # Проверяем, все ли индексы в диапазоне покрыты
+    total_questions = end_row - start_row + 1
+    answered_count = len(answered_indices)
+    
+    if answered_count >= total_questions:
+      print(f"[+] [Бот {self.bot_id}] Все вопросы в диапазоне ({total_questions}) верифицированы")
+      return True
+    else:
+      missing = total_questions - answered_count
+      print(f"[*] [Бот {self.bot_id}] Отвечено {answered_count}/{total_questions} вопросов, осталось {missing}")
+      return False
+
   def advance_question(self):
     """Advances to the next question index"""
     if self.questions is not None:
@@ -223,6 +446,82 @@ class VirtualBotEnv:
         return False  # Возвращаем False для индикации завершения
       print(f"[+] [Бот {self.bot_id}] Вопрос изменён на индекс {self.cur_global_idx}")
       return True
+
+  def increment_question_count(self):
+    """
+    Increments the global question counter.
+    Returns True if limit not exceeded, False if max_questions reached.
+    Called each time a question is asked (including retries).
+    """
+    self.total_question_count += 1
+    if self.total_question_count > self.max_questions:
+      print(f"[!] [Бот {self.bot_id}] Превышен общий лимит вопросов ({self.max_questions}). Всего задано: {self.total_question_count}. Остановка.")
+      self.stop_event.set()
+      return False
+    # Получаем UID текущего вопроса для логирования
+    uid = self.get_cur_question_uid()
+    self.log_question_attempt(self.cur_global_idx, uid)
+    print(f"[*] [Бот {self.bot_id}] Вопрос #{self.total_question_count}/{self.max_questions} (текущий индекс: {self.cur_global_idx})")
+    return True
+
+  def check_question_limit(self):
+    """
+    Check if question limit is reached before asking a question.
+    Returns True if can continue, False if should stop.
+    """
+    if self.total_question_count >= self.max_questions:
+      print(f"[!] [Бот {self.bot_id}] Лимит вопросов ({self.max_questions}) исчерпан. Остановка.")
+      self.stop_event.set()
+      return False
+    return True
+
+  def _log_event(self, event_type: str, message: str):
+    """
+    Logs an event to the bot's event log file with timestamp.
+    Thread-safe logging.
+    """
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"[{timestamp}] [{event_type}] {message}\n"
+    
+    with self.log_lock:
+      with open(self.log_file, 'a', encoding='utf-8') as f:
+        f.write(log_entry)
+    
+    print(f"[LOG] [Бот {self.bot_id}] {event_type}: {message}")
+
+  def log_start(self):
+    """Logs bot start event with timestamp and current question index"""
+    self.last_start_time = datetime.now()
+    self._log_event("START", f"Бот запущен. Вопрос #{self.cur_global_idx}, всего вопросов задано: {self.total_question_count}")
+
+  def log_question_attempt(self, question_idx: int, question_uid: str = None):
+    """
+    Logs each question attempt with timestamp.
+    Called every time a question is asked (including retries).
+    """
+    uid_info = f", UID: {question_uid}" if question_uid else ""
+    self._log_event("QUESTION", f"Попытка #{self.total_question_count}/{self.max_questions}, вопрос индекс #{question_idx}{uid_info}")
+
+  def log_limit_exhausted(self):
+    """Logs when the bot exhausts its question limit"""
+    restart_info = f". Перезапуск через {self.restart_delay} сек" if self.restart_delay > 0 else ""
+    self._log_event("LIMIT_EXHAUSTED", f"Лимит вопросов исчерпан. Всего задано: {self.total_question_count}{restart_info}")
+
+  def log_restart(self):
+    """Logs bot restart event and calculates next restart time"""
+    self.last_start_time = datetime.now()
+    
+    # Вычисляем время следующего перезапуска
+    if self.restart_delay > 0:
+      from datetime import timedelta
+      self.next_restart_time = self.last_start_time + timedelta(seconds=self.restart_delay)
+      self._log_event("RESTART", f"Бот перезапущен. Следующий перезапуск не ранее {self.next_restart_time.strftime('%H:%M:%S')} (через {self.restart_delay} сек)")
+    else:
+      self._log_event("RESTART", "Бот перезапущен (первый запуск, перезапуск отключён)")
+
+  def log_stop(self):
+    """Logs bot stop event"""
+    self._log_event("STOP", f"Бот остановлен. Всего вопросов задано: {self.total_question_count}")
 
   def _clear_cache(self, profile_path):
     trash_dirs = [
@@ -256,7 +555,31 @@ class VirtualBotEnv:
       ["Xvfb", self.display, "-screen", "0", self.size, "-ac"],
       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
     )
-    time.sleep(1)
+    
+    # Ждём пока Xvfb полностью запустится и проверим что он работает
+    xvfb_started = False
+    for _ in range(10):  # Максимум 5 секунд (10 * 0.5с)
+      time.sleep(0.5)
+      if self.procs['xvfb'].poll() is None:
+        # Проверяем, что дисплей доступен
+        try:
+          result = subprocess.run(
+            ["xdpyinfo", "-display", self.display],
+            capture_output=True, timeout=1
+          )
+          if result.returncode == 0:
+            xvfb_started = True
+            print(f"[+] [Бот {self.bot_id}] Xvfb запущен на {self.display}")
+            break
+        except:
+          pass
+      else:
+        print(f"[!] [Бот {self.bot_id}] Xvfb процесс завершился unexpectedly")
+        break
+    
+    if not xvfb_started:
+      print(f"[!] [Бот {self.bot_id}] Не удалось запустить Xvfb на {self.display}")
+      return
 
     env = os.environ.copy()
     env["DISPLAY"] = self.display
@@ -264,12 +587,70 @@ class VirtualBotEnv:
     self.procs['wm'] = subprocess.Popen(
       ["fluxbox"], env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
     )
+    # Ждём пока fluxbox полностью запустится
+    time.sleep(2)
 
     vnc_port = 5900 + self.bot_id
-    self.procs['vnc'] = subprocess.Popen([
-      "x11vnc", "-display", self.display, "-rfbport", str(vnc_port), 
-      "-nopw", "-forever", "-shared"
-    ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    
+    # Проверяем, что порт свободен
+    try:
+      result = subprocess.run(["ss", "-tlnp"], capture_output=True, text=True, timeout=1)
+      if str(vnc_port) in result.stdout:
+        print(f"[!] [Бот {self.bot_id}] Порт {vnc_port} уже занят, пытаемся освободить...")
+        # Пытаемся найти и убить процесс на этом порту
+        subprocess.run(["fuser", "-k", f"{vnc_port}/tcp"], capture_output=True)
+        time.sleep(1)
+    except:
+      pass
+
+    # Пробуем запустить x11vnc с минимальными опциями
+    max_attempts = 3
+    for attempt in range(max_attempts):
+      # Создаём временный лог файл для отладки
+      vnc_log = f"/tmp/bot_{self.bot_id}_x11vnc_attempt_{attempt}.log"
+      
+      # Простые опции для максимальной совместимости
+      self.procs['vnc'] = subprocess.Popen([
+        "x11vnc",
+        "-display", self.display,
+        "-rfbport", str(vnc_port),
+        "-nopw",
+        "-forever",
+        "-shared",
+        "-nowf",
+        "-noxdamage"
+      ], stdout=open(vnc_log, 'w'), stderr=subprocess.STDOUT)
+
+      # Проверяем, что процесс жив
+      time.sleep(2)
+      if self.procs['vnc'].poll() is None:
+        # Проверяем что порт слушается
+        try:
+          result = subprocess.run(["ss", "-tlnp"], capture_output=True, text=True, timeout=1)
+          if str(vnc_port) in result.stdout:
+            print(f"[+] [Бот {self.bot_id}] x11vnc запущен на порту {vnc_port}")
+            break
+        except:
+          pass
+        print(f"[+] [Бот {self.bot_id}] x11vnc запущен (порт не проверен)")
+        break
+      else:
+        # Процесс умер, читаем лог
+        try:
+          with open(vnc_log, 'r') as f:
+            log_content = f.read()
+          print(f"[!] [Бот {self.bot_id}] x11vnc не запустился (попытка {attempt + 1}/{max_attempts})")
+          # Показываем последние строки лога
+          lines = log_content.split('\n')
+          for line in lines[-10:]:
+            if line.strip():
+              print(f"    {line}")
+        except:
+          pass
+        if attempt < max_attempts - 1:
+          time.sleep(2)
+    else:
+      print(f"[!] [Бот {self.bot_id}] Не удалось запустить x11vnc после {max_attempts} попыток")
 
     chrome_cmd = [
       "/usr/bin/chromium",
@@ -280,6 +661,7 @@ class VirtualBotEnv:
       f"--window-size=960,800",
       f"--force-device-scale-factor=1",
       # f"--high-dpi-support=1",e
+      "--proxy-server=http://186.65.122.102:8000",
 
       "--no-sandbox",
       "--disable-gpu",
@@ -293,9 +675,18 @@ class VirtualBotEnv:
       f"--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       url
     ]
-    
+
     self.procs['browser'] = subprocess.Popen(chrome_cmd, env=env)
     print(f"[+] [Бот {self.bot_id}] Готов. VNC: localhost:{vnc_port}")
+
+    # Запускаем поток для обновления VNC (чтобы изображение не пропадало)
+    self.vnc_refresh = VNCRefreshThread(self.display, interval=2.0)
+    self.vnc_refresh.start()
+    vnc_refresh_threads.append(self.vnc_refresh)
+
+    # Логирование запуска бота
+    self.log_restart()  # Логируем как рестарт (или первый запуск)
+    
     threading.Thread(target=self._executor, daemon=True).start()
     # time.sleep(1000)
 
@@ -376,7 +767,18 @@ class VirtualBotEnv:
           )
           if result.returncode != 0:
             print(f"[!] [Бот {self.bot_id}] xdotool click error: {result.stderr}")
-            
+
+        elif t_type == 'mousemove':
+          if not isinstance(val, (list, tuple)) or len(val) != 2:
+            print(f"[!] [Бот {self.bot_id}] Неверный формат mousemove: {val}")
+            continue
+          result = subprocess.run(
+            ["xdotool", "mousemove", str(val[0]), str(val[1])],
+            env=env, capture_output=True, text=True
+          )
+          if result.returncode != 0:
+            print(f"[!] [Бот {self.bot_id}] xdotool click error: {result.stderr}")
+
         elif t_type == 'key':
           # xdotool использует Return вместо enter
           key_name = 'Return' if val.lower() == 'enter' else val
@@ -433,8 +835,30 @@ class VirtualBotEnv:
 
   def stop(self):
     print(f"[*] [Бот {self.bot_id}] Выключение...")
+    # Логирование остановки
+    self.log_stop()
     self.stop_event.set()
-    for p in self.procs.values():
+
+    # Останавливаем поток обновления VNC
+    if hasattr(self, 'vnc_refresh'):
+      self.vnc_refresh.stop()
+
+    # Завершаем все процессы бота
+    for proc_name, p in self.procs.items():
       if p:
-        try: p.terminate()
-        except: pass
+        try:
+          p.terminate()
+          try:
+            p.wait(timeout=3)  # Ждём до 3 секунд
+          except subprocess.TimeoutExpired:
+            p.kill()  # Принудительно убиваем если не завершился
+            p.wait(timeout=1)
+        except Exception as e:
+          print(f"[!] [Бот {self.bot_id}] Остановка {proc_name}: {e}")
+
+    # Очищаем временный профиль
+    try:
+      if os.path.exists(self.temp_profile):
+        shutil.rmtree(self.temp_profile, ignore_errors=True)
+    except Exception as e:
+      print(f"[!] [Бот {self.bot_id}] Ошибка очистки профиля: {e}")

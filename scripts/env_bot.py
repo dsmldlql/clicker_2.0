@@ -5,6 +5,7 @@ import cv2
 import mss
 from queue import Queue
 from datetime import datetime
+from scripts.bot_logger import get_bot_logger
 
 # Глобальный список для хранения потоков обновления VNC
 vnc_refresh_threads = []
@@ -55,6 +56,8 @@ class VirtualBotEnv:
     # Область интереса (ROI) и рабочие зоны
     self.roi = bot_cfg.get('roi', [0, 0, 960, 800])
     self.cooldown = bot_cfg.get('cooldown', 1.0)
+    # Интервал между вопросами (в секундах) - время от начала спрашивания предыдущего вопроса
+    self.question_interval = bot_cfg.get('question_interval', 0.0)
 
     # Инициализация stop_event ДО загрузки вопросов (нужен для ранней установки)
     self.stop_event = threading.Event()
@@ -72,6 +75,8 @@ class VirtualBotEnv:
     self.next_restart_time = None
     # Глобальный счётчик всех попыток (включая повторные)
     self.total_question_count = 0
+    # Время начала спрашивания последнего вопроса (для question_interval)
+    self.last_question_start_time = None
     # Используем dataset_path из конфига или путь по умолчанию
     dataset_path = bot_cfg.get('dataset_path', 'datasets/sp_depers_final_with_hypnorm_used_marks.csv')
     # Преобразуем в абсолютный путь относительно проекта
@@ -95,12 +100,14 @@ class VirtualBotEnv:
         self.stop_event.set()
     else:
       print(f"[+] [Бот {self.bot_id}] Начальный cur_global_idx={self.cur_global_idx}")
-    
+
     # Настройка логирования событий бота
-    self.log_dir = os.path.join(base_dir, 'logs', 'bot_events')
-    os.makedirs(self.log_dir, exist_ok=True)
-    self.log_file = os.path.join(self.log_dir, f'bot_{self.bot_id}_events.log')
-    self.log_lock = threading.Lock()
+    self.project = bot_cfg.get('project', 'unknown')
+    self.site = bot_cfg.get('site', 'unknown')
+    self.scenario = bot_cfg.get('scenario', 'unknown')
+    
+    # Initialize centralized logger with site and scenario for shared CSV logging
+    self.logger = get_bot_logger(self.bot_id, self.project, self.site, self.scenario)
 
     # Расписание запуска бота
     self.schedule_start_immediately = bot_cfg.get('schedule', {}).get('start_immediately', False)
@@ -340,6 +347,13 @@ class VirtualBotEnv:
     if self.questions is None:
       print(f"[!] [Бот {self.bot_id}] Вопросы не загружены")
       return None
+    
+    # Проверяем, что индекс в пределах диапазона
+    start_row, end_row = self.row_range
+    if self.cur_global_idx < start_row or self.cur_global_idx > end_row:
+      print(f"[!] [Бот {self.bot_id}] Индекс вопроса {self.cur_global_idx} вне диапазона [{start_row}-{end_row}]")
+      return None
+    
     return self.questions.loc[self.cur_global_idx]
 
   def get_cur_question_uid(self):
@@ -475,53 +489,97 @@ class VirtualBotEnv:
       return False
     return True
 
-  def _log_event(self, event_type: str, message: str):
-    """
-    Logs an event to the bot's event log file with timestamp.
-    Thread-safe logging.
-    """
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_entry = f"[{timestamp}] [{event_type}] {message}\n"
-    
-    with self.log_lock:
-      with open(self.log_file, 'a', encoding='utf-8') as f:
-        f.write(log_entry)
-    
-    print(f"[LOG] [Бот {self.bot_id}] {event_type}: {message}")
+  def _clear_cache(self, profile_path):
+    trash_dirs = [
+      'Cache', 'Code Cache', 'GPUCache', 'ShaderCache',
+      'GrShaderCache', 'Media Cache', 'WebSession'
+    ]
+    for root, dirs, files in os.walk(profile_path):
+      for d in list(dirs):
+        if d in trash_dirs:
+          try: shutil.rmtree(os.path.join(root, d), ignore_errors=True)
+          except: pass
 
   def log_start(self):
     """Logs bot start event with timestamp and current question index"""
     self.last_start_time = datetime.now()
-    self._log_event("START", f"Бот запущен. Вопрос #{self.cur_global_idx}, всего вопросов задано: {self.total_question_count}")
+    uid = self.get_cur_question_uid()
+    self.logger.info("BOT_START", {
+      "bot_id": self.bot_id,
+      "question_idx": self.cur_global_idx,
+      "total_questions": self.total_question_count,
+      "uid": uid
+    })
+    # Log to CSV (both per-bot and shared scenario+site)
+    self.logger.log_csv_operation("START", global_index=self.cur_global_idx, question_uid=uid)
 
   def log_question_attempt(self, question_idx: int, question_uid: str = None):
     """
     Logs each question attempt with timestamp.
     Called every time a question is asked (including retries).
     """
-    uid_info = f", UID: {question_uid}" if question_uid else ""
-    self._log_event("QUESTION", f"Попытка #{self.total_question_count}/{self.max_questions}, вопрос индекс #{question_idx}{uid_info}")
+    self.logger.info("QUESTION_ATTEMPT", {
+      "attempt": self.total_question_count,
+      "max_questions": self.max_questions,
+      "question_idx": question_idx,
+      "uid": question_uid
+    })
+    # Log to CSV
+    self.logger.log_csv_operation("QUESTION", global_index=question_idx, question_uid=question_uid)
+
+  def log_question_sent(self, question_idx: int, question_uid: str = None):
+    """
+    Logs when a question is actually sent to the AI service.
+    Called after click_paste_enter action completes.
+    """
+    self.logger.info("QUESTION_SENT", {
+      "question_idx": question_idx,
+      "uid": question_uid
+    })
+    # Log to CSV (also logged in bot_logic.py)
 
   def log_limit_exhausted(self):
     """Logs when the bot exhausts its question limit"""
-    restart_info = f". Перезапуск через {self.restart_delay} сек" if self.restart_delay > 0 else ""
-    self._log_event("LIMIT_EXHAUSTED", f"Лимит вопросов исчерпан. Всего задано: {self.total_question_count}{restart_info}")
+    self.logger.info("LIMIT_EXHAUSTED", {
+      "total_questions": self.total_question_count,
+      "max_questions": self.max_questions,
+      "restart_delay": self.restart_delay
+    })
+    # Log to CSV
+    self.logger.log_csv_operation("LIMIT_EXHAUSTED")
 
   def log_restart(self):
     """Logs bot restart event and calculates next restart time"""
     self.last_start_time = datetime.now()
-    
+    uid = self.get_cur_question_uid()
+
     # Вычисляем время следующего перезапуска
     if self.restart_delay > 0:
       from datetime import timedelta
       self.next_restart_time = self.last_start_time + timedelta(seconds=self.restart_delay)
-      self._log_event("RESTART", f"Бот перезапущен. Следующий перезапуск не ранее {self.next_restart_time.strftime('%H:%M:%S')} (через {self.restart_delay} сек)")
+      self.logger.info("RESTART", {
+        "bot_id": self.bot_id,
+        "next_restart": self.next_restart_time.strftime('%H:%M:%S'),
+        "restart_delay": self.restart_delay
+      })
     else:
-      self._log_event("RESTART", "Бот перезапущен (первый запуск, перезапуск отключён)")
+      self.logger.info("RESTART", {
+        "bot_id": self.bot_id,
+        "note": "first_start"
+      })
+    
+    # Log to CSV
+    self.logger.log_csv_operation("RESTART", global_index=self.cur_global_idx, question_uid=uid)
 
   def log_stop(self):
     """Logs bot stop event"""
-    self._log_event("STOP", f"Бот остановлен. Всего вопросов задано: {self.total_question_count}")
+    uid = self.get_cur_question_uid()
+    self.logger.info("BOT_STOP", {
+      "bot_id": self.bot_id,
+      "total_questions": self.total_question_count
+    })
+    # Log to CSV
+    self.logger.log_csv_operation("STOP", global_index=self.cur_global_idx, question_uid=uid)
 
   def _clear_cache(self, profile_path):
     trash_dirs = [
@@ -550,6 +608,34 @@ class VirtualBotEnv:
   def start(self, url):
     self._prepare_profile()
     print(f"[*] [Бот {self.bot_id}] Запуск на {self.display}...")
+
+    # Проверяем и убиваем старые процессы на этом дисплее
+    try:
+      # Находим PID Xvfb на этом дисплее
+      result = subprocess.run(["pgrep", "-f", f"Xvfb {self.display}"], capture_output=True, text=True, timeout=1)
+      if result.stdout.strip():
+        old_pid = result.stdout.strip()
+        print(f"[!] [Бот {self.bot_id}] Найден старый Xvfb (PID: {old_pid}), убиваем...")
+        subprocess.run(["kill", old_pid], capture_output=True)
+        time.sleep(0.5)
+      
+      # Находим PID fluxbox на этом дисплее
+      env = os.environ.copy()
+      env["DISPLAY"] = self.display
+      result = subprocess.run(["pgrep", "-f", "fluxbox"], capture_output=True, text=True, timeout=1)
+      if result.stdout.strip():
+        # Проверяем, относится ли этот fluxbox к нашему дисплею
+        print(f"[!] [Бот {self.bot_id}] Найден fluxbox (PID: {result.stdout.strip()}), убиваем...")
+        for pid in result.stdout.strip().split():
+          subprocess.run(["kill", pid], capture_output=True)
+        time.sleep(0.5)
+      
+      # Убиваем x11vnc на нашем порту
+      vnc_port = 5900 + self.bot_id
+      result = subprocess.run(["fuser", "-k", f"{vnc_port}/tcp"], capture_output=True, timeout=1)
+      time.sleep(0.5)
+    except Exception as e:
+      print(f"[!] [Бот {self.bot_id}] Ошибка очистки старых процессов: {e}")
 
     self.procs['xvfb'] = subprocess.Popen(
       ["Xvfb", self.display, "-screen", "0", self.size, "-ac"],
@@ -855,6 +941,29 @@ class VirtualBotEnv:
             p.wait(timeout=1)
         except Exception as e:
           print(f"[!] [Бот {self.bot_id}] Остановка {proc_name}: {e}")
+
+    # Дополнительная очистка - убиваем процессы по PID если они ещё живы
+    time.sleep(1)
+    try:
+      # Находим и убиваем Xvfb на нашем дисплее
+      result = subprocess.run(["pgrep", "-f", f"Xvfb {self.display}"], capture_output=True, text=True, timeout=1)
+      if result.stdout.strip():
+        for pid in result.stdout.strip().split():
+          print(f"[!] [Бот {self.bot_id}] Убиваем старый Xvfb (PID: {pid})")
+          subprocess.run(["kill", "-9", pid], capture_output=True)
+      
+      # Находим и убиваем fluxbox на нашем дисплее
+      result = subprocess.run(["pgrep", "-f", "fluxbox"], capture_output=True, text=True, timeout=1)
+      if result.stdout.strip():
+        for pid in result.stdout.strip().split():
+          print(f"[!] [Бот {self.bot_id}] Убиваем fluxbox (PID: {pid})")
+          subprocess.run(["kill", "-9", pid], capture_output=True)
+      
+      # Освобождаем VNC порт
+      vnc_port = 5900 + self.bot_id
+      subprocess.run(["fuser", "-k", f"{vnc_port}/tcp"], capture_output=True, timeout=2)
+    except Exception as e:
+      print(f"[!] [Бот {self.bot_id}] Ошибка дополнительной очистки: {e}")
 
     # Очищаем временный профиль
     try:

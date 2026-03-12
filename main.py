@@ -4,6 +4,7 @@ import cv2
 from scripts.env_bot import VirtualBotEnv
 from scripts.gpu_analyzer import GPUAnalyzer
 from scripts.bot_logic import FSM
+from scripts.vnc_monitor import VNCHealthMonitor
 from datetime import datetime
 
 def load_config(path: str) -> Dict[str, Any]:
@@ -32,6 +33,9 @@ def main():
   bot_configs = []  # Сохраняем конфигурации ботов для перезапуска
   bot_stop_times = {}  # Флаг что бот остановлен и ждёт перезапуска
   bot_scheduled = {}  # Флаг что бот ожидает запланированного запуска
+  
+  # Инициализация монитора VNC
+  vnc_monitor = VNCHealthMonitor(bot_count=bots_count, check_interval=30.0)
 
   for i in range(bots_count):
     bot_key = f'bot_{i}'
@@ -68,7 +72,13 @@ def main():
 
     # Инициализация логики (конфиг из основного файла для Perplexity)
     logics.append(FSM(i, cfg_main, bot_cfg))
-    time.sleep(1.0)
+
+    # Даём браузеру время на загрузку страницы
+    time.sleep(3.0)
+
+  # Запускаем монитор VNC после инициализации всех ботов
+  vnc_monitor.start()
+  print("[+] VNC Monitor: Активирован")
 
   try:
     while True:
@@ -124,7 +134,8 @@ def main():
             new_bot = VirtualBotEnv(bot_idx, bot_cfg)
 
             # Проверяем, все ли вопросы отвечены у нового бота
-            if new_bot.stop_event.is_set():
+            # stop_event может быть установлен из-за лимита max_questions, но если есть ещё вопросы — продолжаем
+            if new_bot.all_questions_answered():
               print(f"[+] Бот {bot_idx} все вопросы верифицированы после перезапуска. Бот не запущен.")
               new_bot.stop()  # Останавливаем процессы
               time.sleep(1)
@@ -140,6 +151,10 @@ def main():
             new_fsm = FSM(bot_idx, cfg_main, bot_cfg)
             logics[bot_idx] = new_fsm
 
+            # Сбрасываем флаг, чтобы сообщение о следующем перезапуске вывелось снова
+            if bot_idx in bot_stop_times:
+                del bot_stop_times[bot_idx]
+
             print(f"[+] Бот {bot_idx} перезапущен")
           elif bot.next_restart_time:
             # Показываем информацию о следующем перезапуске (только один раз)
@@ -147,6 +162,49 @@ def main():
               bot_stop_times[bot_idx] = True
               restart_in = int(bot.next_restart_time.timestamp() - current_time)
               print(f"[*] Бот {bot_idx} остановлен. Перезапуск через {restart_in} сек (в {bot.next_restart_time.strftime('%H:%M:%S')})")
+
+      # Шаг 1.5: Проверяем периодический перезапуск для АКТИВНЫХ ботов
+      # Если время перезапуска настало, но бот ещё работает — перезапускаем его
+      for bot_idx, (bot, fsm) in enumerate(zip(bots, logics)):
+        if bot is None or bot.stop_event.is_set():
+          continue  # Пропускаем удалённые или остановленные боты
+
+        bot_cfg = bot_configs[bot_idx][1]
+        restart_delay = bot_cfg.get('restart_delay', 0)
+
+        # Проверяем, наступило ли время перезапуска для активного бота
+        if restart_delay > 0 and bot.next_restart_time and current_time >= bot.next_restart_time.timestamp():
+          print(f"[*] Перезапуск бота {bot_idx} по таймеру (прошло {restart_delay} сек)...")
+
+          # Останавливаем текущего бота
+          bot.stop()
+          time.sleep(2)  # Ждём освобождения ресурсов
+
+          # Создаём нового бота
+          new_bot = VirtualBotEnv(bot_idx, bot_cfg)
+
+          # Проверяем, все ли вопросы отвечены у нового бота
+          if new_bot.all_questions_answered():
+            print(f"[+] Бот {bot_idx} все вопросы верифицированы. Перезапуск отменён.")
+            new_bot.stop()
+            time.sleep(1)
+            bots[bot_idx] = None
+            logics[bot_idx] = None
+            continue
+
+          site_name = bot_cfg['site']
+          new_bot.start(cfg_main['sites'][site_name]['url'])
+          bots[bot_idx] = new_bot
+
+          # Создаём новую FSM
+          new_fsm = FSM(bot_idx, cfg_main, bot_cfg)
+          logics[bot_idx] = new_fsm
+
+          # Сбрасываем флаг для сообщений
+          if bot_idx in bot_stop_times:
+              del bot_stop_times[bot_idx]
+
+          print(f"[+] Бот {bot_idx} перезапущен (активный перезапуск)")
 
       # Шаг 2: Фильтруем активных ботов
       active_pairs = [(bot, fsm) for bot, fsm in zip(bots, logics) 
@@ -172,7 +230,6 @@ def main():
 
       # Шаг 4: Обрабатываем активные пары
       for bot, fsm in active_pairs:
-        print(f"Global frame")
         frame = bot.get_frame_umat()
         if frame is not None:
           fsm.execute_step(bot, analyzer, frame)
@@ -182,6 +239,8 @@ def main():
 
   except KeyboardInterrupt:
     print("\n[*] Завершение работы...")
+    # Останавливаем монитор VNC
+    vnc_monitor.stop()
     for b in bots:
       if b:
         b.stop()

@@ -13,9 +13,10 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  row_range: [0, 74]
-  max_questions: 100
-  restart_delay: 3600
+  question_interval: 5.0
+  row_range: [400, 499]
+  max_questions: 200
+  restart_delay: 7200
   proxy: [186.65.122.102, 8000]
   schedule:
     start_immediately: true
@@ -29,9 +30,9 @@ bot_1:
   project: hypos_norm
   subproject: gen
   site: gemini
-  mode: thinking
+  mode: pro
   model: gemini
-  scenario: thinking
+  scenario: pro
   browser_master_profile: ~/vanthuan1990t@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
@@ -40,6 +41,7 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [75, 149]
   max_questions: 100
   restart_delay: 3600
@@ -56,9 +58,9 @@ bot_2:
   project: hypos_norm
   subproject: gen
   site: gemini
-  mode: thinking
+  mode: pro
   model: gemini
-  scenario: thinking
+  scenario: pro
   browser_master_profile: ~/vanthuan1990t@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
@@ -67,6 +69,7 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [150, 224]
   max_questions: 100
   restart_delay: 3600
@@ -83,9 +86,9 @@ bot_3:
   project: hypos_norm
   subproject: gen
   site: gemini
-  mode: thinking
+  mode: pro
   model: gemini
-  scenario: thinking
+  scenario: pro
   browser_master_profile: ~/vanthuan1990t@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
@@ -94,6 +97,7 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [225, 299]
   max_questions: 100
   restart_delay: 3600
@@ -121,6 +125,7 @@ bot_0_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [0, 40]
   max_questions: 40
   restart_delay: 3600
@@ -141,6 +146,7 @@ bot_0_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [676, 700]
   max_questions: 100
   restart_delay: 180
@@ -160,6 +166,7 @@ bot_1_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [701, 725]
   max_questions: 100
   restart_delay: 180
@@ -179,6 +186,7 @@ bot_2_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [726, 750]
   max_questions: 100
   restart_delay: 180
@@ -198,6 +206,7 @@ bot_3_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [751, 775]
   max_questions: 100
   restart_delay: 3600
@@ -217,6 +226,7 @@ bot_4:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [776, 800]
   max_questions: 100
   restart_delay: 3600
@@ -236,6 +246,7 @@ bot_5:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [801, 825]
   max_questions: 100
   restart_delay: 3600
@@ -255,6 +266,7 @@ bot_6:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -274,6 +286,7 @@ bot_7:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -293,6 +306,7 @@ bot_8:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -312,6 +326,7 @@ bot_9:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -331,6 +346,7 @@ bot_10:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -350,6 +366,7 @@ bot_11:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -369,6 +386,7 @@ bot_12:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -388,6 +406,7 @@ bot_13:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -407,6 +426,7 @@ bot_14:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -426,6 +446,7 @@ bot_15:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -445,6 +466,7 @@ bot_16:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -464,6 +486,7 @@ bot_17:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -483,6 +506,7 @@ bot_18:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -502,6 +526,7 @@ bot_19:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [516, 525]
   max_questions: 100
   restart_delay: 3600
@@ -516,6 +541,7 @@ bot_20:
   browser_master_profile: ~/bot_master_profile
   roi: [0, 621, 500, 620]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [0, 100]
   max_questions: 100
   restart_delay: 3600
@@ -530,6 +556,7 @@ bot_21:
   browser_master_profile: ~/bot_master_profile
   roi: [0, 0, 960, 800]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [124, 148]
   max_questions: 100
   restart_delay: 3600
@@ -543,6 +570,7 @@ bot_22:
   browser_master_profile: ~/bot_master_profile
   roi: [0, 621, 500, 620]
   cooldown: 1.0
+  question_interval: 5.0
   row_range: [163, 189]
   max_questions: 100
   restart_delay: 3600

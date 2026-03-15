@@ -70,7 +70,7 @@ def main():
     bot.start(cfg_main['sites'][site_name]['url'])
     bots.append(bot)
 
-    # Инициализация логики (конфиг из основного файла для Perplexity)
+    # Инициализация логики (конфиг из основного файла)
     logics.append(FSM(i, cfg_main, bot_cfg))
 
     # Даём браузеру время на загрузку страницы
@@ -170,7 +170,8 @@ def main():
           continue  # Пропускаем удалённые или остановленные боты
 
         bot_cfg = bot_configs[bot_idx][1]
-        restart_delay = bot_cfg.get('restart_delay', 0)
+        restart_delay_val = bot_cfg.get('restart_delay', 0)
+        restart_delay = int(restart_delay_val) if restart_delay_val not in (None, 'None', '') else 0
 
         # Проверяем, наступило ли время перезапуска для активного бота
         if restart_delay > 0 and bot.next_restart_time and current_time >= bot.next_restart_time.timestamp():
@@ -235,7 +236,7 @@ def main():
           fsm.execute_step(bot, analyzer, frame)
 
       # Небольшая пауза чтобы не нагружать CPU
-      time.sleep(0.1)
+      time.sleep(1.0)
 
   except KeyboardInterrupt:
     print("\n[*] Завершение работы...")

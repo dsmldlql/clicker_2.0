@@ -1,6 +1,7 @@
 import time, json, subprocess, re, os
 from typing import Tuple, Any, Dict
 from scripts.bot_logger import get_bot_logger
+from scripts.state_logger import StateLogger
 
 # Import verification logic
 try:
@@ -35,12 +36,19 @@ class FSM:
     self.site = site
     self.scenario_name = scenario_name
     self.logger = get_bot_logger(bot_id, self.project, self.site, self.scenario_name)
+    
+    # Initialize state logger for detailed timing
+    log_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'logs', f'bot_{bot_id}')
+    self.state_logger = StateLogger(bot_id, site, scenario_name, log_dir)
 
     self.logger.info("FSM_INITIALIZED", {
       "site": self.site,
       "scenario": self.scenario_name,
       "start_state": self.current_state
     })
+    
+    # Log initial state
+    self.state_logger.enter_state(self.current_state)
 
 
   def get_clipboard(self, display):
@@ -116,6 +124,9 @@ class FSM:
     """
     Выполняет reset последовательность из конфига сайта.
     Пример: Ctrl+L → ввод URL → Enter → ожидание
+    
+    Args:
+      bot: Экземпляр бота
     """
     print(f"[!] [Бот {self.bot_id}] Выполнение reset последовательности...")
 
@@ -153,12 +164,16 @@ class FSM:
         time.sleep(seconds)
 
     # Сброс состояния и таймера
+    previous_state = self.current_state
     self.current_state = self.scenario['start_state']
     self.last_change = time.time()
     
+    # Логируем переход в start_state после reset
+    self.state_logger.enter_state(self.current_state, from_state=previous_state)
+
     # Дополнительная задержка на загрузку страницы после reset
     time.sleep(2.0)
-    
+
     print(f"[+] [Бот {self.bot_id}] Reset завершён, возврат к '{self.current_state}'")
 
   def execute_step(self, bot, analyzer, frame):
@@ -169,8 +184,14 @@ class FSM:
     # Проверка таймаута состояния
     if elapsed > timeout:
       print(f"[!] [Бот {self.bot_id}] Таймаут состояния '{self.current_state}' ({elapsed:.1f}с > {timeout}с)")
+      # Логируем таймаут
+      self.state_logger.log_timeout(timeout)
+      
       # Переход на fail state
       fail_state = cur_state_config['next'].get('fail', self.scenario['start_state'])
+      next_state = fail_state
+      self.state_logger.exit_state(success=False, next_state=next_state, reason='timeout')
+      
       self.current_state = fail_state
       self.last_change = time.time()
       self.expected_complete = False
@@ -204,10 +225,13 @@ class FSM:
 
       if coords and not self.expected_complete:
         print(f'coords and not self.expected_complete: {coords}, {self.expected_complete:}')
+        # Логируем нахождение триггера
+        self.state_logger.mark_trigger_found()
+        
         self.expected_complete = True
         # Сброс таймера при успешном нахождении триггера
         self.last_change = time.time()
-        
+
         # ОЧИСТКА перед действием, если ожидаем проверку буфера
         if cur_state_config.get('condition', {}).get('json_valid'):
           bot.clear_clipboard()
@@ -225,6 +249,9 @@ class FSM:
       # Проверка условий
       if 'templates' in cond:
         print(f'Condition: checking templates {cond["templates"]}')
+        # Отмечаем начало проверки условия
+        self.state_logger.mark_condition_start()
+        
         new_frame = bot.get_frame_umat()
         if new_frame is not None:
           hit, score = analyzer.find_best_match(
@@ -239,12 +266,18 @@ class FSM:
             print(f'Condition found with score: {score}')
         else:
           print('Condition: frame is None')
+        
+        # Логируем результат проверки
+        self.state_logger.mark_condition_result(success, condition_type='templates')
 
       elif cond.get('json_valid'):
         # ОДНА попытка верификации JSON из буфера
         success = False
         verified_data = None
         
+        # Отмечаем начало проверки условия
+        self.state_logger.mark_condition_start()
+
         print(f"[+] [Бот {self.bot_id}] Верификация JSON...")
         
         # Читаем из буфера
@@ -338,7 +371,7 @@ class FSM:
             return
 
           # Выполняем reset последовательность браузера для НОВОГО вопроса
-          # reset_scenario сам устанавливает current_state в start_state
+          # reset_scenario сам устанавливает current_state в start_state и логирует переход
           self.reset_scenario(bot)
           # Возвращаем, чтобы не переходить в другое состояние
           return
@@ -370,11 +403,17 @@ class FSM:
             return
 
           # Выполняем reset последовательность браузера для ПОВТОРНОЙ попытки
+          # reset_scenario сам устанавливает current_state в start_state и логирует переход
           self.reset_scenario(bot)
           # Возвращаем, чтобы не переходить в другое состояние
           return
       else:
         success = True
+        # Для условий без явной проверки (always success)
+        if not hasattr(self, '_condition_logged'):
+          self.state_logger.mark_condition_start()
+          self.state_logger.mark_condition_result(True, condition_type='always')
+          self._condition_logged = True
 
       # Переход
       if time.time() - self.last_change > 2.0:
@@ -383,19 +422,28 @@ class FSM:
         next_state_key = 'success' if success else 'fail'
         next_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
         
+        # Логируем выход из состояния и переход
+        self.state_logger.exit_state(success=success, next_state=next_state, reason='normal')
+
         # Если следующее состояние - start_question, делаем reset браузера
         if next_state == 'start_question':
           print(f"[*] [Бот {self.bot_id}] Переход в start_question - выполняем reset браузера")
+          # reset_scenario сам логирует переход в start_state
           self.reset_scenario(bot)
-          # reset_scenario уже устанавливает current_state в start_state
         else:
+          prev_state = self.current_state
           self.current_state = next_state
-        
+          # Логируем вход в новое состояние
+          self.state_logger.enter_state(self.current_state, from_state=prev_state)
+
         self.last_change = time.time()
         self.expected_complete = False
         # Сбрасываем флаг защиты от повторного выполнения
         if hasattr(self, '_paste_enter_executed'):
             del self._paste_enter_executed
+        # Сбрасываем флаг логирования условия
+        if hasattr(self, '_condition_logged'):
+            del self._condition_logged
 
   def _run_action(self, bot, action, coords):
     x, y = int(coords[0]), int(coords[1])
@@ -517,3 +565,14 @@ class FSM:
       # Прокрутка вверх (Page Up)
       bot.action_queue.put(('key', 'pageup'))
       time.sleep(0.3)
+
+  def print_state_stats(self):
+    """Выводит статистику состояний в консоль"""
+    if hasattr(self, 'state_logger'):
+      self.state_logger.print_stats()
+
+  def get_state_stats(self) -> Dict[str, Any]:
+    """Возвращает статистику состояний"""
+    if hasattr(self, 'state_logger'):
+      return self.state_logger.get_stats_summary()
+    return {}

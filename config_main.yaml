@@ -2,7 +2,7 @@ global:
   screen_max_width: 4000
   screen_max_height: 2200
   screen_fps: 5
-  bots_count: 1
+  bots_count: 2
 
 prompts:
   
@@ -421,6 +421,118 @@ sites:
               success: start_question
               fail: start_question
             timeout: 120.0
+
+
+  claude:
+    url: https://claude.ai/
+
+    home:
+      reset:
+        sequence:
+          - type: hotkey
+            keys: [ctrl, l]
+          - type: wait
+            seconds: 2.0
+          - type: text
+            value: https://claude.ai/
+          - type: key
+            key: enter
+          - type: wait
+            seconds: 5.0
+
+    scenarios:
+      thinking:
+        start_state: start_question
+
+        states:
+          start_question:
+            expect:
+              templates:
+                - templates/chromium/gemini/plus.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/chromium/gemini/web_search_selected.png
+              threshold: 0.8
+            next:
+              success: check_model
+              fail: start_question
+            timeout: 10.0
+
+          check_model:
+            expect:
+              templates:
+                - templates/chromium/gemini/sonnet_main_page.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/chromium/gemini/sonnet_selected.png
+              threshold: 0.8
+            next:
+              success: ask_empty
+              fail: start_question
+            timeout: 10.0
+
+          ask_empty:
+            expect:
+              templates:
+                - templates/chromium/gemini/ask_gemini.png
+              threshold: 0.8
+            action: click_paste_enter
+            condition:
+              templates:
+                - templates/chromium/gemini/stop.png
+              threshold: 0.9
+            next:
+              success: answer_processing
+              fail: answer_processing
+            timeout: 120.0
+
+          answer_processing:
+            expect:
+              templates:
+                - templates/chromium/gemini/voice_mode.png
+              threshold: 0.8
+            action: mousemove
+            condition:
+              templates:
+                - templates/chromium/gemini/more.png
+              threshold: 0.8
+            next:
+              success: find_copy_button
+              fail: start_question
+            timeout: 400.0
+
+          find_copy_button:
+            expect:
+              templates:
+                - templates/chromium/gemini/more.png
+              threshold: 0.8
+            action: click
+            condition:
+              templates:
+                - templates/chromium/gemini/copy.png
+              threshold: 0.8
+            next:
+              success: end_of_answer
+              fail: start_question
+            timeout: 120.0
+
+          end_of_answer:
+            expect:
+              templates:
+                - templates/chromium/gemini/copy.png
+              threshold: 0.8
+            action: click_copy_save_json_check
+            condition:
+              json_valid: true            
+            next:
+              success: start_question
+              fail: start_question
+            timeout: 120.0
+
 
 
   qwen:

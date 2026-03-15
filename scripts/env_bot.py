@@ -68,7 +68,8 @@ class VirtualBotEnv:
     # Общий лимит на количество вопросов (с учётом повторных попыток при битом JSON)
     self.max_questions = bot_cfg.get('max_questions', 100)
     # Задержка перед перезапуском бота после исчерпания лимита (в секундах)
-    self.restart_delay = bot_cfg.get('restart_delay', 0)
+    restart_delay_val = bot_cfg.get('restart_delay', 0)
+    self.restart_delay = int(restart_delay_val) if restart_delay_val not in (None, 'None', '') else 0
     # Время последнего запуска бота
     self.last_start_time = None
     # Время планируемого перезапуска (last_start_time + restart_delay)
@@ -124,7 +125,55 @@ class VirtualBotEnv:
     self.height = self.roi[3]
     self.size = f"{self.width}x{self.height}x24"
 
+    # Прокси из конфига
+    self.proxy, self.proxy_auth = self._parse_proxy(bot_cfg.get('proxy'))
+
     self.procs = {}
+
+  def _parse_proxy(self, proxy_cfg):
+    """
+    Парсит конфигурацию прокси.
+    Возвращает кортеж (proxy_url, auth_header) или (None, None) если прокси не используется.
+
+    Поддерживаемые форматы:
+    - [ip, port] -> ('http://ip:port', None)
+    - [ip, port, login, password] -> ('http://ip:port', 'Basic base64...')
+    - 'ip:port' -> ('http://ip:port', None)
+    - 'login:pass@ip:port' -> ('http://ip:port', 'Basic base64...')
+    - 'none', 'false', False, None -> (None, None)
+    """
+    if proxy_cfg is None:
+      return None, None
+
+    # Проверка на отключенный прокси
+    if isinstance(proxy_cfg, str):
+      if proxy_cfg.lower() in ('none', 'false', ''):
+        return None, None
+      # Формат 'login:pass@ip:port'
+      if '@' in proxy_cfg:
+        auth_part, server_part = proxy_cfg.rsplit('@', 1)
+        login, password = auth_part.split(':', 1)
+        import base64
+        auth_header = 'Basic ' + base64.b64encode(f'{login}:{password}'.encode()).decode()
+        if ':' in server_part:
+          return f'http://{server_part}', auth_header
+        return None, None
+      # Формат 'ip:port'
+      if ':' in proxy_cfg:
+        return f'http://{proxy_cfg}', None
+
+    # Список [ip, port] или [ip, port, login, password]
+    if isinstance(proxy_cfg, list) and len(proxy_cfg) >= 2:
+      ip, port = proxy_cfg[0], proxy_cfg[1]
+      if len(proxy_cfg) >= 4:
+        # Есть логин и пароль
+        login, password = proxy_cfg[2], proxy_cfg[3]
+        import base64
+        auth_header = 'Basic ' + base64.b64encode(f'{login}:{password}'.encode()).decode()
+        return f'http://{ip}:{port}', auth_header
+      return f'http://{ip}:{port}', None
+
+    return None, None
 
   def _parse_schedule_times(self, time_strings):
     """
@@ -150,6 +199,52 @@ class VirtualBotEnv:
       except Exception as e:
         print(f"[!] [Бот {self.bot_id}] Ошибка парсинга времени '{time_str}': {e}")
     return parsed
+
+  def _setup_proxy_auth_cdp(self):
+    """
+    Настраивает аутентификацию прокси через Chrome DevTools Protocol.
+    Отправляет заголовок Proxy-Authorization для всех запросов.
+    """
+    import json
+    import requests
+    
+    # Находим CDP порт из процесса Chrome
+    # Chrome автоматически открывает CDP на порту 9222 или случайном
+    # Используем --remote-debugging-port=9222 в chrome_cmd
+    
+    cdp_url = "http://localhost:9222"
+    
+    try:
+      # Получаем список вкладок
+      response = requests.get(f"{cdp_url}/json/list", timeout=5)
+      tabs = response.json()
+      
+      if tabs:
+        # Берём первую вкладку
+        ws_url = tabs[0].get('webSocketDebuggerUrl')
+        
+        if ws_url:
+          # Отправляем команду CDP для установки заголовков
+          import websocket
+          ws = websocket.create_connection(ws_url, timeout=5)
+          
+          # Устанавливаем заголовки для всех запросов
+          cmd = {
+            "id": 1,
+            "method": "Network.setExtraHTTPHeaders",
+            "params": {
+              "headers": {
+                "Proxy-Authorization": self.proxy_auth
+              }
+            }
+          }
+          ws.send(json.dumps(cmd))
+          ws.recv()  # Ждём ответ
+          ws.close()
+          
+          print(f"[+] [Бот {self.bot_id}] Прокси-аутентификация настроена через CDP")
+    except Exception as e:
+      print(f"[!] [Бот {self.bot_id}] Не удалось настроить прокси-аутентификацию CDP: {e}")
 
   def _get_next_scheduled_time(self):
     """
@@ -738,31 +833,44 @@ class VirtualBotEnv:
     else:
       print(f"[!] [Бот {self.bot_id}] Не удалось запустить x11vnc после {max_attempts} попыток")
 
+    # Формируем команду Chrome с условным прокси
     chrome_cmd = [
       "/usr/bin/chromium",
       f"--display={self.display}",
       f"--user-data-dir={self.temp_profile}",
-
       f"--window-position=0,0",
       f"--window-size=960,800",
       f"--force-device-scale-factor=1",
-      # f"--high-dpi-support=1",e
-      "--proxy-server=http://186.65.122.102:8000",
-
+      "--remote-debugging-port=9222",
+    ]
+    
+    # Добавляем прокси если указан
+    if self.proxy:
+      chrome_cmd.append(f"--proxy-server={self.proxy}")
+      print(f"[*] [Бот {self.bot_id}] Используется прокси: {self.proxy}")
+    else:
+      print(f"[*] [Бот {self.bot_id}] Прокси не используется")
+    
+    chrome_cmd.extend([
       "--no-sandbox",
       "--disable-gpu",
       "--disable-software-rasterizer",
       "--disable-dev-shm-usage",
-      "--blink-settings=imagesEnabled=false",
+      #"--blink-settings=imagesEnabled=false",
       "--disable-notifications",
       "--mute-audio",
-      "--limit-fps=5", # Увеличено до 5 для стабильности интерфейса
+      "--limit-fps=5",
       "--disable-blink-features=AutomationControlled",
       f"--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       url
-    ]
+    ])
 
     self.procs['browser'] = subprocess.Popen(chrome_cmd, env=env)
+    
+    # Настраиваем аутентификацию прокси через CDP если требуется
+    if self.proxy_auth:
+      self._setup_proxy_auth_cdp()
+    
     print(f"[+] [Бот {self.bot_id}] Готов. VNC: localhost:{vnc_port}")
 
     # Запускаем поток для обновления VNC (чтобы изображение не пропадало)

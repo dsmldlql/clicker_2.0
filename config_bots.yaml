@@ -17,7 +17,35 @@ bot_0:
   row_range: [400, 599]
   max_questions: 200
   restart_delay: None
-  proxy: [186.65.122.102, 8000]
+  proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_1:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/rxmzge8117@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 240.0
+  row_range: [0, 199]
+  max_questions: 200
+  restart_delay: 3600
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
     start_times:
@@ -45,35 +73,7 @@ bot_2:
   row_range: [296, 500]
   max_questions: 100
   restart_delay: None
-  proxy: [186.65.122.102, 8000]
-  schedule:
-    start_immediately: true
-    start_times:
-      - "00:00"
-      - "06:00"
-      - "12:00"
-      - "18:00"
-
-bot_1:
-  project: hypos_norm
-  subproject: gen
-  site: gpt
-  mode: web_search
-  model: gpt
-  scenario: web_search
-  browser_master_profile: ~/rxmzge8117_outlook.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 240.0
-  row_range: [0, 199]
-  max_questions: 200
-  restart_delay: 3600
-  proxy: [186.65.122.102, 8000]
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
     start_times:

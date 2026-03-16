@@ -128,6 +128,9 @@ class VirtualBotEnv:
     # Прокси из конфига
     self.proxy, self.proxy_auth = self._parse_proxy(bot_cfg.get('proxy'))
 
+    # Сохраняем логин/пароль прокси для расширения
+    self.proxy_login, self.proxy_password = self._extract_proxy_credentials(bot_cfg.get('proxy'))
+
     self.procs = {}
 
   def _parse_proxy(self, proxy_cfg):
@@ -175,6 +178,62 @@ class VirtualBotEnv:
 
     return None, None
 
+  def _extract_proxy_credentials(self, proxy_cfg):
+    """
+    Извлекает логин и пароль из конфигурации прокси.
+    Возвращает кортеж (login, password) или (None, None) если нет авторизации.
+    """
+    if proxy_cfg is None:
+      return None, None
+
+    # Строковый формат 'login:pass@ip:port'
+    if isinstance(proxy_cfg, str) and '@' in proxy_cfg:
+      auth_part = proxy_cfg.rsplit('@', 1)[0]
+      if ':' in auth_part:
+        login, password = auth_part.split(':', 1)
+        return login, password
+
+    # Список [ip, port, login, password]
+    if isinstance(proxy_cfg, list) and len(proxy_cfg) >= 4:
+      return proxy_cfg[2], proxy_cfg[3]
+
+    return None, None
+
+  def _create_proxy_extension(self):
+    """
+    Создаёт временное расширение Chrome для автоматической прокси-аутентификации.
+    Возвращает путь к директории расширения или None если не требуется.
+    """
+    if not self.proxy_login or not self.proxy_password:
+      return None
+
+    import shutil
+
+    # Пути
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    src_extension_dir = os.path.join(base_dir, 'proxy_extension')
+    temp_extension_dir = os.path.join(self.temp_profile, 'proxy_extension')
+
+    # Копируем расширение во временный профиль
+    if os.path.exists(src_extension_dir):
+      shutil.copytree(src_extension_dir, temp_extension_dir, dirs_exist_ok=True)
+
+      # Заменяем логин/пароль в background.js
+      background_js_path = os.path.join(temp_extension_dir, 'background.js')
+      with open(background_js_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+      content = content.replace('LOGIN_PLACEHOLDER', self.proxy_login)
+      content = content.replace('PASSWORD_PLACEHOLDER', self.proxy_password)
+
+      with open(background_js_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+      print(f"[+] [Бот {self.bot_id}] Расширение прокси-аутентификации создано")
+      return temp_extension_dir
+
+    return None
+
   def _parse_schedule_times(self, time_strings):
     """
     Парсит список времён запуска в формате 'HH:MM' или 'H:MM'.
@@ -205,29 +264,46 @@ class VirtualBotEnv:
     Настраивает аутентификацию прокси через Chrome DevTools Protocol.
     Отправляет заголовок Proxy-Authorization для всех запросов.
     """
+    # Если нет авторизации - выходим сразу
+    if not self.proxy_auth:
+      return
+    
     import json
     import requests
-    
+    import time
+
     # Находим CDP порт из процесса Chrome
     # Chrome автоматически открывает CDP на порту 9222 или случайном
     # Используем --remote-debugging-port=9222 в chrome_cmd
-    
+
     cdp_url = "http://localhost:9222"
+    
+    # Ждём пока CDP порт станет доступен (максимум 10 секунд)
+    for attempt in range(10):
+      try:
+        response = requests.get(f"{cdp_url}/json/list", timeout=2)
+        if response.status_code == 200:
+          break
+      except:
+        pass
+      time.sleep(0.5)
+    else:
+      print(f"[!] [Бот {self.bot_id}] CDP порт не доступен после 10 попыток")
+      return
     
     try:
       # Получаем список вкладок
-      response = requests.get(f"{cdp_url}/json/list", timeout=5)
       tabs = response.json()
-      
+
       if tabs:
         # Берём первую вкладку
         ws_url = tabs[0].get('webSocketDebuggerUrl')
-        
+
         if ws_url:
           # Отправляем команду CDP для установки заголовков
           import websocket
           ws = websocket.create_connection(ws_url, timeout=5)
-          
+
           # Устанавливаем заголовки для всех запросов
           cmd = {
             "id": 1,
@@ -241,7 +317,7 @@ class VirtualBotEnv:
           ws.send(json.dumps(cmd))
           ws.recv()  # Ждём ответ
           ws.close()
-          
+
           print(f"[+] [Бот {self.bot_id}] Прокси-аутентификация настроена через CDP")
     except Exception as e:
       print(f"[!] [Бот {self.bot_id}] Не удалось настроить прокси-аутентификацию CDP: {e}")
@@ -843,11 +919,18 @@ class VirtualBotEnv:
       f"--force-device-scale-factor=1",
       "--remote-debugging-port=9222",
     ]
-    
+
     # Добавляем прокси если указан
     if self.proxy:
       chrome_cmd.append(f"--proxy-server={self.proxy}")
       print(f"[*] [Бот {self.bot_id}] Используется прокси: {self.proxy}")
+      
+      # Добавляем расширение для автоматической аутентификации если есть логин/пароль
+      extension_path = self._create_proxy_extension()
+      if extension_path:
+        chrome_cmd.append(f"--disable-extensions-except={extension_path}")
+        chrome_cmd.append(f"--load-extension={extension_path}")
+        print(f"[*] [Бот {self.bot_id}] Расширение прокси-аутентификации загружено")
     else:
       print(f"[*] [Бот {self.bot_id}] Прокси не используется")
     
@@ -866,10 +949,11 @@ class VirtualBotEnv:
     ])
 
     self.procs['browser'] = subprocess.Popen(chrome_cmd, env=env)
-    
+
     # Настраиваем аутентификацию прокси через CDP если требуется
-    if self.proxy_auth:
-      self._setup_proxy_auth_cdp()
+    # ОТКЛЮЧЕНО: CDP не работает надёжно для прокси-аутентификации
+    # if self.proxy_auth:
+    #   self._setup_proxy_auth_cdp()
     
     print(f"[+] [Бот {self.bot_id}] Готов. VNC: localhost:{vnc_port}")
 

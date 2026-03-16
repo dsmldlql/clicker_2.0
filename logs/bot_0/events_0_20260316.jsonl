@@ -1,0 +1,24 @@
+{"timestamp": "2026-03-16T13:55:04.622512", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T13:55:04.622271", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:13:38.139474", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T14:13:38.139255", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:17:25.635813", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T14:17:25.635508", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:17:31.640722", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T14:17:31.641496", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-16T14:18:07.027535", "bot_id": 0, "event_type": "BOT_STOP", "data": {"bot_id": 0, "total_questions": 0}}
+{"timestamp": "2026-03-16T14:21:22.300915", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T14:21:22.300626", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:21:27.631772", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T14:21:27.633476", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-16T14:21:43.377254", "bot_id": 0, "event_type": "BOT_STOP", "data": {"bot_id": 0, "total_questions": 0}}
+{"timestamp": "2026-03-16T14:22:51.890813", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T14:22:51.890496", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:22:57.280907", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T14:22:57.282584", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-16T14:24:11.800875", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T14:24:11.800657", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T14:24:17.649312", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T14:24:17.649900", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-16T14:24:57.375054", "bot_id": 0, "event_type": "BOT_STOP", "data": {"bot_id": 0, "total_questions": 0}}
+{"timestamp": "2026-03-16T17:44:46.218811", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T17:44:46.218624", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T17:44:51.426769", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T17:44:51.427889", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-16T17:45:36.553102", "bot_id": 0, "event_type": "BOT_STOP", "data": {"bot_id": 0, "total_questions": 0}}
+{"timestamp": "2026-03-16T17:46:42.863748", "bot_id": 0, "event_type": "BOT_START", "data": {"bot_id": 0, "project": "hypos_norm", "timestamp": "2026-03-16T17:46:42.863551", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_0"}}
+{"timestamp": "2026-03-16T17:46:48.078665", "bot_id": 0, "event_type": "RESTART", "data": {"bot_id": 0, "note": "first_start"}}
+{"timestamp": "2026-03-16T17:46:48.079386", "bot_id": 0, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}

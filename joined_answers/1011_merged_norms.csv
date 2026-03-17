@@ -1,0 +1,7 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1011|410000|специальный|54-ФЗ|ФЗ|2|21|22.05.2003|2|2|perplexity_claude_sonnet;perplexity_grok
+1011|410000|специальный|54-ФЗ|ФЗ|2|2|22.05.2003|2|2|perplexity_claude_sonnet;perplexity_grok
+1011|410000|специальный||НК|34643|2||1|2|perplexity_claude_sonnet
+1011|410000|специальный|54-ФЗ|ФЗ|47|1|22.05.2003|1|2|perplexity_claude_sonnet
+1011|410000|общий||НК|34645|1||1|2|perplexity_claude_sonnet
+1011|410000|общий||КОАП|145|||1|2|perplexity_claude_sonnet

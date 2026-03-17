@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+418|48b630e5-547b-4c4d-9de2-7de7aea2d83c|общий||ГПК|428|||2|2|gemini;qwen
+418|48b630e5-547b-4c4d-9de2-7de7aea2d83c|общий||ГПК|35|||2|2|gemini;qwen
+418|48b630e5-547b-4c4d-9de2-7de7aea2d83c|специальный||АПК|319|||1|2|qwen
+418|48b630e5-547b-4c4d-9de2-7de7aea2d83c|специальный|251|Порядок подачи в федеральные суды общей юрисдикции документов в электронном виде, в том числе в форме электронного документа||11|27.12.2016|1|2|qwen
+418|48b630e5-547b-4c4d-9de2-7de7aea2d83c|специальный|229-ФЗ|ФЗ|30||02.10.2007|1|2|gemini

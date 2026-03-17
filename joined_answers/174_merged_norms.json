@@ -1,0 +1,203 @@
+{
+  "Norms": [
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "219",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает право на получение социального налогового вычета за расходы на обучение налогоплательщика, его детей, подопечных, братьев, сестёр.",
+      "case_note": "Норма непосредственно регулирует право на вычет за обучение, что является предметом запроса пользователя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "78",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует порядок зачёта или возврата сумм излишне уплаченного налога налоговым органом.",
+      "case_note": "Определяет механизм возврата налога после подтверждения права на вычет.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "78",
+      "art_prilozhenie": "",
+      "art_chast": "6",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает срок принятия решения о возврате налога — в течение 10 рабочих дней со дня получения заявления.",
+      "case_note": "Определяет сроки возврата, что важно для планирования получения денежных средств.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "78",
+      "art_prilozhenie": "",
+      "art_chast": "7",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Предусматривает срок фактического возврата налога — в течение одного месяца со дня получения заявления.",
+      "case_note": "Определяет максимальный срок получения денежных средств после одобрения вычета.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "88",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует проведение камеральной налоговой проверки деклараций, включая срок проверки — 3 месяца.",
+      "case_note": "Определяет срок проверки декларации 3-НДФЛ перед возвратом налога.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "Приказ ФНС России",
+      "date": "20.10.2025",
+      "number": "ЕД-7-11/913@",
+      "art": "",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Утверждает форму налоговой декларации по НДФЛ (3-НДФЛ), порядок её заполнения и формат представления.",
+      "case_note": "Определяет форму документа, который необходимо подать для получения вычета.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "31.07.1998",
+      "number": "146-ФЗ",
+      "art": "229",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает срок подачи налоговой декларации 3-НДФЛ — не позднее 30 апреля года, следующего за отчётным.",
+      "case_note": "Определяет предельный срок подачи декларации для получения вычета.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "219",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "2",
+      "art_abzats": "1",
+      "scope": "общий",
+      "gen_note": "Устанавливает право налогоплательщика на получение социального налогового вычета в сумме, уплаченной за свое обучение в организациях, осуществляющих образовательную деятельность.",
+      "case_note": "Является базовой нормой, подтверждающей право пользователя на возврат части НДФЛ при оплате собственного образования.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "219",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "1",
+      "scope": "общий",
+      "gen_note": "Устанавливает совокупный предел социальных вычетов в размере 150 000 рублей в год (за исключением обучения детей и дорогостоящего лечения).",
+      "case_note": "Определяет максимальную сумму расходов на собственное обучение, с которой можно вернуть 13% налога.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "221.1",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регламентирует упрощенный порядок получения налоговых вычетов без представления декларации 3-НДФЛ и подтверждающих документов на основании сведений, имеющихся у налогового органа.",
+      "case_note": "Позволяет пользователю получить вычет быстрее через личный кабинет налогоплательщика, если образовательная организация передает данные в ФНС.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_gemini.json"
+      ],
+      "_total_files": 3
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_gemini.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/perplexity_claude_sonnet/hypos_norm/gen/174_91b7f6e8-bfaf-44dd-94ba-1d8890ff84e0_perplexity_claude_sonnet.json"
+    ],
+    "total_source_files": 3,
+    "unique_norms": 10
+  }
+}

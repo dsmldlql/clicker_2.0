@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1033|406843|общий||КОАП|303|||2|2|perplexity_claude_sonnet;perplexity_grok
+1033|406843|общий||КОАП|302|||2|2|perplexity_claude_sonnet;perplexity_grok
+1033|406843|общий||КОАП|301|3||2|2|perplexity_claude_sonnet;perplexity_grok
+1033|406843|общий||КОАП|301|||1|2|perplexity_grok
+1033|406843|общий||КОАП|286|||1|2|perplexity_grok
+1033|406843|общий||КОАП|245|1||1|2|perplexity_claude_sonnet
+1033|406843|общий||КОАП|307|3||1|2|perplexity_claude_sonnet

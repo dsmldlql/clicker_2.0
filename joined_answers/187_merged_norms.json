@@ -1,0 +1,224 @@
+{
+  "Norms": [
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "10",
+      "art_prilозhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Закрепляет правило о том, что права и обязанности супругов возникают только со дня государственной регистрации брака.",
+      "case_note": "Прямо регулирует ситуацию пользователя: без регистрации брака права супругов не возникают.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json",
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "81",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет размер алиментов на несовершеннолетних детей в долевом отношении к заработку родителя.",
+      "case_note": "Позволяет рассчитать размер алиментов на двух детей (1/3 от дохода отца).",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json",
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "1",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает основы семейного законодательства РФ, включая признание брака только при государственной регистрации.",
+      "case_note": "Определяет, что гражданский брак (сожительство) не создаёт правовых последствий брака в РФ.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "80",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает обязанность родителей содержать своих несовершеннолетних детей независимо от статуса отношений между родителями.",
+      "case_note": "Даёт право требовать алименты на детей независимо от того, были ли родители в зарегистрированном браке.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "83",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает взыскание алиментов в твёрдой денежной сумме при нестабильном доходе или в интересах ребёнка.",
+      "case_note": "Альтернативный вариант взыскания алиментов, если долевой порядок нарушает интересы детей.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "89",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает обязанность супругов материально поддерживать друг друга.",
+      "case_note": "Не применима к пользователю, так как требует зарегистрированного брака.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "24",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует вопросы, разрешаемые судом при расторжении брака, включая алименты и место жительства детей.",
+      "case_note": "Определяет судебный порядок разрешения споров о детях при отсутствии соглашения.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "23",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет подсудность дел о взыскании алиментов мировому судье.",
+      "case_note": "Указывает, куда подавать заявление о взыскании алиментов.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "122",
+      "art_prilозhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает возможность получения судебного приказа по делам о взыскании алиментов.",
+      "case_note": "Позволяет упрощённый порядок взыскания алиментов без полноценного судебного разбирательства.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "Постановление Правительства РФ",
+      "date": "02.11.2021",
+      "number": "1908",
+      "art": "",
+      "art_prilozhenie": "Перечень видов заработной платы и иного дохода, из которых производится удержание алиментов на несовершеннолетних детей",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "з",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Удержание алиментов производится с доходов от долевого участия в деятельности организаций, а также дивидендов.",
+      "case_note": "Дивиденды мужа в размере 3 млн рублей в месяц официально включены в базу для расчета алиментов.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "244",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Имущество может находиться в общей собственности с определением доли каждого из собственников (долевая собственность) или без определения таких долей (совместная собственность).",
+      "case_note": "Вне брака имущество принадлежит тому, на кого оно оформлено. Претендовать на долю в имуществе «мужа» можно только через гражданский иск, доказав факт совместных вложений и договоренность о создании общей собственности, что крайне сложно на практике.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_gemini.json"
+      ],
+      "_total_files": 3
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_gemini.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/perplexity_claude_sonnet/hypos_norm/gen/187_3c69a23d-7b96-4071-ac46-d2c2f10efa45_perplexity_claude_sonnet.json"
+    ],
+    "total_source_files": 3,
+    "unique_norms": 11
+  }
+}

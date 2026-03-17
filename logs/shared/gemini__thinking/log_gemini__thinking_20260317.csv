@@ -1,0 +1,7 @@
+timestamp|site|scenario|bot_id|event_type|attempt_number|global_index|question_uid
+2026-03-17 09:16:09|gemini|thinking|0|RESTART||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 09:20:04|gemini|thinking|0|STOP||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 09:26:52|gemini|thinking|0|RESTART||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 09:27:19|gemini|thinking|0|RESTART||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 09:28:58|gemini|thinking|0|QUESTION_SENT||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 09:33:44|gemini|thinking|0|STOP||600|02472255-22ff-4887-8a81-dacb4b704054

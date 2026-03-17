@@ -1,0 +1,10 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|общий||ГК|151|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|общий||ГК|1099|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|общий||ГК|1101|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|специальный||КОАП|252|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|специальный||ГПК|23|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|специальный||ГПК|24|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|общий||ГПК|28|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|специальный||ГПК|29|||1|1|qwen
+702|9085dd78-5430-48bb-b7f5-9cbdafd4a18a|специальный||ГПК|131|||1|1|qwen

@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+796|a440fded-fb94-494e-b2bc-e34af65000bb|специальный|217-ФЗ|ФЗ|14||29.07.2017|1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|специальный|217-ФЗ|ФЗ|5||29.07.2017|1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|специальный|217-ФЗ|ФЗ|3|26|29.07.2017|1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|общий||ГК|309|||1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|общий||ГК|11|||1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|общий||ГПК|3|||1|1|qwen
+796|a440fded-fb94-494e-b2bc-e34af65000bb|общий||ГПК|22|||1|1|qwen

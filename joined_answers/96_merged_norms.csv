@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный||НК|220|1||4|4|gemini;gpt;perplexity_claude_sonnet;qwen
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный||НК|220|3||4|4|gemini;gpt;perplexity_claude_sonnet;qwen
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный||НК|220|11||2|4|gpt;perplexity_claude_sonnet
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|78|7||2|4|gpt;perplexity_claude_sonnet
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|80|||1|4|qwen
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный||НК|220|10||1|4|qwen
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|220|9||1|4|gemini
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|88|2||1|4|gemini
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|79|1||1|4|gemini
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|220|7||1|4|perplexity_claude_sonnet
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|общий||НК|229|1||1|4|perplexity_claude_sonnet
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный|212-ФЗ|ФЗ|2|2|23.07.2013|1|4|perplexity_claude_sonnet
+96|f631dbbd-5a28-4a15-86a9-44b7f5789f76|специальный||НК|2211|1||1|4|perplexity_claude_sonnet

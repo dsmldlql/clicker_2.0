@@ -1,0 +1,22 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный||ГК|252|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|244|||2|5|gpt;perplexity_grok
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|572|||1|5|qwen
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный||ЗК|36|5||1|5|qwen
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный|Федеральный закон от 13.07.2015 № 218-ФЗ|ФЗ|24||13.07.2015|1|5|qwen
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|339|||1|5|qwen
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|246|||1|5|gpt
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|5|gpt
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный||ГК|549|||1|5|perplexity_grok
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный|218-ФЗ|ФЗ|131||13.07.2015|1|5|perplexity_grok
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный||ЗК|36|||1|5|perplexity_grok
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|252|1||1|5|gemini
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|567|1||1|5|gemini
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный|218-ФЗ|ФЗ|42|11|13.07.2015|1|5|gemini
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ЗК|1|1||1|5|gemini
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|567|||1|5|perplexity_claude_sonnet
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|250|||1|5|perplexity_claude_sonnet
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|245|||1|5|perplexity_claude_sonnet
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|223|||1|5|perplexity_claude_sonnet
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|общий||ГК|251|||1|5|perplexity_claude_sonnet
+13|6dbbe7a2-9848-45ba-8e5e-0a1095c7149c|специальный|218-ФЗ|ФЗ|42||13.07.2015|1|5|perplexity_claude_sonnet

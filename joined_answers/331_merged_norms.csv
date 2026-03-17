@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|общий||ГК|556|||2|2|gemini;qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный||ЗК|37|||2|2|gemini;qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|общий||ГК|549|||1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|общий||ГК|551|||1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|21||13.07.2015|1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|26||13.07.2015|1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|27||13.07.2015|1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|81|1|13.07.2015|1|2|qwen
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|специальный|218-ФЗ|ФЗ|28||13.07.2015|1|2|gemini
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|общий||СК|35|||1|2|gemini
+331|ce021bd8-be28-4eda-ac8b-e4fb2b0864bb|общий||ГК|456|||1|2|gemini

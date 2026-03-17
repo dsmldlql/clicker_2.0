@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|209|||2|2|gemini;qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ЖК|31|||2|2|gemini;qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|235|||1|2|qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|141-ФЗ|ФЗ|411||01.07.2017|1|2|qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГПК|131|||1|2|qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|4802-1|Закон РФ|73||15.04.1993|1|2|gemini
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|244|||1|2|gemini

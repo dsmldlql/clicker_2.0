@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|21||28.12.2013|2|2|gemini;qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|218|||1|2|qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|219|||1|2|qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|59-ФЗ|ФЗ|12||02.05.2006|1|2|qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|235|Приказ СФР от 03.03.2025 N 235|||03.03.2025|1|2|qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|400-ФЗ|ФЗ|14||28.12.2013|1|2|gemini
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|1015|ПП||11|02.10.2014|1|2|gemini
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||ГПК|24|||1|2|gemini

@@ -1,0 +1,7 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|322|||1|1|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный||КОАП|2025|||1|1|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|319|||1|1|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||БК|401|||1|1|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|110||02.10.2007|1|1|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|1101||02.10.2007|1|1|qwen

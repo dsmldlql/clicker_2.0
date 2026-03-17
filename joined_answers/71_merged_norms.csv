@@ -1,0 +1,22 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|303|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|301|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+71|17db8126-b801-4297-a179-f9819aa560e6|специальный||КОАП|1219|||3|5|gpt;perplexity_grok;qwen
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|302|||2|5|gemini;perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|специальный||ГПК|251|||1|5|qwen
+71|17db8126-b801-4297-a179-f9819aa560e6|специальный||КАС|219|||1|5|qwen
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|15|||1|5|gpt
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|241|||1|5|gpt
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|261|||1|5|gpt
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|307|||1|5|perplexity_grok
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КАС|218|||1|5|perplexity_grok
+71|17db8126-b801-4297-a179-f9819aa560e6|общий|Постановление Правительства РФ № 1090|Правила дорожного движения Российской Федерации||124|23.10.1993|1|5|perplexity_grok
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|301|3||1|5|gemini
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|245|1||1|5|gemini
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|262|||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|267|||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|306|1||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|306|2||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|307|1||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|общий||КОАП|309|||1|5|perplexity_claude_sonnet
+71|17db8126-b801-4297-a179-f9819aa560e6|специальный||КАС|301|||1|5|perplexity_claude_sonnet

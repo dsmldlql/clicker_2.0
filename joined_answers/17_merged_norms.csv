@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|специальный||КОАП|322|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||БК|1601|2||2|5|gemini;qwen
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||БК|401|||2|5|gpt;perplexity_claude_sonnet
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||БК|1601|||2|5|gpt;perplexity_claude_sonnet
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||БК|1601|1||1|5|qwen
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||ГПК|196|||1|5|qwen
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||ГК|196|||1|5|gpt
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|общий||БК|242|||1|5|perplexity_grok
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|специальный|137н|Приказ Министерства финансов Российской Федерации||3|27.09.2021|1|5|perplexity_claude_sonnet
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|специальный|137н|Приказ Министерства финансов Российской Федерации||7|27.09.2021|1|5|perplexity_claude_sonnet
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|специальный|137н|Приказ Министерства финансов Российской Федерации||8|27.09.2021|1|5|perplexity_claude_sonnet
+17|e880aec5-8349-4b1a-850b-ea03c5c3aa38|специальный|137н|Приказ Министерства финансов Российской Федерации||6|27.09.2021|1|5|perplexity_claude_sonnet

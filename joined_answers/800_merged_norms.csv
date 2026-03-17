@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+800|0cf1db15-7733-40ca-934a-a58c8054f7bd|общий||ГК|1181|||1|1|qwen
+800|0cf1db15-7733-40ca-934a-a58c8054f7bd|общий||ГК|1142|||1|1|qwen
+800|0cf1db15-7733-40ca-934a-a58c8054f7bd|специальный|137-ФЗ|ФЗ|33||25.10.2001|1|1|qwen
+800|0cf1db15-7733-40ca-934a-a58c8054f7bd|специальный|217-ФЗ|ФЗ|12||29.07.2017|1|1|qwen
+800|0cf1db15-7733-40ca-934a-a58c8054f7bd|общий||ЗК|3920|||1|1|qwen

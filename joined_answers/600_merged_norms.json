@@ -1,0 +1,125 @@
+{
+  "Norms": [
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "80",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает обязанность родителей содержать своих несовершеннолетних детей независимо от факта регистрации брака.",
+      "case_note": "Применяется к ситуации, так как отец обязан содержать дочь regardless of marital status с матерью.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "81",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет размер алиментов на несовершеннолетних детей в долевом отношении к заработку родителя.",
+      "case_note": "Регулирует размер алиментов на одного ребёнка (1/4 дохода), что применимо к данной ситуации.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "107",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует сроки обращения за алиментами и возможность взыскания за прошедший период.",
+      "case_note": "Определяет, с какого момента можно взыскать алименты — с момента обращения в суд.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "107",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает правило о взыскании алиментов за прошедший период в пределах трёхлетнего срока.",
+      "case_note": "Позволяет взыскать алименты за период до обращения в суд при доказательстве попыток получения средств.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "23",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет подсудность дел о взыскании алиментов мировому судье.",
+      "case_note": "Указывает, куда подавать заявление о взыскании алиментов — к мировому судье.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "29",
+      "art_prilozhenie": "",
+      "art_chast": "3",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает альтернативную подсудность — иск можно подать по месту жительства истца.",
+      "case_note": "Даёт право матери подать иск по своему месту жительства, а не только по месту жительства отца.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/600_02472255-22ff-4887-8a81-dacb4b704054_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 6
+  }
+}

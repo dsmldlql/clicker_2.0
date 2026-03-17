@@ -1,0 +1,144 @@
+{
+  "Norms": [
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает право налогоплательщика на получение имущественных налоговых вычетов при приобретении недвижимости.",
+      "case_note": "Норма является основанием для получения вычета за покупку жилья и процентов по ипотеке, что напрямую относится к ситуации пользователя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "3",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет размер имущественного налогового вычета в размере фактических расходов на приобретение жилья, но не более 2 млн рублей.",
+      "case_note": "Регулирует основной вычет за покупку, который пользователь уже получил в 2022 и 2023 годах.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "4",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает вычет по процентам по ипотеке в размере фактических расходов, но не более 3 млн рублей.",
+      "case_note": "Непосредственно регулирует вычет по процентам, о котором спрашивает пользователь за 2022 год.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "8",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет порядок предоставления имущественных вычетов через налоговый орган по окончании налогового периода.",
+      "case_note": "Устанавливает процедуру получения вычета через декларацию 3-НДФЛ, которую пользователь подавал за 2022 и 2023 годы.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "78",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует зачёт или возврат сумм излишне уплаченного налога налогоплательщиком.",
+      "case_note": "Даёт право на возврат налога при подаче заявления в пределах срока давности.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "78",
+      "art_prilозhenie": "",
+      "art_chast": "7",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает трёхлетний срок для подачи заявления о возврате излишне уплаченного налога.",
+      "case_note": "Определяет срок давности для возврата налога за 2022 год (до конца 2025 года).",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "229",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет обязанность налогоплательщиков подавать налоговую декларацию 3-НДФЛ.",
+      "case_note": "Регулирует форму обращения за вычетом — декларация 3-НДФЛ, которую пользователь уже подавал.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/663_659a8cf0-f5c0-44aa-aba1-7e9352193dc2_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 7
+  }
+}

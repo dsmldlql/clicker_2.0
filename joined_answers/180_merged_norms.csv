@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|185|||3|4|gpt;perplexity_claude_sonnet;qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный||ГК|1851|||3|4|gpt;perplexity_claude_sonnet;qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|187|||2|4|perplexity_claude_sonnet;qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|186|||2|4|gpt;perplexity_claude_sonnet
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|971|||1|4|qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный|218-ФЗ|ФЗ|18||13.07.2015|1|4|qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|53||11.02.1993|1|4|qwen
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|182|||1|4|gpt
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|185|1||1|4|gemini
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный||ГК|1851|1||1|4|gemini
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный||ГК|187|1||1|4|gemini
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный|218-ФЗ|ФЗ|15|2|13.07.2015|1|4|gemini
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|общий||ГК|131|||1|4|perplexity_claude_sonnet
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный||ГК|549|||1|4|perplexity_claude_sonnet
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный||ГК|551|||1|4|perplexity_claude_sonnet
+180|5f6b97cb-9b3f-4202-a4e6-87466f0b6d61|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|54||11.02.1993|1|4|perplexity_claude_sonnet

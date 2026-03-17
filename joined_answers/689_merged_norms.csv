@@ -1,0 +1,4 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+689|37ecb8ca-c194-40c0-b559-902894911eec|общий||ЖК|169|||1|1|qwen
+689|37ecb8ca-c194-40c0-b559-902894911eec|специальный|399-ФЗ|ФЗ|1||29.12.2015|1|1|qwen
+689|37ecb8ca-c194-40c0-b559-902894911eec|специальный|181-ФЗ|ФЗ|17||24.11.1995|1|1|qwen

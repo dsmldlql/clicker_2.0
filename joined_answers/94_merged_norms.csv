@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ЖК|153|||3|4|gemini;gpt;perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|специальный||ГПК|128|||3|4|gemini;gpt;perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|специальный||ГПК|129|||3|4|gemini;gpt;perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|специальный||ЖК|154|||2|4|gpt;qwen
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|специальный|89-ФЗ|ФЗ|247||24.06.1998|2|4|perplexity_claude_sonnet;qwen
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий|229-ФЗ|ФЗ|80||02.10.2007|2|4|perplexity_claude_sonnet;qwen
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ГПК|140|1||1|4|qwen
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ЖК|153|5||1|4|gpt
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ЖК|155|||1|4|gpt
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ГК|196|||1|4|gemini
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|специальный|229-ФЗ|Об исполнительном производстве|43|4|02.10.2007|1|4|gemini
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ГПК|121|1||1|4|perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий||ГПК|112|||1|4|perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий|229-ФЗ|ФЗ|30||02.10.2007|1|4|perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий|229-ФЗ|ФЗ|122||02.10.2007|1|4|perplexity_claude_sonnet
+94|5df5c88f-4a89-4eb7-ac3f-b527311abfeb|общий|229-ФЗ|ФЗ|128|1|02.10.2007|1|4|perplexity_claude_sonnet

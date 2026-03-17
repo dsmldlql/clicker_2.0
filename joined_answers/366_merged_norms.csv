@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1141|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|специальный||ГК|1142|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1154|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1152|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|специальный||ГК|1155|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|специальный||ГК|1157|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1162|||1|2|qwen
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1142|1||1|2|gemini
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1154|1||1|2|gemini
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|общий||ГК|1161|1||1|2|gemini
+366|ecc3f4ac-ab3a-4a18-8532-0d038a03becc|специальный||ГК|1150|||1|2|gemini

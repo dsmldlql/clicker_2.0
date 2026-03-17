@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|специальный||ГК|1072|||2|2|gemini;qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГК|1064|||1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|специальный|40-ФЗ|ФЗ|111||25.04.2002|1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|специальный|40-ФЗ|ФЗ|161||25.04.2002|1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГПК|35|||1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГПК|56|||1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГПК|131|||1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГПК|148|||1|2|qwen
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|специальный|40-ФЗ|ФЗ|111|4|25.04.2002|1|2|gemini
+464|8bc40f26-1bbf-4ff7-b40b-d9d4d6b26edb|общий||ГПК|132|7||1|2|gemini

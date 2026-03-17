@@ -1,0 +1,19 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный||СК|34|||2|4|gpt;qwen
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный||СК|35|3||2|4|perplexity_claude_sonnet;qwen
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный|102-ФЗ|ФЗ|10||16.07.1998|2|4|gpt;perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||ГК|421|||1|4|gpt
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||ГК|256|||1|4|gpt
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный||СК|35|||1|4|gpt
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|33|1||1|4|gemini
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|34|1||1|4|gemini
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный|102-ФЗ|ФЗ|7|1|16.07.1998|1|4|gemini
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||ГК|256|1||1|4|gemini
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|33|||1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|35|1||1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|35|2||1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный|102-ФЗ|ФЗ|7||16.07.1998|1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|специальный|143-ФЗ|ФЗ|30||15.11.1997|1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|40|||1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий||СК|42|||1|4|perplexity_claude_sonnet
+138|8cd65426-d283-429f-9979-d31f64fd09ab|общий|4462-1|Основы законодательства Российской Федерации о нотариате|54||11.02.1993|1|4|perplexity_claude_sonnet

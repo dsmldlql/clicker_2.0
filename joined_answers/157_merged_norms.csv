@@ -1,0 +1,31 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный||КОАП|147|||3|5|gemini;gpt;perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|10||07.02.1992|2|5|gpt;perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|309|||2|5|gpt;perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|779|||1|5|qwen
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|10||07.02.1992|1|5|qwen
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||КОАП|201|||1|5|qwen
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||УК|213|||1|5|qwen
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий|59-ФЗ|ФЗ|8||02.05.2006|1|5|qwen
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|12||07.02.1992|1|5|gpt
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон РФ|10||07.02.1992|1|5|perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон РФ|16||07.02.1992|1|5|perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|310|||1|5|perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||КОАП|144|||1|5|perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГПК|131|||1|5|perplexity_grok
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|437|2||1|5|gemini
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон РФ|10|1|07.02.1992|1|5|gemini
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон РФ|16|3|07.02.1992|1|5|gemini
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|1515|ПП||19|21.09.2020|1|5|gemini
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий|3-ФЗ|ФЗ|12|2|07.02.2011|1|5|gemini
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|426|1||1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|426|2||1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|779|1||1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|общий||ГК|781|1||1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|16|1|07.02.1992|1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|16|2|07.02.1992|1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|16|31|07.02.1992|1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|17|2|07.02.1992|1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный||КОАП|148|||1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|1036|ПП||5|15.08.1997|1|5|perplexity_claude_sonnet
+157|f2f91334-4dba-484c-8dfe-7aaba67b31b7|специальный|1036|ПП||16|15.08.1997|1|5|perplexity_claude_sonnet

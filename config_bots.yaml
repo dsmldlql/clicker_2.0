@@ -1,4 +1,4 @@
-bot_0:
+bot_0_:
   project: hypos_norm
   subproject: gen
   site: gemini
@@ -14,7 +14,7 @@ bot_0:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 280.0
-  row_range: [400, 599]
+  row_range: [600, 799]
   max_questions: 200
   restart_delay: None
   proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
@@ -26,7 +26,7 @@ bot_0:
       - "12:00"
       - "18:00"
 
-bot_1:
+bot_0:
   project: hypos_norm
   subproject: gen
   site: gpt
@@ -42,9 +42,9 @@ bot_1:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 240.0
-  row_range: [0, 199]
+  row_range: [125, 144]
   max_questions: 200
-  restart_delay: 3600
+  restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
@@ -53,6 +53,36 @@ bot_1:
       - "06:00"
       - "12:00"
       - "18:00"
+  subscription: gpt_go
+
+bot_1:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/halseycusenza35@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 90.0
+  row_range: [145, 199]
+  max_questions: 200
+  restart_delay: None
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
 bot_2:
   project: hypos_norm

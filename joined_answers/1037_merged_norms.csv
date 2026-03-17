@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1037|381684|специальный||ЖК|36|||1|1|perplexity_grok
+1037|381684|специальный||ЖК|44|||1|1|perplexity_grok
+1037|381684|специальный||ЖК|46|||1|1|perplexity_grok
+1037|381684|общий||ГК|10|||1|1|perplexity_grok
+1037|381684|общий|152-ФЗ|ФЗ|6||27.07.2006|1|1|perplexity_grok

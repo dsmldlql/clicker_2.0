@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий||ГК|333|||2|2|gemini;qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|специальный|214-ФЗ|ФЗ|6||30.12.2004|2|2|gemini;qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий||ГК|330|||1|2|qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|специальный|2300-1|Закон Российской Федерации от 07.02.1992|13||07.02.1992|1|2|qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий||ГПК|17|||1|2|qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий||ГПК|131|||1|2|qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий||ГПК|132|||1|2|qwen
+336|4694dbf7-7dcc-4eb6-a6fe-61081ff4397a|общий|2300-1|Закон РФ|13||07.02.1992|1|2|gemini

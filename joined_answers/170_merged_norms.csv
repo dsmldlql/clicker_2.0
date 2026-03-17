@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|262|||3|4|gpt;perplexity_claude_sonnet;qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|303|||3|4|gemini;perplexity_claude_sonnet;qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|286|||2|4|perplexity_claude_sonnet;qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|15|||2|4|gemini;gpt
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|245|1||2|4|gemini;perplexity_claude_sonnet
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|2910|||2|4|gemini;perplexity_claude_sonnet
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||Конституция|49|||1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|16|||1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|301|||1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|306|||1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий|59-ФЗ|ФЗ|10||02.05.2006|1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|специальный|45|Кодекс города Москвы об административных правонарушениях|825||21.11.2007|1|4|qwen
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|281|4||1|4|perplexity_claude_sonnet
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|282|||1|4|perplexity_claude_sonnet
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|301|3||1|4|perplexity_claude_sonnet
+170|447e3239-3bd9-450a-a28c-fc5fec71905e|общий||КОАП|307|3||1|4|perplexity_claude_sonnet

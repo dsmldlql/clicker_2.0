@@ -1,0 +1,24 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|73-ФЗ|ФЗ|25||31.05.2001|3|4|gemini;perplexity_claude_sonnet;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный||ГПК|86|||3|4|gemini;perplexity_claude_sonnet;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|73-ФЗ|ФЗ|8||31.05.2001|2|4|perplexity_claude_sonnet;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный||ГПК|85|||2|4|gpt;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный||АПК|82|||2|4|perplexity_claude_sonnet;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный||АПК|86|||2|4|perplexity_claude_sonnet;qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий||ГПК|79|||2|4|gpt;perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|135-ФЗ|ФЗ|11||29.07.1998|2|4|gemini;perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий||УК|307|||2|4|gemini;perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий|73-ФЗ|ФЗ|1||31.05.2001|1|4|qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный||АПК|83|||1|4|qwen
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|73-ФЗ|ФЗ|9|8|31.05.2001|1|4|gpt
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|73-ФЗ|ФЗ|41||31.05.2001|1|4|gpt
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий||ГПК|80|||1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий||ГПК|87|||1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий||АПК|87|||1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий|73-ФЗ|ФЗ|7||31.05.2001|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий|73-ФЗ|ФЗ|13||31.05.2001|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|общий|73-ФЗ|ФЗ|16||31.05.2001|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|135-ФЗ|ФЗ|4||29.07.1998|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|135-ФЗ|ФЗ|171||29.07.1998|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|328|Приказ Минэкономразвития России «Об утверждении Федерального стандарта оценки «Порядок проведения экспертизы, требования к экспертному заключению и порядку его утверждения (ФСО № 5)»||4|04.07.2011|1|4|perplexity_claude_sonnet
+182|c7decfb9-bfd9-45ab-9d9a-8137d76010f4|специальный|328|Приказ Минэкономразвития России «Об утверждении Федерального стандарта оценки «Порядок проведения экспертизы, требования к экспертному заключению и порядку его утверждения (ФСО № 5)»||7|04.07.2011|1|4|perplexity_claude_sonnet

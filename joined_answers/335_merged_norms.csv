@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|59|1||2|2|gemini;qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|48|||2|2|gemini;qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|59|||1|2|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|113|||1|2|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы|||30.11.2022|1|2|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы||3|30.11.2022|1|2|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|44|5||1|2|gemini
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||КАС|125|||1|2|gemini

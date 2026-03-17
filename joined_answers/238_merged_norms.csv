@@ -1,0 +1,27 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|309|||3|4|gemini;perplexity_grok;qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|310|||2|4|perplexity_grok;qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|450|||2|4|perplexity_grok;qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГПК|131|||2|4|perplexity_claude_sonnet;perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГПК|132|||2|4|perplexity_claude_sonnet;perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный||ГК|463|1||2|4|gemini;perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|15|1||2|4|gemini;perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|393|||1|4|qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный||ГК|4501|||1|4|qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный||ГК|486|||1|4|qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный|2300-1|Закон Российской Федерации от 07.02.1992 № 2300-1|29|1|07.02.1992|1|4|qwen
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|421|||1|4|perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|314|||1|4|perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный|ФЗ-2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|13||07.02.1992|1|4|perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|специальный|ФЗ-2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|18||07.02.1992|1|4|perplexity_grok
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|405|2||1|4|gemini
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|454|1||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|487|3||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|487|4||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|463|2||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|398|||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|15|2||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|395|1||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГК|314|1||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГПК|23|||1|4|perplexity_claude_sonnet
+238|0e21c372-f944-42e5-a262-18af9f67e4df|общий||ГПК|24|||1|4|perplexity_claude_sonnet

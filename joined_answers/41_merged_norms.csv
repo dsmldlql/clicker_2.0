@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|302|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|223|||3|5|gpt;perplexity_claude_sonnet;qwen
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|454|||2|5|gpt;perplexity_grok
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|10|||2|5|gpt;perplexity_claude_sonnet
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|167|||1|5|qwen
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|специальный|283-ФЗ|ФЗ|15||03.08.2018|1|5|qwen
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|специальный|1764|ПП|4||21.12.2019|1|5|qwen
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|421|1||1|5|perplexity_grok
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|10|5||1|5|gemini
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|специальный||ГК|302|1||1|5|gemini
+41|dbe96f48-5a66-4c2a-98ec-85087cbcb219|общий||ГК|182|||1|5|perplexity_claude_sonnet

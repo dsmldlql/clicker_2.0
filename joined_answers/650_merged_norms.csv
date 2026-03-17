@@ -1,0 +1,18 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|общий||Конституция|35|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|общий||ГК|209|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|общий||ГК|218|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|общий||ГК|330|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|1|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|19|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|20|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|22|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|25|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|26|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||ЖК|29|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный|1541-1|Закон Российской Федерации|1||04.07.1991|1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный|1541-1|Закон Российской Федерации|2||04.07.1991|1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||КОАП|721|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||КОАП|71|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||УК|139|||1|1|qwen
+650|b37c8f14-b8e1-44a9-bf3b-1d45bfcfc9c8|специальный||УК|330|||1|1|qwen

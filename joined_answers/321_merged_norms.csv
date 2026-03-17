@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+321|e9d16313-f8d1-4935-8679-a5e393e3c05e|общий||НК|2171|4||2|2|gemini;qwen
+321|e9d16313-f8d1-4935-8679-a5e393e3c05e|общий||НК|220|2||2|2|gemini;qwen
+321|e9d16313-f8d1-4935-8679-a5e393e3c05e|специальный||НК|21410|2||1|2|gemini
+321|e9d16313-f8d1-4935-8679-a5e393e3c05e|специальный||НК|229|4||1|2|gemini

@@ -1,0 +1,21 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||ЖК|31|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГПК|131|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||ЖК|35|||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий|5242-1|Закон РФ|7||25.06.1993|2|5|gpt;perplexity_claude_sonnet
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГПК|28|||2|5|gpt;perplexity_claude_sonnet
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГПК|132|||2|5|perplexity_claude_sonnet;perplexity_grok
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||СК|81|||1|5|qwen
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||СК|83|||1|5|qwen
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||СК|113|||1|5|qwen
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный|1908|ПП|||02.11.2021|1|5|qwen
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГК|209|||1|5|gpt
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГК|304|||1|5|gpt
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный|713|ПП||31|17.07.1995|1|5|gpt
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий|5242-1|Закон Российской Федерации|8||25.06.1993|1|5|perplexity_grok
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий||ГК|209|1||1|5|gemini
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||ГК|292|2||1|5|gemini
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий|5242-1|Закон РФ|7|4|25.06.1993|1|5|gemini
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||ГПК|30|||1|5|perplexity_claude_sonnet
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|специальный||НК|33319|1||1|5|perplexity_claude_sonnet
+23|ec3b5967-db38-4d6b-8573-07bae83796ce|общий|59-ФЗ|ФЗ|10||02.05.2006|1|5|perplexity_claude_sonnet

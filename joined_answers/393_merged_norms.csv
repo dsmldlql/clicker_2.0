@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+393|922dfe46-9cbf-4f62-84f5-a709ffeb826d|специальный||КОАП|2911|||2|2|gemini;qwen
+393|922dfe46-9cbf-4f62-84f5-a709ffeb826d|специальный||КОАП|303|||2|2|gemini;qwen
+393|922dfe46-9cbf-4f62-84f5-a709ffeb826d|специальный||КОАП|249|1||1|2|qwen
+393|922dfe46-9cbf-4f62-84f5-a709ffeb826d|специальный||КОАП|296|||1|2|qwen

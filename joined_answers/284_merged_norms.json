@@ -1,0 +1,167 @@
+{
+  "Norms": [
+    {
+      "act": "Постановление Правительства РФ",
+      "date": "13.08.2006",
+      "number": "491",
+      "art": "",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "5",
+      "art_podpunkt": "а",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет состав общего имущества собственников помещений в многоквартирном доме, включая внутридомовые инженерные системы горячего водоснабжения.",
+      "case_note": "Норма устанавливает, какие элементы системы ГВС относятся к общему имуществу МКД и находятся в зоне ответственности управляющей компании.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json",
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_gemini.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "36",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает право собственности собственников помещений на общее имущество в многоквартирном доме.",
+      "case_note": "Норма определяет, что собственники владеют общим имуществом МКД, включая инженерные системы, что влияет на разграничение ответственности.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.01.1996",
+      "number": "14-ФЗ",
+      "art": "1064",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает общее правило возмещения вреда: вред подлежит возмещению в полном объеме лицом, причинившим вред.",
+      "case_note": "Норма определяет основания ответственности за причинение ущерба имуществу в результате прорыва воды.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.01.1996",
+      "number": "14-ФЗ",
+      "art": "1064",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Предусматривает освобождение от возмещения вреда, если лицо докажет, что вред причинен не по его вине.",
+      "case_note": "Норма позволяет управляющей компании избежать ответственности только при доказательстве отсутствия вины в неисправности оборудования.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "Постановление Госстроя РФ",
+      "date": "27.09.2003",
+      "number": "170",
+      "art": "",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "4.2.1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает правила технической эксплуатации жилищного фонда, включая обязанности по содержанию инженерных систем.",
+      "case_note": "Норма возлагает на управляющую организацию обязанность обеспечивать исправное состояние инженерных систем МКД.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "161",
+      "art_prilozhenie": "",
+      "art_chast": "2.3",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "1",
+      "scope": "общий",
+      "gen_note": "При управлении МКД управляющей организацией она несет ответственность перед собственниками за надлежащее содержание общего имущества.",
+      "case_note": "Поскольку запорный кран — это общее имущество, управляющая компания несет ответственность за его неисправность и последствия его выхода из строя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_gemini.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "1064",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "1",
+      "scope": "общий",
+      "gen_note": "Лицо, причинившее вред, освобождается от его возмещения, только если докажет, что вред причинен не по его вине.",
+      "case_note": "УК должна доказать, что именно ваши действия (отсутствие уведомления), а не техническое состояние крана, стали причиной аварии. Бремя доказывания отсутствия вины лежит на УК.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_gemini.json"
+      ],
+      "_total_files": 4
+    },
+    {
+      "act": "Постановление Правительства РФ",
+      "date": "06.05.2011",
+      "number": "354",
+      "art": "",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "35",
+      "art_podpunkt": "е",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Потребителю запрещено самовольно нарушать функционирование внутридомовых инженерных систем.",
+      "case_note": "УК ссылается на эту норму, однако использование запорного устройства по назначению (закрытие крана для замены оборудования) не является самовольным нарушением системы, если не затронут сам стояк или его пропускная способность.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "284_269e3d1f-adda-4b6b-b3b8-4a041771716e_gemini.json"
+      ],
+      "_total_files": 4
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/284_269e3d1f-adda-4b6b-b3b8-4a041771716e_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/perplexity_grok/hypos_norm/gen/284_269e3d1f-adda-4b6b-b3b8-4a041771716e_perplexity_grok.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/284_269e3d1f-adda-4b6b-b3b8-4a041771716e_gemini.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/perplexity_claude_sonnet/hypos_norm/gen/284_269e3d1f-adda-4b6b-b3b8-4a041771716e_perplexity_claude_sonnet.json"
+    ],
+    "total_source_files": 4,
+    "unique_norms": 8
+  }
+}

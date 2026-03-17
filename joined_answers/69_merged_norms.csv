@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|специальный||ГПК|128|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|специальный||ГПК|129|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|общий||ГПК|112|||3|5|gpt;perplexity_claude_sonnet;qwen
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|общий||ГПК|122|||1|5|perplexity_grok
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|общий||ГПК|121|||1|5|perplexity_claude_sonnet
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|общий||ГК|807|||1|5|perplexity_claude_sonnet
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|специальный|353-ФЗ|ФЗ|7||21.12.2013|1|5|perplexity_claude_sonnet
+69|c8f66465-f650-4efe-bc8b-bc05e6ee8112|специальный|353-ФЗ|ФЗ|9||21.12.2013|1|5|perplexity_claude_sonnet

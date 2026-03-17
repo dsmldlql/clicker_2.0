@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|1152|||2|2|gemini;qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|218|||1|2|qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|209|||1|2|qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|специальный||ГК|1162|||1|2|qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|специальный|218-ФЗ|ФЗ|1||13.07.2015|1|2|qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|специальный||НК|2171|3||1|2|qwen
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|1114|||1|2|gemini
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|1154|||1|2|gemini
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|общий||ГК|1163|||1|2|gemini
+334|8ec7d78b-3580-4b42-a8e3-0ad1c0f411ea|специальный||НК|2171|1||1|2|gemini

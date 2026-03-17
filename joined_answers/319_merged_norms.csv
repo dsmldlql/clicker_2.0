@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+319|e3953ae1-1cba-403f-9728-8399d1f1913e|общий|string|string|||ДД.ММ.ГГГГ|1|2|qwen
+319|e3953ae1-1cba-403f-9728-8399d1f1913e|общий||ГК|1064|||1|2|gemini
+319|e3953ae1-1cba-403f-9728-8399d1f1913e|общий||ГК|15|||1|2|gemini
+319|e3953ae1-1cba-403f-9728-8399d1f1913e|общий||ГПК|56|||1|2|gemini

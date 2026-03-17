@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|210|3||3|4|gemini;gpt;perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|229|1||2|4|perplexity_claude_sonnet;qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|220|3||2|4|gpt;perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|2142|1||2|4|gpt;perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|220|1||2|4|gemini;perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|220|9||2|4|gemini;perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|220|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|210|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|2142|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|224|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|229|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|228|||1|4|qwen
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|210|21||1|4|gemini
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|220|7||1|4|perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|общий||НК|78|7||1|4|perplexity_claude_sonnet
+173|79657fe0-3745-4841-9831-60dc900bfa86|специальный||НК|210|6||1|4|perplexity_claude_sonnet

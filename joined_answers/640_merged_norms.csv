@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|общий||Конституция|21|||1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|специальный|273-ФЗ|ФЗ|34|1|29.12.2012|1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|специальный|273-ФЗ|ФЗ|48||29.12.2012|1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|специальный|273-ФЗ|ФЗ|45||29.12.2012|1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|специальный||СК|56|||1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|специальный|124-ФЗ|ФЗ|9||24.07.1998|1|1|qwen
+640|3bc0cb6d-d357-49b8-8f5a-808a6fc8b6a5|общий||КОАП|561|||1|1|qwen

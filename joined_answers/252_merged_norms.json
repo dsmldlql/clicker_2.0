@@ -1,0 +1,336 @@
+{
+  "Norms": [
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "21",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует порядок расторжения брака в судебном порядке при наличии несовершеннолетних детей.",
+      "case_note": "Применима к ситуации пользователя, так как есть несовершеннолетние дети, что требует судебного порядка развода.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "24",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет вопросы, которые суд решает при расторжении брака, включая воспитание детей и раздел имущества.",
+      "case_note": "Относится к ситуации, так как суд будет решать вопросы о детях и имуществе при разводе.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "34",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает, что имущество, нажитое супругами во время брака, является их совместной собственностью.",
+      "case_note": "Применима для определения статуса имущества, приобретённого в период брака (машина, участки).",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "36",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет имущество каждого из супругов как личное, если оно принадлежало до брака или получено по безвозмездным сделкам.",
+      "case_note": "Ключевая норма для квартиры: договор до брака может позволить признать её личной собственностью.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "38",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует порядок раздела общего имущества супругов по соглашению или через суд.",
+      "case_note": "Относится к разделу машины и участков, зарегистрированных на мужа.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "39",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает равенство долей супругов при разделе общего имущества, если иное не предусмотрено соглашением.",
+      "case_note": "Применима к машине и участкам как совместно нажитому имуществу.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "65",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет, что место жительства детей при раздельном проживании родителей устанавливается исходя из интересов детей.",
+      "case_note": "Ключевая норма для определения места жительства детей при разводе.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "65",
+      "art_prilozhenie": "",
+      "art_chast": "3",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Запрещает преимущество в правах на детей одного родителя перед другим по признаку пола, дохода или статуса.",
+      "case_note": "Защищает пользователя: безработица не лишает автоматически прав на детей.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "256",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает, что имущество, нажитое супругами во время брака, является их совместной собственностью.",
+      "case_note": "Дополняет нормы СК РФ о режиме совместной собственности супругов.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "23",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет подсудность мировых судей по делам о расторжении брака при отсутствии спора о детях.",
+      "case_note": "Не применима напрямую (есть дети), но важна для понимания судебной системы.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "24",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет подсудность районных судов по делам о расторжении брака при наличии спора о детях.",
+      "case_note": "Применима: дело о разводе с детьми подсудно районному суду.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "56",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает обязанность сторон доказывать обстоятельства, на которые они ссылаются.",
+      "case_note": "Относится к необходимости доказать оплату квартиры личными средствами.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "21",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Расторжение брака производится в судебном порядке при наличии у супругов общих несовершеннолетних детей или при отсутствии согласия одного из супругов на расторжение брака.",
+      "case_note": "Поскольку муж против развода и в семье есть несовершеннолетние дети, расторжение брака возможно только через суд.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "36",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Имущество, принадлежавшее каждому из супругов до вступления в брак, является его собственностью.",
+      "case_note": "Договор на квартиру заключен до брака, что является ключевым основанием для признания её личной собственностью, несмотря на регистрацию права в период брака.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "34",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "К имуществу, нажитому супругами во время брака (общему имуществу супругов), относятся доходы каждого из супругов от трудовой деятельности и иные выплаты.",
+      "case_note": "Поскольку часть выплат по квартире производилась в браке из вашей зарплаты, муж может претендовать на денежную компенсацию половины этих сумм, так как зарплата — это общий доход.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "65",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "3",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Место жительства детей при раздельном проживании родителей устанавливается соглашением сторон, а при его отсутствии — судом, исходя из интересов детей.",
+      "case_note": "Суд будет определять, с кем останутся дети, учитывая их привязанность, возраст и личные качества родителей, а не только уровень дохода.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json"
+      ],
+      "_total_files": 3
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "56",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Каждая сторона должна доказать те обстоятельства, на которые она ссылается как на основания своих требований и возражений.",
+      "case_note": "Вам необходимо будет документально подтвердить даты заключения договора и источники денежных средств для оплаты квартиры.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json"
+      ],
+      "_total_files": 3
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/252_65fcea87-5ae2-415f-90db-84c897cd0edd_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/252_65fcea87-5ae2-415f-90db-84c897cd0edd_gemini.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/perplexity_claude_sonnet/hypos_norm/gen/252_65fcea87-5ae2-415f-90db-84c897cd0edd_perplexity_claude_sonnet.json"
+    ],
+    "total_source_files": 3,
+    "unique_norms": 17
+  }
+}

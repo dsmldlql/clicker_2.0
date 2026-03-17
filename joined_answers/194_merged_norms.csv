@@ -1,0 +1,19 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ЖК|57|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный||ЖК|89|||3|5|gemini;gpt;perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ЖК|49|||2|5|gpt;perplexity_grok
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ЖК|52|||1|5|qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ЖК|56|||1|5|qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный|159-ФЗ|ФЗ|8||21.12.1996|1|5|qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный|29|Закон города Москвы|22||14.06.2006|1|5|qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий|47|ПП||47|28.01.2006|1|5|qwen
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный|29|Закон города Москвы от 14.06.2006|20||14.06.2006|1|5|perplexity_grok
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный|2|Закон города Москвы от 27.01.2010|||27.01.2010|1|5|perplexity_grok
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ЖК|15|||1|5|gemini
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный||ЖК|58|||1|5|gemini
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|специальный||ЖК|32|||1|5|perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||ГК|421|1||1|5|perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||Конституция|35|||1|5|perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||Конституция|40|||1|5|perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||КАС|218|||1|5|perplexity_claude_sonnet
+194|6da0ff7b-140f-461c-b95c-1187b2614f61|общий||КАС|219|||1|5|perplexity_claude_sonnet

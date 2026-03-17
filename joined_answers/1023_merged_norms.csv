@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1023|378010|специальный||КОАП|1810|||2|2|perplexity_claude_sonnet;perplexity_grok
+1023|378010|специальный|115-ФЗ|ФЗ|133||25.07.2002|1|2|perplexity_grok
+1023|378010|специальный||КОАП|1815|||1|2|perplexity_grok
+1023|378010|общий||КОАП|303|||1|2|perplexity_grok
+1023|378010|специальный|115-ФЗ|ФЗ|133|16|25.07.2002|1|2|perplexity_claude_sonnet
+1023|378010|общий|115-ФЗ|ФЗ|13|4|25.07.2002|1|2|perplexity_claude_sonnet
+1023|378010|общий||КОАП|21|||1|2|perplexity_claude_sonnet
+1023|378010|общий||КОАП|42|||1|2|perplexity_claude_sonnet
+1023|378010|общий||КОАП|251|||1|2|perplexity_claude_sonnet
+1023|378010|общий||КОАП|301|||1|2|perplexity_claude_sonnet
+1023|378010|общий||КОАП|233|||1|2|perplexity_claude_sonnet
+1023|378010|специальный|115-ФЗ|ФЗ|181|9|25.07.2002|1|2|perplexity_claude_sonnet

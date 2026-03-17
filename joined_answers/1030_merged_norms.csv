@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1030|403252|специальный||НК|220|3||2|2|perplexity_claude_sonnet;perplexity_grok
+1030|403252|специальный||НК|220|||1|2|perplexity_grok
+1030|403252|общий||НК|78|||1|2|perplexity_grok
+1030|403252|общий||НК|229|||1|2|perplexity_grok
+1030|403252|общий||НК|220|1||1|2|perplexity_claude_sonnet
+1030|403252|общий||НК|220|4||1|2|perplexity_claude_sonnet
+1030|403252|общий||НК|220|7||1|2|perplexity_claude_sonnet
+1030|403252|общий||НК|220|8||1|2|perplexity_claude_sonnet
+1030|403252|общий||НК|220|10||1|2|perplexity_claude_sonnet
+1030|403252|общий||НК|220|11||1|2|perplexity_claude_sonnet
+1030|403252|общий|ЕД-7-11/913@|Приказ ФНС России|||20.10.2025|1|2|perplexity_claude_sonnet

@@ -1,0 +1,7 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|специальный||НК|219|||1|2|qwen
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|общий||НК|216|||1|2|qwen
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|общий||НК|78|7||1|2|qwen
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|общий||НК|88|2||1|2|qwen
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|общий||НК|219|1||1|2|gemini
+374|82ae548b-c4e2-4956-b9e8-c83ece05806c|специальный||НК|219|2||1|2|gemini

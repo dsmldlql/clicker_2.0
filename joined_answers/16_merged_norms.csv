@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+16|edca74af-73fe-4570-a5c4-1336c1b74206|общий||ГК|35|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+16|edca74af-73fe-4570-a5c4-1336c1b74206|общий||ГК|21|||2|5|gemini;gpt
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный|48-ФЗ|ФЗ|10||24.04.2008|2|5|gpt;perplexity_claude_sonnet
+16|edca74af-73fe-4570-a5c4-1336c1b74206|общий||ГК|26|||1|5|qwen
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный||ГК|35|1||1|5|qwen
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный|48-ФЗ|ФЗ|35||24.04.2008|1|5|qwen
+16|edca74af-73fe-4570-a5c4-1336c1b74206|общий||ГК|32|||1|5|perplexity_grok
+16|edca74af-73fe-4570-a5c4-1336c1b74206|общий||ГК|35|2||1|5|gemini
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный|1455|УП||1|26.12.2006|1|5|gemini
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный|343|ПП||2|04.06.2007|1|5|gemini
+16|edca74af-73fe-4570-a5c4-1336c1b74206|специальный||СК|146|||1|5|perplexity_claude_sonnet

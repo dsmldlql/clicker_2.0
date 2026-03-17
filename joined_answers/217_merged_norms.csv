@@ -1,0 +1,28 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||ГК|550|||2|3|perplexity_claude_sonnet;qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|218-ФЗ|ФЗ|14||13.07.2015|2|3|perplexity_claude_sonnet;qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|218-ФЗ|ФЗ|18||13.07.2015|2|3|perplexity_claude_sonnet;qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|33333|22||2|3|gemini;qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|220|1||2|3|perplexity_claude_sonnet;qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||ГК|131|||2|3|gemini;perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|2171|||1|3|qwen
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|4462-I|Основы законодательства Российской Федерации о нотариате|443||11.02.1993|1|3|gemini
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|217|181||1|3|gemini
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|4462-I|Основы законодательства Российской Федерации о нотариате|221|1|11.02.1993|1|3|gemini
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||ГК|185|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||ГК|1851|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||ГК|549|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||ГК|551|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||ГК|555|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||ГК|556|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|218-ФЗ|ФЗ|18|2|13.07.2015|1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|218-ФЗ|ФЗ|16||13.07.2015|1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||НК|207|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|2171|4||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|220|3||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|224|11||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|224|3||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|общий||НК|229|||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|33333|1||1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный|4462-1|ФЗ|22||11.02.1993|1|3|perplexity_claude_sonnet
+217|78de440d-c716-4414-aa52-c7154afda37c|специальный||НК|33324|1||1|3|perplexity_claude_sonnet

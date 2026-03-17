@@ -1,0 +1,15 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный||ГПК|446|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный|229-ФЗ|ФЗ|79||02.10.2007|3|5|gpt;perplexity_claude_sonnet;qwen
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|24|||3|5|gemini;gpt;perplexity_grok
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|10|||2|5|gemini;gpt
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный|127-ФЗ|ФЗ|612||26.10.2002|2|5|gemini;perplexity_claude_sonnet
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный||СК|39|||1|5|qwen
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный|229-ФЗ|ФЗ|101|1|02.10.2007|1|5|gpt
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|170|||1|5|gpt
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный|127-ФЗ|ФЗ|21325||26.10.2002|1|5|gpt
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный|229-ФЗ|ФЗ|||02.10.2007|1|5|perplexity_grok
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|специальный||СК|40|||1|5|gemini
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|170|1||1|5|perplexity_claude_sonnet
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|10|1||1|5|perplexity_claude_sonnet
+20|41a89fe7-c6f2-4fc8-a964-ec96457f3668|общий||ГК|168|1||1|5|perplexity_claude_sonnet

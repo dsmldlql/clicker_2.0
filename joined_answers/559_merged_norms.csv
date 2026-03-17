@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|общий||ГК|292|||2|2|gemini;qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|общий||ЖК|31|||1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный|5242-1|Закон РФ|7||25.06.1993|1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный|713|ПП||31|15.07.1995|1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный|713|ПП||32|15.07.1995|1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный|713|ПП||33|15.07.1995|1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|общий||ГПК|3|||1|2|qwen
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|общий||ГК|235|||1|2|gemini
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный||ГК|558|1||1|2|gemini
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|общий||ЖК|35|||1|2|gemini
+559|8aaecef6-c196-42d0-9bcf-d65a890f9bfa|специальный|713|ПП||31|17.07.1995|1|2|gemini

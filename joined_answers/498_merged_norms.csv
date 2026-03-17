@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|специальный||ЖК|153|||2|2|gemini;qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||КОАП|301|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||КОАП|303|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||КОАП|302|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|специальный||ЖК|154|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|специальный||ЖК|155|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|специальный|229-ФЗ|ФЗ|30||02.10.2007|1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||ГК|309|||1|2|qwen
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||ГПК|128|||1|2|gemini
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||ГПК|129|||1|2|gemini
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий||ГПК|112|||1|2|gemini
+498|a6d3deeb-a4e9-4fc9-a2ae-a6a7460bfcbb|общий|229-ФЗ|ФЗ|43|4|02.10.2007|1|2|gemini

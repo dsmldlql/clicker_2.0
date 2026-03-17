@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|специальный|229-ФЗ|ФЗ|67||02.10.2007|3|4|gemini;gpt;perplexity_claude_sonnet
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|общий|114-ФЗ|ФЗ|15|5|15.08.1996|2|4|gemini;gpt
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|общий|string|string|||ДД.ММ.ГГГГ|1|4|qwen
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|специальный|229-ФЗ|ФЗ|67|1|02.10.2007|1|4|gemini
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|общий|114-ФЗ|ФЗ|2||15.08.1996|1|4|perplexity_claude_sonnet
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|общий|114-ФЗ|ФЗ|15||15.08.1996|1|4|perplexity_claude_sonnet
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|специальный|229-ФЗ|ФЗ|67|3|02.10.2007|1|4|perplexity_claude_sonnet
+106|4a7d142c-98b2-4e80-82d0-929008fe2da5|специальный|229-ФЗ|ФЗ|30||02.10.2007|1|4|perplexity_claude_sonnet

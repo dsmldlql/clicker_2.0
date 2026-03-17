@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+315|ba47d68d-2f32-4a06-98fb-b21d5dca71ff|общий|string|string|||ДД.ММ.ГГГГ|1|2|qwen
+315|ba47d68d-2f32-4a06-98fb-b21d5dca71ff|общий||ГК|310|1||1|2|gemini
+315|ba47d68d-2f32-4a06-98fb-b21d5dca71ff|общий||ГК|486|1||1|2|gemini
+315|ba47d68d-2f32-4a06-98fb-b21d5dca71ff|общий||ГК|486|3||1|2|gemini
+315|ba47d68d-2f32-4a06-98fb-b21d5dca71ff|специальный||АПК|4|||1|2|gemini

@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1050|404213|общий||ЖК|153|||1|1|perplexity_grok
+1050|404213|специальный|229-ФЗ|ФЗ|46||02.10.2007|1|1|perplexity_grok
+1050|404213|специальный|229-ФЗ|ФЗ|123||02.10.2007|1|1|perplexity_grok
+1050|404213|специальный|229-ФЗ|ФЗ|36||02.10.2007|1|1|perplexity_grok

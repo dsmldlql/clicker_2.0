@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|специальный|418-ФЗ|ФЗ|2||28.12.2017|1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|специальный|418-ФЗ|ФЗ|4||28.12.2017|1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|специальный|2330|ПП||41|16.12.2022|1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|специальный|2330|ПП||42|16.12.2022|1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|специальный|2330|ПП||44|16.12.2022|1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|общий||ГК|1102|||1|1|qwen
+695|b4f9c46a-770e-48d4-8c9b-4ca1c4e53a2e|общий||ГК|1109|3||1|1|qwen

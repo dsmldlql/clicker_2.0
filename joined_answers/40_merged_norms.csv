@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|общий||ТК|93|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|специальный||ТК|256|||2|5|perplexity_claude_sonnet;qwen
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|общий||ТК|72|||1|5|qwen
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|общий||ТК|91|||1|5|qwen
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|специальный||ТК|254|||1|5|perplexity_claude_sonnet
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|специальный||ТК|74|||1|5|perplexity_claude_sonnet
+40|183a7fe6-33ea-4a4d-a639-ddfb75d27cb4|общий||ТК|108|||1|5|perplexity_claude_sonnet

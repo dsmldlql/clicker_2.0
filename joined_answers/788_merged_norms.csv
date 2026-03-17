@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||ГК|29|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||ГК|177|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||ГК|179|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|специальный||ГК|1146|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|специальный||ЖК|69|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|специальный||ЖК|83|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||УК|116|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||УПК|125|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|общий||ГК|1064|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|специальный||СК|80|||1|1|qwen
+788|f34d2cf9-6298-4ca4-b7fd-e1193db2ab36|специальный||СК|85|||1|1|qwen

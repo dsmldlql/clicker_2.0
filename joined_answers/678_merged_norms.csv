@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|общий||ГК|2|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|общий||ГК|209|||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|общий||ГК|606|||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный||НК|208|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный||НК|217|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный||НК|224|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный||НК|227|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный||НК|83|1||1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|специальный|129-ФЗ|ФЗ|221|1|08.08.2001|1|1|qwen
+678|0aeac8d8-a8a9-47a9-9164-db6fd7ba05d8|общий||НК|2|1||1|1|qwen

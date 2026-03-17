@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||УК|119|||2|2|gemini;qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||КОАП|611|||1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий|3-ФЗ|ФЗ|2|1|07.02.2011|1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий|3-ФЗ|ФЗ|12||07.02.2011|1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|специальный|3-ФЗ|ФЗ|13|2|07.02.2011|1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||ГК|150|||1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||ГК|1064|||1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|специальный||СК|65|||1|2|qwen
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||Конституция|20|||1|2|gemini
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||УПК|141|||1|2|gemini
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий|3-ФЗ|ФЗ|12|2|07.02.2011|1|2|gemini
+372|66f7d20a-8eb8-4ae0-8fd0-ef9a86f73a8d|общий||УПК|144|||1|2|gemini

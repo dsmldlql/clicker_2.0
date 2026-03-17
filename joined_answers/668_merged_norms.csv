@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+668|a75d5c2e-bcfc-4065-82fd-c43bda690668|общий|2267|ПП|25||23.12.2023|1|1|qwen
+668|a75d5c2e-bcfc-4065-82fd-c43bda690668|специальный|773|Приказ МВД|85||16.11.2020|1|1|qwen
+668|a75d5c2e-bcfc-4065-82fd-c43bda690668|общий|4462-1|Основы законодательства Российской Федерации о нотариате|54||11.02.1993|1|1|qwen
+668|a75d5c2e-bcfc-4065-82fd-c43bda690668|общий||ГК|185|||1|1|qwen
+668|a75d5c2e-bcfc-4065-82fd-c43bda690668|специальный||ГК|1851|||1|1|qwen

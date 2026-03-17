@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|общий|400-ФЗ|ФЗ|11||28.12.2013|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|общий|400-ФЗ|ФЗ|14||28.12.2013|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|специальный|173-ФЗ|ФЗ|30||17.12.2001|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|специальный|1015|ПП||11|02.10.2014|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|специальный|1015|ПП||12|02.10.2014|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|специальный|1015|ПП||16|02.10.2014|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|специальный|225|ПП||11|16.04.2003|1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|общий||ГПК|23|||1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|общий||ГПК|55|||1|1|qwen
+820|90d7c05c-af32-4bc7-befd-47b952e514cb|общий||ГПК|56|||1|1|qwen

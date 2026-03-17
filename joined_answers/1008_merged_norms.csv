@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1008|391869|специальный||КОАП|1212|||2|2|perplexity_claude_sonnet;perplexity_grok
+1008|391869|общий||КОАП|303|||2|2|perplexity_claude_sonnet;perplexity_grok
+1008|391869|специальный|1090|Правила дорожного движения|6|2|23.10.1993|1|2|perplexity_grok
+1008|391869|специальный|1090|Правила дорожного движения|6|3|23.10.1993|1|2|perplexity_grok
+1008|391869|общий|1090|ПП|62||23.10.1993|1|2|perplexity_claude_sonnet
+1008|391869|общий|1090|ПП|614||23.10.1993|1|2|perplexity_claude_sonnet
+1008|391869|общий||КОАП|29|||1|2|perplexity_claude_sonnet
+1008|391869|общий||КОАП|302|||1|2|perplexity_claude_sonnet

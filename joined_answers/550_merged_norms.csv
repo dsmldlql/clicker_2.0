@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный||СК|109|||2|2|gemini;qwen
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный|229-ФЗ|ФЗ|113||02.10.2007|2|2|gemini;qwen
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный|229-ФЗ|ФЗ|9||02.10.2007|1|2|qwen
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|общий|229-ФЗ|ФЗ|30||02.10.2007|1|2|qwen
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный|841|ПП|||18.07.1996|1|2|qwen
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный||СК|111|1||1|2|gemini
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|общий|229-ФЗ|ФЗ|98||02.10.2007|1|2|gemini
+550|b0bdfa43-365e-4188-8a46-0ac0a4c45dbb|специальный||КОАП|1714|||1|2|gemini

@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1009|402520|общий||ГК|622|||2|2|perplexity_claude_sonnet;perplexity_grok
+1009|402520|общий||ГК|610|||1|2|perplexity_grok
+1009|402520|общий||ГК|425|||1|2|perplexity_grok
+1009|402520|общий||ГК|314|2||1|2|perplexity_claude_sonnet

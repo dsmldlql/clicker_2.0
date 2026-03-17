@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||УК|163|||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|специальный||КОАП|1227|||3|5|gemini;gpt;perplexity_claude_sonnet
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||ГК|1064|||2|5|gpt;perplexity_grok
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||УК|330|||2|5|gpt;perplexity_grok
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||ГК|1064|1||2|5|gemini;perplexity_claude_sonnet
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий|string|string|||ДД.ММ.ГГГГ|1|5|qwen
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||КОАП|201|||1|5|perplexity_grok
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||УПК|141|||1|5|perplexity_grok
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|специальный|1090|Правила дорожного движения Российской Федерации (утв. Постановлением Правительства РФ)||25|23.10.1993|1|5|gemini
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||КОАП|45|||1|5|perplexity_claude_sonnet
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|общий||ГК|1072|||1|5|perplexity_claude_sonnet
+48|e4eac45a-5f4a-49da-a0f8-331de4f7d05e|специальный|40-ФЗ|ФЗ|12|1|25.04.2002|1|5|perplexity_claude_sonnet

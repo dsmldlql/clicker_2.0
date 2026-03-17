@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1032|394392|специальный|2300-1|Закон РФ|18||07.02.1992|1|2|perplexity_grok
+1032|394392|специальный|2300-1|Закон РФ|29||07.02.1992|1|2|perplexity_grok
+1032|394392|специальный|2300-1|Закон РФ|13||07.02.1992|1|2|perplexity_grok
+1032|394392|общий||ГК|723|||1|2|perplexity_grok
+1032|394392|общий||ГПК|17|||1|2|perplexity_grok
+1032|394392|общий||ГК|1064|||1|2|perplexity_claude_sonnet
+1032|394392|общий||ГК|15|||1|2|perplexity_claude_sonnet
+1032|394392|общий||ГК|393|||1|2|perplexity_claude_sonnet
+1032|394392|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|18||07.02.1992|1|2|perplexity_claude_sonnet
+1032|394392|общий||ГК|503|||1|2|perplexity_claude_sonnet
+1032|394392|общий||ГК|12|||1|2|perplexity_claude_sonnet
+1032|394392|специальный||ГК|1068|||1|2|perplexity_claude_sonnet
+1032|394392|общий||ГПК|28|||1|2|perplexity_claude_sonnet
+1032|394392|общий||ГПК|29|||1|2|perplexity_claude_sonnet
+1032|394392|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|17||07.02.1992|1|2|perplexity_claude_sonnet
+1032|394392|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|13||07.02.1992|1|2|perplexity_claude_sonnet

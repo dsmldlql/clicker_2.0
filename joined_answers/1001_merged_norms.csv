@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1001|400984|специальный||НК|219|1||2|2|perplexity_claude_sonnet;perplexity_grok
+1001|400984|специальный||НК|219|2||2|2|perplexity_claude_sonnet;perplexity_grok
+1001|400984|общий||НК|219|||1|2|perplexity_grok
+1001|400984|общий||НК|78|1||1|2|perplexity_grok
+1001|400984|общий||НК|88|||1|2|perplexity_grok
+1001|400984|специальный|458|ПП||1|08.04.2020|1|2|perplexity_claude_sonnet
+1001|400984|специальный|ЕА-7-11/824@|Приказ Федеральной налоговой службы|||08.11.2023|1|2|perplexity_claude_sonnet

@@ -1,0 +1,16 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1016|406718|специальный||ГК|550|||2|2|perplexity_claude_sonnet;perplexity_grok
+1016|406718|общий||ГК|454|||1|2|perplexity_grok
+1016|406718|общий||ГК|421|||1|2|perplexity_grok
+1016|406718|специальный|218-ФЗ|ФЗ|54||13.07.2015|1|2|perplexity_grok
+1016|406718|общий||ГК|549|||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|554|||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|555|1||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|556|||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|551|||1|2|perplexity_claude_sonnet
+1016|406718|специальный|218-ФЗ|ФЗ|1|1|13.07.2015|1|2|perplexity_claude_sonnet
+1016|406718|специальный|218-ФЗ|ФЗ|1|4|13.07.2015|1|2|perplexity_claude_sonnet
+1016|406718|специальный|218-ФЗ|ФЗ|9|1|13.07.2015|1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|166|1||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|167|1||1|2|perplexity_claude_sonnet
+1016|406718|общий||ГК|167|2||1|2|perplexity_claude_sonnet

@@ -1,0 +1,24 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||ЖК|17|||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||ГрК|1|39||3|5|gemini;perplexity_claude_sonnet;qwen
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ЗК|42|||3|5|gemini;perplexity_claude_sonnet;qwen
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|671|||3|5|gpt;perplexity_claude_sonnet;qwen
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||КОАП|88|||2|5|perplexity_claude_sonnet;qwen
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|209|||2|5|gpt;perplexity_grok
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||ЗК|40|2||1|5|qwen
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|606|||1|5|gpt
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ЗК|42|1||1|5|gpt
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||ГрК|1|||1|5|gpt
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ЗК|49|||1|5|perplexity_grok
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГрК|51|||1|5|perplexity_grok
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|209|2||1|5|gemini
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|288|2||1|5|gemini
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный||ГрК|511|||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный|П/0412|Приказ Росреестра от 10.11.2020 № П/0412 (Классификатор видов разрешённого использования земельных участков)||21|10.11.2020|1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ЖК|16|||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||ГК|683|||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||НК|208|1||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||НК|224|1||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|общий||НК|228|1||1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный|422-ФЗ|ФЗ|4||27.11.2018|1|5|perplexity_claude_sonnet
+155|3d4341e0-20f9-4412-9fa2-419c85818ffc|специальный|218-ФЗ|ФЗ|40||13.07.2015|1|5|perplexity_claude_sonnet

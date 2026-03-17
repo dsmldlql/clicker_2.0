@@ -1,0 +1,20 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|78|||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ГК|421|||2|5|perplexity_claude_sonnet;qwen
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|81|2||2|5|gpt;perplexity_grok
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ТК|140|||2|5|gemini;perplexity_claude_sonnet
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ГК|785|||1|5|qwen
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|10||07.02.1992|1|5|qwen
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|29|1|07.02.1992|1|5|qwen
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ГПК|131|||1|5|qwen
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ТК|77|1||1|5|gpt
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|178|||1|5|gpt
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ТК|841|||1|5|gpt
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|77|||1|5|perplexity_grok
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|80|||1|5|perplexity_grok
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ТК|9|||1|5|gemini
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||Конституция|37|||1|5|gemini
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||НК|217|1||1|5|gemini
+9|4405cb89-f59d-4831-a589-29df715c6dee|специальный||ТК|3493|||1|5|perplexity_claude_sonnet
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ТК|394|||1|5|perplexity_claude_sonnet
+9|4405cb89-f59d-4831-a589-29df715c6dee|общий||ГК|422|||1|5|perplexity_claude_sonnet

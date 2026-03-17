@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный||ГК|665|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный|164-ФЗ|ФЗ|22||29.10.1998|4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|309|||3|5|perplexity_claude_sonnet;perplexity_grok;qwen
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|307|||2|5|perplexity_claude_sonnet;qwen
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный|164-ФЗ|ФЗ|26||29.10.1998|2|5|gpt;perplexity_claude_sonnet
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|614|||1|5|qwen
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|669|||1|5|gpt
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный||ГК|668|||1|5|perplexity_grok
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|210|||1|5|perplexity_grok
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный|164-ФЗ|ФЗ|11|1|29.10.1998|1|5|gemini
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|специальный|164-ФЗ|ФЗ|17|1|29.10.1998|1|5|gemini
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|3091|4||1|5|gemini
+80|bef88b17-9648-40fc-aaf0-25cb6fb0a602|общий||ГК|622|||1|5|perplexity_claude_sonnet

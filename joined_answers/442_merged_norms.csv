@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+442|bb22d952-1153-4210-8ce7-bbad032d3049|специальный|98-ФЗ|ФЗ|3|1|29.07.2004|2|2|gemini;qwen
+442|bb22d952-1153-4210-8ce7-bbad032d3049|общий||ГК|152|||2|2|gemini;qwen
+442|bb22d952-1153-4210-8ce7-bbad032d3049|специальный||ГК|1229|||1|2|qwen
+442|bb22d952-1153-4210-8ce7-bbad032d3049|специальный||ТК|57|||1|2|qwen
+442|bb22d952-1153-4210-8ce7-bbad032d3049|общий||Конституция|29|||1|2|gemini
+442|bb22d952-1153-4210-8ce7-bbad032d3049|специальный||ГК|1474|||1|2|gemini
+442|bb22d952-1153-4210-8ce7-bbad032d3049|специальный||ТК|21|||1|2|gemini

@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+38|fefd3493-5066-45e2-944e-d970724397ce|специальный||ГК|1142|||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1141|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+38|fefd3493-5066-45e2-944e-d970724397ce|специальный||ГК|1150|||3|5|gemini;gpt;perplexity_claude_sonnet
+38|fefd3493-5066-45e2-944e-d970724397ce|специальный||ГК|1149|||2|5|gpt;perplexity_claude_sonnet
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1154|||2|5|gemini;perplexity_claude_sonnet
+38|fefd3493-5066-45e2-944e-d970724397ce|общий|string|string|||ДД.ММ.ГГГГ|1|5|qwen
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1145|||1|5|gpt
+38|fefd3493-5066-45e2-944e-d970724397ce|специальный||ГК|1115|||1|5|perplexity_grok
+38|fefd3493-5066-45e2-944e-d970724397ce|специальный||ГК|1154|1||1|5|perplexity_grok
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1111|||1|5|gemini
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||СК|34|||1|5|gemini
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1110|||1|5|perplexity_claude_sonnet
+38|fefd3493-5066-45e2-944e-d970724397ce|общий||ГК|1152|||1|5|perplexity_claude_sonnet

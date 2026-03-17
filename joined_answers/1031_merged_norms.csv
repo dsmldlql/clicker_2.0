@@ -1,0 +1,7 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1031|388861|специальный|2300-1|Закон РФ|18||07.02.1992|2|2|perplexity_claude_sonnet;perplexity_grok
+1031|388861|специальный|2300-1|Закон РФ|21||07.02.1992|2|2|perplexity_claude_sonnet;perplexity_grok
+1031|388861|специальный|2300-1|Закон РФ|19||07.02.1992|1|2|perplexity_grok
+1031|388861|общий||ГК|477|||1|2|perplexity_grok
+1031|388861|общий||ГК|471|||1|2|perplexity_claude_sonnet
+1031|388861|общий||ГК|476|||1|2|perplexity_claude_sonnet

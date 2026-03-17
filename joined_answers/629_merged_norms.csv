@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГК|209|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГК|218|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|специальный||ГК|1041|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|специальный||ГК|1042|1||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|специальный||ГК|1043|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|специальный||ГК|1044|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|специальный||ГК|1050|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГК|1102|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГК|1105|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГПК|56|||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГПК|57|1||1|1|qwen
+629|7d4cd72f-bf80-44a7-9ae3-a621e77a08c0|общий||ГПК|22|1||1|1|qwen

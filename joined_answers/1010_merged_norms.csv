@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1010|407987|общий||ГПК|28|||2|2|perplexity_claude_sonnet;perplexity_grok
+1010|407987|общий||ГК|309|||1|2|perplexity_grok
+1010|407987|общий||ГК|405|2||1|2|perplexity_grok
+1010|407987|общий||ГК|450|||1|2|perplexity_grok
+1010|407987|общий||ГК|717|||1|2|perplexity_grok
+1010|407987|общий||ГК|723|||1|2|perplexity_grok
+1010|407987|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|||07.02.1992|1|2|perplexity_grok
+1010|407987|специальный|127-ФЗ|ФЗ|2011|1|26.10.2002|1|2|perplexity_grok
+1010|407987|специальный|214-ФЗ|ФЗ|6||30.12.2004|1|2|perplexity_claude_sonnet
+1010|407987|общий||ГК|15|||1|2|perplexity_claude_sonnet
+1010|407987|общий||ГК|393|||1|2|perplexity_claude_sonnet
+1010|407987|общий||ГК|333|||1|2|perplexity_claude_sonnet
+1010|407987|специальный|214-ФЗ|ФЗ|9||30.12.2004|1|2|perplexity_claude_sonnet
+1010|407987|специальный|2300-1|Закон Российской Федерации|17||07.02.1992|1|2|perplexity_claude_sonnet
+1010|407987|общий|127-ФЗ|ФЗ|2||26.10.2002|1|2|perplexity_claude_sonnet
+1010|407987|специальный|127-ФЗ|ФЗ|2011||26.10.2002|1|2|perplexity_claude_sonnet

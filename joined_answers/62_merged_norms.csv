@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|специальный||НК|2171|3||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|специальный||НК|2171|21||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|2171|||2|5|gpt;qwen
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|220|1||2|5|perplexity_claude_sonnet;qwen
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|2171|4||2|5|gemini;perplexity_claude_sonnet
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|220|2||1|5|perplexity_grok
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|217|171||1|5|perplexity_grok
+62|2fd81b8b-9f10-4952-9045-c60674c834cf|общий||НК|2171|2||1|5|perplexity_claude_sonnet

@@ -1,0 +1,28 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1112|||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1152|||2|5|gpt;qwen
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1153|||2|5|gpt;perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1154|||2|5|gpt;perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1155|||2|5|gpt;perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|218|||2|5|gpt;perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГПК|131|||2|5|gpt;perplexity_grok
+44|554f7834-d790-43bd-924c-d90084e8e6a9|специальный||ГК|1156|||1|5|qwen
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГПК|30|||1|5|qwen
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий|218-ФЗ|ФЗ|8||13.07.2015|1|5|qwen
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|225|||1|5|gpt
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1115|||1|5|perplexity_grok
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1151|||1|5|perplexity_grok
+44|554f7834-d790-43bd-924c-d90084e8e6a9|специальный||ГПК|237|||1|5|perplexity_grok
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|302|1||1|5|perplexity_grok
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1152|4||1|5|gemini
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1153|2||1|5|gemini
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|234|1||1|5|gemini
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1141|||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1142|||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|1146|||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГК|196|||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГПК|264|9||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий||ГПК|28|||1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий|1541-1|Закон Российской Федерации от 04.07.1991 № 1541-1 «О приватизации жилищного фонда в Российской Федерации»|2||04.07.1991|1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|общий|1541-1|Закон Российской Федерации от 04.07.1991 № 1541-1 «О приватизации жилищного фонда в Российской Федерации»|7||04.07.1991|1|5|perplexity_claude_sonnet
+44|554f7834-d790-43bd-924c-d90084e8e6a9|специальный|76-ФЗ|ФЗ|15||27.05.1998|1|5|perplexity_claude_sonnet

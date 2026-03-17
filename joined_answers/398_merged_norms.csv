@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|общий||Конституция|62|||2|2|gemini;qwen
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный||УК|3302|||2|2|gemini;qwen
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный|62-ФЗ|ФЗ|6||31.05.2002|1|2|qwen
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный|62-ФЗ|ФЗ|61||31.05.2002|1|2|qwen
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный|138-ФЗ|ФЗ|10||28.04.2023|1|2|gemini
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный|138-ФЗ|ФЗ|11||28.04.2023|1|2|gemini
+398|edc4b35d-b2ca-4571-9d0f-a4edb49d61e9|специальный||КОАП|1983|||1|2|gemini

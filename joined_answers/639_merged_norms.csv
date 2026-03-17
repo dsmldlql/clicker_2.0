@@ -1,0 +1,7 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+639|27cee326-7a95-459b-9629-39a87bcaebfa|специальный|256-ФЗ|ФЗ|10||29.12.2006|1|1|qwen
+639|27cee326-7a95-459b-9629-39a87bcaebfa|общий||ГК|244|||1|1|qwen
+639|27cee326-7a95-459b-9629-39a87bcaebfa|специальный|218-ФЗ|ФЗ|42||13.07.2015|1|1|qwen
+639|27cee326-7a95-459b-9629-39a87bcaebfa|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|1|qwen
+639|27cee326-7a95-459b-9629-39a87bcaebfa|специальный|862|ПП||13|12.12.2007|1|1|qwen
+639|27cee326-7a95-459b-9629-39a87bcaebfa|общий||СК|60|||1|1|qwen

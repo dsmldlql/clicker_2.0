@@ -1,0 +1,220 @@
+{
+  "Norms": [
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "549",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет существенные условия договора купли-продажи недвижимости, включая обязательное указание данных об объекте.",
+      "case_note": "Регулирует заключение договора купли-продажи студии как объекта недвижимости, устанавливает требования к содержанию договора.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "550",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает требование о письменной форме договора купли-продажи недвижимости.",
+      "case_note": "Применяется к сделке покупки студии, требует оформления договора в письменной форме.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "551",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует государственную регистрацию перехода права собственности на недвижимость.",
+      "case_note": "Обязывает зарегистрировать переход права собственности на студию в Росреестре.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "209",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет содержание права собственности, включая права владения, пользования и распоряжения имуществом.",
+      "case_note": "Устанавливает права покупателя после регистрации собственности на нежилое помещение.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "15",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет понятие жилого помещения и требования к нему как объекту жилищных прав.",
+      "case_note": "Позволяет отличить жилое помещение от нежилого, что критично для квалификации студии.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "16",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает виды жилых помещений: квартира, комната, жилой дом.",
+      "case_note": "Помогает определить, что студия со статусом нежилого не относится к жилым помещениям по ЖК РФ.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "19",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует назначение жилого помещения и ограничение его использования.",
+      "case_note": "Устанавливает, что нежилое помещение не может использоваться для постоянного проживания без перевода.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ЖК РФ",
+      "date": "29.12.2004",
+      "number": "188-ФЗ",
+      "art": "22",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет условия и ограничения перевода жилого помещения в нежилое и обратно.",
+      "case_note": "Релевантна при проверке возможности изменения статуса помещения в будущем.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "Федеральный закон О государственной регистрации недвижимости",
+      "date": "13.07.2015",
+      "number": "218-ФЗ",
+      "art": "1",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет цели и принципы государственной регистрации прав на недвижимое имущество.",
+      "case_note": "Устанавливает обязательность регистрации права собственности на студию в ЕГРН.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "Федеральный закон О государственной регистрации недвижимости",
+      "date": "13.07.2015",
+      "number": "218-ФЗ",
+      "art": "14",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет основания для государственной регистрации прав на недвижимость.",
+      "case_note": "Требует предоставления договора купли-продажи и иных документов для регистрации перехода права.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "Федеральный закон О государственной регистрации недвижимости",
+      "date": "13.07.2015",
+      "number": "218-ФЗ",
+      "art": "26",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает сроки государственной регистрации прав на недвижимое имущество.",
+      "case_note": "Определяет временные рамки регистрации перехода права собственности на студию.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/625_ecceb607-4ebc-4861-aa31-78fd15a6be8a_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 11
+  }
+}

@@ -1,0 +1,10 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|специальный||КОАП|1224|||2|2|gemini;qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|общий||КОАП|45|||2|2|gemini;qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|специальный||ГК|1079|||2|2|gemini;qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|общий||КОАП|303|||1|2|qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|общий||КОАП|267|||1|2|qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|общий||ГК|196|||1|2|qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|специальный||УК|264|||1|2|qwen
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|общий|1090|ПП|10|1|23.10.1993|1|2|gemini
+296|aef62145-de1f-4b9e-9cff-48e01cf4961a|специальный|264|Приказ МВД||148|23.08.2023|1|2|gemini

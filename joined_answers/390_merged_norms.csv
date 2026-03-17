@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||ГК|152|||2|2|gemini;qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||ГК|151|||2|2|gemini;qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|специальный||УК|1281|||2|2|gemini;qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||ГПК|56|||2|2|gemini;qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|специальный||СК|64|||2|2|gemini;qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||Конституция|21|||1|2|qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||Конституция|23|||1|2|qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|специальный||КОАП|561|||1|2|qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|общий||ГПК|28|||1|2|qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|специальный|149-ФЗ|ФЗ|103||27.07.2006|1|2|qwen
+390|ef6269c9-cc3b-4632-ba63-8760bf3c6d8c|специальный||СК|56|||1|2|qwen

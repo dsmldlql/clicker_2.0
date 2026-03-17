@@ -1,0 +1,240 @@
+{
+  "Norms": [
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1141",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает общий принцип наследования по закону: наследники одной очереди наследуют в равных долях.",
+      "case_note": "Определяет принцип распределения долей между наследниками одной очереди (мать и дети умершего).",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1141",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует переход доли наследника, не принявшего наследство, к другим наследникам той же очереди.",
+      "case_note": "Касается ситуации с сестрой, которая не вступила в наследство в установленный срок.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1142",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет состав наследников первой очереди по закону: дети, супруг и родители наследодателя.",
+      "case_note": "Устанавливает, что мать, клиент и сестра являются наследниками первой очереди как родители и дети умершего.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1154",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает общий срок принятия наследства — шесть месяцев со дня открытия наследства.",
+      "case_note": "Определяет шестимесячный срок, по истечении которого решается вопрос о распределении долей.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1152",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает, что для приобретения наследства наследник должен его принять.",
+      "case_note": "Подтверждает, что мать и клиент приобрели право на наследство через принятие, а сестра — нет.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1155",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Допускает восстановление срока принятия наследства по решению суда при наличии уважительных причин.",
+      "case_note": "Важно для оценки рисков: сестра может восстановить срок и претендовать на долю.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1157",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает право наследника отказаться от наследства в пользу других лиц или без указания.",
+      "case_note": "Разъясняет разницу между непринятием и официальным отказом от наследства.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1162",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует выдачу свидетельства о праве на наследство нотариусом.",
+      "case_note": "Определяет документ, подтверждающий право на наследство после истечения 6 месяцев.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1142",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает круг наследников первой очереди по закону. К ним относятся дети, супруг и родители умершего в равных долях.",
+      "case_note": "Поскольку завещания нет, мать, клиент и сестра являются законными наследниками первой очереди с равными правами на доли в наследстве.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1154",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет общий срок для принятия наследства. Наследство может быть принято в течение шести месяцев со дня открытия наследства (смерти наследодателя).",
+      "case_note": "Устанавливает временные рамки, в течение которых сестра должна была заявить о своих правах, чтобы претендовать на долю.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1161",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "1",
+      "scope": "общий",
+      "gen_note": "Регулирует приращение наследственных долей. Если наследник не примет наследство, его доля переходит к другим наследникам по закону, принявшим наследство, пропорционально их наследственным долям.",
+      "case_note": "Так как сестра не вступила в наследство в установленный срок, ее потенциальная доля (1/3) распределяется между матерью и клиентом.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1150",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает право пережившего супруга на часть имущества, нажитого во время брака. Доля умершего супруга в этом имуществе входит в состав наследства и распределяется между всеми наследниками.",
+      "case_note": "Если имущество отца было куплено в браке с матерью, она сначала получает свою половину как супруга, а оставшаяся половина делится как наследство.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_gemini.json"
+      ],
+      "_total_files": 2
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/366_ecc3f4ac-ab3a-4a18-8532-0d038a03becc_gemini.json"
+    ],
+    "total_source_files": 2,
+    "unique_norms": 12
+  }
+}

@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|303|||2|2|gemini;qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|302|||2|2|gemini;qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|301|||1|2|qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|305|||1|2|qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|специальный||КОАП|261|||1|2|qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|307|||1|2|qwen
+389|7b318ae5-3f89-43b6-8b4d-c6610f980525|общий||КОАП|301|1||1|2|gemini

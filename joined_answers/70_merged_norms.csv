@@ -1,0 +1,24 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1131|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1123|||3|5|gpt;perplexity_grok;qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|71||11.02.1993|1|5|qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|181|||1|5|qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГПК|28|||1|5|qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГПК|29|||1|5|qwen
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1119|||1|5|gpt
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1118|||1|5|gpt
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1124|||1|5|perplexity_grok
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1141|1||1|5|perplexity_grok
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГПК|276|||1|5|perplexity_grok
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1142|1||1|5|gemini
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1131|2||1|5|gemini
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий|4462-1|"Основы законодательства Российской Федерации о нотариате"" (утв. ВС РФ 11.02.1993 N 4462-1)"|343||11.02.1993|1|5|gemini
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1154|1||1|5|gemini
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1149|1||1|5|gemini
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1142|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1149|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1153|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1154|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|специальный||ГК|1155|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1162|||1|5|perplexity_claude_sonnet
+70|5d8adfa3-ce6e-48e7-b632-d7aa853b04cc|общий||ГК|1141|||1|5|perplexity_claude_sonnet

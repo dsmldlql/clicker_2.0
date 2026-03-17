@@ -1,0 +1,20 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|1219|||2|5|gpt;qwen
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|303|||2|5|gemini;perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|58|Закон города Москвы от 21 ноября 2012 года|43||21.11.2012|1|5|qwen
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий|Постановление Правительства РФ от 23.10.1993 № 1090|Правила дорожного движения Российской Федерации|121||23.10.1993|1|5|qwen
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|306|||1|5|qwen
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|307|||1|5|qwen
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий|257-ФЗ|ФЗ|13||08.11.2007|1|5|gpt
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный||ГрК|55|||1|5|perplexity_grok
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|5|perplexity_grok
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|1606|ПП|||30.12.2017|1|5|perplexity_grok
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|301|||1|5|gemini
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|289-ПП|ПП||27|17.05.2013|1|5|gemini
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|45|Закон г. Москвы «Кодекс города Москвы об административных правонарушениях»|814||21.11.2007|1|5|gemini
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|45|Кодекс города Москвы об административных правонарушениях|814||21.11.2007|1|5|perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|специальный|289-ПП|ПП|||17.05.2013|1|5|perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|301|3||1|5|perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|302|||1|5|perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|261|||1|5|perplexity_claude_sonnet
+52|c77cfaad-43c5-4fc4-817e-7f4fff64edad|общий||КОАП|29|||1|5|perplexity_claude_sonnet

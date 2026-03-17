@@ -1,0 +1,19 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий||ЖК|161|||4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий||КОАП|204|||4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|59-ФЗ|ФЗ|7||02.05.2006|4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий||ЖК|36|||2|4|perplexity_claude_sonnet;perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|123-ФЗ|ФЗ|89||22.07.2008|2|4|perplexity_claude_sonnet;perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|59-ФЗ|ФЗ|12||02.05.2006|2|4|perplexity_claude_sonnet;perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный||ЖК|162|||1|4|qwen
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|Приказ МЧС России от 25.03.2020 № 194|"Свод правил СП 1.13130.2020 ""Системы противопожарной защиты. Эвакуационные пути и выходы"""|427||25.03.2020|1|4|qwen
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|491|ПП||2|13.08.2006|1|4|perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|491|ПП||11|13.08.2006|1|4|perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|123-ФЗ|ФЗ|53||22.07.2008|1|4|perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|69-ФЗ|ФЗ|37||21.12.1994|1|4|perplexity_grok
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|1479|ПП|16||16.09.2020|1|4|gemini
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий||ЖК|36|1||1|4|perplexity_claude_sonnet
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|290|ПП||27|03.04.2013|1|4|perplexity_claude_sonnet
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|1479|ПП||27|16.09.2020|1|4|perplexity_claude_sonnet
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|специальный|1479|ПП||37|16.09.2020|1|4|perplexity_claude_sonnet
+235|f6f7b2d6-a3e5-462e-a39d-f262da5fd652|общий|69-ФЗ|ФЗ|34||21.12.1994|1|4|perplexity_claude_sonnet

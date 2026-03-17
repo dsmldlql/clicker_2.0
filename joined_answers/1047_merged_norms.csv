@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1047|408614|общий||ГК|572|||1|1|perplexity_grok
+1047|408614|общий||ГК|576|||1|1|perplexity_grok
+1047|408614|специальный||СК|35|||1|1|perplexity_grok
+1047|408614|общий|4462-1|Основы законодательства Российской Федерации о нотариате|48||11.02.1993|1|1|perplexity_grok
+1047|408614|специальный|218-ФЗ|ФЗ|15||13.07.2015|1|1|perplexity_grok

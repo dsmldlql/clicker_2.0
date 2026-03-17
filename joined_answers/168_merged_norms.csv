@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|53-ФЗ|ФЗ|8||28.03.1998|2|4|gemini;qwen
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|53-ФЗ|ФЗ|10||28.03.1998|2|4|gpt;qwen
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|общий|53-ФЗ|ФЗ|8|2|28.03.1998|2|4|gpt;perplexity_claude_sonnet
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП||50|27.11.2006|2|4|gemini;gpt
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|общий||КОАП|215|||2|4|gemini;perplexity_claude_sonnet
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП||12|27.11.2006|1|4|qwen
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП||33|27.11.2006|1|4|qwen
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|506|ПП||5|19.04.2024|1|4|qwen
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП|||27.11.2006|1|4|gemini
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|общий|53-ФЗ|ФЗ|8|1|28.03.1998|1|4|perplexity_claude_sonnet
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП|7||27.11.2006|1|4|perplexity_claude_sonnet
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП|161||27.11.2006|1|4|perplexity_claude_sonnet
+168|b7a25663-d964-4e7d-be0b-b547fd59e635|специальный|719|ПП|21||27.11.2006|1|4|perplexity_claude_sonnet

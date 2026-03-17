@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+53|6fb89c77-7501-4d28-a091-f809204b9be3|специальный|2300-1|Закон РФ|32||07.02.1992|3|5|gemini;gpt;perplexity_claude_sonnet
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|421|||2|5|gpt;perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|специальный|2300-1|Закон РФ|16||07.02.1992|2|5|gpt;perplexity_claude_sonnet
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий|string|string|||ДД.ММ.ГГГГ|1|5|qwen
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|779|||1|5|gpt
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|309|||1|5|perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|310|||1|5|perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|16||07.02.1992|1|5|perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГПК|131|||1|5|perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГПК|132|||1|5|perplexity_grok
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|781|||1|5|gemini
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|782|||1|5|perplexity_claude_sonnet
+53|6fb89c77-7501-4d28-a091-f809204b9be3|общий||ГК|421|4||1|5|perplexity_claude_sonnet

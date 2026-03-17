@@ -1,0 +1,17 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|381|||2|4|gpt;qwen
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|429|||2|4|gpt;qwen
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|429|1||2|4|gemini;perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|специальный||ГК|429|5||2|4|gemini;perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|445|4||2|4|gemini;perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|381|2||2|4|gemini;perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|445|||1|4|gpt
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|380|||1|4|gpt
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|380|1||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|380|3||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|429|6||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|3083|1||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|421|1||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГК|15|||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|общий||ГПК|22|||1|4|perplexity_claude_sonnet
+132|a73810aa-0bd2-4e05-99f6-4d2a6aa772fd|специальный||ГПК|30|||1|4|perplexity_claude_sonnet

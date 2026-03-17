@@ -1,0 +1,23 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1143|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1153|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1141|||3|5|gpt;perplexity_claude_sonnet;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1142|||3|5|perplexity_claude_sonnet;perplexity_grok;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1146|||3|5|gpt;perplexity_claude_sonnet;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1154|||3|5|gpt;perplexity_claude_sonnet;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1152|||2|5|perplexity_claude_sonnet;qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1154|1||2|5|gemini;perplexity_grok
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1162|||2|5|perplexity_claude_sonnet;perplexity_grok
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|72||11.02.1993|1|5|qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|5|qwen
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1111|||1|5|gpt
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный|218-ФЗ|ФЗ|24||13.07.2015|1|5|perplexity_grok
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1142|1||1|5|gemini
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1143|1||1|5|gemini
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1146|1||1|5|gemini
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||ГК|1168|1||1|5|gemini
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1110|||1|5|perplexity_claude_sonnet
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1112|||1|5|perplexity_claude_sonnet
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|общий||ГК|1155|||1|5|perplexity_claude_sonnet
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный||НК|33324|1||1|5|perplexity_claude_sonnet
+191|d4369363-b689-45e1-bf4c-8cb0db12a123|специальный|218-ФЗ|ФЗ|14|5|13.07.2015|1|5|perplexity_claude_sonnet

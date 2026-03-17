@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный||КОАП|1922|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный||КОАП|121|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный|1734|ПП|3|1|20.12.2019|1|5|qwen
+35|584a6c02-f856-4208-9b21-49238a722b0e|общий||КОАП|45|1||1|5|qwen
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный|938|ПП||3|12.08.1994|1|5|gpt
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный|283-ФЗ|ФЗ|8|1|03.08.2018|1|5|perplexity_grok
+35|584a6c02-f856-4208-9b21-49238a722b0e|общий|283-ФЗ|ФЗ|8|3|03.08.2018|1|5|gemini
+35|584a6c02-f856-4208-9b21-49238a722b0e|специальный|1764|ПП||3|21.12.2019|1|5|perplexity_claude_sonnet
+35|584a6c02-f856-4208-9b21-49238a722b0e|общий||КОАП|45|||1|5|perplexity_claude_sonnet
+35|584a6c02-f856-4208-9b21-49238a722b0e|общий||КОАП|303|||1|5|perplexity_claude_sonnet

@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|специальный|214-ФЗ|ФЗ|6||30.12.2004|2|2|gemini;qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|специальный|214-ФЗ|ФЗ|9||30.12.2004|1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|общий||ГК|15|||1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|общий||ГК|333|||1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|специальный|2300-1|Закон РФ|28||07.02.1992|1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|специальный|2300-1|Закон РФ|29||07.02.1992|1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|общий||ГПК|17|||1|2|qwen
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|общий||ГК|15|1||1|2|gemini
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|специальный|214-ФЗ|ФЗ|10||30.12.2004|1|2|gemini
+441|9cb63cfa-6bf0-4553-ac89-7b0bb4ca48c9|общий|2300-1|Закон РФ|13|6|07.02.1992|1|2|gemini

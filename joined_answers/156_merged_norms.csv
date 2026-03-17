@@ -1,0 +1,16 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||УПК|141|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный||УК|167|||3|5|gpt;perplexity_claude_sonnet;qwen
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||УПК|144|||3|5|gemini;gpt;perplexity_grok
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный||КОАП|717|||2|5|perplexity_claude_sonnet;qwen
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||УПК|140|||1|5|qwen
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||КОАП|281|1||1|5|qwen
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||УПК|145|||1|5|gpt
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||ГК|1064|||1|5|perplexity_grok
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный|736|Приказ МВД||8|29.08.2014|1|5|gemini
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||КОАП|281|3||1|5|gemini
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный|3-ФЗ|ФЗ|12|1|07.02.2011|1|5|perplexity_claude_sonnet
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный|736|Приказ МВД||3|29.08.2014|1|5|perplexity_claude_sonnet
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|специальный|736|Приказ МВД||23|29.08.2014|1|5|perplexity_claude_sonnet
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||ГК|1064|1||1|5|perplexity_claude_sonnet
+156|295f6100-5427-42fb-a3d5-5ef517c8f9e7|общий||ГК|15|1||1|5|perplexity_claude_sonnet

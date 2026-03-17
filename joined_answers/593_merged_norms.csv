@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный||СК|34|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный||СК|35|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный||СК|38|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный||СК|39|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|253|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|302|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|168|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|166|||1|2|qwen
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||СК|34|1||1|2|gemini
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|специальный||СК|35|3||1|2|gemini
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|167|2||1|2|gemini
+593|7adc5cbc-b52b-436e-9b48-8745fcdd2147|общий||ГК|302|1||1|2|gemini

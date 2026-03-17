@@ -1,0 +1,15 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|303|||4|5|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|15|||3|5|gemini;perplexity_grok;qwen
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|специальный|45|Кодекс города Москвы об административных правонарушениях|814||21.11.2007|2|5|perplexity_grok;qwen
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|302|||2|5|gpt;perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|262|||2|5|perplexity_claude_sonnet;perplexity_grok
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|245|1||2|5|gemini;perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|301|3||2|5|gemini;perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|306|||1|5|qwen
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|специальный|45|Закон города Москвы «Кодекс города Москвы об административных правонарушениях»|814||21.11.2007|1|5|gpt
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|301|||1|5|perplexity_grok
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|специальный||КОАП|1219|||1|5|perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|специальный||КОАП|261|||1|5|perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|245|2||1|5|perplexity_claude_sonnet
+151|5e542dde-41e3-4c8e-a11f-48b07c7b973a|общий||КОАП|29|||1|5|perplexity_claude_sonnet

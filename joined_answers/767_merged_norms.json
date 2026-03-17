@@ -1,0 +1,87 @@
+{
+  "Norms": [
+    {
+      "act": "ТК РФ",
+      "date": "30.12.2001",
+      "number": "197-ФЗ",
+      "art": "71",
+      "art_prilozhenie": "",
+      "art_chast": "3",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует право работника расторгнуть трудовой договор по собственному желанию в период испытательного срока с уведомлением работодателя за три дня в письменной форме.",
+      "case_note": "Применима к ситуации пользователя, так как он находится на испытательном сроке и желает уволиться по собственному желанию.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "767_80fbcbd0-adba-4c52-adf2-dead64fcffaa_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ТК РФ",
+      "date": "30.12.2001",
+      "number": "197-ФЗ",
+      "art": "80",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает общее правило о том, что работник имеет право расторгнуть трудовой договор, предупредив работодателя в письменной форме не позднее чем за две недели.",
+      "case_note": "Применима как общая норма, но вытесняется специальной нормой ст. 71 ТК РФ для работников на испытательном сроке.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "767_80fbcbd0-adba-4c52-adf2-dead64fcffaa_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ТК РФ",
+      "date": "30.12.2001",
+      "number": "197-ФЗ",
+      "art": "14",
+      "art_prilozhenie": "",
+      "art_chast": "4",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет правило исчисления сроков: если последний день срока приходится на нерабочий день, днем окончания срока считается ближайший следующий за ним рабочий день.",
+      "case_note": "Применима к вопросу пользователя о том, влияет ли выходной день на дату увольнения, так как регулирует перенос последнего дня срока.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "767_80fbcbd0-adba-4c52-adf2-dead64fcffaa_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ТК РФ",
+      "date": "30.12.2001",
+      "number": "197-ФЗ",
+      "art": "84.1",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает общий порядок оформления прекращения трудового договора приказом (распоряжением) работодателя.",
+      "case_note": "Применима к процедуре увольнения пользователя, так как регулирует документальное оформление прекращения трудового договора.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "767_80fbcbd0-adba-4c52-adf2-dead64fcffaa_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/767_80fbcbd0-adba-4c52-adf2-dead64fcffaa_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 4
+  }
+}

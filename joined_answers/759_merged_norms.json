@@ -1,0 +1,125 @@
+{
+  "Norms": [
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "1",
+      "art_podpunkt": "3",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает право налогоплательщика на получение имущественного налогового вычета при приобретении жилья на территории РФ.",
+      "case_note": "Норма непосредственно регулирует право на налоговый вычет по сделке с недвижимостью, о которой спрашивает пользователь.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "207",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет круг налогоплательщиков НДФЛ — физических лиц, являющихся налоговыми резидентами РФ.",
+      "case_note": "Пользователь должен быть налоговым резидентом для получения вычета, норма устанавливает это требование.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "224",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает налоговую ставку НДФЛ в размере 13%, которая применяется к доходам физических лиц.",
+      "case_note": "Ставка 13% определяет размер возврата налога при получении имущественного вычета пользователем.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "229",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует порядок представления налоговой декларации 3-НДФЛ для получения налоговых вычетов.",
+      "case_note": "Норма определяет процедурное требование по подаче декларации для получения вычета пользователем.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает порядок получения имущественных вычетов через налогового агента (работодателя) или налоговый орган.",
+      "case_note": "Предоставляет пользователю выбор способа получения вычета — через ФНС или работодателя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "78",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Регулирует порядок зачета или возврата сумм излишне уплаченного налога налогоплательщику.",
+      "case_note": "Норма определяет механизм возврата денежных средств пользователю после подтверждения права на вычет.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/759_db49ebd4-912d-42c9-97f8-bfa0a270f075_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 6
+  }
+}

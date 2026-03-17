@@ -1,0 +1,201 @@
+{
+  "Norms": [
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.43",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает патентную систему налогообложения как специальный налоговый режим, вводимый в действие законами субъектов РФ.",
+      "case_note": "Определяет правовую основу применения ПСН, к которой относится ситуация пользователя как ИП на патенте.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.43",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "10",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает освобождение ИП на ПСН от уплаты НДФЛ, налога на имущество физлиц (в части предпринимательской деятельности).",
+      "case_note": "Определяет налоговые льготы, доступные пользователю как ИП на патентной системе.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.44",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет категорию налогоплательщиков ПСН — только индивидуальные предприниматели.",
+      "case_note": "Подтверждает статус пользователя как субъекта, имеющего право применять патентную систему.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.45",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает срок подачи заявления на получение патента — не позднее 10 рабочих дней до начала применения ПСН.",
+      "case_note": "Регулирует процедурный вопрос получения патента, который может быть связан с проблемой пользователя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.45",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "4",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает основания для отказа налоговым органом в выдаче патента заявителю.",
+      "case_note": "Может быть релевантна, если проблема пользователя связана с отказом в получении патента.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.45",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "6",
+      "art_podpunkt": "1",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает лимит доходов для права применения ПСН — не более 20 млн рублей с 2026 года.",
+      "case_note": "Критичная норма для 2026 года, определяющая право пользователя на применение патента в зависимости от доходов.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.47",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет налоговый период по ПСН — срок действия патента (от 1 до 12 месяцев в пределах календарного года).",
+      "case_note": "Регулирует срок действия патента, что может быть связано с проблемой пользователя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.51",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает порядок исчисления налога по ПСН как стоимость патента.",
+      "case_note": "Определяет методику расчёта налогового обязательства пользователя на патенте.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.51",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует сроки уплаты налога: до 6 месяцев — одна оплата, от 6 до 12 месяцев — две части.",
+      "case_note": "Может быть релевантна, если проблема пользователя связана со сроками или порядком уплаты налога.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "346.46",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет порядок учёта налогоплательщиков ПСН в налоговых органах по месту постановки на учёт.",
+      "case_note": "Регулирует административный аспект применения ПСН, связанный с учётом ИП в налоговом органе.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/626_b28c383e-c8dc-478f-9cc5-6c99efecc47e_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 10
+  }
+}

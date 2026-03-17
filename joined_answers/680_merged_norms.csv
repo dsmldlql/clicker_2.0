@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+680|a73fa3df-800c-4240-803a-0702755e9cc6|специальный|2300-1|Закон РФ|32||07.02.1992|1|1|qwen
+680|a73fa3df-800c-4240-803a-0702755e9cc6|специальный|2300-1|Закон РФ|31|1|07.02.1992|1|1|qwen
+680|a73fa3df-800c-4240-803a-0702755e9cc6|общий||ГК|782|||1|1|qwen
+680|a73fa3df-800c-4240-803a-0702755e9cc6|общий||ГК|1005|||1|1|qwen
+680|a73fa3df-800c-4240-803a-0702755e9cc6|общий||ГК|314|||1|1|qwen

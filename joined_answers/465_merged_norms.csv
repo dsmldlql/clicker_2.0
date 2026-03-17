@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|специальный||КОАП|122|||2|2|gemini;qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|15|||2|2|gemini;qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|303|||2|2|gemini;qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|261|||1|2|qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|301|||1|2|qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|304|||1|2|qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|специальный|1090|Правила дорожного движения Российской Федерации||34|23.10.1993|1|2|qwen
+465|cb0293b2-1636-4caa-80bb-b649c3eb90d5|общий||КОАП|301|1||1|2|gemini

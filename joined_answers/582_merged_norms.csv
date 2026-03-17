@@ -1,0 +1,11 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный||ЖК|31|||2|2|gemini;qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный||ЖК|35|||1|2|qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный|5242-1|Закон Российской Федерации|7||25.06.1993|1|2|qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный|713|ПП||31|17.07.1995|1|2|qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|общий||ГПК|28|||1|2|qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный||ГПК|30|||1|2|qwen
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|общий||ГК|304|||1|2|gemini
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный||ЖК|83|||1|2|gemini
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|общий|5242-1|Закон РФ|7||25.06.1993|1|2|gemini
+582|8a7b8a5a-1fb0-4add-ba0e-061281e24c02|специальный||ГК|42|||1|2|gemini

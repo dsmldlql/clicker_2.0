@@ -1,0 +1,14 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|специальный||ГК|584|||2|2|gemini;qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|специальный||ГК|601|||2|2|gemini;qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий||ГК|166|||1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий||ГК|177|||1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий||ГК|131|||1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|специальный||ГК|583|||1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий|218-ФЗ|ФЗ|1||13.07.2015|1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий|218-ФЗ|ФЗ|14||13.07.2015|1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|специальный|218-ФЗ|ФЗ|42||13.07.2015|1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий||ГК|29|||1|2|qwen
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий||ГК|209|||1|2|gemini
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|специальный||ГК|572|||1|2|gemini
+303|aa0d184c-ab5e-4d3b-a30b-e63aa205329b|общий|218-ФЗ|ФЗ|36||13.07.2015|1|2|gemini

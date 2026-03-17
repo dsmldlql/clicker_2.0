@@ -1,0 +1,33 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГПК|131|||2|5|perplexity_grok;qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|18||07.02.1992|2|5|gpt;perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|19||07.02.1992|2|5|gpt;perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|20||07.02.1992|2|5|gpt;perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|702|||1|5|qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|723|||1|5|qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|29|1|07.02.1992|1|5|qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|17|2|07.02.1992|1|5|qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГПК|132|||1|5|qwen
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|22||07.02.1992|1|5|gpt
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|23||07.02.1992|1|5|gpt
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-1|Закон РФ|17||07.02.1992|1|5|gpt
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|309|||1|5|perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|310|||1|5|perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|314|2||1|5|perplexity_grok
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий|2300-1|Закон РФ|29|1|07.02.1992|1|5|gemini
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий|2300-1|Закон РФ|30||07.02.1992|1|5|gemini
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий|2300-1|Закон РФ|28|5|07.02.1992|1|5|gemini
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|723|1||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|723|2||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|724|1||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|724|3||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГК|724|4||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|18|1|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|19|1|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|29|1|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|18|5|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|17||07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|общий||ГПК|17|||1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|13|1|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|15|1|07.02.1992|1|5|perplexity_claude_sonnet
+36|375dddcf-e381-4e2b-9ca2-dfb953b0aba4|специальный|2300-I|"Закон Российской Федерации ""О защите прав потребителей"""|29|3|07.02.1992|1|5|perplexity_claude_sonnet

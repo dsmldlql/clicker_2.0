@@ -1,0 +1,34 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|381|||3|5|gpt;perplexity_grok;qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный||ГК|250|||2|5|gpt;qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|244|||2|5|perplexity_claude_sonnet;qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|380|||2|5|gpt;qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный||ГК|551|||2|5|perplexity_claude_sonnet;qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|218-ФЗ|ФЗ|62||13.07.2015|2|5|gpt;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|549|||2|5|perplexity_claude_sonnet;perplexity_grok
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|250|1||2|5|gemini;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|250|2||2|5|gemini;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|218-ФЗ|ФЗ|42||13.07.2015|2|5|gemini;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|380|1||2|5|gemini;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|381|2||2|5|gemini;perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный||ГК|246|||1|5|qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный||ГК|554|||1|5|qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|5|qwen
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|454|||1|5|gpt
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|209|||1|5|perplexity_grok
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|576|||1|5|perplexity_grok
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|№ 218-ФЗ|ФЗ|8||13.07.2015|1|5|perplexity_grok
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|№ 218-ФЗ|ФЗ|60||13.07.2015|1|5|perplexity_grok
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|130|||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|315-ФЗ|ФЗ|6||03.07.2016|1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|250|3||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|380|2||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|380|3||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|380|4||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|381|1||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|429|1||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|429|2||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|429|3||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|429|4||1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|специальный|218-ФЗ|ФЗ|8||13.07.2015|1|5|perplexity_claude_sonnet
+190|bf9aa076-2a31-49f4-bef9-300f074470b1|общий||ГК|550|||1|5|perplexity_claude_sonnet

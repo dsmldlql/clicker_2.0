@@ -1,0 +1,15 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|1112|||2|2|gemini;qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|1110|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|1141|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|1142|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|1154|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|1175|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|327|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|807|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|808|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|1157|||1|2|qwen
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|1142|1||1|2|gemini
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|418|2||1|2|gemini
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|специальный||ГК|327|1||1|2|gemini
+599|8b7e2ef8-9adf-42ed-a74d-319b50bb9b0a|общий||ГК|1163|1||1|2|gemini

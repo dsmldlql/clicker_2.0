@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+489|3164a06d-e90c-47b8-8529-59ae9c53b7a2|специальный|229-ФЗ|ФЗ|99||02.10.2007|2|2|gemini;qwen
+489|3164a06d-e90c-47b8-8529-59ae9c53b7a2|общий||ТК|138|||1|2|qwen
+489|3164a06d-e90c-47b8-8529-59ae9c53b7a2|специальный|229-ФЗ|ФЗ|98||02.10.2007|1|2|qwen
+489|3164a06d-e90c-47b8-8529-59ae9c53b7a2|общий|229-ФЗ|ФЗ|69||02.10.2007|1|2|gemini

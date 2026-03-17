@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+444|c3afabc9-5199-48cf-9ba1-fea3a224bddd|общий||НК|212|1||2|2|gemini;qwen
+444|c3afabc9-5199-48cf-9ba1-fea3a224bddd|специальный||НК|220|3||2|2|gemini;qwen
+444|c3afabc9-5199-48cf-9ba1-fea3a224bddd|специальный|259-ФЗ|ФЗ|||08.08.2024|1|2|qwen
+444|c3afabc9-5199-48cf-9ba1-fea3a224bddd|общий||НК|220|1||1|2|qwen
+444|c3afabc9-5199-48cf-9ba1-fea3a224bddd|общий||НК|224|2||1|2|qwen

@@ -1,0 +1,10 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|общий||ГК|182|||1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|общий||ГК|185|||1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный||ГК|1851|||1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|283-ФЗ|ФЗ|3||03.08.2018|1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|283-ФЗ|ФЗ|15||03.08.2018|1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|1764|ПП||2|21.12.2019|1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|1764|ПП||6|21.12.2019|1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|950|Приказ МВД|||21.12.2019|1|1|qwen
+684|98bfedd2-ab39-4287-a012-e90d6a1b6dfa|специальный|950|Приказ МВД||1|21.12.2019|1|1|qwen

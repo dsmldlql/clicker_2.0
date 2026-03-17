@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|80|||3|4|gemini;gpt;qwen
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|общий||ТК|77|||2|4|gemini;qwen
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|81|||2|4|gemini;qwen
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|общий||ТК|77|1||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|общий||ТК|77|2||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|общий||ТК|77|3||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|общий||ТК|77|4||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|81|1||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|81|2||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|81|3||1|4|gpt
+129|875926f2-c2d8-4a4f-aefa-98ab452bd098|специальный||ТК|83|||1|4|gemini

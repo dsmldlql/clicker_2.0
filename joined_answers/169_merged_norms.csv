@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|249|||3|4|gemini;gpt;qwen
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|246|||2|4|gpt;qwen
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|247|||2|4|gpt;qwen
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|специальный||ГК|250|||2|4|gpt;qwen
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|248|||1|4|qwen
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|244|||1|4|gpt
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|246|2||1|4|gemini
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|специальный||ГК|250|1||1|4|gemini
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|специальный||ГК|250|2||1|4|gemini
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|общий||ГК|247|1||1|4|gemini
+169|2f4480bd-f283-4a69-b6d8-7d6c9f4dd86c|специальный|218-ФЗ|ФЗ|42||13.07.2015|1|4|gemini

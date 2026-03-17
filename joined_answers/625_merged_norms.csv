@@ -1,0 +1,12 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|общий||ГК|549|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|общий||ГК|550|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|общий||ГК|551|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|общий||ГК|209|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный||ЖК|15|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный||ЖК|16|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный||ЖК|19|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный||ЖК|22|||1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный|218-ФЗ|ФЗ|1||13.07.2015|1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|1|qwen
+625|ecceb607-4ebc-4861-aa31-78fd15a6be8a|специальный|218-ФЗ|ФЗ|26||13.07.2015|1|1|qwen

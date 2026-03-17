@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|40|||2|2|gemini;qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|41|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|42|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|44|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|общий||СК|34|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|38|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|общий||ГК|168|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|общий||ГК|178|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|общий||ГК|179|||1|2|qwen
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|42|1||1|2|gemini
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|специальный||СК|44|2||1|2|gemini
+518|9741bce7-1729-4e5c-ab49-f9c4deb182f6|общий||ГК|181|2||1|2|gemini

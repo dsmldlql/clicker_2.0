@@ -1,0 +1,243 @@
+{
+  "Norms": [
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "166",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет, что оспоримая сделка недействительна в силу признания её таковой судом, а ничтожная — независимо от такого признания.",
+      "case_note": "Разграничивает процедуры оспаривания сделки третьими лицами через суд.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json",
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "177",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Предусматривает возможность признания недействительной сделки гражданина, не способного понимать значение своих действий.",
+      "case_note": "Релевантна, если третьи лица будут оспаривать дарение по причине недееспособности бабушки.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json",
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "3",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Закрепляет право заинтересованных лиц на обращение в суд за судебной защитой нарушенных прав.",
+      "case_note": "Даёт третьим лицам процессуальное право подать иск об оспаривании договора дарения.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json",
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "572",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет договор дарения как соглашение, по которому даритель безвозмездно передаёт одаряемому вещь в собственность либо имущественное право.",
+      "case_note": "Регулирует основание возникновения права собственности у клиента по договору дарения от бабушки.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "166",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает, что сделка может быть оспорима или ничтожна в случаях, предусмотренных законом.",
+      "case_note": "Определяет общие основания, по которым третьи лица могут требовать признания договора дарения недействительным.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "168",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает, что сделка, нарушающая требования закона, может быть признана судом недействительной.",
+      "case_note": "Даёт основание третьим лицам оспаривать дарение, если оно нарушает законные права (например, кредиторов).",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "578",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "1",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет основания отмены дарения (например, покушение на жизнь дарителя, ненадлежащее обращение с подарком).",
+      "case_note": "Специальная норма об отмене дарения, которая может быть использована третьими лицами в интересах дарителя.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "61.2",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует оспаривание сделок должника в процедурах банкротства.",
+      "case_note": "Релевантна, если бабушка имеет кредиторов и дарение нарушает их права (подозрительная сделка).",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГПК РФ",
+      "date": "14.11.2002",
+      "number": "138-ФЗ",
+      "art": "131",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет форму и содержание искового заявления при обращении в суд.",
+      "case_note": "Регулирует процедуру подачи иска третьими лицами для оспаривания дарения.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "167",
+      "art_prilозhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает последствия недействительности сделки — возврат сторон в первоначальное положение.",
+      "case_note": "Определяет последствия для клиента в случае успешного оспаривания дарения третьими лицами.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.01.1996",
+      "number": "14-ФЗ",
+      "art": "572",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "1",
+      "scope": "специальный",
+      "gen_note": "Раскрывает понятие договора дарения как безвозмездной передачи вещи или права собственности.",
+      "case_note": "Является материально-правовым основанием возникновения права собственности у клиента на основании волеизъявления бабушки.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "ГК РФ",
+      "date": "30.11.1994",
+      "number": "51-ФЗ",
+      "art": "181",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает срок исковой давности по спорам о признании оспоримой сделки недействительной — один год.",
+      "case_note": "Важное защитное положение для клиента: если третьи лица пропустили срок с момента, когда узнали об основаниях для оспаривания, им может быть отказано в иске.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+      ],
+      "_total_files": 2
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/539_7bd8e998-abca-40bb-8119-fab229093e9e_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/539_7bd8e998-abca-40bb-8119-fab229093e9e_gemini.json"
+    ],
+    "total_source_files": 2,
+    "unique_norms": 12
+  }
+}

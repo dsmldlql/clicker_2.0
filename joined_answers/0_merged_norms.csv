@@ -1,0 +1,24 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||УК|159|||3|5|gpt;perplexity_claude_sonnet;qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||Конституция|41|||3|5|gemini;gpt;perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|323-ФЗ|ФЗ|11||21.11.2011|3|5|gemini;gpt;perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|323-ФЗ|ФЗ|19||21.11.2011|3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||УК|163|||2|5|perplexity_claude_sonnet;qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||ГК|782|||1|5|qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|1006|ПП|||04.10.2012|1|5|qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный||КОАП|148|||1|5|qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий|59-ФЗ|ФЗ|8||02.05.2006|1|5|qwen
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|323-ФЗ|ФЗ|73||21.11.2011|1|5|gpt
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный||УК|124|||1|5|gpt
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||ГК|575|3||1|5|perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий|2300-1|"Закон Российской Федерации от 07.02.1992 № 2300-1 ""О защите прав потребителей"""|16||07.02.1992|1|5|perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||ГПК|17|||1|5|perplexity_grok
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|323-ФЗ|ФЗ|19|1|21.11.2011|1|5|gemini
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный||УК|2912|||1|5|gemini
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный|323-ФЗ|ФЗ|32||21.11.2011|1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|специальный||УК|290|||1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||УПК|31|||1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||УПК|31|1||1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||УПК|151|1||1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||ГК|779|1||1|5|perplexity_claude_sonnet
+0|466f428e-0e4b-4d07-b042-c1d22ff2ce88|общий||ГК|15|1||1|5|perplexity_claude_sonnet

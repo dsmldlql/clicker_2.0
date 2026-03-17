@@ -1,0 +1,10 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|303|||2|2|gemini;qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|301|||1|2|qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|304|||1|2|qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|306|||1|2|qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|307|||1|2|qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|специальный|45|Закон города Москвы|814||21.11.2007|1|2|qwen
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|специальный|289-ПП|ПП||25|17.05.2013|1|2|gemini
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|245|1||1|2|gemini
+534|16ad0f4d-174f-4457-8aab-ee116ff0da8d|общий||КОАП|261|||1|2|gemini

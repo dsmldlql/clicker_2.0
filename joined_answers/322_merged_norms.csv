@@ -1,0 +1,9 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|специальный|323-ФЗ|ФЗ|20||21.11.2011|2|2|gemini;qwen
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|специальный||СК|64|||1|2|qwen
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|специальный||СК|65|||1|2|qwen
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|общий||ГК|185|||1|2|qwen
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|специальный|640|ПП|84||17.06.2015|1|2|qwen
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|общий||СК|64|1||1|2|gemini
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|общий||ГК|185|1||1|2|gemini
+322|c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66|специальный|1853|ПП||18|18.11.2020|1|2|gemini

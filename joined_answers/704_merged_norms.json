@@ -1,0 +1,163 @@
+{
+  "Norms": [
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1142",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет круг наследников первой очереди по закону: дети, супруг и родители наследодателя.",
+      "case_note": "Норма определяет, что пользователь как сын имеет право наследовать после отца как наследник первой очереди.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1142",
+      "art_prilozhenie": "",
+      "art_chast": "2",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает право внуков наследодателя и их потомков наследовать по праву представления.",
+      "case_note": "Норма не применяется к ситуации пользователя, так как он наследует как ребёнок, а не по праву представления.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1112",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет состав наследства: вещи, иное имущество, имущественные права и обязанности наследодателя.",
+      "case_note": "Норма указывает, что наследоваться может только имущество, принадлежавшее наследодателю (отцу) на момент смерти.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "36",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет имущество каждого из супругов как личное: принадлежавшее до брака, полученное в дар или в порядке наследования.",
+      "case_note": "Норма показывает, что после развода имущество матери является её личной собственностью и не входит в наследство отца.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "СК РФ",
+      "date": "29.12.1995",
+      "number": "223-ФЗ",
+      "art": "38",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует раздел общего имущества супругов как в период брака, так и после его расторжения.",
+      "case_note": "Норма указывает, что раздел имущества между бывшими супругами должен был произойти при разводе.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1153",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет способы принятия наследства: подача заявления нотариусу или фактическое принятие.",
+      "case_note": "Норма регулирует процедуру вступления пользователя в наследство после отца.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "ГК РФ",
+      "date": "26.11.2001",
+      "number": "146-ФЗ",
+      "art": "1154",
+      "art_prilozhenie": "",
+      "art_chast": "1",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Устанавливает срок принятия наследства — шесть месяцев со дня открытия наследства.",
+      "case_note": "Норма определяет срок, в течение которого пользователь должен обратиться к нотариусу для оформления наследства.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    },
+    {
+      "act": "Основы законодательства Российской Федерации о нотариате",
+      "date": "11.02.1993",
+      "number": "4462-1",
+      "art": "48",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Регулирует выдачу свидетельств о праве на наследство по закону и по завещанию.",
+      "case_note": "Норма определяет документ, который пользователь получит после оформления наследства у нотариуса.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+      ],
+      "_total_files": 1
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/704_958e5fa8-a677-49db-bcea-9f594c7f2da6_qwen.json"
+    ],
+    "total_source_files": 1,
+    "unique_norms": 8
+  }
+}

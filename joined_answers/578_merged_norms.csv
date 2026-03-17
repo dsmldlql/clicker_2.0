@@ -1,0 +1,10 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|общий||ГК|1072|||2|2|gemini;qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|общий||ГК|1064|||1|2|qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|специальный|40-ФЗ|ФЗ|14||25.04.2002|1|2|qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|специальный|40-ФЗ|ФЗ|141||25.04.2002|1|2|qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|общий||ГК|196|||1|2|qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|специальный||ГПК|28|||1|2|qwen
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|общий||ГК|1064|1||1|2|gemini
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|специальный|40-ФЗ|ФЗ|7||25.04.2002|1|2|gemini
+578|efffd06e-1924-4b55-ba90-4b8e6cb181a3|общий||ГК|151|||1|2|gemini

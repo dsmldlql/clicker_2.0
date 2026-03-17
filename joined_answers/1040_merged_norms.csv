@@ -1,0 +1,5 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+1040|394808|общий||ГК|426|||1|1|perplexity_grok
+1040|394808|общий||ГК|782|||1|1|perplexity_grok
+1040|394808|общий|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|32||07.02.1992|1|1|perplexity_grok
+1040|394808|специальный|3612-1|Основы законодательства Российской Федерации о культуре|521||09.10.1992|1|1|perplexity_grok

@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|общий||ЖК|153|||1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|специальный||ЖК|153|5||1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|специальный||ЖК|31|||1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|общий|229-ФЗ|ФЗ|43||02.10.2007|1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|специальный|229-ФЗ|ФЗ|43|4|02.10.2007|1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|общий|229-ФЗ|ФЗ|121||02.10.2007|1|1|qwen
+621|1d3f5c79-88d7-488c-887a-57dfaffad147|общий||ГПК|446|||1|1|qwen

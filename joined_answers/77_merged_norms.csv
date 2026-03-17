@@ -1,0 +1,15 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+77|20aab4c4-2b1d-4642-b020-32ece242026b|специальный||НК|220|3||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|220|1||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+77|20aab4c4-2b1d-4642-b020-32ece242026b|специальный||НК|220|4||2|5|perplexity_claude_sonnet;qwen
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|210|||1|5|qwen
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||ГК|185|||1|5|qwen
+77|20aab4c4-2b1d-4642-b020-32ece242026b|специальный|ЕД-7-11/913@|Приказ ФНС России|||20.10.2025|1|5|qwen
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|19|||1|5|gpt
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|229|||1|5|perplexity_grok
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|210|3||1|5|gemini
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|220|5||1|5|perplexity_claude_sonnet
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|220|7||1|5|perplexity_claude_sonnet
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|220|8||1|5|perplexity_claude_sonnet
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|220|11||1|5|perplexity_claude_sonnet
+77|20aab4c4-2b1d-4642-b020-32ece242026b|общий||НК|1051|2||1|5|perplexity_claude_sonnet

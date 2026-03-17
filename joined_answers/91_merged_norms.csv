@@ -1,0 +1,19 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|32||07.02.1992|2|4|gpt;qwen
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный||ГК|730|||2|4|gemini;qwen
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|16|3|07.02.1992|2|4|gemini;perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий||ГПК|23|5||1|4|qwen
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|17||07.02.1992|1|4|qwen
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|29||07.02.1992|1|4|gpt
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий||ГК|309|||1|4|gpt
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий||ГК|310|||1|4|gpt
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|10|1|07.02.1992|1|4|gemini
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|2300-1|Закон РФ|33|1|07.02.1992|1|4|gemini
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|специальный|1514|ПП||4|21.09.2020|1|4|gemini
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|16|2|07.02.1992|1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|16|1|07.02.1992|1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий||ГК|782|||1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|13|6|07.02.1992|1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|31|1|07.02.1992|1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|17|2|07.02.1992|1|4|perplexity_claude_sonnet
+91|262edd0e-fd30-4be4-ba53-b2028fb48bf3|общий|2300-1|Закон РФ|17|3|07.02.1992|1|4|perplexity_claude_sonnet

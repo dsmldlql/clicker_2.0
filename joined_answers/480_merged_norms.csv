@@ -1,0 +1,6 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+480|96c5f7d4-c99b-4ce1-b161-c0a6121f15fb|специальный|14-ФЗ|ФЗ|32||08.02.1998|1|2|qwen
+480|96c5f7d4-c99b-4ce1-b161-c0a6121f15fb|специальный|14-ФЗ|ФЗ|37||08.02.1998|1|2|qwen
+480|96c5f7d4-c99b-4ce1-b161-c0a6121f15fb|общий||ГК|66|||1|2|qwen
+480|96c5f7d4-c99b-4ce1-b161-c0a6121f15fb|общий|14-ФЗ|ФЗ|32|1|08.02.1998|1|2|gemini
+480|96c5f7d4-c99b-4ce1-b161-c0a6121f15fb|специальный|14-ФЗ|ФЗ|37|8|08.02.1998|1|2|gemini

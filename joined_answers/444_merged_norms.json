@@ -1,0 +1,109 @@
+{
+  "Norms": [
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "212",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "1",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Определяет доход налогоплательщика в виде материальной выгоды от экономии на процентах за пользование заемными средствами, полученными от организаций или индивидуальных предпринимателей.",
+      "case_note": "Применима к ситуации пользователя, так как касается налогообложения материальной выгоды по ипотечному кредиту со ставкой 5%.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json",
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "3",
+      "art_podpunkt": "6",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Определяет момент возникновения права на имущественный налоговый вычет при строительстве или приобретении жилья в строящемся доме.",
+      "case_note": "Ключевая норма для второго вопроса пользователя о праве на вычет до момента сдачи объекта и подписания акта приема-передачи.",
+      "_occurrence_count": 2,
+      "_source_files": [
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json",
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_gemini.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "Федеральный закон",
+      "date": "08.08.2024",
+      "number": "259-ФЗ",
+      "art": "",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "специальный",
+      "gen_note": "Вносит изменения в статью 212 НК РФ, уточняя порядок определения материальной выгоды от экономии на процентах с 1 января 2025 года.",
+      "case_note": "Критически важен для пользователя, так как изменяет правила налогообложения материальной выгоды по льготным ипотечным кредитам с 2025 года.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "220",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "1",
+      "art_podpunkt": "3",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Предоставляет имущественный налоговый вычет в размере фактически произведенных расходов на новое строительство либо приобретение жилья на территории РФ.",
+      "case_note": "Применима к пользователю, так как он приобрел строящееся жилье и интересуется правом на имущественный вычет.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json"
+      ],
+      "_total_files": 2
+    },
+    {
+      "act": "НК РФ",
+      "date": "05.08.2000",
+      "number": "117-ФЗ",
+      "art": "224",
+      "art_prilozhenie": "",
+      "art_chast": "",
+      "art_punkt": "2",
+      "art_podpunkt": "",
+      "art_abzats": "",
+      "scope": "общий",
+      "gen_note": "Устанавливает налоговую ставку 35% для доходов в виде материальной выгоды от экономии на процентах по заемным средствам.",
+      "case_note": "Относится к первому вопросу пользователя о налогообложении материальной выгоды по IT-ипотеке.",
+      "_occurrence_count": 1,
+      "_source_files": [
+        "444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json"
+      ],
+      "_total_files": 2
+    }
+  ],
+  "_metadata": {
+    "source_files": [
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/qwen/hypos_norm/gen/444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_qwen.json",
+      "/home/dmitrii/Documents/projects/clicker_2.0/answers/gemini/hypos_norm/gen/444_c3afabc9-5199-48cf-9ba1-fea3a224bddd_gemini.json"
+    ],
+    "total_source_files": 2,
+    "unique_norms": 5
+  }
+}

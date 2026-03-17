@@ -1,0 +1,16 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||СК|34|||3|5|gpt;perplexity_grok;qwen
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|2171|3||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|2171|4||3|5|gemini;gpt;perplexity_claude_sonnet
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|2171|2||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|220|2||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||СК|38|||2|5|gpt;qwen
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|217|171||2|5|gpt;perplexity_claude_sonnet
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|специальный||НК|2171|||1|5|qwen
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|специальный||НК|2171|1||1|5|qwen
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||ГК|130|||1|5|perplexity_grok
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||СК|34|1||1|5|gemini
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||ГК|235|||1|5|perplexity_claude_sonnet
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|специальный||СК|38|3||1|5|perplexity_claude_sonnet
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|специальный||НК|21410|3||1|5|perplexity_claude_sonnet
+15|ed2d4116-f49f-45c1-8308-08a7a42b641e|общий||НК|229|1||1|5|perplexity_claude_sonnet

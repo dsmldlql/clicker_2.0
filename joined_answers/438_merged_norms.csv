@@ -1,0 +1,13 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|специальный||ГК|274|||2|2|gemini;qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|10|||2|2|gemini;qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|209|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|специальный||ГК|277|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|244|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|246|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|304|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГК|305|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|специальный||ЗК|23|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||ГПК|3|||1|2|qwen
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|специальный||ГК|2875|1||1|2|gemini
+438|57be1c81-d069-44cc-b261-f76cdd96ea81|общий||КОАП|191|||1|2|gemini

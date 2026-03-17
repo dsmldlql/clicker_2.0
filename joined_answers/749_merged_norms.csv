@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|общий||ГК|244|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|общий||ГК|250|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|общий||ГК|549|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|общий||ГК|551|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|специальный||СК|38|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|специальный||СК|39|||1|1|qwen
+749|fcb49ef7-cf1b-4316-bcac-129812b8bea3|специальный|218-ФЗ|ФЗ|42||13.07.2015|1|1|qwen

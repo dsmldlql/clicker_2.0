@@ -1,0 +1,8 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|общий|63|УП|1||23.01.2024|1|2|qwen
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|специальный|63|УП|2||23.01.2024|1|2|qwen
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|специальный||НК|218|4||1|2|qwen
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|специальный||ЗК|395|6||1|2|qwen
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|общий|81-ФЗ|ФЗ|17||19.05.1995|1|2|qwen
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|общий|63|УП||1|23.01.2024|1|2|gemini
+596|293fc15c-2cea-4698-be6a-8c4d28f3ded8|специальный|63|УП||2|23.01.2024|1|2|gemini

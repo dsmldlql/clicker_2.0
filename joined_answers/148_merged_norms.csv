@@ -1,0 +1,34 @@
+example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|432|||3|4|gpt;perplexity_claude_sonnet;qwen
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный||ГК|779|||3|4|gemini;perplexity_claude_sonnet;qwen
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|437|||2|4|gemini;gpt
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|438|||2|4|gpt;perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-1|Закон РФ|16||07.02.1992|2|4|gemini;gpt
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|782|||2|4|gemini;perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-1|Закон Российской Федерации|261|1|07.02.1992|1|4|qwen
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|152-ФЗ|ФЗ|3||27.07.2006|1|4|qwen
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||НК|34611|||1|4|qwen
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|421|||1|4|gpt
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|435|||1|4|gpt
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-1|Закон РФ|8||07.02.1992|1|4|gpt
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|428|||1|4|gemini
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|152-ФЗ|ФЗ|181|2|27.07.2006|1|4|gemini
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|781|||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|437|2||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|428|1||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|428|2||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||ГК|310|||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-I|Закон Российской Федерации «О защите прав потребителей»|8||07.02.1992|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-I|Закон Российской Федерации «О защите прав потребителей»|10||07.02.1992|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-I|Закон Российской Федерации «О защите прав потребителей»|16||07.02.1992|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-I|Закон Российской Федерации «О защите прав потребителей»|32||07.02.1992|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|2300-I|Закон Российской Федерации «О защите прав потребителей»|261||07.02.1992|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|152-ФЗ|ФЗ|6||27.07.2006|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|152-ФЗ|ФЗ|9||27.07.2006|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|152-ФЗ|ФЗ|181||27.07.2006|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|149-ФЗ|ФЗ|10||27.07.2006|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|149-ФЗ|ФЗ|102||27.07.2006|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||НК|145|1||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|общий||НК|34611|2||1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный|54-ФЗ|ФЗ|12||22.05.2003|1|4|perplexity_claude_sonnet
+148|77112dad-87d8-4c6a-bcd4-a728d983b79d|специальный||КОАП|148|||1|4|perplexity_claude_sonnet

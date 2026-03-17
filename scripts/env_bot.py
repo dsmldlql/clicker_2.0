@@ -1,4 +1,4 @@
-import subprocess, os, time, shutil, threading, json, queue, re
+import subprocess, os, time, shutil, threading, json, queue, re, sys
 import numpy as np
 import pandas as pd
 import cv2
@@ -128,8 +128,21 @@ class VirtualBotEnv:
     # Прокси из конфига
     self.proxy, self.proxy_auth = self._parse_proxy(bot_cfg.get('proxy'))
 
-    # Сохраняем логин/пароль прокси для расширения
+    # Сохраняем логин/пароль прокси
     self.proxy_login, self.proxy_password = self._extract_proxy_credentials(bot_cfg.get('proxy'))
+
+    # Отладка: выводим информацию о прокси
+    proxy_cfg = bot_cfg.get('proxy')
+    # Маскируем пароль для безопасности
+    proxy_display = self.proxy
+    if self.proxy_login and self.proxy_password:
+      proxy_display = f"http://{self.proxy_login}:***@{self.proxy.split('@')[-1] if '@' in self.proxy else self.proxy.split('://')[1]}"
+    
+    print(f"[+] [Бот {self.bot_id}] Конфигурация прокси:")
+    print(f"    Исходный конфиг: {proxy_cfg}")
+    print(f"    proxy_url: {proxy_display}")
+    print(f"    proxy_login: {self.proxy_login}")
+    print(f"    proxy_password: {'***' if self.proxy_password else None}")
 
     self.procs = {}
 
@@ -140,9 +153,9 @@ class VirtualBotEnv:
 
     Поддерживаемые форматы:
     - [ip, port] -> ('http://ip:port', None)
-    - [ip, port, login, password] -> ('http://ip:port', 'Basic base64...')
+    - [ip, port, login, password] -> ('http://login:password@ip:port', None)
     - 'ip:port' -> ('http://ip:port', None)
-    - 'login:pass@ip:port' -> ('http://ip:port', 'Basic base64...')
+    - 'login:pass@ip:port' -> ('http://login:pass@ip:port', None)
     - 'none', 'false', False, None -> (None, None)
     """
     if proxy_cfg is None:
@@ -154,13 +167,7 @@ class VirtualBotEnv:
         return None, None
       # Формат 'login:pass@ip:port'
       if '@' in proxy_cfg:
-        auth_part, server_part = proxy_cfg.rsplit('@', 1)
-        login, password = auth_part.split(':', 1)
-        import base64
-        auth_header = 'Basic ' + base64.b64encode(f'{login}:{password}'.encode()).decode()
-        if ':' in server_part:
-          return f'http://{server_part}', auth_header
-        return None, None
+        return f'http://{proxy_cfg}', None
       # Формат 'ip:port'
       if ':' in proxy_cfg:
         return f'http://{proxy_cfg}', None
@@ -169,11 +176,9 @@ class VirtualBotEnv:
     if isinstance(proxy_cfg, list) and len(proxy_cfg) >= 2:
       ip, port = proxy_cfg[0], proxy_cfg[1]
       if len(proxy_cfg) >= 4:
-        # Есть логин и пароль
+        # Есть логин и пароль — встраиваем в URL
         login, password = proxy_cfg[2], proxy_cfg[3]
-        import base64
-        auth_header = 'Basic ' + base64.b64encode(f'{login}:{password}'.encode()).decode()
-        return f'http://{ip}:{port}', auth_header
+        return f'http://{login}:{password}@{ip}:{port}', None
       return f'http://{ip}:{port}', None
 
     return None, None
@@ -205,7 +210,12 @@ class VirtualBotEnv:
     Возвращает путь к директории расширения или None если не требуется.
     """
     if not self.proxy_login or not self.proxy_password:
+      print(f"[!] [Бот {self.bot_id}] Пропускаем создание расширения: нет логина/пароля")
       return None
+
+    print(f"[+] [Бот {self.bot_id}] Создание расширения прокси-аутентификации...")
+    print(f"    Логин: '{self.proxy_login}'")
+    print(f"    Пароль: '{self.proxy_password}'")
 
     import shutil
 
@@ -223,15 +233,16 @@ class VirtualBotEnv:
       with open(background_js_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-      content = content.replace('LOGIN_PLACEHOLDER', self.proxy_login)
-      content = content.replace('PASSWORD_PLACEHOLDER', self.proxy_password)
+      content = content.replace('LOGIN_PLACEHOLDER', str(self.proxy_login))
+      content = content.replace('PASSWORD_PLACEHOLDER', str(self.proxy_password))
 
       with open(background_js_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
-      print(f"[+] [Бот {self.bot_id}] Расширение прокси-аутентификации создано")
+      print(f"[+] [Бот {self.bot_id}] Расширение прокси-аутентификации создано в {temp_extension_dir}")
       return temp_extension_dir
 
+    print(f"[!] [Бот {self.bot_id}] Исходная директория расширения не найдена: {src_extension_dir}")
     return None
 
   def _parse_schedule_times(self, time_strings):
@@ -780,6 +791,9 @@ class VirtualBotEnv:
     self._prepare_profile()
     print(f"[*] [Бот {self.bot_id}] Запуск на {self.display}...")
 
+    # Получаем базовую директорию проекта
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
     # Проверяем и убиваем старые процессы на этом дисплее
     try:
       # Находим PID Xvfb на этом дисплее
@@ -922,15 +936,12 @@ class VirtualBotEnv:
 
     # Добавляем прокси если указан
     if self.proxy:
-      chrome_cmd.append(f"--proxy-server={self.proxy}")
-      print(f"[*] [Бот {self.bot_id}] Используется прокси: {self.proxy}")
+      # Извлекаем чистый IP:port без креденшалов для Chrome
+      pure_proxy = self.proxy.split('://')[1].split('@')[1] if '://' in self.proxy else self.proxy.split('@')[1] if '@' in self.proxy else self.proxy
       
-      # Добавляем расширение для автоматической аутентификации если есть логин/пароль
-      extension_path = self._create_proxy_extension()
-      if extension_path:
-        chrome_cmd.append(f"--disable-extensions-except={extension_path}")
-        chrome_cmd.append(f"--load-extension={extension_path}")
-        print(f"[*] [Бот {self.bot_id}] Расширение прокси-аутентификации загружено")
+      # Используем прямой прокси - браузер покажет окно аутентификации
+      chrome_cmd.append(f"--proxy-server={pure_proxy}")
+      print(f"[*] [Бот {self.bot_id}] Используется прокси: {pure_proxy} (браузер запросит логин/пароль)")
     else:
       print(f"[*] [Бот {self.bot_id}] Прокси не используется")
     
@@ -944,6 +955,9 @@ class VirtualBotEnv:
       "--mute-audio",
       "--limit-fps=5",
       "--disable-blink-features=AutomationControlled",
+      # Отключаем диалог прокси-аутентификации
+      "--disable-prompt-on-repost",
+      "--autoplay-policy=user-gesture-required",
       f"--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       url
     ])

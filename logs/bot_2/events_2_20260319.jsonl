@@ -1,0 +1,7 @@
+{"timestamp": "2026-03-19T10:37:08.379538", "bot_id": 2, "event_type": "BOT_START", "data": {"bot_id": 2, "project": "hypos_norm", "timestamp": "2026-03-19T10:37:08.379374", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_2"}}
+{"timestamp": "2026-03-19T10:37:14.259125", "bot_id": 2, "event_type": "RESTART", "data": {"bot_id": 2, "note": "first_start"}}
+{"timestamp": "2026-03-19T10:37:14.259654", "bot_id": 2, "event_type": "FSM_INITIALIZED", "data": {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}}
+{"timestamp": "2026-03-19T10:38:40.839933", "bot_id": 2, "event_type": "QUESTION_SENT", "data": {"question_idx": 706, "uid": "9a426e06-3237-471c-bf4b-9054f04fcf57"}}
+{"timestamp": "2026-03-19T10:43:33.149869", "bot_id": 2, "event_type": "QUESTION_ATTEMPT", "data": {"attempt": 1, "max_questions": 250, "question_idx": 706, "uid": "9a426e06-3237-471c-bf4b-9054f04fcf57"}}
+{"timestamp": "2026-03-19T10:43:53.499747", "bot_id": 2, "event_type": "QUESTION_SENT", "data": {"question_idx": 707, "uid": "4933db8a-488d-4e0a-9c25-a2d673603e7f"}}
+{"timestamp": "2026-03-19T10:44:38.815939", "bot_id": 2, "event_type": "BOT_STOP", "data": {"bot_id": 2, "total_questions": 1}}

@@ -5,3 +5,9 @@ timestamp|site|scenario|bot_id|event_type|attempt_number|global_index|question_u
 2026-03-17 09:27:19|gemini|thinking|0|RESTART||600|02472255-22ff-4887-8a81-dacb4b704054
 2026-03-17 09:28:58|gemini|thinking|0|QUESTION_SENT||600|02472255-22ff-4887-8a81-dacb4b704054
 2026-03-17 09:33:44|gemini|thinking|0|STOP||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:12:32|gemini|thinking|2|RESTART||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:14:01|gemini|thinking|2|QUESTION_SENT||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:19:02|gemini|thinking|2|JSON_VERIFIED||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:19:02|gemini|thinking|2|QUESTION|1|600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:19:02|gemini|thinking|2|JSON_SAVED||600|02472255-22ff-4887-8a81-dacb4b704054
+2026-03-17 23:19:02|gemini|thinking|2|QUESTION_ADVANCE||601|79cab366-aa07-4e02-bd2c-dc32ec2700d8

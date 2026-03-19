@@ -402,11 +402,10 @@ class FSM:
             bot.log_limit_exhausted()
             return
 
-          # Выполняем reset последовательность браузера для ПОВТОРНОЙ попытки
-          # reset_scenario сам устанавливает current_state в start_state и логирует переход
-          self.reset_scenario(bot)
-          # Возвращаем, чтобы не переходить в другое состояние
-          return
+          # НЕ делаем reset_scenario здесь - пусть FSM перейдёт в состояние try_again
+          # как указано в конфиге (fail: try_again)
+          # reset_scenario будет вызван только при переходе в start_question
+          success = False  # Устанавливаем fail для перехода в try_again
       else:
         success = True
         # Для условий без явной проверки (always success)
@@ -520,7 +519,85 @@ class FSM:
       
       # Устанавливаем флаг, что действие выполнено
       self._paste_enter_executed = True
-      
+
+    elif action == "click_paste_file_enter":
+      # Защита от повторного выполнения
+      if hasattr(self, '_paste_enter_executed'):
+        print(f"[+] [Бот {self.bot_id}] click_paste_file_enter уже выполнен, пропускаем")
+        return
+
+      # Получаем путь к файлу из конфигурации состояния
+      current_state_config = self.scenario['states'].get(self.current_state, {})
+      file_path = current_state_config.get('file')
+
+      if not file_path:
+        print(f"[!] [Бот {self.bot_id}] Не указан параметр 'file' для click_paste_file_enter")
+        return
+
+      # Читаем текст из файла
+      try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+          file_content = f.read()
+        print(f"[+] [Бот {self.bot_id}] Текст прочитан из файла {file_path} ({len(file_content)} символов)")
+      except Exception as e:
+        print(f"[!] [Бот {self.bot_id}] Ошибка чтения файла {file_path}: {e}")
+        return
+
+      # Get question info for CSV logging
+      uid = bot.get_cur_question_uid()
+      global_idx = bot.cur_global_idx
+
+      print(f"[*] [Бот {self.bot_id}] Отправляем текст из файла (длина: {len(file_content)} символов)...")
+
+      # Log to CSV: question being sent
+      self.logger.log_csv_operation("QUESTION_SENT", global_index=global_idx, question_uid=uid)
+
+      # Запоминаем время начала спрашивания вопроса
+      bot.last_question_start_time = time.time()
+
+      # Очищаем буфер обмена перед копированием
+      bot.clear_clipboard()
+      time.sleep(0.2)
+
+      # Копируем содержимое файла в буфер обмена конкретного бота
+      try:
+        cmd = ["xclip", "-selection", "clipboard", "-display", bot.display]
+        proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.DEVNULL)
+        proc.communicate(input=file_content.encode('utf-8'))
+        proc.wait(timeout=2)
+        print(f"[+] [Бот {self.bot_id}] Текст из файла скопирован в буфер")
+      except Exception as e:
+        print(f"[!] [Бот {self.bot_id}] Ошибка копирования в буфер: {e}")
+        return
+
+      # Клик по полю ввода
+      bot.action_queue.put(('click', (x, y)))
+      time.sleep(1.0)  # Увеличенная пауза после клика
+
+      # Вставка из буфера
+      try:
+        # Вставляем текст через ctrl+v
+        bot.action_queue.put(('hotkey', ['ctrl', 'v']))
+        time.sleep(1.0)  # Увеличенная пауза для вставки
+
+        print(f"[+] [Бот {self.bot_id}] Текст вставлен")
+      except Exception as e:
+        print(f"[!] [Бот {self.bot_id}] Ошибка вставки: {e}")
+
+      # Нажатие Enter
+      bot.action_queue.put(('key', 'Return'))
+      time.sleep(0.5)  # Пауза после Enter
+
+      # Логируем факт задавания вопроса
+      bot.log_question_sent(bot.cur_global_idx, uid)
+
+      # Очищаем буфер после вставки
+      bot.clear_clipboard()
+      print(f"[+] [Бот {self.bot_id}] Буфер очищен после вставки")
+
+      # Устанавливаем флаг, что действие выполнено
+      self._paste_enter_executed = True
+
     elif action == "click_copy_save_json_check":
       # Сохраняем координаты кнопки копирования
       self.copy_button_coords = (x, y)

@@ -1,30 +1,31 @@
-bot_0_:
-  project: hypos_norm
-  subproject: gen
-  site: gemini
-  mode: thinking
-  model: gemini
-  scenario: thinking
-  browser_master_profile: ~/vanthuan1990t@gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 280.0
-  row_range: [600, 799]
-  max_questions: 200
-  restart_delay: None
-  proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
-  schedule:
-    start_immediately: true
-    start_times:
-      - "00:00"
-      - "06:00"
-      - "12:00"
-      - "18:00"
+# bot_0_:
+#   project: hypos_norm
+#   subproject: gen
+#   site: gpt
+#   mode: web_search
+#   model: gpt
+#   scenario: web_search
+#   browser_master_profile: ~/rxmzge8117@outlook.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 90.0
+#   row_range: [350, 499]
+#   max_questions: 200
+#   restart_delay: None
+#   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+#   schedule:
+#     start_immediately: true
+#     start_times:
+#       - "00:00"
+#       - "06:00"
+#       - "12:00"
+#       - "18:00"
+#   subscription: gpt_go
 
 bot_0:
   project: hypos_norm
@@ -33,7 +34,7 @@ bot_0:
   mode: web_search
   model: gpt
   scenario: web_search
-  browser_master_profile: ~/rxmzge8117@outlook.com
+  browser_master_profile: ~/janskisheikh042@outlook.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -41,9 +42,9 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 240.0
-  row_range: [125, 144]
-  max_questions: 200
+  question_interval: 45.0
+  row_range: [382, 499]
+  max_questions: 400
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
@@ -53,7 +54,8 @@ bot_0:
       - "06:00"
       - "12:00"
       - "18:00"
-  subscription: gpt_go
+  subscription: gpt_plus
+
 
 bot_1:
   project: hypos_norm
@@ -70,9 +72,9 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 90.0
-  row_range: [145, 199]
-  max_questions: 200
+  question_interval: 45.0
+  row_range: [500, 799]
+  max_questions: 400
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
@@ -84,13 +86,42 @@ bot_1:
       - "18:00"
   subscription: gpt_plus
 
-bot_2:
+bot_2_:
+  project: hypos_norm
+  subproject: gen
+  site: gemini
+  mode: thinking
+  model: gemini
+  scenario: thinking
+  browser_master_profile: ~/vanthuan1990t@gmail.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 280.0
+  row_range: [600, 799]
+  max_questions: 250
+  restart_delay: None
+  proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gemini_plus
+
+bot_3:
   project: hypos_norm
   subproject: gen
   site: claude
   mode: pro
-  model: gemini
-  scenario: pro
+  model: claude
+  scenario: sonnet
   browser_master_profile: ~/leinswdolenfnk4@outlook.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
@@ -99,8 +130,8 @@ bot_2:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 1800
-  row_range: [296, 500]
+  question_interval: 300
+  row_range: [301, 312]
   max_questions: 100
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
@@ -112,7 +143,91 @@ bot_2:
       - "12:00"
       - "18:00"
 
-bot_3:
+bot_4:
+  project: hypos_norm
+  subproject: gen
+  site: claude
+  mode: pro
+  model: claude
+  scenario: sonnet
+  browser_master_profile: ~/sweetozewdur0ye@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 300
+  row_range: [313, 325]
+  max_questions: 100
+  restart_delay: None
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_5:
+  project: hypos_norm
+  subproject: gen
+  site: claude
+  mode: pro
+  model: claude
+  scenario: sonnet
+  browser_master_profile: ~/touchxdimespgq6d4@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 300
+  row_range: [326, 338]
+  max_questions: 100
+  restart_delay: None
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_6:
+  project: hypos_norm
+  subproject: gen
+  site: claude
+  mode: pro
+  model: claude
+  scenario: sonnet
+  browser_master_profile: ~/meachjhayamegl@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 300
+  row_range: [339, 350]
+  max_questions: 100
+  restart_delay: None
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+
+bot_3_:
   project: hypos_norm
   subproject: gen
   site: gemini
@@ -241,7 +356,7 @@ bot_3_:
   max_questions: 100
   restart_delay: 3600
 
-bot_4:
+bot_4_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -261,7 +376,7 @@ bot_4:
   max_questions: 100
   restart_delay: 3600
 
-bot_5:
+bot_5_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -281,7 +396,7 @@ bot_5:
   max_questions: 100
   restart_delay: 3600
 
-bot_6:
+bot_6_:
   project: hypos_norm
   subproject: gen
   site: qwen
@@ -301,7 +416,7 @@ bot_6:
   max_questions: 100
   restart_delay: 3600
 
-bot_7:
+bot_7_:
   project: hypos_norm
   subproject: gen
   site: qwen

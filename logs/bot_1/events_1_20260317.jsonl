@@ -235,3 +235,15 @@
 {"timestamp": "2026-03-17T17:25:16.865284", "bot_id": 1, "event_type": "QUESTION_SENT", "data": {"question_idx": 199, "uid": "26a73c85-1521-4084-b567-d6ce46d8bc3d"}}
 {"timestamp": "2026-03-17T17:26:52.351441", "bot_id": 1, "event_type": "QUESTION_ATTEMPT", "data": {"attempt": 57, "max_questions": 200, "question_idx": 199, "uid": "26a73c85-1521-4084-b567-d6ce46d8bc3d"}}
 {"timestamp": "2026-03-17T17:26:53.359145", "bot_id": 1, "event_type": "BOT_STOP", "data": {"bot_id": 1, "total_questions": 57}}
+{"timestamp": "2026-03-17T23:12:17.365197", "bot_id": 1, "event_type": "BOT_START", "data": {"bot_id": 1, "project": "hypos_norm", "timestamp": "2026-03-17T23:12:17.364985", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_1"}}
+{"timestamp": "2026-03-17T23:12:23.129137", "bot_id": 1, "event_type": "RESTART", "data": {"bot_id": 1, "note": "first_start"}}
+{"timestamp": "2026-03-17T23:12:23.129557", "bot_id": 1, "event_type": "FSM_INITIALIZED", "data": {"site": "gpt", "scenario": "web_search", "start_state": "start_question"}}
+{"timestamp": "2026-03-17T23:13:12.440208", "bot_id": 1, "event_type": "QUESTION_SENT", "data": {"question_idx": 280, "uid": "88664947-14c4-4fab-a119-efc454715c23"}}
+{"timestamp": "2026-03-17T23:14:58.439385", "bot_id": 1, "event_type": "QUESTION_ATTEMPT", "data": {"attempt": 1, "max_questions": 400, "question_idx": 280, "uid": "88664947-14c4-4fab-a119-efc454715c23"}}
+{"timestamp": "2026-03-17T23:16:09.686140", "bot_id": 1, "event_type": "QUESTION_SENT", "data": {"question_idx": 281, "uid": "d3bf578e-7607-4f10-a5e5-0a946050c39a"}}
+{"timestamp": "2026-03-17T23:17:47.247236", "bot_id": 1, "event_type": "QUESTION_ATTEMPT", "data": {"attempt": 2, "max_questions": 400, "question_idx": 281, "uid": "d3bf578e-7607-4f10-a5e5-0a946050c39a"}}
+{"timestamp": "2026-03-17T23:18:16.995275", "bot_id": 1, "event_type": "QUESTION_SENT", "data": {"question_idx": 282, "uid": "fab939ea-c3f5-469f-bf14-17a03bb552ed"}}
+{"timestamp": "2026-03-17T23:36:52.161115", "bot_id": 1, "event_type": "BOT_START", "data": {"bot_id": 1, "project": "hypos_norm", "timestamp": "2026-03-17T23:36:52.160953", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_1"}}
+{"timestamp": "2026-03-17T23:36:57.929296", "bot_id": 1, "event_type": "RESTART", "data": {"bot_id": 1, "note": "first_start"}}
+{"timestamp": "2026-03-17T23:36:57.929696", "bot_id": 1, "event_type": "FSM_INITIALIZED", "data": {"site": "gpt", "scenario": "web_search", "start_state": "start_question"}}
+{"timestamp": "2026-03-17T23:42:23.868599", "bot_id": 1, "event_type": "BOT_STOP", "data": {"bot_id": 1, "total_questions": 0}}

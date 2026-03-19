@@ -1,0 +1,7 @@
+2026-03-19 10:37:08 | INFO     | [BOT_START] {"bot_id": 2, "project": "hypos_norm", "timestamp": "2026-03-19T10:37:08.379374", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_2"}
+2026-03-19 10:37:14 | INFO     | [RESTART] {"bot_id": 2, "note": "first_start"}
+2026-03-19 10:37:14 | INFO     | [FSM_INITIALIZED] {"site": "gemini", "scenario": "thinking", "start_state": "start_question"}
+2026-03-19 10:38:40 | INFO     | [QUESTION_SENT] {"question_idx": 706, "uid": "9a426e06-3237-471c-bf4b-9054f04fcf57"}
+2026-03-19 10:43:33 | INFO     | [QUESTION_ATTEMPT] {"attempt": 1, "max_questions": 250, "question_idx": 706, "uid": "9a426e06-3237-471c-bf4b-9054f04fcf57"}
+2026-03-19 10:43:53 | INFO     | [QUESTION_SENT] {"question_idx": 707, "uid": "4933db8a-488d-4e0a-9c25-a2d673603e7f"}
+2026-03-19 10:44:38 | INFO     | [BOT_STOP] {"bot_id": 2, "total_questions": 1}

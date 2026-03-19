@@ -109,6 +109,7 @@ perplexity:
 
 - `click`: Простой клик по элементу
 - `click_paste_enter`: Клик, вставка текста из буфера и Enter
+- `click_paste_file_enter`: Клик, вставка текста из файла и Enter (требует параметр `file`)
 - `click_copy_save_json_check`: Клик, выделение всего, копирование и проверка JSON
 - `click_scroll_down`: Клик с последующей прокруткой вниз
 - `scroll_up`: Прокрутка вверх

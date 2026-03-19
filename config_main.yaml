@@ -2,7 +2,7 @@ global:
   screen_max_width: 4000
   screen_max_height: 2200
   screen_fps: 5
-  bots_count: 2
+  bots_count: 1
 
 prompts:
   
@@ -22,14 +22,14 @@ prompts:
       filter:
         text: prompts/grok/hypos_norm/filter/hn_filter_grok_text_latest
         json: prompts/grok/hypos_norm/filter/hn_filter_grok_json_latest
-  claude_sonnet:
+  claude:
     hypos_norm:
       gen: 
-        text: prompts/claude_sonnet/hypos_norm/gen/hn_gen_claude_sonnet_text_latest
-        json: prompts/claude_sonnet/hypos_norm/gen/hn_gen_claude_sonnet_json_latest
+        text: prompts/claude/hypos_norm/gen/hn_gen_claude_sonnet_text_latest
+        json: prompts/claude/hypos_norm/gen/hn_gen_claude_sonnet_json_latest
       filter:
-        text: prompts/claude_sonnet/hypos_norm/filter/hn_filter_claude_sonnet_text_latest
-        json: prompts/claude_sonnet/hypos_norm/filter/hn_filter_claude_sonnet_json_latest
+        text: prompts/claude/hypos_norm/filter/hn_filter_claude_sonnet_text_latest
+        json: prompts/claude/hypos_norm/filter/hn_filter_claude_sonnet_json_latest
   gemini:
     hypos_norm:
       gen: 
@@ -74,12 +74,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gpt/plus.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gpt/more.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: options_menu_opened
               fail: start_question
@@ -89,12 +89,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gpt/more.png
-              threshold: 0.8
+              threshold: 0.7
             action: mousemove
             condition:
               templates:
                 - templates/chromium/gpt/web_search.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: select_web_search
               fail: start_question
@@ -104,12 +104,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gpt/web_search.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gpt/blue_search.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: ask_empty
               fail: start_question
@@ -119,12 +119,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gpt/search_the_web.png
-              threshold: 0.8
+              threshold: 0.7
             action: click_paste_enter
             condition:
               templates:
                 - templates/chromium/gpt/stop.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: answer_processing
               fail: answer_processing
@@ -133,13 +133,28 @@ sites:
           answer_processing:
             expect:
               templates:
+                - templates/chromium/gpt/voice_mode.png
+              threshold: 0.7
+            action: mousemove
+            condition:
+              templates:
                 - templates/chromium/gpt/voice_right_side.png
-              threshold: 0.8
+              threshold: 0.7
+            next:
+              success: page_end
+              fail: start_question
+            timeout: 400.0
+
+          page_end:
+            expect:
+              templates:
+                - templates/chromium/gpt/voice_right_side.png
+              threshold: 0.7
             action: click_ctrl_end
             condition:
               templates:
-                - templates/chromium/gpt/copy_like.png
-              threshold: 0.8
+                - templates/chromium/gpt/try_again_more.png
+              threshold: 0.7
             next:
               success: end_of_answer
               fail: start_question
@@ -149,14 +164,59 @@ sites:
             expect:
               templates:
                 - templates/chromium/gpt/copy.png
-              threshold: 0.8
+              threshold: 0.7
             action: click_copy_save_json_check
             condition:
               json_valid: true            
             next:
               success: start_question
+              fail: try_again
+            timeout: 120.0
+
+          try_again:
+            expect:
+              templates:
+                - templates/chromium/gpt/try_again.png
+              threshold: 0.7
+            action: click
+            condition:
+              templates:
+                - templates/chromium/gpt/try_again_option.png   
+              threshold: 0.7
+            next:
+              success: select_try_again
               fail: start_question
             timeout: 120.0
+
+          select_try_again:
+            expect:
+              templates:
+                - templates/chromium/gpt/try_again_option.png
+              threshold: 0.7
+            action: click
+            condition:
+              templates:
+                - templates/chromium/gpt/plus.png   
+              threshold: 0.7
+            next:
+              success: answer_processing
+              fail: start_question
+            timeout: 120.0
+            
+    #   1 my_state:
+    #   2   expect:
+    #   3     templates:
+    #   4       - templates/trigger.png
+    #   5     threshold: 0.7
+    #   6   action: click_paste_file_enter
+    #   7   file: /path/to/your/prompt.txt  # ← путь к файлу
+    #   8   condition:
+    #   9     templates:
+    #  10       - templates/result.png
+    #  11     threshold: 0.7
+    #  12   next:
+    #  13     success: next_state
+    #  14     fail: retry_state
 
 
   gemini:
@@ -185,57 +245,57 @@ sites:
             expect:
               templates:
                 - templates/chromium/gemini/main_page_thinking.png
-              threshold: 0.8
+              threshold: 0.7
             action: mousemove
             condition:
               templates:
                 - templates/chromium/gemini/ask_gemini.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: ask_empty
               fail: if_pro
-            timeout: 10.0
+            timeout: 120.0
 
           if_pro:
             expect:
               templates:
                 - templates/chromium/gemini/main_page_pro.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gemini/thinking.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: options_menu_opened
               fail: if_fast
-            timeout: 10.0
+            timeout: 120.0
 
           if_fast:
             expect:
               templates:
                 - templates/chromium/gemini/main_page_fast.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gemini/thinking.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: options_menu_opened
               fail: start_question
-            timeout: 10.0
+            timeout: 120.0
 
           options_menu_opened:
             expect:
               templates:
                 - templates/chromium/gemini/thinking.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gemini/main_page_thinking.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: ask_empty
               fail: start_question
@@ -245,12 +305,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gemini/ask_gemini.png
-              threshold: 0.8
+              threshold: 0.7
             action: click_paste_enter
             condition:
               templates:
                 - templates/chromium/gemini/stop.png
-              threshold: 0.9
+              threshold: 0.7
             next:
               success: answer_processing
               fail: answer_processing
@@ -260,12 +320,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gemini/voice_mode.png
-              threshold: 0.8
+              threshold: 0.7
             action: mousemove
             condition:
               templates:
                 - templates/chromium/gemini/more.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: find_copy_button
               fail: start_question
@@ -275,12 +335,12 @@ sites:
             expect:
               templates:
                 - templates/chromium/gemini/more.png
-              threshold: 0.8
+              threshold: 0.7
             action: click
             condition:
               templates:
                 - templates/chromium/gemini/copy.png
-              threshold: 0.8
+              threshold: 0.7
             next:
               success: end_of_answer
               fail: start_question
@@ -290,7 +350,7 @@ sites:
             expect:
               templates:
                 - templates/chromium/gemini/copy.png
-              threshold: 0.8
+              threshold: 0.7
             action: click_copy_save_json_check
             condition:
               json_valid: true            
@@ -317,7 +377,7 @@ sites:
             next:
               success: options_menu_opened
               fail: if_thinking
-            timeout: 20.0
+            timeout: 120.0
 
           if_thinking:
             expect:
@@ -332,7 +392,7 @@ sites:
             next:
               success: options_menu_opened
               fail: if_fast
-            timeout: 20.0
+            timeout: 120.0
 
           if_fast:
             expect:
@@ -347,7 +407,7 @@ sites:
             next:
               success: options_menu_opened
               fail: start_question
-            timeout: 20.0
+            timeout: 120.0
 
           options_menu_opened:
             expect:
@@ -441,49 +501,49 @@ sites:
             seconds: 5.0
 
     scenarios:
-      thinking:
+      sonnet:
         start_state: start_question
 
         states:
           start_question:
             expect:
               templates:
-                - templates/chromium/gemini/plus.png
+                - templates/chromium/claude/plus.png
               threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/chromium/gemini/web_search_selected.png
+                - templates/chromium/claude/web_search_selected.png
               threshold: 0.8
             next:
               success: check_model
               fail: start_question
-            timeout: 10.0
+            timeout: 120.0
 
           check_model:
             expect:
               templates:
-                - templates/chromium/gemini/sonnet_main_page.png
+                - templates/chromium/claude/how_can_i_help.png
               threshold: 0.8
             action: click
             condition:
               templates:
-                - templates/chromium/gemini/sonnet_selected.png
+                - templates/chromium/claude/sonnet_main_page.png
               threshold: 0.8
             next:
               success: ask_empty
               fail: start_question
-            timeout: 10.0
+            timeout: 120.0
 
           ask_empty:
             expect:
               templates:
-                - templates/chromium/gemini/ask_gemini.png
+                - templates/chromium/claude/how_can_i_help.png
               threshold: 0.8
             action: click_paste_enter
             condition:
               templates:
-                - templates/chromium/gemini/stop.png
+                - templates/chromium/claude/answer_processing.png
               threshold: 0.9
             next:
               success: answer_processing
@@ -493,28 +553,28 @@ sites:
           answer_processing:
             expect:
               templates:
-                - templates/chromium/gemini/voice_mode.png
-              threshold: 0.8
+                - templates/chromium/claude/voice_mode.png
+              threshold: 0.65
             action: mousemove
             condition:
               templates:
-                - templates/chromium/gemini/more.png
-              threshold: 0.8
+                - templates/chromium/claude/voice_right_conner.png
+              threshold: 0.65
             next:
               success: find_copy_button
               fail: start_question
-            timeout: 400.0
+            timeout: 600.0
 
           find_copy_button:
             expect:
               templates:
-                - templates/chromium/gemini/more.png
-              threshold: 0.8
-            action: click
+                - templates/chromium/claude/voice_right_conner.png
+              threshold: 0.65
+            action: click_ctrl_end
             condition:
               templates:
-                - templates/chromium/gemini/copy.png
-              threshold: 0.8
+                - templates/chromium/claude/copy_likes.png
+              threshold: 0.65
             next:
               success: end_of_answer
               fail: start_question
@@ -523,8 +583,8 @@ sites:
           end_of_answer:
             expect:
               templates:
-                - templates/chromium/gemini/copy.png
-              threshold: 0.8
+                - templates/chromium/claude/copy.png
+              threshold: 0.65
             action: click_copy_save_json_check
             condition:
               json_valid: true            

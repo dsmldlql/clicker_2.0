@@ -78,6 +78,10 @@ class VirtualBotEnv:
     self.total_question_count = 0
     # Время начала спрашивания последнего вопроса (для question_interval)
     self.last_question_start_time = None
+    # Флаг ожидания завершения интервала между вопросами (неблокирующая версия)
+    self.waiting_for_interval = False
+    # Время, когда бот сможет возобновить работу после ожидания интервала
+    self.interval_resume_time = None
     # Используем dataset_path из конфига или путь по умолчанию
     dataset_path = bot_cfg.get('dataset_path', 'datasets/sp_depers_final_with_hypnorm_used_marks.csv')
     # Преобразуем в абсолютный путь относительно проекта

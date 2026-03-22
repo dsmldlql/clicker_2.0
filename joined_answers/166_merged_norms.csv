@@ -1,16 +1,12 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|20||07.02.1992|4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|18||07.02.1992|4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|23||07.02.1992|3|5|gpt;perplexity_claude_sonnet;qwen
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|22||07.02.1992|1|5|qwen
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГК|477|1||1|5|perplexity_grok
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГПК|17|||1|5|perplexity_grok
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГК|314|||1|5|perplexity_grok
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|20|1|07.02.1992|1|5|gemini
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|23|1|07.02.1992|1|5|gemini
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|23|2|07.02.1992|1|5|gemini
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|18|1|07.02.1992|1|5|gemini
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|17||07.02.1992|1|5|perplexity_claude_sonnet
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|15||07.02.1992|1|5|perplexity_claude_sonnet
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|13||07.02.1992|1|5|perplexity_claude_sonnet
-166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|924|ПП||6|10.11.2011|1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|20|07.02.1992|5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|18|07.02.1992|5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|23|07.02.1992|4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|17|07.02.1992|1|5|perplexity_claude_sonnet
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|15|07.02.1992|1|5|perplexity_claude_sonnet
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|13|07.02.1992|1|5|perplexity_claude_sonnet
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|924|ПП|6|10.11.2011|1|5|perplexity_claude_sonnet
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|специальный|2300-1|Закон РФ|22|07.02.1992|1|5|qwen
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГК|477||1|5|perplexity_grok
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГПК|17||1|5|perplexity_grok
+166|dad820a4-6334-46e7-b0ad-9519cdc6d81b|общий||ГК|314||1|5|perplexity_grok

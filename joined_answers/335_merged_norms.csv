@@ -1,9 +1,18 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|59|1||2|2|gemini;qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|48|||2|2|gemini;qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|59|||1|2|qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|113|||1|2|qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы|||30.11.2022|1|2|qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы||3|30.11.2022|1|2|qwen
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|44|5||1|2|gemini
-335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||КАС|125|||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|48||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|59||4|5|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|113||3|5|gpt;perplexity_grok;qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|70||2|5|gpt;perplexity_grok
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|69||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||КАС|286||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||КАС|289||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||КАС|220||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||КАС|219||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|32||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|138||1|5|perplexity_claude_sonnet
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы||30.11.2022|1|5|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный|ЕД-7-8/1131@|Приказ Федеральной налоговой службы|3|30.11.2022|1|5|qwen
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||НК|44||1|5|gemini
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|общий||КАС|125||1|5|gemini
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|47||1|5|gpt
+335|5f0a9ce9-056f-41c7-a3f2-ed8dc045f02f|специальный||НК|46||1|5|perplexity_grok

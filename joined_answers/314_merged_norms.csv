@@ -1,8 +1,14 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|143-ФЗ|ФЗ|9||15.11.1997|2|2|gemini;qwen
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|143-ФЗ|ФЗ|16||15.11.1997|1|2|qwen
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|143-ФЗ|ФЗ|17||15.11.1997|1|2|qwen
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|1274|ПП||28|31.10.1998|1|2|qwen
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий||ГПК|264|1||1|2|gemini
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий||ГПК|265|||1|2|gemini
-314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|143-ФЗ|ФЗ|77||15.11.1997|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|143-ФЗ|ФЗ|9|15.11.1997|5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий||ГПК|264||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий||ГПК|265||2|5|gemini;perplexity_claude_sonnet
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий||СК|14||1|5|perplexity_claude_sonnet
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|143-ФЗ|ФЗ|7|15.11.1997|1|5|perplexity_claude_sonnet
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|84|11.02.1993|1|5|perplexity_claude_sonnet
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|125-ФЗ|ФЗ|26|22.10.2004|1|5|perplexity_claude_sonnet
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|143-ФЗ|ФЗ|16|15.11.1997|1|5|qwen
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|143-ФЗ|ФЗ|17|15.11.1997|1|5|qwen
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|1274|ПП|28|31.10.1998|1|5|qwen
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|143-ФЗ|ФЗ|77|15.11.1997|1|5|gemini
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|специальный|143-ФЗ|ФЗ|47|15.11.1997|1|5|gpt
+314|f75d2fd8-5e9e-426a-b44c-2d8329983431|общий|125-ФЗ|ФЗ|17|22.10.2004|1|5|gpt

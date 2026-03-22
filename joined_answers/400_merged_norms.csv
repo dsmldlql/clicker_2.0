@@ -1,7 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный||ТК|325|||2|2|gemini;qwen
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|178-ФЗ|ФЗ|62|2|17.07.1999|1|2|qwen
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|178-ФЗ|ФЗ|62||17.07.1999|1|2|qwen
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|178-ФЗ|ФЗ|61|3|17.07.1999|1|2|qwen
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|176|ПП||2|01.04.2005|1|2|qwen
-400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|455|ПП||3|12.06.2008|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный||ТК|325||3|3|gemini;gpt;qwen
+400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|178-ФЗ|ФЗ|6.2|17.07.1999|1|3|qwen
+400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|178-ФЗ|ФЗ|6.1|17.07.1999|1|3|qwen
+400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|176|ПП|2|01.04.2005|1|3|qwen
+400|3aa4405d-614c-413a-a9bf-4ef2f6ad51c8|специальный|455|ПП|3|12.06.2008|1|3|gemini

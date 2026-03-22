@@ -1,6 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный||КОАП|122|||2|2|gemini;qwen
-343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|50577-2018|ГОСТ Р 50577-2018|||18.09.2018|1|2|qwen
-343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|50577-2018|ГОСТ Р 50577-2018||47|18.09.2018|1|2|qwen
-343|91aec345-d6b5-442b-bf60-4e723c1f6e37|общий||КОАП|262|||1|2|gemini
-343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|264|Приказ МВД||77|02.05.2023|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный||КОАП|12.2||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|общий||КОАП|28.1||1|5|perplexity_claude_sonnet
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный||КОАП|28.3||1|5|perplexity_claude_sonnet
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|664|Приказ МВД|106|23.08.2017|1|5|perplexity_claude_sonnet
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|50577-2018|ГОСТ Р 50577-2018||18.09.2018|1|5|qwen
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|50577-2018|ГОСТ Р 50577-2018|4.7|18.09.2018|1|5|qwen
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|общий||КОАП|26.2||1|5|gemini
+343|91aec345-d6b5-442b-bf60-4e723c1f6e37|специальный|264|Приказ МВД|77|02.05.2023|1|5|gemini

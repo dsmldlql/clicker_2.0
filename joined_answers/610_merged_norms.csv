@@ -1,7 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|322|||1|1|qwen
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный||КОАП|2025|||1|1|qwen
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|319|||1|1|qwen
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||БК|401|||1|1|qwen
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|110||02.10.2007|1|1|qwen
-610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|1101||02.10.2007|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|32.2||3|3|gemini;gpt;qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный||КОАП|20.25||3|3|gemini;gpt;qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||КОАП|31.9||1|3|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||БК|40.1||1|3|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|110|02.10.2007|1|3|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|специальный|229-ФЗ|ФЗ|110.1|02.10.2007|1|3|qwen
+610|862c5957-faec-4344-a6f0-27cf3bd913ac|общий||БК|160.1||1|3|gemini

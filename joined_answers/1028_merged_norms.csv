@@ -1,12 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1028|393025|общий||СК|52|||2|2|perplexity_claude_sonnet;perplexity_grok
-1028|393025|специальный|143-ФЗ|ФЗ|69||15.11.1997|1|2|perplexity_grok
-1028|393025|специальный|143-ФЗ|ФЗ|70||15.11.1997|1|2|perplexity_grok
-1028|393025|специальный|143-ФЗ|ФЗ|71||15.11.1997|1|2|perplexity_grok
-1028|393025|общий||СК|51|1||1|2|perplexity_claude_sonnet
-1028|393025|общий||СК|51|2||1|2|perplexity_claude_sonnet
-1028|393025|общий|143-ФЗ|ФЗ|69|1|15.11.1997|1|2|perplexity_claude_sonnet
-1028|393025|общий|143-ФЗ|ФЗ|69|2|15.11.1997|1|2|perplexity_claude_sonnet
-1028|393025|общий||ГПК|24|4||1|2|perplexity_claude_sonnet
-1028|393025|общий||ГПК|28|1||1|2|perplexity_claude_sonnet
-1028|393025|общий||СК|48|2||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1028|393025|специальный|143-ФЗ|ФЗ|69|15.11.1997|1|1|perplexity_grok
+1028|393025|специальный|143-ФЗ|ФЗ|70|15.11.1997|1|1|perplexity_grok
+1028|393025|специальный|143-ФЗ|ФЗ|71|15.11.1997|1|1|perplexity_grok
+1028|393025|общий||СК|52||1|1|perplexity_grok

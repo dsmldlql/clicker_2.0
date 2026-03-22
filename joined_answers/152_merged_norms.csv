@@ -1,10 +1,10 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|255|||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|специальный||ТК|298|||4|5|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|специальный||ТК|254|||2|5|gemini;perplexity_claude_sonnet
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|256|||1|5|gpt
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|специальный|1089н|Приказ Минздрава России||57|23.11.2021|1|5|gemini
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|260|||1|5|perplexity_claude_sonnet
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|1089н|Приказ Министерства здравоохранения Российской Федерации об утверждении Условий и порядка формирования листков нетрудоспособности в форме электронного документа и выдачи листков нетрудоспособности в форме документа на бумажном носителе в случаях, установленных законодательством Российской Федерации||56|23.11.2021|1|5|perplexity_claude_sonnet
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|255-ФЗ|ФЗ|11||29.12.2006|1|5|perplexity_claude_sonnet
-152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|255-ФЗ|ФЗ|14||29.12.2006|1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|255||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|специальный||ТК|298||4|5|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|254||2|5|gemini;perplexity_claude_sonnet
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|260||1|5|perplexity_claude_sonnet
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|1089н|Приказ Министерства здравоохранения Российской Федерации об утверждении Условий и порядка формирования листков нетрудоспособности в форме электронного документа и выдачи листков нетрудоспособности в форме документа на бумажном носителе в случаях, установленных законодательством Российской Федерации|56|23.11.2021|1|5|perplexity_claude_sonnet
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|255-ФЗ|ФЗ|11|29.12.2006|1|5|perplexity_claude_sonnet
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий|255-ФЗ|ФЗ|14|29.12.2006|1|5|perplexity_claude_sonnet
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|специальный|1089н|Приказ Минздрава России|57|23.11.2021|1|5|gemini
+152|f0504e19-8e3b-48be-bd1d-351393e8f7d8|общий||ТК|256||1|5|gpt

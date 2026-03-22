@@ -1,8 +1,19 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|209|||2|2|gemini;qwen
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ЖК|31|||2|2|gemini;qwen
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|235|||1|2|qwen
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|141-ФЗ|ФЗ|411||01.07.2017|1|2|qwen
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГПК|131|||1|2|qwen
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|4802-1|Закон РФ|73||15.04.1993|1|2|gemini
-325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|244|||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|209||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|244||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ЖК|31||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|252||2|5|gpt;perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГПК|131||2|5|perplexity_claude_sonnet;qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|14|Закон города Москвы о дополнительных гарантиях жилищных и имущественных прав физических и юридических лиц при осуществлении реновации жилищного фонда в городе Москве|7|17.05.2017|1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|421||1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|153||1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|161||1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|162||1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГПК|28||1|5|perplexity_claude_sonnet
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|235||1|5|qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|141-ФЗ|ФЗ|41.1|01.07.2017|1|5|qwen
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|специальный|4802-1|Закон РФ|7.3|15.04.1993|1|5|gemini
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|246||1|5|gpt
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|245||1|5|perplexity_grok
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||ГК|254||1|5|perplexity_grok
+325|a6181728-940f-4eb3-a2b8-bda2c0741d21|общий||СК|60||1|5|perplexity_grok

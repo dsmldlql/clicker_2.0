@@ -1,5 +1,7 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|392|||1|1|qwen
-711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|391|||1|1|qwen
-711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|67|||1|1|qwen
-711|99840931-3b3c-4421-97f1-000d6ceeba49|общий||ГПК|22|1||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|392||2|2|gpt;qwen
+711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|391||2|2|gpt;qwen
+711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|67||2|2|gpt;qwen
+711|99840931-3b3c-4421-97f1-000d6ceeba49|общий||ГПК|22||1|2|qwen
+711|99840931-3b3c-4421-97f1-000d6ceeba49|специальный||ТК|72||1|2|gpt
+711|99840931-3b3c-4421-97f1-000d6ceeba49|общий||ГПК|112||1|2|gpt

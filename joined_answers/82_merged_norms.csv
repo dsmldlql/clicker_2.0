@@ -1,18 +1,12 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|220|4||3|5|gemini;gpt;perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|220|1||2|5|gpt;perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|78|7||2|5|gemini;gpt
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|229|1||2|5|gemini;perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|220|3||2|5|gemini;perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|220|8||2|5|gemini;perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|261||07.02.1992|1|5|qwen
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|18||07.02.1992|1|5|qwen
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|22||07.02.1992|1|5|qwen
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||ГК|314|||1|5|qwen
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|80|1||1|5|gpt
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|220|||1|5|perplexity_grok
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|219|||1|5|perplexity_grok
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|228|||1|5|perplexity_grok
-82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|ЕД-7-11/903@|Приказ Федеральной налоговой службы|||22.10.2021|1|5|perplexity_grok
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|220|7||1|5|perplexity_claude_sonnet
-82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|220|9||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|220||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|229||2|5|gemini;perplexity_claude_sonnet
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|78||2|5|gemini;gpt
+82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|26.1|07.02.1992|1|5|qwen
+82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|18|07.02.1992|1|5|qwen
+82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|22|07.02.1992|1|5|qwen
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||ГК|314||1|5|qwen
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|80||1|5|gpt
+82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный||НК|219||1|5|perplexity_grok
+82|190d9b0e-132e-44a1-b226-abf3cde65102|общий||НК|228||1|5|perplexity_grok
+82|190d9b0e-132e-44a1-b226-abf3cde65102|специальный|ЕД-7-11/903@|Приказ Федеральной налоговой службы||22.10.2021|1|5|perplexity_grok

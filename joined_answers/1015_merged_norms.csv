@@ -1,12 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1015|372992|специальный||НК|2191|||1|2|perplexity_grok
-1015|372992|специальный||НК|2192|||1|2|perplexity_grok
-1015|372992|общий||НК|220|||1|2|perplexity_grok
-1015|372992|общий||НК|221|||1|2|perplexity_grok
-1015|372992|специальный||НК|2192|1||1|2|perplexity_claude_sonnet
-1015|372992|специальный||НК|2192|2||1|2|perplexity_claude_sonnet
-1015|372992|специальный||НК|2192|4||1|2|perplexity_claude_sonnet
-1015|372992|специальный||НК|2211|||1|2|perplexity_claude_sonnet
-1015|372992|специальный|39-ФЗ|ФЗ|1021|2|22.04.1996|1|2|perplexity_claude_sonnet
-1015|372992|специальный|39-ФЗ|ФЗ|1021|9|22.04.1996|1|2|perplexity_claude_sonnet
-1015|372992|специальный|76-р|РПП|||18.01.2024|1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1015|372992|специальный||НК|219.1||1|1|perplexity_grok
+1015|372992|специальный||НК|219.2||1|1|perplexity_grok
+1015|372992|общий||НК|220||1|1|perplexity_grok
+1015|372992|общий||НК|221||1|1|perplexity_grok

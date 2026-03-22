@@ -1,11 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1000|408355|общий||КОАП|302|||2|2|perplexity_claude_sonnet;perplexity_grok
-1000|408355|общий||КОАП|303|||2|2|perplexity_claude_sonnet;perplexity_grok
-1000|408355|общий||КОАП|322|||1|2|perplexity_grok
-1000|408355|специальный|273-70|"Закон Санкт-Петербурга ""Об административных правонарушениях в Санкт-Петербурге"""|372||31.05.2010|1|2|perplexity_grok
-1000|408355|специальный|273-70|Закон Санкт-Петербурга «Об административных правонарушениях в Санкт-Петербурге»|372||31.05.2010|1|2|perplexity_claude_sonnet
-1000|408355|общий||КОАП|301|3||1|2|perplexity_claude_sonnet
-1000|408355|общий||КОАП|262|||1|2|perplexity_claude_sonnet
-1000|408355|общий||КОАП|15|||1|2|perplexity_claude_sonnet
-1000|408355|специальный|1294|ПП||12|29.12.2014|1|2|perplexity_claude_sonnet
-1000|408355|специальный|1294|ПП||522|29.12.2014|1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1000|408355|общий||КОАП|30.2||1|1|perplexity_grok
+1000|408355|общий||КОАП|30.3||1|1|perplexity_grok
+1000|408355|общий||КОАП|32.2||1|1|perplexity_grok
+1000|408355|специальный|273-70|"Закон Санкт-Петербурга ""Об административных правонарушениях в Санкт-Петербурге"""|37.2|31.05.2010|1|1|perplexity_grok

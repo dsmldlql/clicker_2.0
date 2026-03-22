@@ -1,0 +1,116 @@
+bot_2:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/rxmzge8117@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 45.0
+  row_range: [980, 999]
+  max_questions: 200
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_go
+
+bot_0:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/janskisheikh042@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 60.0
+  row_range: [1000, 1099]
+  max_questions: 400
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
+
+
+bot_1:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/halseycusenza35@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 55.0
+  row_range: [1100, 1199]
+  max_questions: 400
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
+
+bot_3:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/kacalbsullo03467p@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 55.0
+  row_range: [1200, 1299]
+  max_questions: 400
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus

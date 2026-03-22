@@ -1,0 +1,7 @@
+timestamp|event_type|attempt_number|global_index|question_uid
+2026-03-22 14:34:43|RESTART||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821
+2026-03-22 14:37:18|RESTART||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821
+2026-03-22 14:39:48|QUESTION_SENT||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821
+2026-03-22 14:44:06|QUESTION_SENT||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821
+2026-03-22 14:47:40|QUESTION_SENT||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821
+2026-03-22 14:49:03|STOP||1321|c058a5ea-ccee-4258-acf1-a9fec17f1821

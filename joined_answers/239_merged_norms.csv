@@ -1,18 +1,18 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|315|||4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|129|||4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|316|||3|4|gemini;perplexity_claude_sonnet;qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|317|||3|4|gemini;perplexity_claude_sonnet;qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|135|||2|4|perplexity_claude_sonnet;qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|2|Приказ Минтруда|||22.11.1990|1|4|qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|22|||1|4|qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|352|||1|4|qwen
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|1012|ПП|||07.10.1993|1|4|perplexity_grok
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|14-1/ООГ-8563|Письмо Минтруда РФ|||21.10.2021|1|4|perplexity_grok
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|4520-1|Закон РФ|10||19.02.1993|1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|4520-1|Закон РФ|11||19.02.1993|1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|191|||1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|392|||1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|353|||1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|356|||1|4|perplexity_claude_sonnet
-239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||КОАП|527|||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|129||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|315||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|316||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|317||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|135||3|5|gpt;perplexity_claude_sonnet;qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|4520-1|Закон РФ|10|19.02.1993|1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|4520-1|Закон РФ|11|19.02.1993|1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|191||1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|392||1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|353||1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|356||1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||КОАП|5.27||1|5|perplexity_claude_sonnet
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|2|Приказ Минтруда||22.11.1990|1|5|qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|общий||ТК|22||1|5|qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный||ТК|352||1|5|qwen
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|1012|ПП||07.10.1993|1|5|perplexity_grok
+239|7410ac4d-5d99-4447-b7ab-7670ce77b8c3|специальный|14-1/ООГ-8563|Письмо Минтруда РФ||21.10.2021|1|5|perplexity_grok

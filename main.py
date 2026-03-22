@@ -84,6 +84,47 @@ def main():
     while True:
       current_time = time.time()
 
+      # Шаг 0.5: Проверяем падение Xvfb и перезапускаем ботов немедленно
+      for bot_idx in range(bots_count):
+        bot = bots[bot_idx] if bot_idx < len(bots) else None
+        if bot is None:
+          continue
+        if vnc_monitor.is_xvfb_failed(bot_idx):
+          print(f"[!] VNC Monitor: Бот {bot_idx} - Xvfb упал! Требуется немедленный перезапуск...")
+          
+          # Останавливаем текущего бота
+          bot.stop()
+          time.sleep(2)
+          
+          # Очищаем флаг Xvfb failure
+          vnc_monitor.clear_xvfb_failed(bot_idx)
+          
+          # Создаём нового бота (это перезапустит Xvfb)
+          bot_cfg = bot_configs[bot_idx][1]
+          new_bot = VirtualBotEnv(bot_idx, bot_cfg)
+          
+          # Проверяем, все ли вопросы отвечены
+          if new_bot.all_questions_answered():
+            print(f"[+] Бот {bot_idx} все вопросы верифицированы. Перезапуск отменён.")
+            new_bot.stop()
+            bots[bot_idx] = None
+            logics[bot_idx] = None
+            continue
+          
+          site_name = bot_cfg['site']
+          new_bot.start(cfg_main['sites'][site_name]['url'])
+          bots[bot_idx] = new_bot
+          
+          # Создаём новую FSM
+          new_fsm = FSM(bot_idx, cfg_main, bot_cfg)
+          logics[bot_idx] = new_fsm
+          
+          # Сбрасываем флаг для сообщений
+          if bot_idx in bot_stop_times:
+              del bot_stop_times[bot_idx]
+          
+          print(f"[+] Бот {bot_idx} перезапущен после падения Xvfb")
+
       # Шаг 0: Проверяем запланированные запуски ботов
       for bot_idx, bot in enumerate(bots):
         if bot is None:
@@ -207,11 +248,34 @@ def main():
 
           print(f"[+] Бот {bot_idx} перезапущен (активный перезапуск)")
 
-      # Шаг 2: Фильтруем активных ботов
-      active_pairs = [(bot, fsm) for bot, fsm in zip(bots, logics) 
-                      if bot is not None and fsm is not None and not bot.stop_event.is_set()]
+      # Шаг 2: Проверяем ботов, ожидающих завершения интервала между вопросами
+      for bot_idx, (bot, fsm) in enumerate(zip(bots, logics)):
+        if bot is None or fsm is None or bot.stop_event.is_set():
+          continue
+        
+        # Проверяем, ожидает ли бот завершения интервала
+        if hasattr(bot, 'waiting_for_interval') and bot.waiting_for_interval:
+          if hasattr(bot, 'interval_resume_time') and current_time >= bot.interval_resume_time:
+            # Интервал истёк, сбрасываем флаг и продолжаем работу
+            print(f"[+] [Бот {bot_idx}] Интервал истёк, возобновляем работу")
+            bot.waiting_for_interval = False
+            bot.interval_resume_time = None
+            # Выполняем reset браузера сейчас
+            print(f"[*] [Бот {bot_idx}] Переход в start_question - выполняем reset браузера")
+            fsm.reset_scenario(bot)
+            # Ждём завершения всех действий в очереди (reset должен выполниться полностью)
+            if hasattr(bot, 'action_queue'):
+              bot.action_queue.join()
+              print(f"[+] [Бот {bot_idx}] Reset завершён, бот готов к работе")
+          # Если ещё ждём, просто продолжаем (бот будет пропущен на шаге 4)
 
-      # Шаг 3: Проверяем, все ли боты завершили работу
+      # Шаг 3: Фильтруем активных ботов (исключая тех, кто ждёт интервал)
+      active_pairs = [(bot, fsm) for bot, fsm in zip(bots, logics)
+                      if bot is not None and fsm is not None 
+                      and not bot.stop_event.is_set()
+                      and not (hasattr(bot, 'waiting_for_interval') and bot.waiting_for_interval)]
+
+      # Шаг 4: Проверяем, все ли боты завершили работу
       all_bots_done = all(b is None for b in bots)
       if all_bots_done:
         print("[+] Все боты завершили все вопросы. Выход.")
@@ -224,19 +288,19 @@ def main():
               pass
         break
 
-      # Если нет активных ботов, но есть ожидающие перезапуска - продолжаем цикл
+      # Если нет активных ботов, но есть ожидающие перезапуска или интервала - продолжаем цикл
       if not active_pairs:
         time.sleep(1.0)
         continue
 
-      # Шаг 4: Обрабатываем активные пары
+      # Шаг 5: Обрабатываем активные пары
       for bot, fsm in active_pairs:
         frame = bot.get_frame_umat()
         if frame is not None:
           fsm.execute_step(bot, analyzer, frame)
 
-      # Небольшая пауза чтобы не нагружать CPU
-      time.sleep(1.0)
+      # Минимальная пауза чтобы не нагружать CPU (теперь кадры обновляются чаще)
+      time.sleep(0.1)
 
   except KeyboardInterrupt:
     print("\n[*] Завершение работы...")

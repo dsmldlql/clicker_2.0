@@ -1,6 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|841|||1|1|qwen
-647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|62|||1|1|qwen
-647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|234|||1|1|qwen
-647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||ТК|352|||1|1|qwen
-647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||ТК|356|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|84.1||3|3|gemini;gpt;qwen
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|62||3|3|gemini;gpt;qwen
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|специальный||ТК|234||3|3|gemini;gpt;qwen
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||ТК|352||1|3|qwen
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||ТК|356||1|3|qwen
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||КОАП|5.27||1|3|gemini
+647|ade3f91c-9abd-4baf-a797-a2f724a255a5|общий||ГПК|22||1|3|gpt

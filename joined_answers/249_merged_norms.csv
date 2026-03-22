@@ -1,21 +1,20 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|98|||4|4|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|96|||3|4|perplexity_claude_sonnet;perplexity_grok;qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|88|||2|4|perplexity_claude_sonnet;qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|94|||2|4|perplexity_claude_sonnet;qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|86|||2|4|gemini;perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|18||07.02.1992|1|4|qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|13||07.02.1992|1|4|qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|17||07.02.1992|1|4|qwen
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|79|||1|4|perplexity_grok
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-I|Закон РФ|18|6|07.02.1992|1|4|gemini
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|104|||1|4|gemini
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|18|1|07.02.1992|1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|18|6|07.02.1992|1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|13|6|07.02.1992|1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|15||07.02.1992|1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|23|1|07.02.1992|1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|196|||1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|39|||1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|320|||1|4|perplexity_claude_sonnet
-249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|321|||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|98||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|96||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|88||3|5|gpt;perplexity_claude_sonnet;qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|86||2|5|gemini;perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|94||2|5|perplexity_claude_sonnet;qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|79||2|5|gpt;perplexity_grok
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|18|07.02.1992|1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|13|07.02.1992|1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|15|07.02.1992|1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон РФ|23|07.02.1992|1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|196||1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|39||1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|320||1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|321||1|5|perplexity_claude_sonnet
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|18|07.02.1992|1|5|qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|13|07.02.1992|1|5|qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-1|Закон Российской Федерации от 07.02.1992 О защите прав потребителей|17|07.02.1992|1|5|qwen
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|специальный|2300-I|Закон РФ|18|07.02.1992|1|5|gemini
+249|a2ddb33b-edaf-412f-ad4a-499debbafb59|общий||ГПК|104||1|5|gemini

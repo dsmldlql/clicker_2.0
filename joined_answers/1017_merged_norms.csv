@@ -1,8 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1017|398796|общий||УПК|145|||2|2|perplexity_claude_sonnet;perplexity_grok
-1017|398796|общий||УПК|20|||2|2|perplexity_claude_sonnet;perplexity_grok
-1017|398796|общий||УПК|144|||1|2|perplexity_grok
-1017|398796|специальный||УК|158|||1|2|perplexity_grok
-1017|398796|общий||УПК|25|||1|2|perplexity_claude_sonnet
-1017|398796|общий||УК|76|||1|2|perplexity_claude_sonnet
-1017|398796|общий||УК|15|||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1017|398796|общий||УПК|144||1|1|perplexity_grok
+1017|398796|общий||УПК|145||1|1|perplexity_grok
+1017|398796|специальный||УК|158||1|1|perplexity_grok
+1017|398796|общий||УПК|20||1|1|perplexity_grok

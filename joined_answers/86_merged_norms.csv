@@ -1,9 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-86|ee619717-6916-467b-b446-7a3b0f8dadea|специальный||ЖК|153|5||3|4|gemini;gpt;perplexity_claude_sonnet
-86|ee619717-6916-467b-b446-7a3b0f8dadea|специальный||ЖК|153|||2|4|gpt;perplexity_claude_sonnet
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|196|||2|4|gemini;gpt
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|199|||2|4|gemini;gpt
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|210|||2|4|gemini;perplexity_claude_sonnet
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий|string|string|||ДД.ММ.ГГГГ|1|4|qwen
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|196|1||1|4|perplexity_claude_sonnet
-86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|199|2||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ЖК|153||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|210||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|196||3|5|gemini;gpt;perplexity_claude_sonnet
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|199||3|5|gemini;gpt;perplexity_claude_sonnet
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий|string|string||ДД.ММ.ГГГГ|1|5|qwen
+86|ee619717-6916-467b-b446-7a3b0f8dadea|общий||ГК|131||1|5|perplexity_grok
+86|ee619717-6916-467b-b446-7a3b0f8dadea|специальный||ЖК|155||1|5|perplexity_grok

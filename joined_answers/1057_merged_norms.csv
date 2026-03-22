@@ -1,4 +1,4 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1057|403976|специальный||ЖК|162|||1|1|perplexity_grok
-1057|403976|специальный||ЖК|161|||1|1|perplexity_grok
-1057|403976|специальный|416|ПП||4|15.05.2013|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1057|403976|специальный||ЖК|162||1|1|perplexity_grok
+1057|403976|специальный||ЖК|161||1|1|perplexity_grok
+1057|403976|специальный|416|ПП|4|15.05.2013|1|1|perplexity_grok

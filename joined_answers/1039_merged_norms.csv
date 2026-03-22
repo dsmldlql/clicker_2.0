@@ -1,6 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1039|406698|общий|257-ФЗ|ФЗ|18||08.11.2007|1|1|perplexity_grok
-1039|406698|специальный||КОАП|12214|||1|1|perplexity_grok
-1039|406698|общий||КОАП|301|||1|1|perplexity_grok
-1039|406698|общий||КОАП|303|||1|1|perplexity_grok
-1039|406698|специальный|1652|ПП||27|30.09.2021|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1039|406698|общий|257-ФЗ|ФЗ|18|08.11.2007|1|1|perplexity_grok
+1039|406698|специальный||КОАП|12.21.4||1|1|perplexity_grok
+1039|406698|общий||КОАП|30.1||1|1|perplexity_grok
+1039|406698|общий||КОАП|30.3||1|1|perplexity_grok
+1039|406698|специальный|1652|ПП|27|30.09.2021|1|1|perplexity_grok

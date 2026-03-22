@@ -1,7 +1,7 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|322|||1|1|qwen
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|301|||1|1|qwen
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|303|||1|1|qwen
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|319|||1|1|qwen
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|специальный|289-ПП|ПП|||17.05.2013|1|1|qwen
-773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|302|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|32.2||1|1|qwen
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|30.1||1|1|qwen
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|30.3||1|1|qwen
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|31.9||1|1|qwen
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|специальный|289-ПП|ПП||17.05.2013|1|1|qwen
+773|54bd11fc-6bcc-4c84-912d-ea5f076f7130|общий||КОАП|30.2||1|1|qwen

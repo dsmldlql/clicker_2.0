@@ -1,5 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|46|||1|1|qwen
-813|f2003849-dbb3-4757-a62a-b10217314d49|специальный||КОАП|129|||1|1|qwen
-813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|301|||1|1|qwen
-813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|303|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|4.6||1|1|qwen
+813|f2003849-dbb3-4757-a62a-b10217314d49|специальный||КОАП|12.9||1|1|qwen
+813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|30.1||1|1|qwen
+813|f2003849-dbb3-4757-a62a-b10217314d49|общий||КОАП|30.3||1|1|qwen

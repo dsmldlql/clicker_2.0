@@ -1,13 +1,23 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|15|||2|2|gemini;qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|1064|||2|2|gemini;qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|1066|||1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|17||08.11.2007|1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|22||08.11.2007|1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|28|||1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|131|||1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|132|||1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|56|||1|2|qwen
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|196-ФЗ|ФЗ|12||10.12.1995|1|2|gemini
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|28|2|08.11.2007|1|2|gemini
-348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|Приказ Росстандарта № 1245-ст|ГОСТ Р 50597-2017 'Дороги автомобильные и улицы. Требования к эксплуатационному состоянию'||521|26.09.2017|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|1064||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|15||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|196-ФЗ|ФЗ|12|10.12.1995|3|5|gemini;gpt;perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|131||3|5|gpt;perplexity_claude_sonnet;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|28||2|5|perplexity_claude_sonnet;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный||КОАП|12.34||2|5|perplexity_claude_sonnet;perplexity_grok
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|17|08.11.2007|2|5|gpt;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|132||2|5|gpt;qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный||ГК|1069||1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный||ГК|1071||1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|12|08.11.2007|1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|ГОСТ Р 50597-2017|ГОСТ Р 50597-2017 «Дороги автомобильные и улицы. Требования к эксплуатационному состоянию, допустимому по условиям обеспечения безопасности дорожного движения»|5|26.09.2017|1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|24||1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|196||1|5|perplexity_claude_sonnet
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|1066||1|5|qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|22|08.11.2007|1|5|qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГПК|56||1|5|qwen
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257-ФЗ|ФЗ|28|08.11.2007|1|5|gemini
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|Приказ Росстандарта № 1245-ст|ГОСТ Р 50597-2017 'Дороги автомобильные и улицы. Требования к эксплуатационному состоянию'|5.2.1|26.09.2017|1|5|gemini
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|общий||ГК|1079||1|5|perplexity_grok
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|257‑ФЗ|ФЗ|28|08.11.2007|1|5|perplexity_grok
+348|6c018f25-0c6b-4e3a-86c3-cbe1df40f7c5|специальный|196‑ФЗ|ФЗ|12|10.12.1995|1|5|perplexity_grok

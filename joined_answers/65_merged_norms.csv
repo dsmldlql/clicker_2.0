@@ -1,16 +1,14 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|18|1|07.02.1992|3|5|gemini;perplexity_claude_sonnet;qwen
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|22||07.02.1992|3|5|gemini;gpt;perplexity_claude_sonnet
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|261||07.02.1992|2|5|gpt;qwen
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|18||07.02.1992|2|5|gpt;perplexity_grok
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|17||07.02.1992|2|5|perplexity_claude_sonnet;perplexity_grok
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|261|4|07.02.1992|2|5|gemini;perplexity_claude_sonnet
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|497|||1|5|qwen
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|612|ПП|21|1|27.09.2007|1|5|qwen
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГПК|29|||1|5|qwen
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|231||07.02.1992|1|5|gpt
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГПК|17|||1|5|gpt
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий|195-ФЗ|Кодекс РФ об административных правонарушениях|148||30.12.2001|1|5|gpt
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|469|||1|5|perplexity_grok
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2463|ПП|||31.12.2020|1|5|perplexity_grok
-65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|475|2||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий|2300-1|Закон РФ|18|07.02.1992|5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|26.1|07.02.1992|4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий|2300-1|Закон РФ|22|07.02.1992|3|5|gemini;gpt;perplexity_claude_sonnet
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий|2300-1|Закон РФ|17|07.02.1992|2|5|perplexity_claude_sonnet;perplexity_grok
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|475||1|5|perplexity_claude_sonnet
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|497||1|5|qwen
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|612|ПП|21|27.09.2007|1|5|qwen
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГПК|29||1|5|qwen
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2300-1|Закон РФ|23.1|07.02.1992|1|5|gpt
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГПК|17||1|5|gpt
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий|195-ФЗ|Кодекс РФ об административных правонарушениях|14.8|30.12.2001|1|5|gpt
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|общий||ГК|469||1|5|perplexity_grok
+65|d753ffb3-7fe5-4a1c-8fbb-348c4cf802dc|специальный|2463|ПП||31.12.2020|1|5|perplexity_grok

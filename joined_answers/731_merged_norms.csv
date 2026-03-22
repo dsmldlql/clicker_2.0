@@ -1,5 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|28||07.02.1992|1|1|qwen
-731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|16||07.02.1992|1|1|qwen
-731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|13||07.02.1992|1|1|qwen
-731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|общий||ГК|333|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|28|07.02.1992|2|2|gpt;qwen
+731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|16|07.02.1992|2|2|gpt;qwen
+731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|общий||ГК|333||2|2|gpt;qwen
+731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|специальный|2300-1|Закон РФ|13|07.02.1992|1|2|qwen
+731|ccb2ac6c-a1e8-420f-8b27-90b45d598d8b|общий||ГК|332||1|2|gpt

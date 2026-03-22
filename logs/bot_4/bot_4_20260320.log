@@ -1,0 +1,22 @@
+2026-03-20 15:19:43 | INFO     | [BOT_START] {"bot_id": 4, "project": "hypos_norm", "timestamp": "2026-03-20T15:19:43.063137", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_4"}
+2026-03-20 15:19:48 | INFO     | [RESTART] {"bot_id": 4, "note": "first_start"}
+2026-03-20 15:19:48 | INFO     | [FSM_INITIALIZED] {"site": "claude", "scenario": "sonnet", "start_state": "start_question"}
+2026-03-20 15:24:46 | INFO     | [QUESTION_SENT] {"question_idx": 322, "uid": "c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66"}
+2026-03-20 15:31:08 | INFO     | [QUESTION_ATTEMPT] {"attempt": 1, "max_questions": 100, "question_idx": 322, "uid": "c2c2bcb0-9470-42c9-bb5b-52d90f8ffc66"}
+2026-03-20 15:32:31 | INFO     | [QUESTION_SENT] {"question_idx": 323, "uid": "e1d3f6cd-75bf-4979-a545-12aec1d9cba2"}
+2026-03-20 15:38:12 | INFO     | [QUESTION_ATTEMPT] {"attempt": 2, "max_questions": 100, "question_idx": 323, "uid": "e1d3f6cd-75bf-4979-a545-12aec1d9cba2"}
+2026-03-20 15:39:10 | INFO     | [BOT_STOP] {"bot_id": 4, "total_questions": 2}
+2026-03-20 16:03:14 | INFO     | [BOT_START] {"bot_id": 4, "project": "hypos_norm", "timestamp": "2026-03-20T16:03:14.422444", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_4"}
+2026-03-20 16:03:20 | INFO     | [RESTART] {"bot_id": 4, "note": "first_start"}
+2026-03-20 16:03:20 | INFO     | [FSM_INITIALIZED] {"site": "claude", "scenario": "sonnet", "start_state": "start_question"}
+2026-03-20 16:14:30 | INFO     | [BOT_START] {"bot_id": 4, "project": "hypos_norm", "timestamp": "2026-03-20T16:14:30.626267", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_4"}
+2026-03-20 16:14:37 | INFO     | [RESTART] {"bot_id": 4, "note": "first_start"}
+2026-03-20 16:14:37 | INFO     | [FSM_INITIALIZED] {"site": "claude", "scenario": "sonnet", "start_state": "start_question"}
+2026-03-20 16:19:54 | INFO     | [BOT_START] {"bot_id": 4, "project": "hypos_norm", "timestamp": "2026-03-20T16:19:54.437879", "log_dir": "/home/dmitrii/Documents/projects/clicker_2.0/logs/bot_4"}
+2026-03-20 16:20:00 | INFO     | [RESTART] {"bot_id": 4, "note": "first_start"}
+2026-03-20 16:20:00 | INFO     | [FSM_INITIALIZED] {"site": "claude", "scenario": "sonnet", "start_state": "start_question"}
+2026-03-20 16:21:56 | INFO     | [QUESTION_SENT] {"question_idx": 324, "uid": "85fd2ee4-cda2-444d-810e-6a5817493cc9"}
+2026-03-20 16:24:56 | INFO     | [QUESTION_ATTEMPT] {"attempt": 1, "max_questions": 100, "question_idx": 324, "uid": "85fd2ee4-cda2-444d-810e-6a5817493cc9"}
+2026-03-20 16:26:32 | INFO     | [QUESTION_SENT] {"question_idx": 325, "uid": "a6181728-940f-4eb3-a2b8-bda2c0741d21"}
+2026-03-20 16:29:26 | INFO     | [QUESTION_ATTEMPT] {"attempt": 2, "max_questions": 100, "question_idx": 325, "uid": "a6181728-940f-4eb3-a2b8-bda2c0741d21"}
+2026-03-20 16:29:27 | INFO     | [BOT_STOP] {"bot_id": 4, "total_questions": 2}

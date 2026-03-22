@@ -1,8 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|31|1||2|2|gemini;qwen
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|88|||1|2|qwen
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|31|4||1|2|qwen
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|специальный|ЕД-7-11/871@|Приказ Федеральной налоговой службы|||18.10.2024|1|2|qwen
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|специальный||НК|2211|4||1|2|gemini
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|88|3||1|2|gemini
-448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|128|||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|88||3|3|gemini;gpt;qwen
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|31||3|3|gemini;gpt;qwen
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|специальный||НК|221.1||2|3|gemini;gpt
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|специальный|ЕД-7-11/871@|Приказ Федеральной налоговой службы||18.10.2024|1|3|qwen
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|128||1|3|gemini
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|21||1|3|gpt
+448|34b35261-b4e0-4542-9f0f-3c90b65a1eff|общий||НК|138||1|3|gpt

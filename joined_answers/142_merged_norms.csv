@@ -1,21 +1,16 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|42||13.07.2015|4|4|gemini;gpt;perplexity_claude_sonnet;qwen
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|163|||2|4|gpt;qwen
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный||НК|33333|22||2|4|gpt;qwen
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|22|1|11.02.1993|2|4|perplexity_claude_sonnet;qwen
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|250|||2|4|gemini;gpt
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|33324|1||2|4|gemini;perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|221||11.02.1993|1|4|gpt
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|2171|4||1|4|gemini
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-I|Основы законодательства Российской Федерации о нотариате|221|1|11.02.1993|1|4|gemini
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|250|1||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|250|2||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|163|1||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|18||13.07.2015|1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|33333|1||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|2171|2||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|2171|3||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|220|1||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|220|2||1|4|perplexity_claude_sonnet
-142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|229|1||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|250||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|42|13.07.2015|4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|333.33||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||ГК|163||3|5|gpt;perplexity_claude_sonnet;qwen
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|333.24||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|22|11.02.1993|2|5|perplexity_claude_sonnet;qwen
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|217.1||2|5|gemini;perplexity_claude_sonnet
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|14|13.07.2015|1|5|perplexity_claude_sonnet
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218-ФЗ|ФЗ|18|13.07.2015|1|5|perplexity_claude_sonnet
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|220||1|5|perplexity_claude_sonnet
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий||НК|229||1|5|perplexity_claude_sonnet
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-I|Основы законодательства Российской Федерации о нотариате|22.1|11.02.1993|1|5|gemini
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|4462-1|Основы законодательства Российской Федерации о нотариате|22.1|11.02.1993|1|5|gpt
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|специальный|218‑ФЗ|ФЗ|42|13.07.2015|1|5|perplexity_grok
+142|04fed8e4-305d-4ed2-ba2f-63e3f2aef38a|общий|218‑ФЗ|ФЗ|59|13.07.2015|1|5|perplexity_grok

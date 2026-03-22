@@ -1,10 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1003|402632|общий||ГК|416|||2|2|perplexity_claude_sonnet;perplexity_grok
-1003|402632|общий||ГК|451|||2|2|perplexity_claude_sonnet;perplexity_grok
-1003|402632|общий||ГК|401|3||1|2|perplexity_grok
-1003|402632|специальный||ГК|523|||1|2|perplexity_grok
-1003|402632|специальный|183-ФЗ|ФЗ|||18.07.1999|1|2|perplexity_grok
-1003|402632|специальный||ГК|417|||1|2|perplexity_claude_sonnet
-1003|402632|общий||ГК|4501|||1|2|perplexity_claude_sonnet
-1003|402632|общий||ГК|401|||1|2|perplexity_claude_sonnet
-1003|402632|специальный||ГК|506|||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1003|402632|общий||ГК|416||1|1|perplexity_grok
+1003|402632|общий||ГК|451||1|1|perplexity_grok
+1003|402632|общий||ГК|401||1|1|perplexity_grok
+1003|402632|специальный||ГК|523||1|1|perplexity_grok
+1003|402632|специальный|183-ФЗ|ФЗ||18.07.1999|1|1|perplexity_grok

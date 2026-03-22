@@ -1,7 +1,7 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1035|391898|общий||ГК|606|||1|1|perplexity_grok
-1035|391898|общий||ГК|607|||1|1|perplexity_grok
-1035|391898|общий||ГК|608|||1|1|perplexity_grok
-1035|391898|общий||ГК|611|||1|1|perplexity_grok
-1035|391898|специальный||ГК|642|||1|1|perplexity_grok
-1035|391898|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|4||07.02.1992|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1035|391898|общий||ГК|606||1|1|perplexity_grok
+1035|391898|общий||ГК|607||1|1|perplexity_grok
+1035|391898|общий||ГК|608||1|1|perplexity_grok
+1035|391898|общий||ГК|611||1|1|perplexity_grok
+1035|391898|специальный||ГК|642||1|1|perplexity_grok
+1035|391898|специальный|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|4|07.02.1992|1|1|perplexity_grok

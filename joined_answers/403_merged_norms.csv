@@ -1,7 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП||1|06.08.2020|2|2|gemini;qwen
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|400-ФЗ|ФЗ|30|20|28.12.2013|2|2|gemini;qwen
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП||3|06.08.2020|1|2|qwen
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП||4|06.08.2020|1|2|qwen
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|общий|400-ФЗ|ФЗ|13||28.12.2013|1|2|qwen
-403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП||2|06.08.2020|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП|1|06.08.2020|2|3|gemini;qwen
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|400-ФЗ|ФЗ|30|28.12.2013|2|3|gemini;qwen
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП|3|06.08.2020|1|3|qwen
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП|4|06.08.2020|1|3|qwen
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|общий|400-ФЗ|ФЗ|13|28.12.2013|1|3|qwen
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП|2|06.08.2020|1|3|gemini
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|специальный|1191|ПП||06.08.2020|1|3|gpt
+403|e2fcf3d4-1848-44b4-8741-aba704be7ee3|общий|400‑ФЗ|ФЗ|30|28.12.2013|1|3|gpt

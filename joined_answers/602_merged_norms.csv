@@ -1,6 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1113|||1|1|qwen
-602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1154|||1|1|qwen
-602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1153|||1|1|qwen
-602|6557d156-8bb6-4169-acd6-d779da48915d|специальный||ГК|1155|||1|1|qwen
-602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1141|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1154||3|3|gemini;gpt;qwen
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1153||3|3|gemini;gpt;qwen
+602|6557d156-8bb6-4169-acd6-d779da48915d|специальный||ГК|1155||2|3|gpt;qwen
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1152||2|3|gemini;gpt
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1113||1|3|qwen
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1141||1|3|qwen
+602|6557d156-8bb6-4169-acd6-d779da48915d|общий||ГК|1142||1|3|gemini

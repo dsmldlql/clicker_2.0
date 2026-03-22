@@ -1,33 +1,4 @@
-# bot_0_:
-#   project: hypos_norm
-#   subproject: gen
-#   site: gpt
-#   mode: web_search
-#   model: gpt
-#   scenario: web_search
-#   browser_master_profile: ~/rxmzge8117@outlook.com
-#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-#   columns:
-#     - uid
-#     - query
-#     - used
-#   roi: [0, 0, 960, 800]
-#   cooldown: 1.0
-#   question_interval: 90.0
-#   row_range: [350, 499]
-#   max_questions: 200
-#   restart_delay: None
-#   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
-#   schedule:
-#     start_immediately: true
-#     start_times:
-#       - "00:00"
-#       - "06:00"
-#       - "12:00"
-#       - "18:00"
-#   subscription: gpt_go
-
-bot_0:
+bot_6:
   project: hypos_norm
   subproject: gen
   site: gpt
@@ -42,10 +13,10 @@ bot_0:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 45.0
-  row_range: [382, 499]
+  question_interval: 60.0
+  row_range: [1321, 1449]
   max_questions: 400
-  restart_delay: None
+  restart_delay: 0
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
@@ -57,7 +28,7 @@ bot_0:
   subscription: gpt_plus
 
 
-bot_1:
+bot_7:
   project: hypos_norm
   subproject: gen
   site: gpt
@@ -72,10 +43,10 @@ bot_1:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 45.0
-  row_range: [500, 799]
+  question_interval: 55.0
+  row_range: [1450, 1575]
   max_questions: 400
-  restart_delay: None
+  restart_delay: 0
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
@@ -86,14 +57,14 @@ bot_1:
       - "18:00"
   subscription: gpt_plus
 
-bot_2_:
+bot_8:
   project: hypos_norm
   subproject: gen
-  site: gemini
-  mode: thinking
-  model: gemini
-  scenario: thinking
-  browser_master_profile: ~/vanthuan1990t@gmail.com
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/rxmzge8117@outlook.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -101,11 +72,11 @@ bot_2_:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 280.0
-  row_range: [600, 799]
-  max_questions: 250
-  restart_delay: None
-  proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
+  question_interval: 45.0
+  row_range: [1287, 1320]
+  max_questions: 200
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
     start_immediately: true
     start_times:
@@ -113,9 +84,96 @@ bot_2_:
       - "06:00"
       - "12:00"
       - "18:00"
-  subscription: gemini_plus
+  subscription: gpt_go
 
-bot_3:
+bot_9:
+  project: hypos_norm
+  subproject: gen
+  site: gpt
+  mode: web_search
+  model: gpt
+  scenario: web_search
+  browser_master_profile: ~/kacalbsullo03467p@outlook.com
+  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+  columns:
+    - uid
+    - query
+    - used
+  roi: [0, 0, 960, 800]
+  cooldown: 1.0
+  question_interval: 55.0
+  row_range: [1575, 1699]
+  max_questions: 400
+  restart_delay: 0
+  proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
+
+# bot_0:
+#   project: hypos_norm
+#   subproject: gen
+#   site: gemini
+#   mode: thinking
+#   model: gemini
+#   scenario: thinking_1
+#   browser_master_profile: ~/vanthuan1990t@gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 220.0
+#   row_range: [700, 949]
+#   max_questions: 300
+#   restart_delay: 0
+#   proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
+#   schedule:
+#     start_immediately: true
+#     start_times:
+#       - "00:00"
+#       - "06:00"
+#       - "12:00"
+#       - "18:00"
+#   subscription: gemini_plus
+
+# bot_1:
+#   project: hypos_norm
+#   subproject: gen
+#   site: gemini
+#   mode: thinking
+#   model: gemini
+#   scenario: thinking_0
+#   browser_master_profile: ~/hoanghao1994hy@gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 220.0
+#   row_range: [950, 1199]
+#   max_questions: 300
+#   restart_delay: 0
+#   proxy: [186.65.122.102, 8000, "bbaBmV", "vEyoqs"]
+#   schedule:
+#     start_immediately: true
+#     start_times:
+#       - "00:00"
+#       - "06:00"
+#       - "12:00"
+#       - "18:00"
+#   subscription: gemini_plus
+
+bot_3_:
   project: hypos_norm
   subproject: gen
   site: claude
@@ -130,9 +188,9 @@ bot_3:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 300
-  row_range: [301, 312]
-  max_questions: 100
+  question_interval: 150
+  row_range: [950, 1199]
+  max_questions: 300
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
   schedule:
@@ -143,7 +201,7 @@ bot_3:
       - "12:00"
       - "18:00"
 
-bot_4:
+bot_4_:
   project: hypos_norm
   subproject: gen
   site: claude
@@ -158,8 +216,8 @@ bot_4:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 300
-  row_range: [313, 325]
+  question_interval: 150
+  row_range: [324, 325]
   max_questions: 100
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
@@ -171,7 +229,7 @@ bot_4:
       - "12:00"
       - "18:00"
 
-bot_5:
+bot_5_:
   project: hypos_norm
   subproject: gen
   site: claude
@@ -186,8 +244,8 @@ bot_5:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 300
-  row_range: [326, 338]
+  question_interval: 150
+  row_range: [337, 337]
   max_questions: 100
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
@@ -199,7 +257,7 @@ bot_5:
       - "12:00"
       - "18:00"
 
-bot_6:
+bot_6_:
   project: hypos_norm
   subproject: gen
   site: claude
@@ -214,8 +272,8 @@ bot_6:
     - used
   roi: [0, 0, 960, 800]
   cooldown: 1.0
-  question_interval: 300
-  row_range: [339, 350]
+  question_interval: 150
+  row_range: [338, 338]
   max_questions: 100
   restart_delay: None
   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
@@ -227,14 +285,43 @@ bot_6:
       - "12:00"
       - "18:00"
 
-bot_3_:
+# bot_1:
+#   project: hypos_norm
+#   subproject: gen
+#   site: gpt
+#   mode: web_search
+#   model: gpt
+#   scenario: web_search
+#   browser_master_profile: ~/halseycusenza35@outlook.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 55.0
+#   row_range: [1100, 1199]
+#   max_questions: 400
+#   restart_delay: 0
+#   proxy: [186.65.122.102, 8000, bbaBmV, vEyoqs]
+#   schedule:
+#     start_immediately: true
+#     start_times:
+#       - "00:00"
+#       - "06:00"
+#       - "12:00"
+#       - "18:00"
+#   subscription: gpt_plus
+
+bot_0:
   project: hypos_norm
   subproject: gen
-  site: gemini
-  mode: pro
-  model: gemini
-  scenario: pro
-  browser_master_profile: ~/vanthuan1990t@gmail.com
+  site: qwen
+  mode: web_search_no_think
+  model: qwen
+  scenario: web_search_no_think
+  browser_master_profile: ~/karvinoir@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -243,10 +330,10 @@ bot_3_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [225, 299]
+  row_range: [1400, 1449]
   max_questions: 100
-  restart_delay: 3600
-  proxy: [186.65.122.102, 8000]
+  restart_delay: 0
+  proxy: None
   schedule:
     start_immediately: true
     start_times:
@@ -254,36 +341,17 @@ bot_3_:
       - "06:00"
       - "12:00"
       - "18:00"
+  subscription: gpt_plus
 
-bot_0_:
-  project: hypos_norm
-  subproject: gen
-  site: gpt
-  mode: web_search
-  model: gpt
-  scenario: web_search
-  browser_master_profile: ~/rxmzge8117_outlook.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [0, 40]
-  max_questions: 40
-  restart_delay: 3600
-  proxy: [186.65.122.102, 8000]
 
-bot_0_:
+bot_1:
   project: hypos_norm
   subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
   scenario: web_search_no_think
-  browser_master_profile: ~/karvinoir_gmail.com
+  browser_master_profile: ~/dsmldlql0@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -292,18 +360,27 @@ bot_0_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [676, 700]
+  row_range: [1350, 1399]
   max_questions: 100
-  restart_delay: 180
+  restart_delay: 0
+  proxy: None
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
-bot_1_:
+bot_2:
   project: hypos_norm
   subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
   scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql0_gmail.com
+  browser_master_profile: ~/alexanderborchun@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -312,18 +389,27 @@ bot_1_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [701, 725]
+  row_range: [1300, 1349]
   max_questions: 100
-  restart_delay: 180
+  restart_delay: 0
+  proxy: None
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
-bot_2_:
+bot_3:
   project: hypos_norm
   subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
   scenario: web_search_no_think
-  browser_master_profile: ~/alexanderborchun_gmail.com
+  browser_master_profile: ~/karvinior@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -332,18 +418,27 @@ bot_2_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [726, 750]
+  row_range: [1250, 1299]
   max_questions: 100
-  restart_delay: 180
+  restart_delay: 0
+  proxy: None
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
-bot_3_:
+bot_4:
   project: hypos_norm
   subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
   scenario: web_search_no_think
-  browser_master_profile: ~/karvinior_gmail.com
+  browser_master_profile: ~/rxmzge8117@outlook.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -352,18 +447,27 @@ bot_3_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [751, 775]
+  row_range: [1200, 1249]
   max_questions: 100
-  restart_delay: 3600
+  restart_delay: 0
+  proxy: None
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
-bot_4_:
+bot_5:
   project: hypos_norm
   subproject: gen
   site: qwen
   mode: web_search_no_think
   model: qwen
   scenario: web_search_no_think
-  browser_master_profile: ~/rxmzge8117_outlook.com
+  browser_master_profile: ~/dsmldlql@gmail.com
   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
   columns:
     - uid
@@ -372,350 +476,339 @@ bot_4_:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [776, 800]
+  row_range: [1150, 1199]
   max_questions: 100
-  restart_delay: 3600
+  restart_delay: 0
+  proxy: None
+  schedule:
+    start_immediately: true
+    start_times:
+      - "00:00"
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  subscription: gpt_plus
 
-bot_5_:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [801, 825]
-  max_questions: 100
-  restart_delay: 3600
+# bot_6_:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_6_:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_7_:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_7_:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_8:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_8:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_9:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_9:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_10:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_10:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_11:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_11:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_12:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_12:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_13:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_13:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_14:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_14:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_15:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_15:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_16:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_16:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_17:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_17:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_18:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_18:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
-
-bot_19:
-  project: hypos_norm
-  subproject: gen
-  site: qwen
-  mode: web_search_no_think
-  model: qwen
-  scenario: web_search_no_think
-  browser_master_profile: ~/dsmldlql_gmail.com
-  dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
-  columns:
-    - uid
-    - query
-    - used
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [516, 525]
-  max_questions: 100
-  restart_delay: 3600
+# bot_19:
+#   project: hypos_norm
+#   subproject: gen
+#   site: qwen
+#   mode: web_search_no_think
+#   model: qwen
+#   scenario: web_search_no_think
+#   browser_master_profile: ~/dsmldlql_gmail.com
+#   dataset_path: datasets/sp_depers_final_with_hypnorm_used_marks.csv
+#   columns:
+#     - uid
+#     - query
+#     - used
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [516, 525]
+#   max_questions: 100
+#   restart_delay: 3600
 
 
-bot_20:
-  project: hypos_norm
-  subproject: gen
-  site: gpt
-  mode: study_learn
-  model: gpt
-  browser_master_profile: ~/bot_master_profile
-  roi: [0, 621, 500, 620]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [0, 100]
-  max_questions: 100
-  restart_delay: 3600
+# bot_20:
+#   project: hypos_norm
+#   subproject: gen
+#   site: gpt
+#   mode: study_learn
+#   model: gpt
+#   browser_master_profile: ~/bot_master_profile
+#   roi: [0, 621, 500, 620]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [0, 100]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_21:
-  project: hypos_norm
-  subproject: gen
-  site: perplexity
-  mode: grok
-  model: perplexity_grok
-  scenario: grok
-  browser_master_profile: ~/bot_master_profile
-  roi: [0, 0, 960, 800]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [124, 148]
-  max_questions: 100
-  restart_delay: 3600
+# bot_21:
+#   project: hypos_norm
+#   subproject: gen
+#   site: perplexity
+#   mode: grok
+#   model: perplexity_grok
+#   scenario: grok
+#   browser_master_profile: ~/bot_master_profile
+#   roi: [0, 0, 960, 800]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [124, 148]
+#   max_questions: 100
+#   restart_delay: 3600
 
-bot_22:
-  project: hypos_norm
-  subproject: gen
-  site: perplexity
-  mode: grok
-  model: perplexity_grok
-  browser_master_profile: ~/bot_master_profile
-  roi: [0, 621, 500, 620]
-  cooldown: 1.0
-  question_interval: 5.0
-  row_range: [163, 189]
-  max_questions: 100
-  restart_delay: 3600
+# bot_22:
+#   project: hypos_norm
+#   subproject: gen
+#   site: perplexity
+#   mode: grok
+#   model: perplexity_grok
+#   browser_master_profile: ~/bot_master_profile
+#   roi: [0, 621, 500, 620]
+#   cooldown: 1.0
+#   question_interval: 5.0
+#   row_range: [163, 189]
+#   max_questions: 100
+#   restart_delay: 3600

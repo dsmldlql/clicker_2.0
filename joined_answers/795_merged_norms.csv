@@ -1,5 +1,7 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|188|5||1|1|qwen
-795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|42|||1|1|qwen
-795|4a3623f0-4571-43d9-aafe-cfab4733125e|специальный||ГПК|276|||1|1|qwen
-795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|185|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|188||2|2|gpt;qwen
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|42||2|2|gpt;qwen
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|специальный||ГПК|276||1|2|qwen
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|185||1|2|qwen
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|189||1|2|gpt
+795|4a3623f0-4571-43d9-aafe-cfab4733125e|общий||ГК|44||1|2|gpt

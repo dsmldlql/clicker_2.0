@@ -1,12 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|220|||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|220|1||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|220|2||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|220|21||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|216|||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|224|||1|2|qwen
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|220|3||1|2|gemini
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|220|4||1|2|gemini
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|220|9||1|2|gemini
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|2211|1||1|2|gemini
-391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|2211|3||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|220||3|3|gemini;gpt;qwen
+391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|216||1|3|qwen
+391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|общий||НК|224||1|3|qwen
+391|50fa1cf1-7cb6-470e-9ead-94da19f8eede|специальный||НК|221.1||1|3|gemini

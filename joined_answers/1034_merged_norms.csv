@@ -1,5 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1034|394752|общий||ГК|130|||1|1|perplexity_grok
-1034|394752|общий||ГК|554|||1|1|perplexity_grok
-1034|394752|специальный|ФЗ-218|ФЗ|14|2|13.07.2015|1|1|perplexity_grok
-1034|394752|специальный|ФЗ-218|ФЗ|18||13.07.2015|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1034|394752|общий||ГК|130||1|1|perplexity_grok
+1034|394752|общий||ГК|554||1|1|perplexity_grok
+1034|394752|специальный|ФЗ-218|ФЗ|14|13.07.2015|1|1|perplexity_grok
+1034|394752|специальный|ФЗ-218|ФЗ|18|13.07.2015|1|1|perplexity_grok

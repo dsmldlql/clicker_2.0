@@ -1,18 +1,15 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|7||29.12.2006|2|4|gpt;qwen
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|10||29.12.2006|2|4|gemini;gpt
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий|862|ПП||13|12.12.2007|2|4|gemini;perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|7|1|29.12.2006|1|4|qwen
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|2|1|12.12.2007|1|4|qwen
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|10||12.12.2007|1|4|qwen
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|846н|Приказ Минтруда|||29.11.2024|1|4|qwen
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|7|3|29.12.2006|1|4|gemini
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|217-ФЗ|ФЗ|3|2|29.07.2017|1|4|gemini
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|3|4|29.12.2006|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|3||29.12.2006|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП||2|12.12.2007|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП||3|12.12.2007|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП||8|12.12.2007|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП||10|12.12.2007|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий|862|ПП||15|12.12.2007|1|4|perplexity_claude_sonnet
-90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП||12|12.12.2007|1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|7|29.12.2006|4|5|gemini;gpt;perplexity_grok;qwen
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий|256-ФЗ|ФЗ|10|29.12.2006|3|5|gemini;gpt;perplexity_grok
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|2|12.12.2007|2|5|perplexity_claude_sonnet;qwen
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|10|12.12.2007|2|5|perplexity_claude_sonnet;qwen
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|13|12.12.2007|2|5|gemini;perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|256-ФЗ|ФЗ|3|29.12.2006|1|5|perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|3|12.12.2007|1|5|perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|8|12.12.2007|1|5|perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий|862|ПП|15|12.12.2007|1|5|perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|862|ПП|12|12.12.2007|1|5|perplexity_claude_sonnet
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|846н|Приказ Минтруда||29.11.2024|1|5|qwen
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|специальный|217-ФЗ|ФЗ|3|29.07.2017|1|5|gemini
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий||ГК|244||1|5|perplexity_grok
+90|e4bd4406-487b-47db-9329-b7b0db16a04a|общий|218-ФЗ|ФЗ|42|13.07.2015|1|5|perplexity_grok

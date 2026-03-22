@@ -1,25 +1,21 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий|173-ФЗ|ФЗ|6||10.12.2003|3|5|gemini;gpt;perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|9||10.12.2003|3|5|gemini;gpt;perplexity_grok
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|208|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|209|||3|5|gemini;gpt;perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|224|||2|5|gpt;perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|217|||2|5|perplexity_claude_sonnet;perplexity_grok
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|18||07.02.1992|1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|19||07.02.1992|1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|20||07.02.1992|1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|309|||1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|310|||1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|314|2||1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГПК|131|||1|5|qwen
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|10||10.12.2003|1|5|gpt
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|19||10.12.2003|1|5|gpt
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|217|181||1|5|gemini
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|79|УП||3|28.02.2022|1|5|gemini
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий|173-ФЗ|ФЗ|1|6|10.12.2003|1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий|173-ФЗ|ФЗ|1|7|10.12.2003|1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|9|13|10.12.2003|1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|9|12|10.12.2003|1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|207|||1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|228|1||1|5|perplexity_claude_sonnet
-14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|229|||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|9|10.12.2003|4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий|173-ФЗ|ФЗ|6|10.12.2003|3|5|gemini;gpt;perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|208||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|209||3|5|gemini;gpt;perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|217||3|5|gemini;perplexity_claude_sonnet;perplexity_grok
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|224||2|5|gpt;perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий|173-ФЗ|ФЗ|1|10.12.2003|1|5|perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|207||1|5|perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|228||1|5|perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||НК|229||1|5|perplexity_claude_sonnet
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|18|07.02.1992|1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|19|07.02.1992|1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|2300-1|Закон РФ|20|07.02.1992|1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|309||1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|310||1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГК|314||1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|общий||ГПК|131||1|5|qwen
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|79|УП|3|28.02.2022|1|5|gemini
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|10|10.12.2003|1|5|gpt
+14|df646a88-087b-4f21-9329-8d662a7434f6|специальный|173-ФЗ|ФЗ|19|10.12.2003|1|5|gpt

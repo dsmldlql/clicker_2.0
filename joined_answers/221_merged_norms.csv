@@ -1,17 +1,16 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|44|||2|3|perplexity_claude_sonnet;qwen
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|1064|||2|3|gemini;qwen
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||ГПК|61|||2|3|gemini;perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|131|||2|3|gemini;perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|31|||1|3|qwen
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|31|||1|3|qwen
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||НК|33336|4||1|3|gemini
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|42|||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|309|||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|15|1||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|15|2||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|1064|1||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|1064|2||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|151|||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|196|1||1|3|perplexity_claude_sonnet
-221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|132|||1|3|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|1064||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|44||3|5|gpt;perplexity_claude_sonnet;qwen
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|15||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|131||3|5|gemini;gpt;perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|61||3|5|gemini;gpt;perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|42||1|5|perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|309||1|5|perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|151||1|5|perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГК|196||1|5|perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|132||1|5|perplexity_claude_sonnet
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|общий||ГПК|31||1|5|qwen
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||УПК|31||1|5|qwen
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный||НК|333.36||1|5|gemini
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный|174‑ФЗ|Уголовно‑процессуальный кодекс Российской Федерации|44|18.12.2001|1|5|perplexity_grok
+221|7f266e08-fd7d-4e47-b5d3-1057267903a8|специальный|174‑ФЗ|Уголовно‑процессуальный кодекс Российской Федерации|54|18.12.2001|1|5|perplexity_grok

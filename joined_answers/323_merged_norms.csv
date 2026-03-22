@@ -1,5 +1,16 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий|string|string|||ДД.ММ.ГГГГ|1|2|qwen
-323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ЖК|155|||1|2|gemini
-323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|406|||1|2|gemini
-323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный|474|ПП||1|26.03.2022|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный||ЖК|155||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|333||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|406||2|5|gemini;perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный||ЖК|153||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|196||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|200||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный||ЖК|161||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий|2300-1|Закон Российской Федерации «О защите прав потребителей»|10|07.02.1992|1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий|59-ФЗ|ФЗ|12|02.05.2006|1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГПК|131||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГПК|22||1|5|perplexity_claude_sonnet
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий|string|string||ДД.ММ.ГГГГ|1|5|qwen
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный|474|ПП|1|26.03.2022|1|5|gemini
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|общий||ГК|401||1|5|gpt
+323|e1d3f6cd-75bf-4979-a545-12aec1d9cba2|специальный|354|ПП||06.05.2011|1|5|perplexity_grok

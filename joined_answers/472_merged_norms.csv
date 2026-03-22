@@ -1,7 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный|229-ФЗ|ФЗ|30||02.10.2007|2|2|gemini;qwen
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||ГПК|132|7||2|2|gemini;qwen
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||АПК|4|||2|2|gemini;qwen
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||ГПК|4|||1|2|qwen
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный||ГК|452|||1|2|qwen
-472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий|229-ФЗ|ФЗ|31||02.10.2007|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный|229-ФЗ|ФЗ|30|02.10.2007|2|3|gemini;qwen
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||ГПК|132||2|3|gemini;qwen
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||АПК|4||2|3|gemini;qwen
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий||ГПК|4||1|3|qwen
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный||ГК|452||1|3|qwen
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|общий|229-ФЗ|ФЗ|31|02.10.2007|1|3|gemini
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный|229‑ФЗ|ФЗ|30|02.10.2007|1|3|gpt
+472|b4115efb-1036-406c-82d0-eadd1b7a011c|специальный||ГПК|428||1|3|gpt

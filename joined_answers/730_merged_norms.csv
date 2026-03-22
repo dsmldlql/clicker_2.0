@@ -1,7 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|34611|||1|1|qwen
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|227|1||1|1|qwen
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|221|1||1|1|qwen
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|218|1||1|1|qwen
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|219|1||1|1|qwen
-730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|220|1||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|346.11||2|2|gpt;qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|221||2|2|gpt;qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|218||2|2|gpt;qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|219||2|2|gpt;qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|общий||НК|220||2|2|gpt;qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|227||1|2|qwen
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|346.18||1|2|gpt
+730|aee8273f-3915-43ae-9ac2-3c9f816e0b5d|специальный||НК|346.16||1|2|gpt

@@ -1,11 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1018|402768|специальный||ГК|1154|||2|2|perplexity_claude_sonnet;perplexity_grok
-1018|402768|специальный||ГК|1155|||2|2|perplexity_claude_sonnet;perplexity_grok
-1018|402768|общий||ГПК|28|||2|2|perplexity_claude_sonnet;perplexity_grok
-1018|402768|общий||ГПК|23|||1|2|perplexity_grok
-1018|402768|общий||ГПК|131|1||1|2|perplexity_claude_sonnet
-1018|402768|общий||ГПК|131|2||1|2|perplexity_claude_sonnet
-1018|402768|общий||ГПК|131|3||1|2|perplexity_claude_sonnet
-1018|402768|общий||ГПК|131|4||1|2|perplexity_claude_sonnet
-1018|402768|общий||ГПК|131|5||1|2|perplexity_claude_sonnet
-1018|402768|общий||ГПК|131|8||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1018|402768|специальный||ГК|1154||1|1|perplexity_grok
+1018|402768|специальный||ГК|1155||1|1|perplexity_grok
+1018|402768|общий||ГПК|28||1|1|perplexity_grok
+1018|402768|общий||ГПК|23||1|1|perplexity_grok

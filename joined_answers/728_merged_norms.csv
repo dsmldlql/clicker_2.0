@@ -1,5 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|общий||НК|219|5||1|1|qwen
-728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|специальный|ЕД-7-11/756@|Приказ Федеральной налоговой службы|||18.10.2023|1|1|qwen
-728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|специальный|2451|ПП||1|24.12.2021|1|1|qwen
-728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|общий||НК|219|2||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|общий||НК|219||2|2|gpt;qwen
+728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|специальный|ЕД-7-11/756@|Приказ Федеральной налоговой службы||18.10.2023|1|2|qwen
+728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|специальный|2451|ПП|1|24.12.2021|1|2|qwen
+728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|общий||НК|252||1|2|gpt
+728|88f7efc8-ae11-4982-9fd1-3e3f808414f6|специальный|88-ФЗ|ФЗ||05.04.2021|1|2|gpt

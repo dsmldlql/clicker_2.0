@@ -1,18 +1,19 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|12|2|22.05.2003|2|3|perplexity_claude_sonnet;qwen
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|54-ФЗ|ФЗ|12|5|22.05.2003|2|3|perplexity_claude_sonnet;qwen
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|54-ФЗ|ФЗ|12|21|22.05.2003|2|3|perplexity_claude_sonnet;qwen
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|11||22.05.2003|2|3|gemini;perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|12||22.05.2003|1|3|gemini
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||ГК|414|||1|3|gemini
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный||ГК|795|||1|3|gemini
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|47|1|22.05.2003|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|145||22.05.2003|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||КОАП|145|||1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|60-ФЗ|ВоздК|107|2|19.03.1997|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|60-ФЗ|ВоздК|108|2|19.03.1997|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|4||07.02.1992|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|18||07.02.1992|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|13||07.02.1992|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|17||07.02.1992|1|3|perplexity_claude_sonnet
-270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||ГК|408|2||1|3|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|1.2|22.05.2003|5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|1.1|22.05.2003|3|5|gemini;gpt;perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|4.7|22.05.2003|3|5|gpt;perplexity_claude_sonnet;perplexity_grok
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|60-ФЗ|ВоздК|108|19.03.1997|2|5|perplexity_claude_sonnet;perplexity_grok
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|54-ФЗ|ФЗ|14.5|22.05.2003|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||КОАП|14.5||1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный|60-ФЗ|ВоздК|107|19.03.1997|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|4|07.02.1992|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|18|07.02.1992|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|13|07.02.1992|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|17|07.02.1992|1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||ГК|408||1|5|perplexity_claude_sonnet
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||ГК|414||1|5|gemini
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|специальный||ГК|795||1|5|gemini
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий||ГК|493||1|5|gpt
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-1|Закон Российской Федерации «О защите прав потребителей»|16|07.02.1992|1|5|gpt
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-1|Закон РФ|10|07.02.1992|1|5|perplexity_grok
+270|1b9d6f01-5f24-4054-9bb1-2c965ff4d6b0|общий|2300-1|Закон РФ|16|07.02.1992|1|5|perplexity_grok

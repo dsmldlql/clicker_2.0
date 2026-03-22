@@ -1,7 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|244|||1|1|qwen
-750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|246|||1|1|qwen
-750|15bed371-cace-4934-a630-0596bd659e2c|специальный||ГК|250|||1|1|qwen
-750|15bed371-cace-4934-a630-0596bd659e2c|специальный||ЖК|42|||1|1|qwen
-750|15bed371-cace-4934-a630-0596bd659e2c|специальный|218-ФЗ|ФЗ|14||13.07.2015|1|1|qwen
-750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|131|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+750|15bed371-cace-4934-a630-0596bd659e2c|специальный||ГК|250||2|2|gpt;qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|специальный||ЖК|42||2|2|gpt;qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|244||1|2|qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|246||1|2|qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|специальный|218-ФЗ|ФЗ|14|13.07.2015|1|2|qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|общий||ГК|131||1|2|qwen
+750|15bed371-cace-4934-a630-0596bd659e2c|специальный|218-ФЗ|ФЗ|42|13.07.2015|1|2|gpt

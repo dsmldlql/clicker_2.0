@@ -124,7 +124,7 @@ class FSM:
     """
     Выполняет reset последовательность из конфига сайта.
     Пример: Ctrl+L → ввод URL → Enter → ожидание
-    
+
     Args:
       bot: Экземпляр бота
     """
@@ -163,20 +163,35 @@ class FSM:
         print(f"  → Wait: {seconds}с")
         time.sleep(seconds)
 
-    # Сброс состояния и таймера
-    previous_state = self.current_state
-    self.current_state = self.scenario['start_state']
-    self.last_change = time.time()
-    
-    # Логируем переход в start_state после reset
-    self.state_logger.enter_state(self.current_state, from_state=previous_state)
+    # Ждём завершения всех действий в очереди
+    if hasattr(bot, 'action_queue'):
+      bot.action_queue.join()
+      print(f"[+] [Бот {self.bot_id}] Очередь действий пуста")
 
     # Дополнительная задержка на загрузку страницы после reset
     time.sleep(2.0)
 
+    # Сброс состояния и таймера
+    previous_state = self.current_state
+    self.current_state = self.scenario['start_state']
+    self.last_change = time.time()
+
+    # Логируем переход в start_state после reset
+    self.state_logger.enter_state(self.current_state, from_state=previous_state)
+
     print(f"[+] [Бот {self.bot_id}] Reset завершён, возврат к '{self.current_state}'")
 
   def execute_step(self, bot, analyzer, frame):
+    # Debug: check if state exists
+    if self.current_state not in self.scenario.get('states', {}):
+      print(f"[!] [Бот {self.bot_id}] Состояние '{self.current_state}' не найдено в scenario!")
+      print(f"    Доступные состояния: {list(self.scenario.get('states', {}).keys())}")
+      print(f"    scenario keys: {list(self.scenario.keys())}")
+      # Try to recover by resetting to start_state
+      self.current_state = self.scenario.get('start_state', 'start_question')
+      self.last_change = time.time()
+      self.expected_complete = False
+    
     cur_state_config = self.scenario['states'][self.current_state]
     timeout = cur_state_config.get('timeout', 120)
     elapsed = time.time() - self.last_change
@@ -200,25 +215,15 @@ class FSM:
           del self._paste_enter_executed
       return
 
-    # Проверка интервала между вопросами - ждём если интервал ещё не прошёл
-    if self.question_interval > 0 and bot.last_question_start_time is not None:
-      time_since_last_question = time.time() - bot.last_question_start_time
-      if time_since_last_question < self.question_interval:
-        remaining = self.question_interval - time_since_last_question
-        # Показываем сообщение только один раз при первом входе в это состояние
-        if not hasattr(self, '_waiting_interval_shown'):
-          self._waiting_interval_shown = True
-          print(f"[*] [Бот {self.bot_id}] Ожидание интервала между вопросами: {remaining:.1f}с (интервал: {self.question_interval}с)")
-        return
-      else:
-        # Интервал прошёл - сбрасываем флаг
-        self._waiting_interval_shown = False
-
     if not self.expected_complete:
-      # Поиск визуального триггера
+      # Поиск визуального триггера - получаем СВЕЖИЙ кадр для надёжности
       print(f'Expect [{self.current_state}]')
+      fresh_frame = bot.get_frame_umat()
+      if fresh_frame is None:
+        fresh_frame = frame  # Fallback на старый кадр если не удалось получить новый
+      
       coords, _ = analyzer.find_best_match(
-        frame,
+        fresh_frame,
         cur_state_config['expect']['templates'],
         cur_state_config['expect']['threshold']
       )
@@ -227,7 +232,7 @@ class FSM:
         print(f'coords and not self.expected_complete: {coords}, {self.expected_complete:}')
         # Логируем нахождение триггера
         self.state_logger.mark_trigger_found()
-        
+
         self.expected_complete = True
         # Сброс таймера при успешном нахождении триггера
         self.last_change = time.time()
@@ -241,7 +246,14 @@ class FSM:
     
     if self.expected_complete:
       print(f'self.expected_complete {self.expected_complete}')
-      time.sleep(1.0)  # Даём время на обновление экрана перед проверкой условия
+      
+      # Увеличенная пауза для состояний с click_paste_enter
+      # Даём время GPT на начало генерации ответа
+      action = cur_state_config.get('action', '')
+      if action == 'click_paste_enter':
+        time.sleep(2.0)  # Ждём пока GPT начнёт генерацию
+      else:
+        time.sleep(0.3)
 
       success = False
       cond = cur_state_config.get('condition', {})
@@ -251,7 +263,8 @@ class FSM:
         print(f'Condition: checking templates {cond["templates"]}')
         # Отмечаем начало проверки условия
         self.state_logger.mark_condition_start()
-        
+
+        # Получаем свежий кадр для проверки условия
         new_frame = bot.get_frame_umat()
         if new_frame is not None:
           hit, score = analyzer.find_best_match(
@@ -292,7 +305,7 @@ class FSM:
           print(f"[!] [Бот {self.bot_id}] Буфер пуст")
         else:
           print(f"[+] [Бот {self.bot_id}] Буфер содержит {len(clipboard_content)} символов, верифицируем...")
-          
+
           # Верифицируем с использованием полного функционала
           if check_valid_json:
             success, verified_data = check_valid_json(clipboard_content, self.bot_id)
@@ -334,7 +347,7 @@ class FSM:
         if success and verified_data:
           # Сбрасываем флаг ожидания ПЕРЕД всеми операциями
           self.expected_complete = False
-          
+
           # Log to CSV: JSON verified successfully
           self.logger.log_csv_operation("JSON_VERIFIED", global_index=global_idx, question_uid=uid)
 
@@ -370,10 +383,61 @@ class FSM:
             bot.log_limit_exhausted()
             return
 
-          # Выполняем reset последовательность браузера для НОВОГО вопроса
-          # reset_scenario сам устанавливает current_state в start_state и логирует переход
-          self.reset_scenario(bot)
-          # Возвращаем, чтобы не переходить в другое состояние
+          # Выполняем переход в success state согласно конфигу
+          next_state_key = 'success'
+          next_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
+
+          # Логируем выход из состояния и переход
+          self.state_logger.exit_state(success=True, next_state=next_state, reason='normal')
+
+          # Если следующее состояние - start_question, проверяем интервал
+          if next_state == 'start_question':
+            # ПРОВЕРКА ИНТЕРВАЛА МЕЖДУ ВОПРОСАМИ (неблокирующая)
+            if self.question_interval > 0 and bot.last_question_start_time is not None:
+              time_since_last_question = time.time() - bot.last_question_start_time
+              if time_since_last_question < self.question_interval:
+                # Вычисляем время, когда можно продолжить
+                bot.interval_resume_time = time.time() + (self.question_interval - time_since_last_question)
+                remaining = self.question_interval - time_since_last_question
+                print(f"[*] [Бот {self.bot_id}] Ожидание интервала между вопросами: {remaining:.1f}с (интервал: {self.question_interval}с)")
+                # Не блокируем, а просто устанавливаем флаг ожидания
+                bot.waiting_for_interval = True
+                # Сбрасываем таймер интервала
+                bot.last_question_start_time = None
+                # Обновляем состояние, но не вызываем reset_scenario ещё
+                prev_state = self.current_state
+                self.current_state = next_state
+                self.state_logger.enter_state(self.current_state, from_state=prev_state)
+                self.last_change = time.time()
+                self.expected_complete = False
+                # Сбрасываем флаги
+                if hasattr(self, '_paste_enter_executed'):
+                    del self._paste_enter_executed
+                if hasattr(self, '_condition_logged'):
+                    del self._condition_logged
+                return
+
+            # Интервал прошёл или не был установлен - сбрасываем таймер
+            bot.last_question_start_time = None
+            # Вызываем reset_scenario для перезагрузки страницы
+            print(f"[*] [Бот {self.bot_id}] Переход в start_question - выполняем reset браузера")
+            self.reset_scenario(bot)
+            # reset_scenario уже обновил состояние, просто выходим
+            return
+
+          # Для других состояний - просто обновляем состояние
+          prev_state = self.current_state
+          self.current_state = next_state
+          self.state_logger.enter_state(self.current_state, from_state=prev_state)
+
+          self.last_change = time.time()
+          self.expected_complete = False
+          # Сбрасываем флаг защиты от повторного выполнения
+          if hasattr(self, '_paste_enter_executed'):
+              del self._paste_enter_executed
+          # Сбрасываем флаг логирования условия
+          if hasattr(self, '_condition_logged'):
+              del self._condition_logged
           return
 
         else:
@@ -390,9 +454,6 @@ class FSM:
           # Вопрос будет задан ПОВТОРНО (cur_global_idx не изменился!)
           print(f"[!] [Бот {self.bot_id}] JSON плохой, вопрос будет задан повторно (попытка #{bot.total_question_count}, индекс: {bot.cur_global_idx})")
 
-          # Сбрасываем флаг ожидания
-          self.expected_complete = False
-
           # Очищаем буфер после неудачной верификации
           bot.clear_clipboard()
           print(f"[+] [Бот {self.bot_id}] Буфер очищен после неудачной верификации")
@@ -402,10 +463,26 @@ class FSM:
             bot.log_limit_exhausted()
             return
 
-          # НЕ делаем reset_scenario здесь - пусть FSM перейдёт в состояние try_again
-          # как указано в конфиге (fail: try_again)
-          # reset_scenario будет вызван только при переходе в start_question
-          success = False  # Устанавливаем fail для перехода в try_again
+          # Выполняем переход в fail state (try_again) согласно конфигу
+          next_state_key = 'fail'
+          next_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
+          
+          # Логируем выход из состояния и переход
+          self.state_logger.exit_state(success=False, next_state=next_state, reason='normal')
+          
+          prev_state = self.current_state
+          self.current_state = next_state
+          self.state_logger.enter_state(self.current_state, from_state=prev_state)
+          
+          self.last_change = time.time()
+          self.expected_complete = False
+          # Сбрасываем флаг защиты от повторного выполнения
+          if hasattr(self, '_paste_enter_executed'):
+              del self._paste_enter_executed
+          # Сбрасываем флаг логирования условия
+          if hasattr(self, '_condition_logged'):
+              del self._condition_logged
+          return
       else:
         success = True
         # Для условий без явной проверки (always success)
@@ -414,18 +491,38 @@ class FSM:
           self.state_logger.mark_condition_result(True, condition_type='always')
           self._condition_logged = True
 
-      # Переход
-      if time.time() - self.last_change > 2.0:
+      # Переход (для случаев, когда переход ещё не был выполнен)
+      # Для json_valid переход уже выполнен выше, поэтому проверяем expected_complete
+      if self.expected_complete and time.time() - self.last_change > 2.0:
         print(time.time() - self.last_change)
         print('PEREHOD\n')
         next_state_key = 'success' if success else 'fail'
         next_state = cur_state_config['next'].get(next_state_key, self.scenario['start_state'])
-        
+
         # Логируем выход из состояния и переход
         self.state_logger.exit_state(success=success, next_state=next_state, reason='normal')
 
         # Если следующее состояние - start_question, делаем reset браузера
         if next_state == 'start_question':
+          # ПРОВЕРКА ИНТЕРВАЛА МЕЖДУ ВОПРОСАМИ (неблокирующая)
+          # Устанавливаем время, когда бот сможет продолжить работу
+          if self.question_interval > 0 and bot.last_question_start_time is not None:
+            time_since_last_question = time.time() - bot.last_question_start_time
+            if time_since_last_question < self.question_interval:
+              # Вычисляем время, когда можно продолжить
+              bot.interval_resume_time = time.time() + (self.question_interval - time_since_last_question)
+              remaining = self.question_interval - time_since_last_question
+              print(f"[*] [Бот {self.bot_id}] Ожидание интервала между вопросами: {remaining:.1f}с (интервал: {self.question_interval}с)")
+              # Не блокируем, а просто устанавливаем флаг ожидания
+              bot.waiting_for_interval = True
+              # Сбрасываем таймер интервала
+              bot.last_question_start_time = None
+              # Выходим без выполнения reset_scenario - он будет выполнен позже
+              return
+
+          # Сбрасываем таймер интервала
+          bot.last_question_start_time = None
+
           print(f"[*] [Бот {self.bot_id}] Переход в start_question - выполняем reset браузера")
           # reset_scenario сам логирует переход в start_state
           self.reset_scenario(bot)
@@ -446,10 +543,11 @@ class FSM:
 
   def _run_action(self, bot, action, coords):
     x, y = int(coords[0]), int(coords[1])
-    
+
     if action == "click":
       bot.action_queue.put(('click', (x, y)))
-    
+      time.sleep(0.5)  # Даём время на выполнение клика
+
     elif action == "mousemove":
       bot.action_queue.put(('mousemove', (x, y)))
       

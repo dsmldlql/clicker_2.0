@@ -1,7 +1,7 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1044|372993|общий||ЖК|82|||1|1|perplexity_grok
-1044|372993|общий||ЖК|83|||1|1|perplexity_grok
-1044|372993|специальный||ЖК|94|||1|1|perplexity_grok
-1044|372993|специальный||ЖК|101|||1|1|perplexity_grok
-1044|372993|общий||ГК|1112|||1|1|perplexity_grok
-1044|372993|специальный|1541-1|Закон Российской Федерации|4||04.07.1991|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1044|372993|общий||ЖК|82||1|1|perplexity_grok
+1044|372993|общий||ЖК|83||1|1|perplexity_grok
+1044|372993|специальный||ЖК|94||1|1|perplexity_grok
+1044|372993|специальный||ЖК|101||1|1|perplexity_grok
+1044|372993|общий||ГК|1112||1|1|perplexity_grok
+1044|372993|специальный|1541-1|Закон Российской Федерации|4|04.07.1991|1|1|perplexity_grok

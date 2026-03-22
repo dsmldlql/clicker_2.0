@@ -1,7 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|36||27.07.2004|2|2|gemini;qwen
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий||ТК|127|||2|2|gemini;qwen
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий||ТК|123|||2|2|gemini;qwen
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|46||27.07.2004|1|2|qwen
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|45||27.07.2004|1|2|qwen
-401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий|79-ФЗ|ФЗ|73||27.07.2004|1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|36|27.07.2004|2|3|gemini;qwen
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий||ТК|127||2|3|gemini;qwen
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий||ТК|123||2|3|gemini;qwen
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|46|27.07.2004|1|3|qwen
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79-ФЗ|ФЗ|45|27.07.2004|1|3|qwen
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|общий|79-ФЗ|ФЗ|73|27.07.2004|1|3|gemini
+401|f33575ca-d8ed-47f6-9edc-ed5f5773804d|специальный|79‑ФЗ|ФЗ|46|27.07.2004|1|3|gpt

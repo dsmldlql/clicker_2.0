@@ -1,10 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1020|398120|общий||УК|159|||2|2|perplexity_claude_sonnet;perplexity_grok
-1020|398120|общий||УПК|141|||2|2|perplexity_claude_sonnet;perplexity_grok
-1020|398120|общий||УПК|144|||2|2|perplexity_claude_sonnet;perplexity_grok
-1020|398120|общий||ГК|1102|||1|2|perplexity_grok
-1020|398120|общий||ГПК|22|||1|2|perplexity_grok
-1020|398120|общий||ГК|1102|1||1|2|perplexity_claude_sonnet
-1020|398120|общий||УПК|151|1||1|2|perplexity_claude_sonnet
-1020|398120|общий||ГК|1107|2||1|2|perplexity_claude_sonnet
-1020|398120|общий||ГПК|28|||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1020|398120|общий||УК|159||1|1|perplexity_grok
+1020|398120|общий||УПК|141||1|1|perplexity_grok
+1020|398120|общий||УПК|144||1|1|perplexity_grok
+1020|398120|общий||ГК|1102||1|1|perplexity_grok
+1020|398120|общий||ГПК|22||1|1|perplexity_grok

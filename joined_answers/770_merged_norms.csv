@@ -1,11 +1,11 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|168|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|178|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|179|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|181|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|432|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный||ГК|558|||1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|1541-1|Закон Российской Федерации|2||04.07.1991|1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|1541-1|Закон Российской Федерации|7||04.07.1991|1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|218-ФЗ|ФЗ|13||13.07.2015|1|1|qwen
-770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|218-ФЗ|ФЗ|26||13.07.2015|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|168||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|178||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|179||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|181||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|общий||ГК|432||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный||ГК|558||1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|1541-1|Закон Российской Федерации|2|04.07.1991|1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|1541-1|Закон Российской Федерации|7|04.07.1991|1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|218-ФЗ|ФЗ|13|13.07.2015|1|1|qwen
+770|bef0bb9a-43f8-43b1-beaf-c218b543ac23|специальный|218-ФЗ|ФЗ|26|13.07.2015|1|1|qwen

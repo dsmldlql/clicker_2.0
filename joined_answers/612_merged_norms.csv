@@ -1,8 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий|2300-1|Закон РФ|25||07.02.1992|1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|2300-1|Закон РФ|18||07.02.1992|1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|924|ПП||6|10.11.2011|1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный||ГК|497|||1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|2300-1|Закон РФ|261||07.02.1992|1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий|2300-1|Закон РФ|22||07.02.1992|1|1|qwen
-612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий||ГК|503|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|2300-1|Закон РФ|18|07.02.1992|3|3|gemini;gpt;qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|2300-1|Закон РФ|26.1|07.02.1992|3|3|gemini;gpt;qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий|2300-1|Закон РФ|25|07.02.1992|2|3|gpt;qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий|2300-1|Закон РФ|22|07.02.1992|2|3|gpt;qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|924|ПП|6|10.11.2011|1|3|qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный||ГК|497||1|3|qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|общий||ГК|503||1|3|qwen
+612|7b9acef3-c502-4c44-8d18-ccd4f93fd769|специальный|924|ПП||10.11.2011|1|3|gemini

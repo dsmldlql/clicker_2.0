@@ -1,11 +1,10 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|81||15.08.1996|3|5|gpt;perplexity_claude_sonnet;perplexity_grok
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|6||15.08.1996|2|5|perplexity_claude_sonnet;perplexity_grok
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|10||15.08.1996|1|5|qwen
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|298|Положение о паспорте гражданина Российской Федерации, удостоверяющем личность гражданина Российской Федерации за пределами территории Российской Федерации||10|14.03.1997|1|5|qwen
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|7||15.08.1996|1|5|gpt
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|общий|128-ФЗ|ФЗ|58||25.07.1998|1|5|perplexity_grok
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|81|1|15.08.1996|1|5|gemini
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|82||15.08.1996|1|5|gemini
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|151||15.08.1996|1|5|gemini
-19|f794713b-da99-48cf-bb6e-0d261bdf5051|общий||КОАП|1915|||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|8.1|15.08.1996|4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|общий|114-ФЗ|ФЗ|6|15.08.1996|2|5|perplexity_claude_sonnet;perplexity_grok
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|общий||КОАП|19.15||1|5|perplexity_claude_sonnet
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|10|15.08.1996|1|5|qwen
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|298|Положение о паспорте гражданина Российской Федерации, удостоверяющем личность гражданина Российской Федерации за пределами территории Российской Федерации|10|14.03.1997|1|5|qwen
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|8.2|15.08.1996|1|5|gemini
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|15.1|15.08.1996|1|5|gemini
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|специальный|114-ФЗ|ФЗ|7|15.08.1996|1|5|gpt
+19|f794713b-da99-48cf-bb6e-0d261bdf5051|общий|128-ФЗ|ФЗ|58|25.07.1998|1|5|perplexity_grok

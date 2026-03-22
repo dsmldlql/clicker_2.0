@@ -1,6 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-815|533d373d-e1db-46a8-a36e-3ee1acd95a39|общий||НК|229|||1|1|qwen
-815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|228|1||1|1|qwen
-815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|230|||1|1|qwen
-815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|226|||1|1|qwen
-815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный|ЕД-7-11/913@|Приказ ФНС России|||20.10.2025|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+815|533d373d-e1db-46a8-a36e-3ee1acd95a39|общий||НК|229||1|1|qwen
+815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|228||1|1|qwen
+815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|230||1|1|qwen
+815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный||НК|226||1|1|qwen
+815|533d373d-e1db-46a8-a36e-3ee1acd95a39|специальный|ЕД-7-11/913@|Приказ ФНС России||20.10.2025|1|1|qwen

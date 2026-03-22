@@ -1,8 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|231||07.02.1992|1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|28||07.02.1992|1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|13||07.02.1992|1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|309|||1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|310|||1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|395|||1|1|qwen
-806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный||ГПК|17|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|23.1|07.02.1992|1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|28|07.02.1992|1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный|2300-1|Закон РФ|13|07.02.1992|1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|309||1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|310||1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|общий||ГК|395||1|1|qwen
+806|f7ec49cb-d408-4ed6-8e10-db13eab0a689|специальный||ГПК|17||1|1|qwen

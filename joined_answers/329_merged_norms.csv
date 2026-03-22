@@ -1,20 +1,28 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|702|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|708|1||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|708|3||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|721|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|723|1||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|723|2||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|330|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|28|1|07.02.1992|1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|28|5|07.02.1992|1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|29|1|07.02.1992|1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|29|3|07.02.1992|1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|131|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|132|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|28|||1|2|qwen
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|28||07.02.1992|1|2|gemini
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|29||07.02.1992|1|2|gemini
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|31||07.02.1992|1|2|gemini
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|13||07.02.1992|1|2|gemini
-329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|740|||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|723||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|330||3|5|gpt;perplexity_claude_sonnet;qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|702||3|5|perplexity_claude_sonnet;perplexity_grok;qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|708||3|5|gpt;perplexity_claude_sonnet;qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|333||2|5|gpt;perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|721||2|5|perplexity_claude_sonnet;qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|724||2|5|gpt;perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный||ГК|740||2|5|gemini;perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный||ГК|756||1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный||ГК|754||1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|27|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|28|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|29|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|15|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|13|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|17||1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации «О защите прав потребителей»|17|07.02.1992|1|5|perplexity_claude_sonnet
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|28|07.02.1992|1|5|qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон Российской Федерации от 07.02.1992|29|07.02.1992|1|5|qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|131||1|5|qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|132||1|5|qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГПК|28||1|5|qwen
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|28|07.02.1992|1|5|gemini
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|29|07.02.1992|1|5|gemini
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|31|07.02.1992|1|5|gemini
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|специальный|2300-1|Закон РФ|13|07.02.1992|1|5|gemini
+329|e1f7fb3c-68f5-47cf-a3b6-5cca6e76aa4b|общий||ГК|394||1|5|perplexity_grok

@@ -1,5 +1,12 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|250|||1|1|qwen
-613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|234|||1|1|qwen
-613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|252|||1|1|qwen
-613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГПК|30|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|252||3|3|gemini;gpt;qwen
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|250||2|3|gpt;qwen
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|249||2|3|gemini;gpt
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|234||1|3|qwen
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГПК|30||1|3|qwen
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|209||1|3|gemini
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|235||1|3|gemini
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|165.1||1|3|gemini
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|244||1|3|gpt
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|246||1|3|gpt
+613|5df92249-cfcc-44be-88aa-6736640ca9bd|общий||ГК|247||1|3|gpt

@@ -1,7 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный|1541-I|Закон РФ|7||04.07.1991|1|2|qwen
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|общий||ГК|292|||1|2|qwen
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный||ЖК|31|||1|2|qwen
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный|189-ФЗ|ФЗ|19||29.12.2004|1|2|gemini
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный||ГК|558|1||1|2|gemini
-467|f3797c55-b5bc-404a-bbed-d03d029c15c8|общий||ГК|292|2||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|общий||ГК|292||2|3|gemini;qwen
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный||ЖК|31||2|3|gpt;qwen
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный|1541-I|Закон РФ|7|04.07.1991|1|3|qwen
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный|189-ФЗ|ФЗ|19|29.12.2004|1|3|gemini
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный||ГК|558||1|3|gemini
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|общий||ЖК|69||1|3|gpt
+467|f3797c55-b5bc-404a-bbed-d03d029c15c8|специальный|1541‑1|Закон РФ|4|04.07.1991|1|3|gpt

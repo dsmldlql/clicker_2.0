@@ -1,15 +1,13 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1137|4||3|4|gemini;gpt;perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1137|1||2|4|gemini;perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1138|1||2|4|gemini;perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1162|1||2|4|gemini;perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1137|||1|4|qwen
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1162|||1|4|qwen
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1138|||1|4|gpt
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1113|||1|4|gpt
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1114|||1|4|gpt
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий|4462-I|Основы законодательства Российской Федерации о нотариате|48||11.02.1993|1|4|gemini
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1137|3||1|4|perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|314|2||1|4|perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий|4462-1|Основы законодательства Российской Федерации о нотариате|48||11.02.1993|1|4|perplexity_claude_sonnet
-89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГПК|310|||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1137||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1162||4|5|gemini;perplexity_claude_sonnet;perplexity_grok;qwen
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1138||3|5|gemini;gpt;perplexity_claude_sonnet
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|314||1|5|perplexity_claude_sonnet
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий|4462-1|Основы законодательства Российской Федерации о нотариате|48|11.02.1993|1|5|perplexity_claude_sonnet
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГПК|310||1|5|perplexity_claude_sonnet
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий|4462-I|Основы законодательства Российской Федерации о нотариате|48|11.02.1993|1|5|gemini
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1113||1|5|gpt
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1114||1|5|gpt
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|специальный||ГК|1163||1|5|perplexity_grok
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1152||1|5|perplexity_grok
+89|d3cf3445-ba6b-4896-8e75-395610f5f4be|общий||ГК|1175||1|5|perplexity_grok

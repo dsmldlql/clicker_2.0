@@ -1,4 +1,4 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1049|410591|общий||НК|75|||1|1|perplexity_grok
-1049|410591|специальный||НК|48|||1|1|perplexity_grok
-1049|410591|общий||НК|61|||1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1049|410591|общий||НК|75||1|1|perplexity_grok
+1049|410591|специальный||НК|48||1|1|perplexity_grok
+1049|410591|общий||НК|61||1|1|perplexity_grok

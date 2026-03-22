@@ -1,17 +1,10 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|1||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|3||3|5|gemini;perplexity_claude_sonnet;qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|81|||3|5|gpt;perplexity_claude_sonnet;perplexity_grok
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|81|1||2|5|gemini;qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|4||1|5|qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|81|4||1|5|qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/845@|Приказ Федеральной налоговой службы|||23.08.2023|1|5|qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/913@|Приказ Федеральной налоговой службы|||20.10.2025|1|5|qwen
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|6||1|5|gpt
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|78|||1|5|gpt
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|80|||1|5|gpt
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|229|4||1|5|perplexity_grok
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|79|1||1|5|gemini
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|7||1|5|perplexity_claude_sonnet
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220|9||1|5|perplexity_claude_sonnet
-49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/913@|Приказ ФНС России|||20.10.2025|1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|81||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|220||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/913@|Приказ ФНС России||20.10.2025|1|5|perplexity_claude_sonnet
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/845@|Приказ Федеральной налоговой службы||23.08.2023|1|5|qwen
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный|ЕД-7-11/913@|Приказ Федеральной налоговой службы||20.10.2025|1|5|qwen
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|79||1|5|gemini
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|78||1|5|gpt
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|общий||НК|80||1|5|gpt
+49|ccb30b20-9e26-4e3f-b97a-0a5e9326741d|специальный||НК|229||1|5|perplexity_grok

@@ -1,6 +1,6 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1048|408426|общий||ГК|450|||1|1|perplexity_grok
-1048|408426|специальный||ГК|546|||1|1|perplexity_grok
-1048|408426|специальный|549|ПП||51|21.07.2008|1|1|perplexity_grok
-1048|408426|специальный|1547|ПП|||13.09.2021|1|1|perplexity_grok
-1048|408426|специальный|410|ПП||41|14.05.2013|1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1048|408426|общий||ГК|450||1|1|perplexity_grok
+1048|408426|специальный||ГК|546||1|1|perplexity_grok
+1048|408426|специальный|549|ПП|51|21.07.2008|1|1|perplexity_grok
+1048|408426|специальный|1547|ПП||13.09.2021|1|1|perplexity_grok
+1048|408426|специальный|410|ПП|41|14.05.2013|1|1|perplexity_grok

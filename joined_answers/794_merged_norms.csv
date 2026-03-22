@@ -1,7 +1,11 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|779|||1|1|qwen
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|781|||1|1|qwen
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|61|||1|1|qwen
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный||ЖК|161|||1|1|qwen
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный||ЖК|162|||1|1|qwen
-794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный|2300-1|Закон Российской Федерации от 07.02.1992|29|1|07.02.1992|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный||ЖК|161||2|2|gpt;qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный||ЖК|162||2|2|gpt;qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|779||1|2|qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|781||1|2|qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|61||1|2|qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный|2300-1|Закон Российской Федерации от 07.02.1992|29|07.02.1992|1|2|qwen
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ЖК|39||1|2|gpt
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|специальный||ЖК|164||1|2|gpt
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|309||1|2|gpt
+794|7bc294d3-013e-4e4a-a2eb-ead6db0599e3|общий||ГК|15||1|2|gpt

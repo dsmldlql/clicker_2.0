@@ -24,6 +24,8 @@ class VNCHealthMonitor:
         self.check_interval = check_interval
         self.stop_event = threading.Event()
         self.monitor_thread: Optional[threading.Thread] = None
+        self.xvfb_failed_bots: set = set()  # Множество ботов с упавшим Xvfb
+        self._lock = threading.Lock()  # Блокировка для потокобезопасности
 
     def check_xvfb(self, bot_id: int) -> bool:
         """Проверяет что Xvfb запущен на дисплее бота"""
@@ -206,6 +208,9 @@ class VNCHealthMonitor:
                 if not xvfb_ok:
                     print(f"[!] VNC Monitor: Бот {bot_id} - Xvfb не работает (дисплей :{100 + bot_id})")
                     print(f"[!] VNC Monitor: Бот {bot_id} требует перезапуска (Xvfb упал)")
+                    # Добавляем бота в список требующих перезапуска
+                    with self._lock:
+                        self.xvfb_failed_bots.add(bot_id)
                     # Xvfb упал - это серьёзно, монитор не может восстановить
                     continue
 
@@ -221,6 +226,10 @@ class VNCHealthMonitor:
                     if not success:
                         print(f"[!] VNC Monitor: Не удалось восстановить VNC для бота {bot_id}")
                         print(f"[!] VNC Monitor: Попробуйте перезапустить бота вручную")
+                    else:
+                        # VNC восстановлен, убираем из списка failed если там был
+                        with self._lock:
+                            self.xvfb_failed_bots.discard(bot_id)
             
             # Логируем статус раз в 10 проверок (5 минут)
             if all_ok and check_count % 10 == 0:
@@ -251,3 +260,19 @@ class VNCHealthMonitor:
     def is_running(self) -> bool:
         """Проверяет запущен ли монитор"""
         return self.monitor_thread is not None and self.monitor_thread.is_alive()
+
+    def is_xvfb_failed(self, bot_id: int) -> bool:
+        """Проверяет, упал ли Xvfb для указанного бота"""
+        with self._lock:
+            return bot_id in self.xvfb_failed_bots
+
+    def clear_xvfb_failed(self, bot_id: int):
+        """Убирает бота из списка упавших (вызывается после успешного перезапуска)"""
+        with self._lock:
+            self.xvfb_failed_bots.discard(bot_id)
+
+    def get_failed_bots(self) -> list:
+        """Возвращает список ботов с упавшим Xvfb"""
+        with self._lock:
+            return list(self.xvfb_failed_bots)
+

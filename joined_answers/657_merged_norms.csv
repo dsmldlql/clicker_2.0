@@ -1,8 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1113|||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1152|||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1175|||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|210|||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|специальный||ЖК|153|||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|специальный||ЖК|153|1||1|1|qwen
-657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1154|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1175||3|3|gemini;gpt;qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|специальный||ЖК|153||3|3|gemini;gpt;qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1113||2|3|gemini;qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1152||2|3|gemini;qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|210||1|3|qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1154||1|3|qwen
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|общий||ГК|1112||1|3|gpt
+657|0fcea8de-bb49-4832-8987-aa4f47b74123|специальный||ГК|1174||1|3|gpt

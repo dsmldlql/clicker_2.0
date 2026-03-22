@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-21T23:03:54.692878", "bot_id": 1, "site": "gemini", "scenario": "thinking_old", "event": "STATE_ENTER", "data": {"state": "start_question", "from_state": null, "previous_state": null, "transition_delay_ms": null}}
+{"timestamp": "2026-03-21T23:39:18.081586", "bot_id": 1, "site": "gemini", "scenario": "thinking_old", "event": "STATE_ENTER", "data": {"state": "start_question", "from_state": null, "previous_state": null, "transition_delay_ms": null}}

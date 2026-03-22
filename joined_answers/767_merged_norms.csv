@@ -1,5 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|специальный||ТК|71|||1|1|qwen
-767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|80|||1|1|qwen
-767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|14|||1|1|qwen
-767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|841|||1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|специальный||ТК|71||1|1|qwen
+767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|80||1|1|qwen
+767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|14||1|1|qwen
+767|80fbcbd0-adba-4c52-adf2-dead64fcffaa|общий||ТК|84.1||1|1|qwen

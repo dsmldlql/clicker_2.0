@@ -1,6 +1,2 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1056|382142|специальный||НК|220|||1|1|perplexity_grok
-1056|382142|специальный||НК|220|3||1|1|perplexity_grok
-1056|382142|специальный||НК|220|6||1|1|perplexity_grok
-1056|382142|специальный||НК|220|7||1|1|perplexity_grok
-1056|382142|специальный||НК|220|8||1|1|perplexity_grok
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1056|382142|специальный||НК|220||1|1|perplexity_grok

@@ -1,9 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЖК|36|4||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЖК|36|||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЗК|393|||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЗК|1110|||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный|218-ФЗ|ФЗ|69||13.07.2015|1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ГрК|43|||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|общий||ЗК|35|||1|1|qwen
-818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный|221-ФЗ|ФЗ|22||24.07.2007|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЖК|36||1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЗК|39.3||1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ЗК|11.10||1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный|218-ФЗ|ФЗ|69|13.07.2015|1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный||ГрК|43||1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|общий||ЗК|35||1|1|qwen
+818|e89005e2-ed15-4eac-a59c-913eddb399de|специальный|221-ФЗ|ФЗ|22|24.07.2007|1|1|qwen

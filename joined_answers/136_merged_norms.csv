@@ -1,8 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|специальный||КОАП|1212|||3|4|gemini;gpt;qwen
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|303|||3|4|gemini;gpt;qwen
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|322|||2|4|gemini;qwen
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|41|||1|4|qwen
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|301|||1|4|gpt
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий|1090|ПП||62|23.10.1993|1|4|gemini
-136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|46|||1|4|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|специальный||КОАП|12.12||4|5|gemini;gpt;perplexity_grok;qwen
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|32.2||3|5|gemini;perplexity_grok;qwen
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|30.3||3|5|gemini;gpt;qwen
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|4.1||1|5|qwen
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий|1090|ПП|6.2|23.10.1993|1|5|gemini
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|4.6||1|5|gemini
+136|bfacb2b4-fa8c-4751-b0af-9063cdba7e3d|общий||КОАП|30.1||1|5|gpt

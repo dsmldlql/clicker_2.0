@@ -1,22 +1,15 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|111|4|25.04.2002|3|5|gemini;gpt;perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|12||25.04.2002|2|5|gpt;qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|15|||2|5|gpt;qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|1064|||2|5|gpt;qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|7|1|25.04.2002|1|5|qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|14|1|25.04.2002|1|5|qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГПК|131|||1|5|qwen
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|111|2|25.04.2002|1|5|gpt
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|111|3|25.04.2002|1|5|gpt
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|12|151|25.04.2002|1|5|gemini
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|12|152|25.04.2002|1|5|gemini
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|123-ФЗ|ФЗ|15||04.06.2018|1|5|gemini
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|121|3|25.04.2002|1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|161|1|25.04.2002|1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|161|3|25.04.2002|1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|15|1||1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|15|2||1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|1072|||1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГПК|24|1||1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|13||07.02.1992|1|5|perplexity_claude_sonnet
-6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|17|1|07.02.1992|1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|11.1|25.04.2002|3|5|gemini;gpt;perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|15||3|5|gpt;perplexity_claude_sonnet;qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|12|25.04.2002|3|5|gemini;gpt;qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|1064||2|5|gpt;qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|12.1|25.04.2002|1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|16.1|25.04.2002|1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГК|1072||1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГПК|24||1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|13|07.02.1992|1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий|2300-I|Закон Российской Федерации «О защите прав потребителей»|17|07.02.1992|1|5|perplexity_claude_sonnet
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|7|25.04.2002|1|5|qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|40-ФЗ|ФЗ|14|25.04.2002|1|5|qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|общий||ГПК|131||1|5|qwen
+6|7cc8a96e-ff5f-4f71-b1be-23e6f9afcace|специальный|123-ФЗ|ФЗ|15|04.06.2018|1|5|gemini

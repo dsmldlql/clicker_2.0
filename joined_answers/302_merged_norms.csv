@@ -1,9 +1,22 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|21||28.12.2013|2|2|gemini;qwen
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|218|||1|2|qwen
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|219|||1|2|qwen
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|59-ФЗ|ФЗ|12||02.05.2006|1|2|qwen
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|235|Приказ СФР от 03.03.2025 N 235|||03.03.2025|1|2|qwen
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|400-ФЗ|ФЗ|14||28.12.2013|1|2|gemini
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|1015|ПП||11|02.10.2014|1|2|gemini
-302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||ГПК|24|||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|21|28.12.2013|4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|218||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|219||3|5|gpt;perplexity_claude_sonnet;qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|59-ФЗ|ФЗ|12|02.05.2006|2|5|perplexity_claude_sonnet;qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|8|28.12.2013|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|11|28.12.2013|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|12|28.12.2013|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|18|28.12.2013|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|27-ФЗ|ФЗ|14|01.04.1996|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|220||1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||КАС|226||1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|167-ФЗ|ФЗ|3|15.12.2001|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|59-ФЗ|ФЗ|5|02.05.2006|1|5|perplexity_claude_sonnet
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|235|Приказ СФР от 03.03.2025 N 235||03.03.2025|1|5|qwen
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|400-ФЗ|ФЗ|14|28.12.2013|1|5|gemini
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|1015|ПП|11|02.10.2014|1|5|gemini
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий||ГПК|24||1|5|gemini
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400-ФЗ|ФЗ|22|28.12.2013|1|5|gpt
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|общий|167-ФЗ|ФЗ|5|15.12.2001|1|5|gpt
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|400‑ФЗ|ФЗ|22|28.12.2013|1|5|perplexity_grok
+302|981fcaf0-8294-4d2b-925f-e83b83e41aff|специальный|166‑ФЗ|ФЗ|2|15.12.2001|1|5|perplexity_grok

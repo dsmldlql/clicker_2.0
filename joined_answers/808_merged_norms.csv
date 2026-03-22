@@ -1,9 +1,9 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|1||04.03.2002|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|2||04.03.2002|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|4||04.03.2002|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|166-ФЗ|ФЗ|4|1|15.12.2001|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|166-ФЗ|ФЗ|25||15.12.2001|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|34|ПП|||23.01.2025|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|1099|УП|||07.09.2010|1|1|qwen
-808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|1699|Приказ СФР|||14.09.2023|1|1|qwen
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|1|04.03.2002|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|2|04.03.2002|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|21-ФЗ|ФЗ|4|04.03.2002|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|166-ФЗ|ФЗ|4|15.12.2001|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|166-ФЗ|ФЗ|25|15.12.2001|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|34|ПП||23.01.2025|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|общий|1099|УП||07.09.2010|1|1|qwen
+808|e5d980c9-1bbe-4d26-8aa6-fc4b37e5ac9b|специальный|1699|Приказ СФР||14.09.2023|1|1|qwen

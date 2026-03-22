@@ -1,21 +1,19 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|1064|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|15|||3|5|gemini;gpt;perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|28|||2|5|perplexity_grok;qwen
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГПК|29|||2|5|perplexity_claude_sonnet;qwen
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|28|2|08.11.2007|2|5|gemini;gpt
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|12||08.11.2007|1|5|qwen
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|196-ФЗ|ФЗ|12||10.12.1995|1|5|gpt
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|131|||1|5|gpt
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 196-ФЗ|ФЗ|11||10.12.1995|1|5|perplexity_grok
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 196-ФЗ|ФЗ|12||10.12.1995|1|5|perplexity_grok
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 257-ФЗ|ФЗ|3|7|08.11.2007|1|5|perplexity_grok
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|1064|1||1|5|gemini
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|196-ФЗ|ФЗ|12|2|10.12.1995|1|5|gemini
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГК|1069|||1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|151|||1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|3|12|08.11.2007|1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|5||08.11.2007|1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|24|||1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГК|1071|||1|5|perplexity_claude_sonnet
-2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|1082|||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|1064||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|15||3|5|gemini;gpt;perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГПК|29||2|5|perplexity_claude_sonnet;qwen
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|28||2|5|perplexity_grok;qwen
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|196-ФЗ|ФЗ|12|10.12.1995|2|5|gemini;gpt
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|28|08.11.2007|2|5|gemini;gpt
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГК|1069||1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|151||1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|3|08.11.2007|1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|5|08.11.2007|1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|24||1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный||ГК|1071||1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГК|1082||1|5|perplexity_claude_sonnet
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|257-ФЗ|ФЗ|12|08.11.2007|1|5|qwen
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|общий||ГПК|131||1|5|gpt
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 196-ФЗ|ФЗ|11|10.12.1995|1|5|perplexity_grok
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 196-ФЗ|ФЗ|12|10.12.1995|1|5|perplexity_grok
+2|fc3a28c4-5a19-4434-b6ed-2d39d777c8ee|специальный|№ 257-ФЗ|ФЗ|3|08.11.2007|1|5|perplexity_grok

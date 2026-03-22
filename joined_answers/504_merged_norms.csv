@@ -1,9 +1,8 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|303|||2|2|gemini;qwen
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный|45|Закон города Москвы от 21 ноября 2007 года № 45|814||21.11.2007|1|2|qwen
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|301|||1|2|qwen
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|305|||1|2|qwen
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный|533-ПП|ПП|||16.09.2014|1|2|qwen
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный||КОАП|15|||1|2|gemini
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|245|1||1|2|gemini
-504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|301|3||1|2|gemini
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|30.1||3|3|gemini;gpt;qwen
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|30.3||3|3|gemini;gpt;qwen
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный||КОАП|1.5||2|3|gemini;gpt
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный|45|Закон города Москвы от 21 ноября 2007 года № 45|8.14|21.11.2007|1|3|qwen
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|30.5||1|3|qwen
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|специальный|533-ПП|ПП||16.09.2014|1|3|qwen
+504|11a6fd34-6f44-4fcc-ac86-45624d491bbb|общий||КОАП|24.5||1|3|gemini

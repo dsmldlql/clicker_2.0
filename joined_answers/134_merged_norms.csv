@@ -1,17 +1,16 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|196|||4|4|gemini;gpt;perplexity_claude_sonnet;qwen
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|200|||3|4|gpt;perplexity_claude_sonnet;qwen
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|199|||3|4|gpt;perplexity_claude_sonnet;qwen
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный||ЖК|155|||3|4|gemini;gpt;perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП||119|06.05.2011|3|4|gemini;gpt;perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный||ГПК|129|||2|4|gpt;perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|Правила предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов|118|1|06.05.2011|1|4|qwen
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|Правила предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов|81|11|06.05.2011|1|4|qwen
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|199|2||1|4|gemini
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|204|1||1|4|gemini
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|204|||1|4|perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|203|||1|4|perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП||117|06.05.2011|1|4|perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП||122|06.05.2011|1|4|perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГПК|35|||1|4|perplexity_claude_sonnet
-134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный||КОАП|723|||1|4|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|196||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|199||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|200||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный||ЖК|155||4|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП|119|06.05.2011|3|5|gemini;gpt;perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|204||2|5|gemini;perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГПК|129||2|5|gpt;perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|203||1|5|perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП|117|06.05.2011|1|5|perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|ПП|122|06.05.2011|1|5|perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГПК|35||1|5|perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный||КОАП|7.23||1|5|perplexity_claude_sonnet
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|Правила предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов|118|06.05.2011|1|5|qwen
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|специальный|354|Правила предоставления коммунальных услуг собственникам и пользователям помещений в многоквартирных домах и жилых домов|81|06.05.2011|1|5|qwen
+134|556e3dd9-bc99-49d5-8dc9-d2d05be5a5ba|общий||ГК|195||1|5|perplexity_grok

@@ -1,20 +1,16 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|1064|||4|5|gpt;perplexity_claude_sonnet;perplexity_grok;qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|304|||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|222|||3|5|gpt;perplexity_grok;qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|28|||2|5|perplexity_claude_sonnet;perplexity_grok
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|210|||1|5|qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|15|||1|5|qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|22|||1|5|qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|28|1||1|5|qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный|66-ФЗ|ФЗ|12|1|15.04.1998|1|5|qwen
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|30|||1|5|gpt
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный|№ 338-ФЗ|ФЗ|11||24.07.2023|1|5|perplexity_grok
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|1064|1||1|5|gemini
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|15|1||1|5|gemini
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|56|||1|5|gemini
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|22|1||1|5|perplexity_claude_sonnet
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный||СП 4.13130.2013 Системы противопожарной защиты. Ограничение распространения пожара на объектах защиты. Требования к объемно-планировочным и конструктивным решениям||534|24.06.2013|1|5|perplexity_claude_sonnet
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГрК|222|||1|5|perplexity_claude_sonnet
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|208|||1|5|perplexity_claude_sonnet
-60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|196|||1|5|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|1064||5|5|gemini;gpt;perplexity_claude_sonnet;perplexity_grok;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|304||4|5|gemini;gpt;perplexity_claude_sonnet;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|28||3|5|perplexity_claude_sonnet;perplexity_grok;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|222||3|5|gpt;perplexity_grok;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|22||2|5|perplexity_claude_sonnet;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|15||2|5|gemini;qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный||СП 4.13130.2013 Системы противопожарной защиты. Ограничение распространения пожара на объектах защиты. Требования к объемно-планировочным и конструктивным решениям|5.3.4|24.06.2013|1|5|perplexity_claude_sonnet
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГрК|222||1|5|perplexity_claude_sonnet
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|208||1|5|perplexity_claude_sonnet
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|196||1|5|perplexity_claude_sonnet
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГК|210||1|5|qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный|66-ФЗ|ФЗ|12|15.04.1998|1|5|qwen
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|56||1|5|gemini
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|общий||ГПК|30||1|5|gpt
+60|fd76ea86-3cb7-4d0b-b096-dff288df0b3b|специальный|№ 338-ФЗ|ФЗ|11|24.07.2023|1|5|perplexity_grok

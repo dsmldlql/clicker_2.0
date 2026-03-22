@@ -1,9 +1,5 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1025|373553|общий||СК|36|||2|2|perplexity_claude_sonnet;perplexity_grok
-1025|373553|общий||ГК|1142|||2|2|perplexity_claude_sonnet;perplexity_grok
-1025|373553|общий||ГК|1113|||1|2|perplexity_grok
-1025|373553|общий||ГК|1141|||1|2|perplexity_grok
-1025|373553|общий||ГК|1111|||1|2|perplexity_claude_sonnet
-1025|373553|общий||ГК|256|||1|2|perplexity_claude_sonnet
-1025|373553|специальный||СК|34|||1|2|perplexity_claude_sonnet
-1025|373553|общий||ГК|1150|||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1025|373553|общий||СК|36||1|1|perplexity_grok
+1025|373553|общий||ГК|1113||1|1|perplexity_grok
+1025|373553|общий||ГК|1141||1|1|perplexity_grok
+1025|373553|общий||ГК|1142||1|1|perplexity_grok

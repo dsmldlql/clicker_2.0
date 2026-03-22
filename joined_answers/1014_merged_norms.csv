@@ -1,9 +1,4 @@
-example_id|uid|norm_type|norm_number|act|article|point|date|occurrence_count|total_files|models
-1014|378042|общий||ГК|779|||1|2|perplexity_grok
-1014|378042|общий|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|4||07.02.1992|1|2|perplexity_grok
-1014|378042|специальный|1172-ПП|ПП|||14.09.2021|1|2|perplexity_grok
-1014|378042|общий||ГК|608|||1|2|perplexity_claude_sonnet
-1014|378042|специальный|259-ФЗ|ФЗ|||08.11.2007|1|2|perplexity_claude_sonnet
-1014|378042|специальный|1800|ПП|||26.10.2021|1|2|perplexity_claude_sonnet
-1014|378042|общий||КОАП|127|||1|2|perplexity_claude_sonnet
-1014|378042|общий||УК|166|||1|2|perplexity_claude_sonnet
+example_id|uid|norm_type|norm_number|act|article|date|occurrence_count|total_files|models
+1014|378042|общий||ГК|779||1|1|perplexity_grok
+1014|378042|общий|2300-1|"Закон Российской Федерации ""О защите прав потребителей"""|4|07.02.1992|1|1|perplexity_grok
+1014|378042|специальный|1172-ПП|ПП||14.09.2021|1|1|perplexity_grok

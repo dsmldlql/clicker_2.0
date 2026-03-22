@@ -120,47 +120,51 @@ def normalize_act_name(act_name: str) -> str:
 
 
 def clean_article_field(value: str) -> str:
-    """Extract only digits from article field. Remove 'ст.', 'статья', etc.
-    
+    """Clean article field: remove 'ст.', 'статья', etc. Preserve digits and dots.
+
     Examples:
         "ст. 163" -> "163"
         "статья 421" -> "421"
+        "333.19" -> "333.19"
+        "12.19" -> "12.19"
         "159" -> "159"
         "" -> ""
     """
     if not value:
         return ""
-    
+
     # Remove common prefixes
     cleaned = re.sub(r'^ст\.\s*', '', str(value), flags=re.IGNORECASE)
     cleaned = re.sub(r'^статья\s*', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'^арт\.\s*', '', cleaned, flags=re.IGNORECASE)
-    
-    # Extract only digits
-    digits = re.findall(r'\d+', cleaned)
-    return ''.join(digits) if digits else ""
+
+    # Extract digits and dots (to preserve decimal points like 333.19)
+    result = re.sub(r'[^\d.]', '', cleaned)
+    return result.strip('.') if result else ""
 
 
 def clean_point_field(value: str) -> str:
-    """Extract only digits from point field. Remove 'п.', 'punkt', etc.
-    
+    """Clean point field: remove 'п.', 'punkt', etc. Preserve digits and dots.
+
     Examples:
         "п. 1" -> "1"
         "punkt 2" -> "2"
-        "3" -> "3"
+        "3.14" -> "3.14"
+        "333.19" -> "333.19"
+        "12.19" -> "12.19"
         "" -> ""
     """
     if not value:
         return ""
-    
+
     # Remove common prefixes
     cleaned = re.sub(r'^п\.\s*', '', str(value), flags=re.IGNORECASE)
     cleaned = re.sub(r'^punkt\s*', '', cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r'^point\s*', '', cleaned, flags=re.IGNORECASE)
-    
-    # Extract only digits
-    digits = re.findall(r'\d+', cleaned)
-    return ''.join(digits) if digits else ""
+
+    # Extract digits and dots (to preserve decimal points like 3.14)
+    result = re.sub(r'[^\d.]', '', cleaned)
+    return result.strip('.') if result else ""
 
 
 def find_all_json_files(answers_dir: Path, folders_to_include: Optional[Set[str]] = None) -> Dict[str, List[Path]]:
@@ -295,23 +299,26 @@ def clean_micro_number(data: Dict[str, Any]) -> Dict[str, Any]:
 
 def normalize_norm(norm: Dict[str, Any]) -> Tuple:
     """Create a hashable key from norm fields for comparison.
-    
-    Normalizes act name and extracts only digits from art and art_punkt.
-    Grouping is based on: normalized_act, date, number, art (digits only), art_punkt (digits only)
+
+    Normalizes act name and extracts digits and dots from art and art_punkt.
+    Grouping is based on: normalized_act, date, number, art (digits and dots).
+    If art is empty, uses art_punkt (digits and dots) instead.
     """
     act_name = norm.get('act', '')
     normalized_act = normalize_act_name(act_name)
-    
+
     # Clean article and point fields - extract only digits
     art_clean = clean_article_field(norm.get('art', ''))
     art_punkt_clean = clean_point_field(norm.get('art_punkt', ''))
-    
+
+    # Use art_punkt only if art is empty
+    article_key = art_punkt_clean if not art_clean else art_clean
+
     return (
         normalized_act,
         norm.get('date', ''),
         norm.get('number', ''),
-        art_clean,
-        art_punkt_clean,
+        article_key,
     )
 
 
@@ -370,9 +377,12 @@ def merge_norms_with_count(file_paths: List[Path], example_id: str) -> List[Dict
         original_act = norm_data.get('act', '')
         normalized_act = normalize_act_name(original_act)
 
-        # Clean article and point fields - extract only digits for output
+        # Clean article and point fields - extract digits and dots for output
         article_clean = clean_article_field(norm_data.get('art', ''))
         point_clean = clean_point_field(norm_data.get('art_punkt', ''))
+
+        # Use art_punkt only if art is empty (for output)
+        article_output = point_clean if not article_clean else article_clean
 
         # Determine norm type from scope field
         scope = norm_data.get('scope', '')
@@ -384,8 +394,7 @@ def merge_norms_with_count(file_paths: List[Path], example_id: str) -> List[Dict
             'norm_type': norm_type,
             'norm_number': norm_data.get('number', ''),
             'act': normalized_act,  # Use normalized act name
-            'article': article_clean,  # Only digits
-            'point': point_clean,  # Only digits
+            'article': article_output,  # Digits and dots (art or art_punkt if art is empty)
             'date': norm_data.get('date', ''),
             'occurrence_count': info['count'],
             'total_files': len(file_paths),
@@ -438,7 +447,7 @@ def join_all_norms(output_dir: Path = None, folders_to_include: Optional[List[st
 
         fieldnames = [
             'example_id', 'uid', 'norm_type', 'norm_number',
-            'act', 'article', 'point', 'date',
+            'act', 'article', 'date',
             'occurrence_count', 'total_files', 'models'
         ]
         
@@ -452,19 +461,68 @@ def join_all_norms(output_dir: Path = None, folders_to_include: Optional[List[st
     return results
 
 
+def merge_all_csvs(output_dir: Path = None) -> Path:
+    """
+    Merge all {number}_merged_norms.csv files into one combined CSV file.
+    
+    Returns path to the merged file.
+    """
+    if output_dir is None:
+        output_dir = Path(__file__).parent.parent / "joined_answers"
+    
+    # Find all merged CSV files
+    merged_files = sorted(output_dir.glob("*_merged_norms.csv"), 
+                          key=lambda x: int(x.stem.split('_')[0]) if x.stem.split('_')[0].isdigit() else 0)
+    
+    if not merged_files:
+        logger.warning(f"No merged CSV files found in {output_dir}")
+        return None
+    
+    logger.info(f"Merging {len(merged_files)} CSV files...")
+    
+    # Read all files and combine
+    all_rows = []
+    fieldnames = None
+    
+    for csv_file in merged_files:
+        logger.info(f"  Reading {csv_file.name}...")
+        with open(csv_file, 'r', encoding='utf-8', newline='') as f:
+            reader = csv.DictReader(f, delimiter='|')
+            if fieldnames is None:
+                fieldnames = reader.fieldnames
+            rows = list(reader)
+            all_rows.extend(rows)
+    
+    # Write combined file
+    output_file = output_dir / "all_merged_norms.csv"
+    
+    with open(output_file, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='|')
+        writer.writeheader()
+        writer.writerows(all_rows)
+    
+    logger.info(f"Saved combined CSV to {output_file}")
+    logger.info(f"  Total rows: {len(all_rows)}")
+    
+    return output_file
+
+
 def main():
     """Main entry point."""
     logger.info("Starting norm joining process...")
     logger.info(f"Scanning directory: {ANSWERS_DIR}")
-    
+
     # Use configuration from FOLDERS_TO_INCLUDE constant
     # Or override by passing a list to join_all_norms()
     results = join_all_norms(folders_to_include=FOLDERS_TO_INCLUDE)
     
+    # Merge all CSV files into one
+    merge_all_csvs()
+
     # Print summary
     total_norms = sum(len(r) for r in results.values())
     logger.info(f"Completed! Processed {len(results)} groups, total {total_norms} unique norms")
-    
+
     # Print detailed summary for first few groups
     for file_num in list(results.keys())[:5]:
         norms = results[file_num]

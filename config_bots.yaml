@@ -330,7 +330,7 @@ bot_0:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1400, 1449]
+  row_range: [990, 999]
   max_questions: 100
   restart_delay: 0
   proxy: None
@@ -360,7 +360,7 @@ bot_1:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1350, 1399]
+  row_range: [869, 884]
   max_questions: 100
   restart_delay: 0
   proxy: None
@@ -389,7 +389,7 @@ bot_2:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1300, 1349]
+  row_range: [885, 899]
   max_questions: 100
   restart_delay: 0
   proxy: None
@@ -418,7 +418,7 @@ bot_3:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1250, 1299]
+  row_range: [939, 949]
   max_questions: 100
   restart_delay: 0
   proxy: None
@@ -447,7 +447,7 @@ bot_4:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1200, 1249]
+  row_range: [1090, 1099]
   max_questions: 100
   restart_delay: 0
   proxy: None
@@ -476,7 +476,7 @@ bot_5:
   roi: [0, 0, 960, 800]
   cooldown: 1.0
   question_interval: 5.0
-  row_range: [1150, 1199]
+  row_range: [1450, 1499]
   max_questions: 100
   restart_delay: 0
   proxy: None
